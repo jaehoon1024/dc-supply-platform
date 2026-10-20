@@ -1,0 +1,12 @@
+{
+  "name": "dc-supply-platform",
+  "private": true,
+  "type": "module",
+  "description": "대한민국 데이터센터 공급현황 관리 플랫폼 (GitHub 데이터 + Vercel 배포)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "validate": "node scripts/validate.mjs",
+    "permits": "node scripts/permits.mjs"
+  }
+}

@@ -1,0 +1,1981 @@
+[
+  {
+    "id": "가비아",
+    "name": "가비아",
+    "aliases": [],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "네오ai클라우드",
+    "name": "네오AI클라우드",
+    "aliases": [],
+    "type": "시행·개발",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "네이버클라우드",
+    "name": "네이버클라우드",
+    "aliases": [
+      "네이버",
+      "NAVER"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "네이버",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "다우기술",
+    "name": "다우기술",
+    "aliases": [
+      "다우데이타센터",
+      "다우데이타"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "다우키움그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "대림",
+    "name": "대림",
+    "aliases": [],
+    "type": "대기업·그룹",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "대우건설",
+    "name": "대우건설",
+    "aliases": [],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "드림마크원",
+    "name": "드림마크원",
+    "aliases": [],
+    "type": "시행·개발",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "디노티시아",
+    "name": "디노티시아",
+    "aliases": [
+      "디노코어"
+    ],
+    "type": "시행·개발",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "디씨브릿지",
+    "name": "디씨브릿지",
+    "aliases": [
+      "DC Bridge"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "디지털리얼티",
+    "name": "디지털리얼티",
+    "aliases": [
+      "Digital Realty"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "롯데이노베이트",
+    "name": "롯데이노베이트",
+    "aliases": [
+      "롯데정보통신"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "롯데",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "맥쿼리자산운용",
+    "name": "맥쿼리자산운용",
+    "aliases": [
+      "맥쿼리",
+      "MAIF4"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "메가데이타코리아",
+    "name": "메가데이타코리아",
+    "aliases": [
+      "메가데이터코리아"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "메타인프라",
+    "name": "메타인프라",
+    "aliases": [],
+    "type": "시행·개발",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "베네포스",
+    "name": "베네포스",
+    "aliases": [],
+    "type": "시행·개발",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "삼성물산",
+    "name": "삼성물산",
+    "aliases": [],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "삼성",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "삼성sds",
+    "name": "삼성SDS",
+    "aliases": [
+      "삼성에스디에스"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "삼성",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "스마일게이트",
+    "name": "스마일게이트",
+    "aliases": [
+      "스마일게이트자산운용",
+      "스마일게이트넥사서비스"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "아워서킷",
+    "name": "아워서킷",
+    "aliases": [],
+    "type": "시행·개발",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "액티스",
+    "name": "액티스",
+    "aliases": [
+      "Actis"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "와이드크릭자산운용",
+    "name": "와이드크릭자산운용",
+    "aliases": [
+      "와이드크릭"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "워버그핀커스",
+    "name": "워버그핀커스",
+    "aliases": [
+      "Warburg Pincus"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "원아시아",
+    "name": "원아시아",
+    "aliases": [
+      "원아시아네트워크",
+      "One Asia"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "유림티에스",
+    "name": "유림티에스",
+    "aliases": [
+      "유림TS",
+      "유림",
+      "Urim TS",
+      "엠디에이3호"
+    ],
+    "type": "시행·개발",
+    "roles": [
+      "dev",
+      "con"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "변압기 방열기 제조(1983 유림공업사) → 태양광·연료전지 → 데이터센터 시행. 2009 유림공업과 합병. 시행: 문래 80MW·부천 내동 100MW·일산 80MW·구로 80MW·안양 80MW / 지분참여: 가산 40MW·안양(2) 80MW / 시공참여: 죽전 100MW. ※ 일산·구로·안양·가산은 위치·상태 미확인으로 센터 미등록.",
+    "url": "https://www.urimts.co.kr",
+    "created_at": "2026-10-20T20:00:00+09:00",
+    "updated_at": "2026-10-20T20:00:00+09:00",
+    "updated_by": "user:auto",
+    "log": [
+      {
+        "at": "2026-10-20T20:00:00+09:00",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
+      }
+    ]
+  },
+  {
+    "id": "유진그룹",
+    "name": "유진그룹",
+    "aliases": [
+      "DC플랫폼"
+    ],
+    "type": "대기업·그룹",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "이도",
+    "name": "이도",
+    "aliases": [
+      "청라IDC PFV"
+    ],
+    "type": "시행·개발",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "이지스자산운용",
+    "name": "이지스자산운용",
+    "aliases": [
+      "이지스"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "자이ca",
+    "name": "자이C&A",
+    "aliases": [
+      "자이씨앤에이"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "GS",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "카카오",
+    "name": "카카오",
+    "aliases": [
+      "Kakao"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "캡스톤자산운용",
+    "name": "캡스톤자산운용",
+    "aliases": [
+      "캡스톤"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "코람코자산운용",
+    "name": "코람코자산운용",
+    "aliases": [
+      "코람코"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "코스콤",
+    "name": "코스콤",
+    "aliases": [
+      "KOSCOM"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "킨드릴코리아",
+    "name": "킨드릴코리아",
+    "aliases": [
+      "킨드릴",
+      "Kyndryl"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "파인앤파트너스자산운용",
+    "name": "파인앤파트너스자산운용",
+    "aliases": [],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "퍼시픽자산운용",
+    "name": "퍼시픽자산운용",
+    "aliases": [
+      "퍼시픽"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "포스코이앤씨",
+    "name": "포스코이앤씨",
+    "aliases": [
+      "포스코E&C"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": false,
+    "parent": "포스코",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "한국가스공사",
+    "name": "한국가스공사",
+    "aliases": [
+      "KOGAS"
+    ],
+    "type": "에너지·기타",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "한국대체투자자산운용",
+    "name": "한국대체투자자산운용",
+    "aliases": [
+      "KAAM",
+      "캄스퀘어"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "한국초저온",
+    "name": "한국초저온",
+    "aliases": [
+      "한국초저온인천",
+      "EMP벨스타"
+    ],
+    "type": "에너지·기타",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "한화건설",
+    "name": "한화건설",
+    "aliases": [
+      "한화 건설부문"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": false,
+    "parent": "한화",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "현대건설",
+    "name": "현대건설",
+    "aliases": [
+      "Hyundai E&C"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "현대자동차그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "현대엔지니어링",
+    "name": "현대엔지니어링",
+    "aliases": [],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "현대자동차그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "현대오토에버",
+    "name": "현대오토에버",
+    "aliases": [],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "현대자동차그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "현대자동차그룹",
+    "name": "현대자동차그룹",
+    "aliases": [
+      "현대차그룹"
+    ],
+    "type": "대기업·그룹",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "amazonwebservices",
+    "name": "Amazon Web Services",
+    "aliases": [
+      "AWS",
+      "아마존웹서비스"
+    ],
+    "type": "빅테크",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "cj대한통운건설부문",
+    "name": "CJ대한통운 건설부문",
+    "aliases": [
+      "CJ대한통운"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": false,
+    "parent": "CJ",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "cj올리브네트웍스",
+    "name": "CJ올리브네트웍스",
+    "aliases": [],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op",
+      "con"
+    ],
+    "major": true,
+    "parent": "CJ",
+    "note": "MEP 시공 참여",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "cppib",
+    "name": "CPPIB",
+    "aliases": [
+      "캐나다연금투자위원회"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "dcidatacenters",
+    "name": "DCI Data Centers",
+    "aliases": [
+      "DCI Korea",
+      "DCI"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "digitaledge",
+    "name": "Digital Edge",
+    "aliases": [
+      "디지털엣지"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "Stonepeak",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "dl건설",
+    "name": "DL건설",
+    "aliases": [],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": false,
+    "parent": "DL",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "dl이앤씨",
+    "name": "DL이앤씨",
+    "aliases": [
+      "DL E&C"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "DL",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "dprconstruction",
+    "name": "DPR Construction",
+    "aliases": [
+      "DPR"
+    ],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "empyriondigital",
+    "name": "Empyrion Digital",
+    "aliases": [
+      "엠피리온"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "epochdigitalkorea",
+    "name": "Epoch Digital Korea",
+    "aliases": [
+      "Epoch Digital",
+      "ADIK",
+      "에포크디지털"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "equinix",
+    "name": "Equinix",
+    "aliases": [
+      "에퀴닉스"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "esr",
+    "name": "ESR",
+    "aliases": [
+      "켄달스퀘어",
+      "ESR켄달스퀘어"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "gs건설",
+    "name": "GS건설",
+    "aliases": [],
+    "type": "건설사",
+    "roles": [
+      "con",
+      "dev"
+    ],
+    "major": true,
+    "parent": "GS",
+    "note": "PFV 지분 참여 사례 다수",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "gs그룹",
+    "name": "GS그룹",
+    "aliases": [
+      "GS AI인프라",
+      "동해에이아이"
+    ],
+    "type": "대기업·그룹",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "keppel",
+    "name": "Keppel",
+    "aliases": [
+      "케펠",
+      "Keppel DC Fund"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "kinx",
+    "name": "KINX",
+    "aliases": [
+      "케이아이엔엑스"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "가비아",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "kt클라우드",
+    "name": "KT클라우드",
+    "aliases": [
+      "KT Cloud",
+      "케이티클라우드"
+    ],
+    "type": "통신·클라우드",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "KT",
+    "note": "KT 그룹 IDC·클라우드 전문 자회사",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "lgcns",
+    "name": "LG CNS",
+    "aliases": [
+      "엘지씨엔에스"
+    ],
+    "type": "IT서비스·플랫폼",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "LG",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "lg유플러스",
+    "name": "LG유플러스",
+    "aliases": [
+      "LGU+",
+      "LG U+",
+      "엘지유플러스"
+    ],
+    "type": "통신·클라우드",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "LG",
+    "note": "자사",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "aliases": [
+      "마이크로소프트",
+      "5673코리아"
+    ],
+    "type": "빅테크",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "nfd",
+    "name": "NFD",
+    "aliases": [],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "princetondigitalgroup",
+    "name": "Princeton Digital Group",
+    "aliases": [
+      "PDG",
+      "프린스턴디지털"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sc제우스",
+    "name": "SC제우스",
+    "aliases": [
+      "SC Capital Partners",
+      "SC Zeus"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": true,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sgc에너지",
+    "name": "SGC에너지",
+    "aliases": [
+      "SGC AI인프라",
+      "SGC데이터파워",
+      "SGC"
+    ],
+    "type": "에너지·기타",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sk그룹",
+    "name": "SK그룹",
+    "aliases": [],
+    "type": "대기업·그룹",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sk브로드밴드",
+    "name": "SK브로드밴드",
+    "aliases": [
+      "SKB"
+    ],
+    "type": "통신·클라우드",
+    "roles": [
+      "dev"
+    ],
+    "major": true,
+    "parent": "SK그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sk에코플랜트",
+    "name": "SK에코플랜트",
+    "aliases": [],
+    "type": "건설사",
+    "roles": [
+      "con"
+    ],
+    "major": true,
+    "parent": "SK그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sk텔레콤",
+    "name": "SK텔레콤",
+    "aliases": [
+      "SKT"
+    ],
+    "type": "통신·클라우드",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "SK그룹",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sk호라이즌",
+    "name": "SK호라이즌",
+    "aliases": [],
+    "type": "통신·클라우드",
+    "roles": [
+      "op"
+    ],
+    "major": true,
+    "parent": "SK그룹",
+    "note": "SK브로드밴드 IDC 운영 자회사",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "sttgdc",
+    "name": "STT GDC",
+    "aliases": [
+      "STT GDC코리아",
+      "STT"
+    ],
+    "type": "글로벌 DC사업자",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "",
+    "url": "",
+    "created_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-20T15:00:00+09:00",
+        "editor": "auto",
+        "fields": [],
+        "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  }
+]

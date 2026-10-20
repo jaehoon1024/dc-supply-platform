@@ -1,0 +1,75 @@
+# DC공급현황
+
+대한민국 데이터센터 공급현황 관리 플랫폼입니다. 데이터는 이 저장소의 `data/*.json`에 있고 GitHub에서 버전을 관리합니다. 화면은 Vercel에 배포합니다.
+
+## 무엇을 하나
+
+- 센터별 구분(자체/상용), 단계(운영/개발), 상태(설계중·착공·개발중·준공·운영중)
+- 발주처·시공사·운영사, 수전용량과 IT Load(MW), 착공월·준공월·RFS
+- 필드마다 **확정/추정** 표시. 센터마다 **근거 목록**과 **변경 히스토리**
+- 주소 정합성 검사, 지도(Leaflet + OpenStreetMap), 구글 지도 링크
+- **핵심 사업자**(LG유플러스·KT·SK·LG CNS) 필터·카드·사업자 목표 대비 추정치
+- **2031년까지 연도별 공급 추정**(상태별 실현확률 가중 / 계획 그대로)
+- 상세 화면에서 수동 수정 → Vercel 함수가 GitHub에 커밋. 수정한 필드는 고정되어 자동수집이 덮어쓰지 않음
+- 국토교통부 건축HUB 인허가: 인허가 탭 실시간 조회(+신규 후보 발굴), 매일 08:00 동기화(Vercel Cron), CSV 내보내기
+
+## 구조
+
+```
+index.html, app.js, styles.css   화면 (빌드 없음)
+lib/model.js                      공용 규칙: 상태·확정/추정·주소검사·사업자·공급추정·수정 반영
+lib/store.js                      GitHub 읽기/원자적 커밋
+api/data.js                       GET  최신 데이터 (main 브랜치 최신 커밋)
+api/save.js                       POST 수정·근거 추가 → GitHub 커밋
+scripts/permits.mjs               건축HUB 인허가 조회·매칭·동기화
+api/permits.js                    건축HUB 실시간 조회 API / Cron 동기화(?sync=1)
+scripts/validate.mjs              데이터 검증 (모든 push에서 실행)
+data/                             dcs, evidence, history, sources, runs, permits, grid, targets
+.github/workflows/                ci.yml(검증), daily-permits.yml(매일 08:00 KST)
+```
+
+## 배포 (처음 한 번)
+
+1. **Vercel 연결**: vercel.com → Add New → Project → 이 GitHub 저장소 Import → Framework Preset "Other" 그대로 Deploy.
+2. **GitHub 토큰 만들기**: GitHub → Settings → Developer settings → Fine-grained tokens → 이 저장소만 선택, Repository permissions에서 **Contents: Read and write** 허용.
+3. **Vercel 환경변수** (Project → Settings → Environment Variables), 입력 후 Redeploy:
+
+| 이름 | 값 |
+|---|---|
+| `GITHUB_TOKEN` | 2번에서 만든 토큰 |
+| `GITHUB_REPO` | `계정명/dc-supply-platform` |
+| `GITHUB_BRANCH` | `main` (생략 가능) |
+| `EDIT_PASSWORD` | 팀 편집 비밀번호 |
+
+4. **건축HUB 키(data.go.kr)**: "국토교통부_건축HUB_건축인허가정보 서비스" 활용 신청 → 일반 인증키(Decoding)를 **Vercel** Environment Variables에 `BUILDING_HUB_KEY`(Sensitive)로 등록 후 Redeploy. 인허가 탭에서 바로 실시간 조회되고, 매일 08:00 Vercel Cron이 결과를 GitHub에 커밋합니다(GITHUB_TOKEN 필요). 키는 저장소에 넣지 않습니다. (GitHub Actions로 돌리려면 같은 키를 Actions Secret에도 등록)
+   - 센터 주소(지번)에서 시군구·법정동 코드를 자동 변환해 `permit_ref`에 넣어 두었습니다. 지번 단위는 정확 매칭, 법정동 단위는 이름 일치 또는 동 내 유일한 데이터센터성 인허가일 때만 연결합니다.
+5. (선택) 외부 공개를 막으려면 Vercel → Settings → Deployment Protection을 켜세요.
+
+환경변수가 없으면 배포본에 포함된 데이터로 **보기 전용**으로 동작합니다.
+
+## 일일 수집
+
+| 시각(KST) | 무엇 | 방식 |
+|---|---|---|
+| 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) · GitHub Actions(선택) |
+| 매일 | 30개 소스 뉴스·공시·발표 | Claude 예약 작업이 저장소에 커밋 |
+
+자동수집은 `lib/model.js`의 `applyAuto`를 따릅니다. 고정된 필드는 바꾸지 않고 히스토리에 `proposal`(제안)로 남깁니다.
+
+## 판정 규칙
+
+- **확정**: A등급(공공·인허가·공시·사업자 공식 발표) 근거 1건 이상, 또는 독립된 B등급 2건 이상이 같은 값을 보고
+- **추정**: 단일 보도, 목표·계획치, 단위 불명확, 역산
+- **공급 시점**: RFS → 준공월 → 상태별 리드타임(준공 3·개발중 12·착공 24·설계중 36개월)
+- **가중 추정**: 운영중·준공 100%, 개발중 90%, 착공 80%, 설계중 50%
+- **환산**: 한쪽 용량만 있으면 수전 ≈ IT × 1.4
+
+## 로컬 확인
+
+```
+npm test           # 규칙·API·동기화 테스트
+npm run validate   # 데이터 검증
+npx vercel dev     # 로컬 실행 (선택)
+```
+
+정리 과정에서 지연이나 오기가 있을 수 있습니다. 투자·계약 판단 전에는 세움터 건축물대장과 각 기관 원문을 확인하세요.

@@ -1,0 +1,30 @@
+name: 건축HUB 인허가 일일 동기화
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 매일 08:00 KST
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: data-write, cancel-in-progress: false }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: 인허가 동기화
+        run: npm run permits
+        env:
+          BUILDING_HUB_KEY: ${{ secrets.BUILDING_HUB_KEY }}
+      - name: 데이터 검증
+        run: npm run validate
+      - name: 변경 커밋
+        run: |
+          git config user.name "dc-supply-bot"
+          git config user.email "dc-supply-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "data: 건축HUB 인허가 동기화 $(TZ=Asia/Seoul date +%F)"
+          git pull --rebase origin main
+          git push

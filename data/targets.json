@@ -1,0 +1,48 @@
+[
+  {
+    "player": "KT",
+    "target_mw": 1000,
+    "year": 2031,
+    "basis": "AIDC 용량",
+    "note": "약 20개 사이트, 6조 투자. 5년 내 500MW(2026-05 발언)",
+    "url": "https://www.hankyung.com/article/2026091565431",
+    "reported_mw": 162,
+    "reported_n": 15,
+    "reported_basis": "수전 기준, 미래에셋증권 추정(2025-10)",
+    "reported_url": "https://v.daum.net/v/20251020145947364"
+  },
+  {
+    "player": "LG유플러스",
+    "target_mw": 600,
+    "year": 2030,
+    "basis": "AIDC 용량",
+    "note": "2030년 AIDC 누적 수주 5조, 600MW 이상",
+    "url": "https://www.fnnews.com/news/202606070957377160",
+    "reported_mw": 160,
+    "reported_n": 13,
+    "reported_basis": "수전 기준, 미래에셋증권 추정(2025-10)",
+    "reported_url": "https://v.daum.net/v/20251020145947364"
+  },
+  {
+    "player": "SK",
+    "target_mw": 300,
+    "year": 2030,
+    "basis": "SKT AIDC 누적",
+    "note": "울산·구로 등 2030년 300MW+. SK호라이즌 운영 약 318MW(기존 8개+신규 포함)",
+    "url": "https://news.sktelecom.com/213527",
+    "reported_mw": 137,
+    "reported_n": 9,
+    "reported_basis": "수전 기준, 미래에셋증권 추정(2025-10)",
+    "reported_url": "https://v.daum.net/v/20251020145947364"
+  },
+  {
+    "player": "LG CNS",
+    "target_mw": null,
+    "year": null,
+    "basis": "",
+    "note": "공개 용량 목표 없음. AI박스(모듈형 소형 AIDC) 사업 확대",
+    "url": "",
+    "reported_basis": "수전 기준, 미래에셋증권 추정(2025-10)",
+    "reported_url": "https://v.daum.net/v/20251020145947364"
+  }
+]

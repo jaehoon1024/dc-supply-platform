@@ -1,0 +1,3975 @@
+[
+  {
+    "id": "e-actis-ansan-0",
+    "dc_id": "actis-ansan",
+    "url": "https://seoulpi.io/article/00365260385795465216",
+    "publisher": "서울PI",
+    "title": "안산 데이터센터 개발도 속도 내는 액티스, 9,000억원 규모 PF 조달",
+    "pub_date": "2025",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "안산 데이터센터 개발, 9,000억원 규모 PF 조달 순항.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-actis-yangpyeong-0",
+    "dc_id": "actis-yangpyeong",
+    "url": "https://adik.co.kr/?kboard_content_redirect=7",
+    "publisher": "에포크디지털코리아",
+    "title": "액티스, 서울 양평동에 26MW급 도심형 데이터센터 준공",
+    "pub_date": "2026-01-08",
+    "grade": "A",
+    "fields": [
+      "IT Load",
+      "시공사",
+      "운영사",
+      "주소"
+    ],
+    "excerpt": "양평동3가 77-80, IT 26MW, 현대건설 시공 준공, 운영 에포크디지털코리아, 글로벌 CSP 절반 이상 임차.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-ansan-gcc-0",
+    "dc_id": "ansan-gcc",
+    "url": "https://www.hankyung.com/article/2026101670151",
+    "publisher": "한국경제",
+    "title": "안산 글로벌 클라우드센터, 롯데이노베이트가 운영",
+    "pub_date": "2026-10-16",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "용량",
+      "준공월"
+    ],
+    "excerpt": "이지스자산운용과 5년 운영 계약. 약 40MW 규모, 내년 준공 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-ansan-gcc-1",
+    "dc_id": "ansan-gcc",
+    "url": "https://www.ajunews.com/view/20261016094000112",
+    "publisher": "아주경제",
+    "title": "롯데이노베이트, 데이터센터 사업 확대…안산 GCC 운영·베트남 시장 공략",
+    "pub_date": "2026-10-16",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "안산 GCC 운영사 선정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-ansan-gcc-2",
+    "dc_id": "ansan-gcc",
+    "url": "https://www.investchosun.com/site/data/html_dir/2026/08/07/2026080780110.html",
+    "publisher": "인베스트조선",
+    "title": "대형 건설사들, 데이터센터에 베팅…AI 회의론 지울까",
+    "pub_date": "2026-08-07",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "용량"
+    ],
+    "excerpt": "삼성물산: 안산 글로벌 클라우드 센터 40MW, 약 4,000억 수주.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-ansan-our-0",
+    "dc_id": "ansan-our",
+    "url": "https://www.fnnews.com/news/202610151328058185",
+    "publisher": "파이낸셜뉴스",
+    "title": "파인앤파트너스·아워서킷, 1390억 규모 안산 데이터센터 만든다",
+    "pub_date": "2026-10-15",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "주소",
+      "착공월",
+      "준공월",
+      "시공사"
+    ],
+    "excerpt": "수전 7.6MW, IT 4.82MW. 2026년 10월 12일 착공, 2027년 10월 준공 목표. 시공 CJ대한통운 건설부문.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-aws-incheon-0",
+    "dc_id": "aws-incheon",
+    "url": "https://www.incheontoday.com/news/articleView.html?idxno=243760",
+    "publisher": "인천투데이",
+    "title": "AWS 한국 데이터센터 알고보니 인천 서구에",
+    "pub_date": "2024-03-21",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "착공월"
+    ],
+    "excerpt": "인천 서구 가좌동 585-49·585-1, 32,476㎡, 착공 2024년 상반기 예상, 준공일 미정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-bucheon-samjeong-0",
+    "dc_id": "bucheon-samjeong",
+    "url": "https://www.dailian.co.kr/news/view/1646410/DL%EA%B1%B4%EC%84%A4-%EB%94%94%EC%A7%80%ED%84%B8-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%8B%9C%EA%B3%B5-%EC%97%AD%EB%9F%89-%EA%B0%95-2026",
+    "publisher": "데일리안",
+    "title": "DL건설, 디지털 인프라 시공 역량 강화…부천 데이터센터 수주",
+    "pub_date": "2026-05-20",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "발주처",
+      "용량"
+    ],
+    "excerpt": "부천 삼정 AI 허브센터 신축공사, 지하2~지상4층, 약 9.8MW, 공사기간 26개월.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-cj-songdo-0",
+    "dc_id": "cj-songdo",
+    "url": "https://www.news1.kr/it-science/general-it/6009611",
+    "publisher": "뉴스1",
+    "title": "CJ올넷, 전남 첫 데이터센터 장성 파인데이터센터 구축 참여",
+    "pub_date": "2025-12-16",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "CJ올리브네트웍스가 구축·운영하는 송도 데이터센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-daou-jukjeon-0",
+    "dc_id": "daou-jukjeon",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "준공월",
+      "RFS"
+    ],
+    "excerpt": "Daou Jukjeon CDC: 40 MW power, 26 MW IT; official completion end-2026 vs reported Q2 2027 opening.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-daou-jukjeon-1",
+    "dc_id": "daou-jukjeon",
+    "url": "https://blog.daouidc.com/en-us/blog/daou-data-centers-news-25.03.05-en",
+    "publisher": "다우데이타센터",
+    "title": "Daou Data Centers – SC ZEUS partnership",
+    "pub_date": "2025-03-05",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "준공월",
+      "발주처"
+    ],
+    "excerpt": "첫 하이퍼스케일 센터 40MW, 36,131㎡, 2026년 말 가동, 100MW 추가 계획. SC ZEUS와 파트너십(2025-02-28 서명).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-daou-jukjeon-2",
+    "dc_id": "daou-jukjeon",
+    "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=240758",
+    "publisher": "뉴스퀘스트",
+    "title": "다우기술, 글로벌 데이터센터 사업자 SC ZEUS와 협약",
+    "pub_date": "2025-03-05",
+    "grade": "B",
+    "fields": [
+      "발주처"
+    ],
+    "excerpt": "다우기술, 싱가포르 데이터센터 사업자 SC ZEUS와 사업 협약.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-daou-jukjeon-3",
+    "dc_id": "daou-jukjeon",
+    "url": "https://zdnet.co.kr/view/?no=20260609143934",
+    "publisher": "지디넷코리아",
+    "title": "다우기술, 내년 2분기 신규 데이터센터 개소…AI 인프라 사업 확대",
+    "pub_date": "2026-06-09",
+    "grade": "B",
+    "fields": [
+      "RFS"
+    ],
+    "excerpt": "다우기술 하이퍼스케일 신규 데이터센터 2027년 2분기 개소 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:30:00+09:00"
+  },
+  {
+    "id": "e-daou-jukjeon-4",
+    "dc_id": "daou-jukjeon",
+    "url": "https://blog.daouidc.com/en-us/blog/daou-data-centers-news-11.21-0-0",
+    "publisher": "다우데이타센터",
+    "title": "다우기술, 첫 번째 하이퍼스케일 데이터센터 착공",
+    "pub_date": "2024-11",
+    "grade": "A",
+    "fields": [
+      "시공사",
+      "IT Load",
+      "준공월"
+    ],
+    "excerpt": "죽전 하이퍼스케일 착공: 시공 포스코이앤씨, 40MW(2N)·최대 IT 26MW, 1단계 20MW 2026-Q4, 약 30개월 공사.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:30:00+09:00"
+  },
+  {
+    "id": "e-dci-gasan-0",
+    "dc_id": "dci-gasan",
+    "url": "https://www.joongangenews.com/news/articleView.html?idxno=454291",
+    "publisher": "중앙이코노미뉴스",
+    "title": "DL이앤씨, 20MW 규모 가산 데이터센터 준공",
+    "pub_date": "2025-09-29",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "시공사",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "수전용량 20MW, IT 부하 12.9MW. 2023년 6월 착공, 예정보다 약 한 달 앞당겨 준공. 커미셔닝 수행.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-dci-sel02-0",
+    "dc_id": "dci-sel02",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "상태",
+      "RFS"
+    ],
+    "excerpt": "DCI·Koramco SEL02 (Ansan): 40 MW (type not disclosed); construction start reported; operation target 2028.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-dci-sel02-1",
+    "dc_id": "dci-sel02",
+    "url": "https://zdnet.co.kr/view/?no=20260607162942",
+    "publisher": "지디넷코리아",
+    "title": "DCI-코람코, 안산에 AI 데이터센터 착공…40MW급",
+    "pub_date": "2026-06-07",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "착공월",
+      "시공사",
+      "운영사"
+    ],
+    "excerpt": "안산 성곡동 시화국가산단, 수전 40MW, Tier3급, 연면적 26,810㎡. 2026-06-08 착공. 시공 현대건설, DCI Korea 설계·CM·운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-de-pus1-0",
+    "dc_id": "de-pus1",
+    "url": "https://www.ai-dc.co.kr/international/en/data-centers/digital-edge-sel2",
+    "publisher": "AI-DC KOREA",
+    "title": "Digital Edge SEL2 Location, power, and operation information",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load"
+    ],
+    "excerpt": "PUS1 부산, 4.5MW(공식 페이지), 상태 확인 필요.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-de-sel1-0",
+    "dc_id": "de-sel1",
+    "url": "https://www.ai-dc.co.kr/international/en/data-centers/digital-edge-sel2",
+    "publisher": "AI-DC KOREA",
+    "title": "Digital Edge SEL2 Location, power, and operation information",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "SEL1 강남, 운영. 공식 4.8MW, 상세표 2.4MW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-de-sel2-0",
+    "dc_id": "de-sel2",
+    "url": "https://www.ai-dc.co.kr/international/en/data-centers/digital-edge-sel2",
+    "publisher": "AI-DC KOREA",
+    "title": "Digital Edge SEL2 Location, power, and operation information",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS",
+      "주소"
+    ],
+    "excerpt": "인천 부평구 청천동 422, IT 36MW, 2024년 8월 RFS.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-de-sel3-0",
+    "dc_id": "de-sel3",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "Digital Edge SEL3 (Bupyeong, Incheon), 60 MW operator label, Ready target Q4 2027.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-de-sel5-0",
+    "dc_id": "de-sel5",
+    "url": "https://www.prnewswire.com/apac/news-releases/digital-edge-secures-fully-powered-ansan-data-center-site-in-power-constrained-south-korea-advancing-expansion-302793521.html",
+    "publisher": "PR Newswire (Digital Edge)",
+    "title": "Digital Edge Secures Fully Powered Ansan Data Center Site",
+    "pub_date": "2026-06-08",
+    "grade": "A",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "안산 시화산단 부지 확보, 60MW 하이퍼스케일, 90MVA 전력. 한국 5개 센터(서울·인천·안산·부산).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-dinotisia-changwon-0",
+    "dc_id": "dinotisia-changwon",
+    "url": "https://www.newspim.com/news/view/20260727001183",
+    "publisher": "뉴스핌",
+    "title": "경남도, 국내 최초 100MW급 방산 전용 AI 데이터센터 창원 유치",
+    "pub_date": "2026-07-27",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "발주처",
+      "주소"
+    ],
+    "excerpt": "창원 의창구 팔용동, 계약전력 100MW급, 1.66조, 투자협약 체결.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-dlr-icn10-0",
+    "dc_id": "dlr-icn10",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "Digital Realty ICN10: 12 MW critical IT, operating.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-dreammark1-guro-0",
+    "dc_id": "dreammark1-guro",
+    "url": "https://www.etnews.com/20231222000110",
+    "publisher": "전자신문",
+    "title": "드림마크원, 인천 클라우드 데이터센터 준공",
+    "pub_date": "2023-12-22",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "기존 구로 센터와 네트워크 연동·이중화 완료.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-dreammark1-incheon-0",
+    "dc_id": "dreammark1-incheon",
+    "url": "https://www.etnews.com/20231222000110",
+    "publisher": "전자신문",
+    "title": "드림마크원, 인천 클라우드 데이터센터 준공",
+    "pub_date": "2023-12-22",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "준공월",
+      "RFS"
+    ],
+    "excerpt": "인천 가좌동 국가산단, 수전 10MW, 2023-12-19 준공식, 2024-01 서비스 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-egis-edge-lotte-0",
+    "dc_id": "egis-edge-lotte",
+    "url": "https://news.mtn.co.kr/news-detail/2026090411145561342",
+    "publisher": "머니투데이방송",
+    "title": "외부 데이터센터 뚫은 롯데이노베이트",
+    "pub_date": "2026-09-04",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "운영사"
+    ],
+    "excerpt": "2월 이지스자산운용 엣지 데이터센터 약 10MW 사업 수주.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-egis-hanam-0",
+    "dc_id": "egis-hanam",
+    "url": "https://core.asiae.co.kr/article/2026071510090844664",
+    "publisher": "아시아경제",
+    "title": "이지스 삼송 데이터센터 사용승인 (LG CNS 위탁운영)",
+    "pub_date": "2026-07-15",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "LG CNS가 이지스자산운용과 협업한 하남 데이터센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-egis-hanam-1",
+    "dc_id": "egis-hanam",
+    "url": "https://thelec.kr/news/articleView.html?idxno=42673",
+    "publisher": "디일렉",
+    "title": "LG CNS, 100MW 죽전 하이퍼스케일 DC 운영 시작",
+    "pub_date": "2025-10",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "운영사"
+    ],
+    "excerpt": "하남 데이터센터 수전 40MW, 12개층, 이지스 소유·LG CNS DBO.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-egis-samsong-0",
+    "dc_id": "egis-samsong",
+    "url": "https://core.asiae.co.kr/article/2026071510090844664",
+    "publisher": "아시아경제",
+    "title": "이지스 삼송 데이터센터 사용승인 (LG CNS 위탁운영)",
+    "pub_date": "2026-07-15",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "준공월",
+      "운영사",
+      "시공사"
+    ],
+    "excerpt": "수전 80MW, 2026-07-15 사용승인 취득, 이지스 개발·한화건설 시공·LG CNS 위탁운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-egis-samsong-1",
+    "dc_id": "egis-samsong",
+    "url": "https://news.bizwatch.co.kr/article/real_estate/2026/07/15/0011",
+    "publisher": "비즈워치",
+    "title": "이지스자산운용 삼송 데이터센터 준공",
+    "pub_date": "2026-07-15",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "운영사"
+    ],
+    "excerpt": "삼송 데이터센터 준공, 수전 80MW, LG CNS 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-empyrion-kr1-0",
+    "dc_id": "empyrion-kr1",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "Empyrion KR1: 29.4 MW IT, grand opening.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-empyrion-kr1-1",
+    "dc_id": "empyrion-kr1",
+    "url": "https://zdnet.co.kr/view/?no=20250702191007",
+    "publisher": "지디넷코리아",
+    "title": "엠피리온 디지털, KR1 강남 데이터 센터 그랜드 오픈",
+    "pub_date": "2025-07-02",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "서초구 양재동 224, IT 29.4MW, 2025-07-02 개관.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-empyrion-kr1-2",
+    "dc_id": "empyrion-kr1",
+    "url": "https://dealsite.co.kr/articles/160068",
+    "publisher": "딜사이트",
+    "title": "대우건설 데이터센터 사업 (엠피리온 AI 캠퍼스 40MW 준공)",
+    "pub_date": "2026-04",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "준공월"
+    ],
+    "excerpt": "대우건설, 엠피리온 디지털 AI 캠퍼스(40MW) 2025-06 준공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-epoch-anyang-0",
+    "dc_id": "epoch-anyang",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "용량"
+    ],
+    "excerpt": "Epoch Anyang: 26 MW capacity (Actis cited).",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-epoch-anyang-1",
+    "dc_id": "epoch-anyang",
+    "url": "https://adik.co.kr/blog-list/?mod=document&uid=5",
+    "publisher": "에포크디지털코리아",
+    "title": "액티스, 안양에 4200억원 규모 최신 데이터센터 완공",
+    "pub_date": "2026-01-08",
+    "grade": "A",
+    "fields": [
+      "용량",
+      "착공월",
+      "상태"
+    ],
+    "excerpt": "안양 호계동 40MW급, 4,200억, 2021년 8월 착공 후 28개월 만에 완공, 글로벌 클라우드 장기 임대.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-epoch-anyang-2",
+    "dc_id": "epoch-anyang",
+    "url": "https://zdnet.co.kr/view/?no=20260629165024",
+    "publisher": "지디넷코리아",
+    "title": "GS, 30조 AI 데이터센터 승부수…전력·건설 역량 총동원",
+    "pub_date": "2026-06-29",
+    "grade": "B",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "GS건설·자이C&A·디씨브릿지의 에포크 안양센터, 고양 마그나센터 구축·운영 경험.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-epoch-anyang-3",
+    "dc_id": "epoch-anyang",
+    "url": "https://www.capacitymedia.com/article/29otd6mddjpstghmuw9vk/news/actis-targets-korean-data-centre-growth-with-adik-alliance",
+    "publisher": "Capacity Media",
+    "title": "Actis targets Korean data centre growth with ADIK alliance",
+    "pub_date": "2021-06",
+    "grade": "B",
+    "fields": [
+      "IT Load"
+    ],
+    "excerpt": "Actis 평촌(안양) 26MW·3.15억 달러, GS건설과 구축. ADIK가 기술·설계·운영 자문.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-epoch-anyang-4",
+    "dc_id": "epoch-anyang",
+    "url": "https://www.inews24.com/view/1413246",
+    "publisher": "아이뉴스24",
+    "title": "데이터센터 신사업 GS건설, 운영 자회사 디씨브릿지 설립",
+    "pub_date": "2021-10",
+    "grade": "B",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "GS건설, 에포크PFV로 안양 데이터센터 추진(공사비 2,674억), 운영 자회사 디씨브릿지 설립.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-equinix-sl1-0",
+    "dc_id": "equinix-sl1",
+    "url": "https://zdnet.co.kr/view/?no=20260409155204",
+    "publisher": "지디넷코리아",
+    "title": "한국 AI 수요 폭발…에퀴닉스, 수도권 데이터센터 확장 속도",
+    "pub_date": "2026-04-09",
+    "grade": "B",
+    "fields": [
+      "상태",
+      "주소"
+    ],
+    "excerpt": "SL1 상암 DMC, 에퀴닉스 첫 한국 데이터센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-equinix-sl2x-0",
+    "dc_id": "equinix-sl2x",
+    "url": "https://www.ai-dc.co.kr/data-centers/equinix-sl4",
+    "publisher": "AI-DC KOREA",
+    "title": "Equinix Seoul SL4 위치·전력·운영정보",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "IT Load"
+    ],
+    "excerpt": "SL4: 고양시 덕양구 향동로 69, SL2x 22MW(동일 운영사 목록).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-equinix-sl2x-1",
+    "dc_id": "equinix-sl2x",
+    "url": "https://zdnet.co.kr/view/?no=20260409155204",
+    "publisher": "지디넷코리아",
+    "title": "한국 AI 수요 폭발…에퀴닉스, 수도권 데이터센터 확장 속도",
+    "pub_date": "2026-04-09",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "SL2x·SL4 고양 향동. GIC 합작으로 수도권 신규 센터 건설 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-gabia-ansan-0",
+    "dc_id": "gabia-ansan",
+    "url": "https://www.etnews.com/20260303000127",
+    "publisher": "전자신문",
+    "title": "가비아·맥쿼리, 6000억 공동 투자… 하이퍼스케일 IDC 플랫폼",
+    "pub_date": "2026-03-03",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "발주처",
+      "운영사"
+    ],
+    "excerpt": "첫 프로젝트 안산 40MW IDC, 플랫폼 100MW+ 목표, 6,000억 투자, KINX 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-gabia-gwacheon-0",
+    "dc_id": "gabia-gwacheon",
+    "url": "https://www.etnews.com/20260303000127",
+    "publisher": "전자신문",
+    "title": "가비아·맥쿼리, 6000억 공동 투자… 하이퍼스케일 IDC 플랫폼",
+    "pub_date": "2026-03-03",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "기존 과천 IDC(GPU 서버 호스팅)와 안산 연계.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-gabia-gwacheon-1",
+    "dc_id": "gabia-gwacheon",
+    "url": "https://www.koit.co.kr/news/articleView.html?idxno=126018",
+    "publisher": "정보통신신문",
+    "title": "KINX, 과천 데이터센터 개관",
+    "pub_date": "2024-10-21",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS",
+      "운영사"
+    ],
+    "excerpt": "KINX 과천 데이터센터 개관(2024-10), 주요 IT 10MW, 8번째·자체 구축. 다른 센터: 도곡·가산·분당·상암·평촌.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-gangneung-anin-0",
+    "dc_id": "gangneung-anin",
+    "url": "https://news.mtn.co.kr/news-detail/2026031913385767317",
+    "publisher": "머니투데이방송",
+    "title": "강릉을 AI 산업 개척자로…13조 데이터센터",
+    "pub_date": "2026-03-19",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "준공월",
+      "용량"
+    ],
+    "excerpt": "강동면 안인진리 1단계, 1월 건축허가, 3월 기공식, 2028-12 준공, 전체 1GW·13.8조.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-gs-donghae-0",
+    "dc_id": "gs-donghae",
+    "url": "https://news.mtn.co.kr/news-detail/2026100211182992684",
+    "publisher": "머니투데이방송",
+    "title": "동해에 첫 100MW급 AI데이터센터… 건축허가 완료",
+    "pub_date": "2026-10-02",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "상태",
+      "준공월"
+    ],
+    "excerpt": "동해 북평2산단 1차 100MW 건축허가(2026-10-01), 연내 착공, 2028 하반기 준공 목표. 전체 1.2GW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-gs-donghae-1",
+    "dc_id": "gs-donghae",
+    "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261019010005973",
+    "publisher": "아시아투데이",
+    "title": "GS건설, AI 데이터센터서 5조 잭팟 터지나",
+    "pub_date": "2026-10-19",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "운영사",
+      "착공월"
+    ],
+    "excerpt": "시행 동해에이아이제3캠퍼스, 투자 15조, 11월까지 PF·시공사 선정, 디씨브릿지 운영. GS건설 수주 가능성.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-gs-donghae-2",
+    "dc_id": "gs-donghae",
+    "url": "https://zdnet.co.kr/view/?no=20260629165024",
+    "publisher": "지디넷코리아",
+    "title": "GS, 30조 AI 데이터센터 승부수…전력·건설 역량 총동원",
+    "pub_date": "2026-06-29",
+    "grade": "B",
+    "fields": [
+      "발주처"
+    ],
+    "excerpt": "GS그룹 동해 AIDC 1단계 1.2GW(2028), 2단계 1.2GW(2029), 직접투자 30조. GS AI인프라가 개발·운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-hae-gwangju-0",
+    "dc_id": "hae-gwangju",
+    "url": "https://www.hyundai-autoever.com/kor/about/workplace/domestic/contents.do?cntnSeq=239",
+    "publisher": "현대오토에버",
+    "title": "사업장 – 데이터센터",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "운영사"
+    ],
+    "excerpt": "현대오토에버 광주 데이터센터: 광주광역시 광산구 진곡산단중앙로 75.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-hae-paju-0",
+    "dc_id": "hae-paju",
+    "url": "https://www.hyundai-autoever.com/kor/about/workplace/domestic/contents.do?cntnSeq=239",
+    "publisher": "현대오토에버",
+    "title": "사업장 – 데이터센터",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "운영사"
+    ],
+    "excerpt": "현대오토에버 파주 데이터센터: 경기도 파주시 조리읍 팔학골길 148-43.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-hae-uiwang-0",
+    "dc_id": "hae-uiwang",
+    "url": "https://www.hyundai-autoever.com/kor/about/workplace/domestic/contents.do?cntnSeq=239",
+    "publisher": "현대오토에버",
+    "title": "사업장 – 데이터센터",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "운영사"
+    ],
+    "excerpt": "현대오토에버 의왕 데이터센터: 경기도 의왕시 철도박물관로 37.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-hdec-saemangeum-0",
+    "dc_id": "hdec-saemangeum",
+    "url": "https://www.investchosun.com/site/data/html_dir/2026/08/07/2026080780110.html",
+    "publisher": "인베스트조선",
+    "title": "대형 건설사들, 데이터센터에 베팅…AI 회의론 지울까",
+    "pub_date": "2026-08-07",
+    "grade": "B",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "현대건설: 안산 시화 40MW 착공, 새만금 AI 데이터센터 수주.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-hdec-saemangeum-1",
+    "dc_id": "hdec-saemangeum",
+    "url": "https://news.tf.co.kr/read/economy/2332452.htm",
+    "publisher": "더팩트",
+    "title": "젠슨 황도 주목한 새만금…현대차그룹 AI 밸리",
+    "pub_date": "2026-06",
+    "grade": "B",
+    "fields": [
+      "발주처"
+    ],
+    "excerpt": "현대차그룹 새만금 AI 밸리 9조, AI 데이터센터 5.8조·GPU 5만장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-icn11-0",
+    "dc_id": "icn11",
+    "url": "https://www.creditnews.kr/news/articleView.html?idxno=31777",
+    "publisher": "한국신용신문",
+    "title": "DL이앤씨 시공 美 디지털리얼티 김포 데이터센터 상량식…64MW 규모",
+    "pub_date": "2026-10-18",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "시공사",
+      "착공월",
+      "RFS",
+      "상태"
+    ],
+    "excerpt": "최대 64MW IT 수전 용량. 2025년 5월 본착공, 2027년 하반기 상업운영 목표. 지하4층~지상8층 골조 완료, 상량식.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-icn11-1",
+    "dc_id": "icn11",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "준공월"
+    ],
+    "excerpt": "ICN11 Gimpo 64MW critical IT, under construction; construction contract ends Oct 2027 (not the operating date).",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-incheon-wonchang-0",
+    "dc_id": "incheon-wonchang",
+    "url": "https://www.g-enews.com/article/Real-Estate/2026/10/202610071132181382aa6f4cdad_1",
+    "publisher": "글로벌이코노믹",
+    "title": "현대엔지니어링, 8700억 인천 데이터센터 수주",
+    "pub_date": "2026-10-07",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "시공사",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "청라 IDC PFV 발주, 50MW급. 11월 착공 예정, 2029년 하반기 준공 목표. 기계·전기 공사는 KT클라우드와 분담.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-incheon-wonchang-1",
+    "dc_id": "incheon-wonchang",
+    "url": "https://www.mt.co.kr/estate/2026/01/13/2026011309554799857",
+    "publisher": "머니투데이",
+    "title": "이도, 50MW급 데이터센터 개발 착수",
+    "pub_date": "2026-01-13",
+    "grade": "B",
+    "fields": [
+      "수전용량"
+    ],
+    "excerpt": "이도, 50MW급(수전) 데이터센터 개발 착수. 국내 대기업과 임차 협의 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-incheon-wonchang-2",
+    "dc_id": "incheon-wonchang",
+    "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03781846645610624",
+    "publisher": "이데일리",
+    "title": "청라에 50MW급 AI 데이터센터…kt cloud 설계·운영",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "청라 50MW급 AI 데이터센터, kt cloud가 설계·운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-incheon-wonchang-3",
+    "dc_id": "incheon-wonchang",
+    "url": "https://news.mtn.co.kr/news-detail/2026100709273543444",
+    "publisher": "머니투데이방송",
+    "title": "KT클라우드, 50MW 청라 AI데이터센터 구축…2030년 1분기 준공",
+    "pub_date": "2026-10-07",
+    "grade": "A",
+    "fields": [
+      "착공월",
+      "준공월",
+      "운영사"
+    ],
+    "excerpt": "청라 50MW, 2026 4분기 착공·2030 1분기 준공, KT클라우드 DBO, 현대엔지니어링 공동 시공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-jangseong-pine-0",
+    "dc_id": "jangseong-pine",
+    "url": "https://www.news1.kr/it-science/general-it/6009611",
+    "publisher": "뉴스1",
+    "title": "CJ올넷, 전남 첫 데이터센터 장성 파인데이터센터 구축 참여",
+    "pub_date": "2025-12-16",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "착공월",
+      "RFS",
+      "시공사"
+    ],
+    "excerpt": "장성 남면 첨단3지구, 26MW급, 3,959억. 2025-12-15 착공식, 2028년 상반기 준공·가동. CJ올리브네트웍스 MEP 참여.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-jangseong-pine-1",
+    "dc_id": "jangseong-pine",
+    "url": "https://www.investchosun.com/site/data/html_dir/2026/08/07/2026080780110.html",
+    "publisher": "인베스트조선",
+    "title": "대형 건설사들, 데이터센터에 베팅",
+    "pub_date": "2026-08-07",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "용량"
+    ],
+    "excerpt": "대우건설: 장성 파인데이터센터 60MW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-kakao-ansan-0",
+    "dc_id": "kakao-ansan",
+    "url": "https://mobile.newsis.com/view/NISX20230926_0002464688",
+    "publisher": "뉴시스",
+    "title": "카카오 첫 자체 데이터센터 준공",
+    "pub_date": "2023-09-26",
+    "grade": "B",
+    "fields": [
+      "준공월",
+      "상태"
+    ],
+    "excerpt": "카카오 첫 자체 데이터센터 안산 준공(2023-09-26).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-kakao-ansan-1",
+    "dc_id": "kakao-ansan",
+    "url": "https://www.kakaocorp.com/page/detail/8818",
+    "publisher": "카카오",
+    "title": "카카오, 안산에 데이터센터 건립",
+    "pub_date": "2020-09-07",
+    "grade": "A",
+    "fields": [
+      "주소"
+    ],
+    "excerpt": "안산시 상록구 사동 1271 한양대 캠퍼스혁신파크, 서버 12만 대.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-kakao-namyangju-0",
+    "dc_id": "kakao-namyangju",
+    "url": "https://www.etnews.com/20261015000284",
+    "publisher": "전자신문",
+    "title": "카카오 제2데이터센터 착공 밀린다…왕숙 산단 지연",
+    "pub_date": "2026-10-15",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "준공월",
+      "상태"
+    ],
+    "excerpt": "왕숙 산단 지연으로 착공 내년으로 밀림, 핵심시설 2029년 준공 목표, 6,000억, 92,000㎡.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-kamsquare-dc-0",
+    "dc_id": "kamsquare-dc",
+    "url": "https://news.mtn.co.kr/news-detail/2026090411145561342",
+    "publisher": "머니투데이방송",
+    "title": "외부 데이터센터 뚫은 롯데이노베이트",
+    "pub_date": "2026-09-04",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "지난해 말 캄스퀘어 데이터센터 운영 수주.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-keppel-ansan-0",
+    "dc_id": "keppel-ansan",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "RFS"
+    ],
+    "excerpt": "Keppel Ansan: 60 MW gross; RFS target 2030.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-keppel-ansan-1",
+    "dc_id": "keppel-ansan",
+    "url": "https://www.keppel.com/media/keppel-enters-south-koreas-fast-growing-data-centre-market/",
+    "publisher": "Keppel",
+    "title": "Keppel enters South Korea’s fast growing data centre market",
+    "pub_date": "2026-06-09",
+    "grade": "A",
+    "fields": [
+      "발주처",
+      "RFS",
+      "상태"
+    ],
+    "excerpt": "Keppel 안산 60MW 그린필드, 인허가·전력 승인 확보, 2030년 RFS. KDCF III 약 73%, 신영·NH투자증권·현대건설 27%.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-keppel-ansan-2",
+    "dc_id": "keppel-ansan",
+    "url": "https://www.structureresearch.net/2026/07/10/keppel-enters-south-korea-with-60mw-greenfield-project-in-ansan-near-seoul/",
+    "publisher": "Structure Research",
+    "title": "Keppel enters South Korea with 60MW greenfield project in Ansan",
+    "pub_date": "2026-07-10",
+    "grade": "B",
+    "fields": [
+      "용량"
+    ],
+    "excerpt": "Keppel, 안산 60MW 그린필드로 한국 진출.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-kinx-dogok-0",
+    "dc_id": "kinx-dogok",
+    "url": "https://www.koit.co.kr/news/articleView.html?idxno=126018",
+    "publisher": "정보통신신문",
+    "title": "KINX, 과천 데이터센터 개관",
+    "pub_date": "2024-10-21",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "KINX 운영 센터: 도곡, 가산, 분당, 상암, 평촌, 과천 등 8개.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-koramco-busan-0",
+    "dc_id": "koramco-busan",
+    "url": "https://www.ddaily.co.kr/page/view/2025083010065083566",
+    "publisher": "디지털데일리",
+    "title": "코람코, 부산에 초대형 데이터센터 개발",
+    "pub_date": "2025-08-30",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "시공사",
+      "운영사",
+      "착공월"
+    ],
+    "excerpt": "부산 사하구 장림동, 한전 수전 40MW 확보, 사업비 약 5,800억. 시공 GS건설, LG유플러스 위탁운영. 2026년 중순 착공 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-koramco-gasan-0",
+    "dc_id": "koramco-gasan",
+    "url": "https://zdnet.co.kr/view/?no=20250926172539",
+    "publisher": "지디넷코리아",
+    "title": "코람코, 신규 대형 가산 데이터센터 가동…10조 투자 청사진",
+    "pub_date": "2025-09-26",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "RFS",
+      "운영사",
+      "시공사"
+    ],
+    "excerpt": "한전 계약 40MW, IT 26MW, 2,446랙. 2025-09-26 개소·가동. 시공 현대건설, 운영 LG유플러스.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-koramco-gasan-1",
+    "dc_id": "koramco-gasan",
+    "url": "https://www.ddaily.co.kr/page/view/2025083010065083566",
+    "publisher": "디지털데일리",
+    "title": "코람코, 부산에 초대형 데이터센터 개발",
+    "pub_date": "2025-08-30",
+    "grade": "B",
+    "fields": [
+      "준공월"
+    ],
+    "excerpt": "코람코는 2025년 6월 가산 케이스퀘어 데이터센터 준공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-koscom-anyang-0",
+    "dc_id": "koscom-anyang",
+    "url": "https://m.news.nate.com/view/20260313n23764",
+    "publisher": "네이트 뉴스",
+    "title": "코스콤, 차세대 안양 데이터센터 올해말 준공",
+    "pub_date": "2026-03-13",
+    "grade": "B",
+    "fields": [
+      "준공월"
+    ],
+    "excerpt": "제목 기준: 2026년 말 준공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-ksquare-ujb-0",
+    "dc_id": "ksquare-ujb",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "RFS"
+    ],
+    "excerpt": "K-Square Uijeongbu: 100 MW reported; phased opening 2030.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-ksquare-ujb-1",
+    "dc_id": "ksquare-ujb",
+    "url": "https://www.hankyung.com/article/202601287114r",
+    "publisher": "한국경제",
+    "title": "케이스퀘어데이터센터 의정부 (코람코)",
+    "pub_date": "2026-01-28",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "착공월",
+      "RFS",
+      "운영사"
+    ],
+    "excerpt": "산곡동 리듬시티, 수전 100MW 계약 완료, 2027 상반기 착공, 2030년부터 단계적 준공·가동. NH투자증권·LG CNS 컨소시엄.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-ksquare-ujb-2",
+    "dc_id": "ksquare-ujb",
+    "url": "https://www.hankyung.com/article/202601151559r",
+    "publisher": "한국경제",
+    "title": "의정부 100MW AI 데이터센터 (메타컴플렉스)",
+    "pub_date": "2026-01-15",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "주소"
+    ],
+    "excerpt": "의정부 산곡동 805 외, 100MW, 2022-11 한전 계약, 2025-08 건축허가. 코람코·NH 컨소시엄 우선협상대상자.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-kt-ansan-0",
+    "dc_id": "kt-ansan",
+    "url": "https://www.hankyung.com/article/2026091565431",
+    "publisher": "한국경제",
+    "title": "KT AI 데이터센터에 5년간 6조 투자",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "준공월",
+      "운영사"
+    ],
+    "excerpt": "안산 AIDC 2029년 완공 예정 (KT 1GW 로드맵).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-kt-baekseok-0",
+    "dc_id": "kt-baekseok",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 백석.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-baekseok-1",
+    "dc_id": "kt-baekseok",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "백석: 운영 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-beomil-0",
+    "dc_id": "kt-beomil",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 범일.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-beomil-1",
+    "dc_id": "kt-beomil",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "범일: 운영 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-bucheon-0",
+    "dc_id": "kt-bucheon",
+    "url": "https://www.hankyung.com/article/2026091565431",
+    "publisher": "한국경제",
+    "title": "KT AI 데이터센터에 5년간 6조 투자",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "준공월",
+      "운영사"
+    ],
+    "excerpt": "부천 AIDC 2027년 완공 예정 (KT 1GW 로드맵).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-kt-bundang-0",
+    "dc_id": "kt-bundang",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 분당.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-bundang-1",
+    "dc_id": "kt-bundang",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "분당: KORNET 백본 직결.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-cheonan-0",
+    "dc_id": "kt-cheonan",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 천안 CDC.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-cheonan-1",
+    "dc_id": "kt-cheonan",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "천안 CDC: 클라우드 전용.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-cheongju-0",
+    "dc_id": "kt-cheongju",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 청주.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-cheongju-1",
+    "dc_id": "kt-cheongju",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "청주: 운영 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-daegu-0",
+    "dc_id": "kt-daegu",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 대구.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-daegu-1",
+    "dc_id": "kt-daegu",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "대구: 운영 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-daejeon-0",
+    "dc_id": "kt-daejeon",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 대전.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-daejeon-1",
+    "dc_id": "kt-daejeon",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "대전: 공공 DR 선호.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gaebong-0",
+    "dc_id": "kt-gaebong",
+    "url": "https://www.hankyung.com/article/2026091565431",
+    "publisher": "한국경제",
+    "title": "KT AI 데이터센터에 5년간 6조 투자",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "준공월",
+      "운영사"
+    ],
+    "excerpt": "개봉 AIDC 2028년 완공 예정 (KT 1GW 로드맵).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gangnam-0",
+    "dc_id": "kt-gangnam",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 강남.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gangnam-1",
+    "dc_id": "kt-gangnam",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "강남: 운영 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gasan-0",
+    "dc_id": "kt-gasan",
+    "url": "https://zdnet.co.kr/view/?no=20260512170445",
+    "publisher": "지디넷코리아",
+    "title": "첫 컨콜 나선 김봉균 KT클라우드 \"5년 내 데이터센터 용량 500MW로 키울 것\"",
+    "pub_date": "2026-05-12",
+    "grade": "B",
+    "fields": [
+      "RFS",
+      "상태"
+    ],
+    "excerpt": "가산 데이터센터 2025년 11월 개소, 가동률 확대 중. 5년 내 총 500MW 목표.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gasan-1",
+    "dc_id": "kt-gasan",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=43408",
+    "publisher": "디일렉",
+    "title": "kt클라우드, 40MW 가산센터 개소",
+    "pub_date": "2025-11-06",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load"
+    ],
+    "excerpt": "kt클라우드 가산센터 수전 40MW, IT 26MW, 2025-11-05 개소.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gimhae-0",
+    "dc_id": "kt-gimhae",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 김해.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gimhae-1",
+    "dc_id": "kt-gimhae",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "김해: DR 특화.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gyeongbuk-0",
+    "dc_id": "kt-gyeongbuk",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 경북 CDC.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gyeongbuk-1",
+    "dc_id": "kt-gyeongbuk",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "경북 CDC: 민관 협력, AI 서버·코로케이션.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-gyeongbuk-2",
+    "dc_id": "kt-gyeongbuk",
+    "url": "https://v.daum.net/v/20251020145947364",
+    "publisher": "전자신문(다음뉴스)",
+    "title": "통신 3사 데이터센터 용량 450MW 넘었다",
+    "pub_date": "2025-10-20",
+    "grade": "B",
+    "fields": [
+      "RFS"
+    ],
+    "excerpt": "KT 경북 AI DC 5월 준공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:30:00+09:00"
+  },
+  {
+    "id": "e-kt-mokdong1-0",
+    "dc_id": "kt-mokdong1",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 목동1.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-mokdong1-1",
+    "dc_id": "kt-mokdong1",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "목동1: 대형 전산실.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-mokdong2-0",
+    "dc_id": "kt-mokdong2",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 목동2.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-mokdong2-1",
+    "dc_id": "kt-mokdong2",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "목동2: 하이브리드존, AI 이노베이션 센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-namguro-0",
+    "dc_id": "kt-namguro",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 남구로.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-namguro-1",
+    "dc_id": "kt-namguro",
+    "url": "http://www.boannews.com/news/articleView.html?idxno=97488",
+    "publisher": "보안뉴스",
+    "title": "KT, 남구로 IDC 개소",
+    "pub_date": "2021-05-14",
+    "grade": "B",
+    "fields": [
+      "RFS"
+    ],
+    "excerpt": "KT 14번째 IDC 남구로 개소, 335랙.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-sangam-0",
+    "dc_id": "kt-sangam",
+    "url": "https://www.newsis.com/view/NISX20251105_0003391812",
+    "publisher": "뉴시스",
+    "title": "최지웅 KT클라우드 대표 \"2030년까지 500MW 확보\"",
+    "pub_date": "2025-11-05",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "안산·상암 진행 중, 부지·전력 준비 완료. 2030년 500MW 목표.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-songjeong-0",
+    "dc_id": "kt-songjeong",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 송정 GHC.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-songjeong-1",
+    "dc_id": "kt-songjeong",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "송정 GHC: 부산 육양국 인접, 경남권 최대 DC.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-yeouido-0",
+    "dc_id": "kt-yeouido",
+    "url": "https://www.hankyung.com/article/2026091565431",
+    "publisher": "한국경제",
+    "title": "KT AI 데이터센터에 5년간 6조 투자",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "여의도에 금융권 고객용 저지연 데이터센터 계획.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-kt-yongin-0",
+    "dc_id": "kt-yongin",
+    "url": "https://www.hankyung.com/article/2026091565431",
+    "publisher": "한국경제",
+    "title": "KT AI 데이터센터에 5년간 6조 투자",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "준공월",
+      "운영사"
+    ],
+    "excerpt": "용인 AIDC 2028년 완공 예정 (KT 1GW 로드맵).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-kt-yongsan-0",
+    "dc_id": "kt-yongsan",
+    "url": "https://www.kt-idc.com/support/viewcustomer_idcPage",
+    "publisher": "KT클라우드",
+    "title": "DC 정기출입등록 안내 (센터 목록)",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "KT클라우드 데이터센터 목록: 용산.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-kt-yongsan-1",
+    "dc_id": "kt-yongsan",
+    "url": "https://www.kt-idc.com/viewindexPage",
+    "publisher": "KT클라우드",
+    "title": "데이터센터 서비스",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "용산: 2020-11 개소, 154kV 이중 수전, 서버 10만 대+ 하이퍼스케일.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgcns-busan-0",
+    "dc_id": "lgcns-busan",
+    "url": "https://core.asiae.co.kr/article/2026071510090844664",
+    "publisher": "아시아경제",
+    "title": "이지스 삼송 데이터센터 사용승인 (LG CNS 위탁운영)",
+    "pub_date": "2026-07-15",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "LG CNS가 운영 중인 부산·상암·가산 글로벌 클라우드 데이터센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgcns-busan-1",
+    "dc_id": "lgcns-busan",
+    "url": "https://www.kharn.kr/news/article.html?no=23636",
+    "publisher": "칸(KHARN)",
+    "title": "[인터뷰] LG CNS 클라우드 데이터센터사업단장",
+    "pub_date": "2023-11-12",
+    "grade": "B",
+    "fields": [
+      "수전용량"
+    ],
+    "excerpt": "부산 글로벌 클라우드센터 수전 40,000kVA, 32,531㎡.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgcns-gasan-0",
+    "dc_id": "lgcns-gasan",
+    "url": "https://core.asiae.co.kr/article/2026071510090844664",
+    "publisher": "아시아경제",
+    "title": "이지스 삼송 데이터센터 사용승인 (LG CNS 위탁운영)",
+    "pub_date": "2026-07-15",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "LG CNS가 운영 중인 부산·상암·가산 글로벌 클라우드 데이터센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgcns-incheon-0",
+    "dc_id": "lgcns-incheon",
+    "url": "https://www.kharn.kr/news/article.html?no=23636",
+    "publisher": "칸(KHARN)",
+    "title": "[인터뷰] LG CNS 클라우드 데이터센터사업단장",
+    "pub_date": "2023-11-12",
+    "grade": "B",
+    "fields": [
+      "RFS",
+      "상태"
+    ],
+    "excerpt": "인천센터: 백업 전용, 1992년 국내 최초 DC 개소.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgcns-sangam-0",
+    "dc_id": "lgcns-sangam",
+    "url": "https://core.asiae.co.kr/article/2026071510090844664",
+    "publisher": "아시아경제",
+    "title": "이지스 삼송 데이터센터 사용승인 (LG CNS 위탁운영)",
+    "pub_date": "2026-07-15",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "LG CNS가 운영 중인 부산·상암·가산 글로벌 클라우드 데이터센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgcns-sangam-1",
+    "dc_id": "lgcns-sangam",
+    "url": "https://www.kharn.kr/news/article.html?no=23636",
+    "publisher": "칸(KHARN)",
+    "title": "[인터뷰] LG CNS 클라우드 데이터센터사업단장",
+    "pub_date": "2023-11-12",
+    "grade": "B",
+    "fields": [
+      "수전용량"
+    ],
+    "excerpt": "상암 IT센터 수전 18,000kVA, 금융 특화.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-anyang-0",
+    "dc_id": "lgu-anyang",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "상태"
+    ],
+    "excerpt": "안양센터: 경기도 안양시 만안구 안양동 200-12.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-anyang-1",
+    "dc_id": "lgu-anyang",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-busan-ami-0",
+    "dc_id": "lgu-busan-ami",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "상태"
+    ],
+    "excerpt": "부산 아미센터: 부산광역시 서구 부민동1가 30-1.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-busan-ami-1",
+    "dc_id": "lgu-busan-ami",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-busan-choryang-0",
+    "dc_id": "lgu-busan-choryang",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "상태"
+    ],
+    "excerpt": "부산 초량센터: 부산광역시 동구 초량동.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-busan-choryang-1",
+    "dc_id": "lgu-busan-choryang",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-daegu-0",
+    "dc_id": "lgu-daegu",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "상태"
+    ],
+    "excerpt": "대구센터: 대구광역시 중구 동인동1가 295-1.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-daegu-1",
+    "dc_id": "lgu-daegu",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-daejeon-0",
+    "dc_id": "lgu-daejeon",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "상태"
+    ],
+    "excerpt": "대전센터: 대전광역시 서구 탄방동 663.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-daejeon-1",
+    "dc_id": "lgu-daejeon",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-gasan-0",
+    "dc_id": "lgu-gasan",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "주소",
+      "상태"
+    ],
+    "excerpt": "가산센터: 서울특별시 금천구 가산동 459-9, 전력 40000kW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-gasan-1",
+    "dc_id": "lgu-gasan",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-gwangju-0",
+    "dc_id": "lgu-gwangju",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "상태"
+    ],
+    "excerpt": "광주센터: 광주광역시 광산구 우산동 1598-2.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-gwangju-1",
+    "dc_id": "lgu-gwangju",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-nonhyeon-0",
+    "dc_id": "lgu-nonhyeon",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "주소",
+      "상태"
+    ],
+    "excerpt": "논현센터: 서울특별시 강남구 논현동 261-1, 전력 20000kW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-nonhyeon-1",
+    "dc_id": "lgu-nonhyeon",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-paju-0",
+    "dc_id": "lgu-paju",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "준공월"
+    ],
+    "excerpt": "LG U+ Paju AIDC: 200 MW power supply confirmed; Building 1 50 MW facility, completion target June 2027.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-paju-1",
+    "dc_id": "lgu-paju",
+    "url": "https://www.fnnews.com/news/202606070957377160",
+    "publisher": "파이낸셜뉴스",
+    "title": "[르포] \"완공 1년 전인데 완판\"…수도권 최대 LG U+ 파주 AIDC 가보니",
+    "pub_date": "2026-06-07",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "준공월"
+    ],
+    "excerpt": "200MW 전력 확보, 공정률 약 20%. 1동 2027년 6월 준공 예정(완판), 전체 2027년 하반기 완공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-paju-2",
+    "dc_id": "lgu-paju",
+    "url": "https://www.mt.co.kr/index.php/stock/2026/10/01/2026100108541795411",
+    "publisher": "머니투데이",
+    "title": "GS건설, 데이터센터 추가 수주 임박…목표가 26.3%↑-다올",
+    "pub_date": "2026-10-01",
+    "grade": "B",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "GS건설 진행 중 데이터센터: 네이버 2·3차, LG유플러스 파주1239.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-paju-2-0",
+    "dc_id": "lgu-paju-2",
+    "url": "https://dealsite.co.kr/articles/166204",
+    "publisher": "딜사이트",
+    "title": "LG유플러스 파주 AIDC 1.3조 추가 투자",
+    "pub_date": "2026-08",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "1.3조 추가 투자로 2·3동 건설, 4동 설계.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-paju-2-1",
+    "dc_id": "lgu-paju-2",
+    "url": "https://www.etnews.com/20260806000339",
+    "publisher": "전자신문",
+    "title": "LGU+, AIDC에 2조 투자…외부 조달 없이 단계적 확장",
+    "pub_date": "2026-08-06",
+    "grade": "B",
+    "fields": [
+      "준공월"
+    ],
+    "excerpt": "파주 1동 2027년, 2~4동 2028년까지 완공. 2조 투자 외부 조달 없이.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon1-0",
+    "dc_id": "lgu-pyeongchon1",
+    "url": "https://www.fnnews.com/news/202606070957377160",
+    "publisher": "파이낸셜뉴스",
+    "title": "[르포] \"완공 1년 전인데 완판\"…수도권 최대 LG U+ 파주 AIDC 가보니",
+    "pub_date": "2026-06-07",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "기존 평촌 1·2센터를 수도권 전력 인프라로 언급.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon1-1",
+    "dc_id": "lgu-pyeongchon1",
+    "url": "https://www.mt.co.kr/index.php/stock/2026/10/01/2026100108541795411",
+    "publisher": "머니투데이",
+    "title": "GS건설, 데이터센터 추가 수주 임박…목표가 26.3%↑-다올",
+    "pub_date": "2026-10-01",
+    "grade": "B",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "GS건설 과거 수주: LG유플러스 평촌 메가센터.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon1-2",
+    "dc_id": "lgu-pyeongchon1",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "주소"
+    ],
+    "excerpt": "평촌메가센터: 안양 동안구 관양동 1743-1, 85,548㎡, 165,000kW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon2-0",
+    "dc_id": "lgu-pyeongchon2",
+    "url": "https://dealsite.co.kr/articles/168986",
+    "publisher": "딜사이트",
+    "title": "엔비디아 손잡은 LG…환경부 규제에 평촌AIDC 발목",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "평촌2센터 완공했으나 추가 전력 확보 못해 정상 가동 차질.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon2-1",
+    "dc_id": "lgu-pyeongchon2",
+    "url": "https://www.fnnews.com/news/202606070957377160",
+    "publisher": "파이낸셜뉴스",
+    "title": "[르포] \"완공 1년 전인데 완판\"…수도권 최대 LG U+ 파주 AIDC 가보니",
+    "pub_date": "2026-06-07",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "평촌 1·2센터 언급.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon2-2",
+    "dc_id": "lgu-pyeongchon2",
+    "url": "https://www.hankyung.com/article/2025070492741",
+    "publisher": "한국경제",
+    "title": "전력 규제에 발목…LG유플 데이터센터 10개월째 반쪽 가동",
+    "pub_date": "2025-07-04",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "상태"
+    ],
+    "excerpt": "설계 수전 90MW, 계약 45MW로 반쪽 가동. 추가 45MW 계통영향평가 미통과(2025-06-20).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-pyeongchon2-3",
+    "dc_id": "lgu-pyeongchon2",
+    "url": "https://www.fnnews.com/news/202310260901400517",
+    "publisher": "파이낸셜뉴스",
+    "title": "LGU+ 안양시에 초거대 IDC 평촌2센터 준공",
+    "pub_date": "2023-10-26",
+    "grade": "B",
+    "fields": [
+      "준공월"
+    ],
+    "excerpt": "평촌2센터 준공(2023-10-26), 40,450㎡, 서버 20만 대 이상.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-sangam-0",
+    "dc_id": "lgu-sangam",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "주소",
+      "상태"
+    ],
+    "excerpt": "상암센터: 서울특별시 마포구 상암동 1600, 전력 20000kW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-sangam-1",
+    "dc_id": "lgu-sangam",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-seocho1-0",
+    "dc_id": "lgu-seocho1",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "주소",
+      "상태"
+    ],
+    "excerpt": "서초1센터: 서울특별시 서초구 서초동 1423-1, 전력 9500kW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-seocho1-1",
+    "dc_id": "lgu-seocho1",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-seocho2-0",
+    "dc_id": "lgu-seocho2",
+    "url": "https://www.lguplus.com/biz/all/telecom/idc/center/B000000031",
+    "publisher": "LG유플러스",
+    "title": "IDC - 전국 데이터센터",
+    "pub_date": "2026-10",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "주소",
+      "상태"
+    ],
+    "excerpt": "서초2센터: 서울특별시 서초구 서초동 1421-1, 전력 7500kW.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lgu-seocho2-1",
+    "dc_id": "lgu-seocho2",
+    "url": "https://lg.co.kr/media/release/29882",
+    "publisher": "LG",
+    "title": "LG유플러스, 27년 데이터센터 운영 — 전국 15개",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "LG유플러스는 27년간 전국 15개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-lotte-daejeon-0",
+    "dc_id": "lotte-daejeon",
+    "url": "https://news.mtn.co.kr/news-detail/2026090411145561342",
+    "publisher": "머니투데이방송",
+    "title": "외부 데이터센터 뚫은 롯데이노베이트",
+    "pub_date": "2026-09-04",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "롯데이노베이트는 서울·용인·대전 등에 4개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-lotte-seoul-0",
+    "dc_id": "lotte-seoul",
+    "url": "https://news.mtn.co.kr/news-detail/2026090411145561342",
+    "publisher": "머니투데이방송",
+    "title": "외부 데이터센터 뚫은 롯데이노베이트",
+    "pub_date": "2026-09-04",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "롯데이노베이트는 서울·용인·대전 등에 4개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-lotte-yongin-0",
+    "dc_id": "lotte-yongin",
+    "url": "https://news.mtn.co.kr/news-detail/2026090411145561342",
+    "publisher": "머니투데이방송",
+    "title": "외부 데이터센터 뚫은 롯데이노베이트",
+    "pub_date": "2026-09-04",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "롯데이노베이트는 서울·용인·대전 등에 4개 데이터센터 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-magna-goyang-0",
+    "dc_id": "magna-goyang",
+    "url": "https://www.kyeonggi.com/article/20241030580151",
+    "publisher": "경기일보",
+    "title": "고양 덕이동 데이터센터, 착공신고 결국 허가",
+    "pub_date": "2024-10-30",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "시공사",
+      "상태"
+    ],
+    "excerpt": "마그나PFV 시행, GS건설 시공, 덕이동, 2024-10-30 착공신고 허가.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-magna-goyang-1",
+    "dc_id": "magna-goyang",
+    "url": "https://zdnet.co.kr/view/?no=20260629165024",
+    "publisher": "지디넷코리아",
+    "title": "GS, 30조 AI 데이터센터 승부수",
+    "pub_date": "2026-06-29",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "GS건설·자이C&A·디씨브릿지의 에포크 안양·고양 마그나센터 경험.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-ms-busan-1-2-0",
+    "dc_id": "ms-busan-1-2",
+    "url": "https://ir.edaily.co.kr/News/Read?k=04785526645477456",
+    "publisher": "이데일리",
+    "title": "MS, 부산에 125MW급 데이터센터 추진…올해 10월 착공 예정",
+    "pub_date": "2026-06-01",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "MS 부산 1·2호기 가동 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-ms-busan-3-0",
+    "dc_id": "ms-busan-3",
+    "url": "https://ir.edaily.co.kr/News/Read?k=04785526645477456",
+    "publisher": "이데일리",
+    "title": "MS, 부산에 125MW급 데이터센터 추진…올해 10월 착공 예정",
+    "pub_date": "2026-06-01",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "부산 강서구 미음, 125MW급, 2026-10 착공·2031-10 준공 목표, 5673코리아, 2조원 이상.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-nat-ai-haenam-0",
+    "dc_id": "nat-ai-haenam",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "National AI Computing Center (Haenam): Phase 1 40 MW ~15k GPUs in 2028; 80 MW ~50k GPUs by 2030.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-naver-chuncheon-0",
+    "dc_id": "naver-chuncheon",
+    "url": "https://navercorp.com/tech/datacenterGak",
+    "publisher": "NAVER",
+    "title": "데이터센터 각",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "각 춘천: 국내 IT 포털 기업 최초 하이퍼스케일 자가 데이터센터, 10년 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-naver-sejong-0",
+    "dc_id": "naver-sejong",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "NAVER AI Factory (Sejong): 55 MW rising to 100 MW (2027), 200 MW cumulative (2028); operating and expanding.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-naver-sejong-1",
+    "dc_id": "naver-sejong",
+    "url": "https://www.newsis.com/view/NISX20260624_0003680880",
+    "publisher": "뉴시스",
+    "title": "자이C&A \"AI 데이터센터 분야 선도해 연매출 2.2조원 이룰 것\"",
+    "pub_date": "2026-06-24",
+    "grade": "B",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "자이C&A: 네이버 데이터센터 세종 2~3차 구축공사 수주, 1월 착공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-naver-sejong-2-0",
+    "dc_id": "naver-sejong-2",
+    "url": "https://www.joongangenews.com/news/articleView.html?idxno=460294",
+    "publisher": "중앙이코노미뉴스",
+    "title": "네이버, 각 세종 2027·2029년 연속 확장",
+    "pub_date": "2025-10-28",
+    "grade": "A",
+    "fields": [
+      "RFS"
+    ],
+    "excerpt": "2·3차 서버동 2025년 말 착공, 2027·2029년 각각 가동.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-naver-sejong-2-1",
+    "dc_id": "naver-sejong-2",
+    "url": "https://v.daum.net/v/20260726184809291",
+    "publisher": "다음뉴스",
+    "title": "네이버 14.6조, SKT 2GW… AI 데이터센터 GW급 전쟁",
+    "pub_date": "2026-07-26",
+    "grade": "B",
+    "fields": [
+      "IT Load"
+    ],
+    "excerpt": "각 세종 AI 팩토리 55MW → 2028년 200MW 확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-naver-sejong-3-0",
+    "dc_id": "naver-sejong-3",
+    "url": "https://www.joongangenews.com/news/articleView.html?idxno=460294",
+    "publisher": "중앙이코노미뉴스",
+    "title": "네이버, 각 세종 2027·2029년 연속 확장",
+    "pub_date": "2025-10-28",
+    "grade": "A",
+    "fields": [
+      "RFS"
+    ],
+    "excerpt": "3차 서버동 2029년 가동 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-nfd-dangjin-0",
+    "dc_id": "nfd-dangjin",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "NFD Dangjin: 300 MW campus initial; 140 MW IT current; initial target Q1 2028, current Q4 2028.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-nfd-yongin-0",
+    "dc_id": "nfd-yongin",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "준공월"
+    ],
+    "excerpt": "NFD Yongin: 80 MW facility initial; 56 MW IT current; completion Q2 2028.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-nfd-yongin-1",
+    "dc_id": "nfd-yongin",
+    "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05756406645420712",
+    "publisher": "이데일리",
+    "title": "사업비 1.4조 용인 AI 데이터센터 다음달 첫삽…7100억 본PF 조달",
+    "pub_date": "2026-04-28",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "시공사",
+      "발주처",
+      "주소"
+    ],
+    "excerpt": "용인 처인구 이동읍 덕성리 448-5, 수전 80MW·IT 약 56MW, 시공 삼성물산, 용인덕성데이터센터PFV(워버그핀커스·와이드크릭), 1.4조, 본PF 7,100억.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:30:00+09:00"
+  },
+  {
+    "id": "e-nfd-yongin-2",
+    "dc_id": "nfd-yongin",
+    "url": "https://www.sankun.com/site-info/-hr3fPd5IkhNkOi7nLGj41Gl3lKhGarXUCGvHN_zV5s",
+    "publisher": "산군(국토부 건축데이터 개방)",
+    "title": "용인 덕성리 방송통신시설 신축 현장",
+    "pub_date": "2026-08-20",
+    "grade": "A",
+    "fields": [
+      "착공월",
+      "주소"
+    ],
+    "excerpt": "덕성리 448-5 방송통신시설, 연면적 55,655㎡, 착공 2025-09-03(건축행정).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:30:00+09:00"
+  },
+  {
+    "id": "e-nfd-yongin-3",
+    "dc_id": "nfd-yongin",
+    "url": "https://www.corebeat.co.kr/article/1312",
+    "publisher": "코어비트",
+    "title": "워버그 핀커스-와이드크릭, 80MW 초대형 데이터센터 개발 착공",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "워버그 핀커스-와이드크릭, 80MW 데이터센터 착공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:30:00+09:00"
+  },
+  {
+    "id": "e-oneasia-busan-0",
+    "dc_id": "oneasia-busan",
+    "url": "https://v.daum.net/v/20260125080010728",
+    "publisher": "다음뉴스",
+    "title": "AI의 심장들, 부산에서 뛴다",
+    "pub_date": "2026-01-25",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "준공월"
+    ],
+    "excerpt": "원아시아 100MW급 대형 데이터센터 올해 하반기 완공 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-oneasia-busan-1",
+    "dc_id": "oneasia-busan",
+    "url": "https://zdnet.co.kr/view/?no=20210618061825",
+    "publisher": "지디넷코리아",
+    "title": "홍콩 원아시아네트워크 부산에 데이터센터 건립",
+    "pub_date": "2021-06-18",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "주소"
+    ],
+    "excerpt": "홍콩 원아시아네트워크, 부산 미음산단에 데이터센터 건립 투자협약.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-bucheon-0",
+    "dc_id": "pacific-bucheon",
+    "url": "https://seoulpi.io/article/00448981050208837632",
+    "publisher": "서울PI",
+    "title": "퍼시픽, 부천 내동 데이터센터 개발 부지 확보 — CPPIB와 네 번째 프로젝트",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "상태"
+    ],
+    "excerpt": "퍼시픽, 부천 내동 데이터센터 개발 부지 확보 — CPPIB와 네 번째 프로젝트.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-sunny-0",
+    "dc_id": "pacific-sunny",
+    "url": "https://www.hdec.kr/kr/newsroom/news_view.aspx?NewsSeq=1368&NewsType=LATEST&NewsListType=news_clist",
+    "publisher": "현대건설 뉴스룸",
+    "title": "현대건설, 용인 죽전 퍼시픽써니 데이터센터 준공",
+    "pub_date": "2025-10-24",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "착공월",
+      "준공월",
+      "시공사"
+    ],
+    "excerpt": "수전 100MW, IT 64MW. 2022년 2월 착공, 2025-10-24 준공 발표. 발주 퍼시픽자산운용.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-sunny-1",
+    "dc_id": "pacific-sunny",
+    "url": "https://thelec.kr/news/articleView.html?idxno=42673",
+    "publisher": "디일렉",
+    "title": "LG CNS, 100MW 죽전 하이퍼스케일 DC 운영 시작",
+    "pub_date": "2025-10",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "IT Load"
+    ],
+    "excerpt": "LG CNS가 설계·구축 담당, 임차인으로 운영. IT 64MW, 수전 100MW급.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-pdg-se1-0",
+    "dc_id": "pdg-se1",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "PDG SE1 (Bupyeong, Incheon), 48 MW, early 2028 RFS target.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-pdg-se1-1",
+    "dc_id": "pdg-se1",
+    "url": "https://www.etnews.com/20251117000418",
+    "publisher": "전자신문",
+    "title": "ESR·와이드크릭자산운용, 인천 부평구에 한국 내 첫 데이터센터 개발",
+    "pub_date": "2025-11-17",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "운영사",
+      "착공월",
+      "용량"
+    ],
+    "excerpt": "ESR·와이드크릭, 인천 부평 80MW급 지상 9층, 2025-11 착공, 2028 가동, PDG 임차·운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-pdg-se1-2",
+    "dc_id": "pdg-se1",
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=204040",
+    "publisher": "AI타임스",
+    "title": "PDG, 1조 투자해 인천에 48MW 시설 구축",
+    "pub_date": "2025-11-17",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "PDG SE1 인천 48MW, 7억 달러, 11월 착공, 2028년 초 가동.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-pdg-se1-3",
+    "dc_id": "pdg-se1",
+    "url": "https://www.mt.co.kr/industry/2025/11/18/2025111815003370455",
+    "publisher": "머니투데이",
+    "title": "ESR·와이드크릭자산운용, 한국 내 첫 데이터센터 개발",
+    "pub_date": "2025-11-18",
+    "grade": "B",
+    "fields": [
+      "발주처"
+    ],
+    "excerpt": "ESR 개발관리·설계, 와이드크릭 골조·외장 공동, 80MW 지상 9층, PDG 임차 운영, 2028 가동.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:30:00+09:00"
+  },
+  {
+    "id": "e-pohang-ai-0",
+    "dc_id": "pohang-ai",
+    "url": "https://m.ekn.kr/view.php?key=20260513023104322",
+    "publisher": "에너지경제신문",
+    "title": "포항 AI데이터센터 본격화…2027년 국내 첫 GPU 기반 상업운전 기대",
+    "pub_date": "2026-05-13",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "시공사",
+      "착공월",
+      "준공월",
+      "RFS"
+    ],
+    "excerpt": "1단계 40MW, 6월 착공 목표, 2027년 9월 준공·10월 상업운전 목표. 인허가·전력 확보 완료.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-pohang-ai-1",
+    "dc_id": "pohang-ai",
+    "url": "https://www.hdec.kr/kr/newsroom/news_view.aspx?NewsSeq=1564&NewsType=LATEST&NewsListType=news_clist",
+    "publisher": "현대건설 뉴스룸",
+    "title": "현대건설, 대한민국 1호 AI 전용 데이터센터 16개월 만에 완성한다",
+    "pub_date": "2026-09-21",
+    "grade": "A",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "시공사",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "포항 광명일반산단, 수전 40MW(IT 32MW). 발주 AI Factory Pohang PFV, 시행 네오AI클라우드. 2026-06 착공, 2027-11 준공, 공기 16.5개월.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-sczeus-seoul-0",
+    "dc_id": "sczeus-seoul",
+    "url": "https://datacenterdynamics.com/en/news/singapores-sc-capital-partners-launches-new-data-center-firm-plans-hyperscale-facility-in-seoul",
+    "publisher": "DCD",
+    "title": "SC Capital Partners launches new data center firm, plans hyperscale facility in Seoul",
+    "pub_date": "2022-02-28",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "상태"
+    ],
+    "excerpt": "SC Zeus, 서울 하이퍼스케일 45MW·45,000㎡, 약 5억 달러, 부지 확보 후 건설 중.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T12:00:00+09:00"
+  },
+  {
+    "id": "e-sds-chuncheon-0",
+    "dc_id": "sds-chuncheon",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=53349",
+    "publisher": "디일렉",
+    "title": "삼성SDS, AI데이터센터 3곳에 3조7000억",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "삼성SDS 기존 데이터센터(춘천).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-sds-chuncheon-ai-0",
+    "dc_id": "sds-chuncheon-ai",
+    "url": "https://v.daum.net/v/20260706000132566",
+    "publisher": "다음뉴스",
+    "title": "삼성, 춘천에 AI데이터센터…내년 10월 완공",
+    "pub_date": "2026-07-06",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "준공월"
+    ],
+    "excerpt": "춘천 칠전동 삼성SDS 부지 내 2.4MW 모듈형 AI 데이터센터, 2027년 10월 완공 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-sds-dongtan-0",
+    "dc_id": "sds-dongtan",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=53349",
+    "publisher": "디일렉",
+    "title": "삼성SDS, AI데이터센터 3곳에 3조7000억",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "RFS"
+    ],
+    "excerpt": "동탄 2동 20MW(전체 40MW), 2026년 1분기 가동.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-sds-gumi-0",
+    "dc_id": "sds-gumi",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "RFS"
+    ],
+    "excerpt": "Samsung SDS Gumi: 60 MW announced; planning/design; operation target March 2029.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-sds-gumi-1",
+    "dc_id": "sds-gumi",
+    "url": "https://v.daum.net/v/20260915143307958",
+    "publisher": "다음뉴스",
+    "title": "삼성SDS, 구미 AI 데이터센터 착공",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "시공사",
+      "RFS"
+    ],
+    "excerpt": "착공 신고 완료, 시공 삼성물산, 60MW, 2029년 가동 목표, 4,273억.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-sds-sangam-0",
+    "dc_id": "sds-sangam",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=53349",
+    "publisher": "디일렉",
+    "title": "삼성SDS, AI데이터센터 3곳에 3조7000억",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "삼성SDS 기존 데이터센터(상암).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-sds-suwon-0",
+    "dc_id": "sds-suwon",
+    "url": "https://www.thelec.kr/news/articleView.html?idxno=53349",
+    "publisher": "디일렉",
+    "title": "삼성SDS, AI데이터센터 3곳에 3조7000억",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "상태"
+    ],
+    "excerpt": "삼성SDS 기존 데이터센터(수원).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T10:00:00+09:00"
+  },
+  {
+    "id": "e-sgc-gunsan-0",
+    "dc_id": "sgc-gunsan",
+    "url": "https://biz.heraldcorp.com/article/10886023",
+    "publisher": "헤럴드경제",
+    "title": "현대엔지니어링, 8700억 군산 AI 데이터센터 수주",
+    "pub_date": "2026-09-28",
+    "grade": "B",
+    "fields": [
+      "용량",
+      "발주처",
+      "시공사",
+      "착공월"
+    ],
+    "excerpt": "군산 비응도동 115,702㎡, 1단계 60MW(300MW 클러스터), 발주 SGC그룹, 10월 내 착공 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T11:00:00+09:00"
+  },
+  {
+    "id": "e-sgc-gunsan-1",
+    "dc_id": "sgc-gunsan",
+    "url": "https://byline.network/2026/09/28-654/",
+    "publisher": "바이라인네트워크",
+    "title": "KT클라우드, SGC에너지와 군산 AI 데이터센터 구축 착수",
+    "pub_date": "2026-09-28",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "RFS",
+      "용량"
+    ],
+    "excerpt": "KT클라우드가 SGC에너지 군산 AIDC DBO 파트너. 1단계 60MW 모듈형, 2026년 말 착공, 2028년 1분기 가동, 300MW 확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-sgc-gunsan-2",
+    "dc_id": "sgc-gunsan",
+    "url": "https://m.ceoscoredaily.com/page/view/2026092915454870089",
+    "publisher": "CEO스코어데일리",
+    "title": "300MW급 SGC 군산 AIDC 본궤도…10월 1단계 착공",
+    "pub_date": "2026-09-29",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "시공사",
+      "발주처"
+    ],
+    "excerpt": "1단계 60MW·8,700억, 10월 착공, 현대엔지니어링 단독 시공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-sgc-gunsan-3",
+    "dc_id": "sgc-gunsan",
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=206334",
+    "publisher": "AI타임스",
+    "title": "SGC에너지, 전북 군산에 300MW급 AI 데이터센터",
+    "pub_date": "2026-02-03",
+    "grade": "B",
+    "fields": [
+      "용량"
+    ],
+    "excerpt": "SGC에너지, 군산에 300MW급 AI 데이터센터 추진.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T15:00:00+09:00"
+  },
+  {
+    "id": "e-sk-gangneung-okgye-0",
+    "dc_id": "sk-gangneung-okgye",
+    "url": "https://v.daum.net/v/20260708195739269",
+    "publisher": "KBS(다음뉴스)",
+    "title": "강원 AI 데이터센터 설치 봇물…과제는?",
+    "pub_date": "2026-07-08",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "상태"
+    ],
+    "excerpt": "SK그룹 강릉 옥계산단 1GW 검토, 송변전 부재로 한전 협의.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T13:00:00+09:00"
+  },
+  {
+    "id": "e-skb-bundang-0",
+    "dc_id": "skb-bundang",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-centum-0",
+    "dc_id": "skb-centum",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-gasan-0",
+    "dc_id": "skb-gasan",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-gasan-1",
+    "dc_id": "skb-gasan",
+    "url": "https://v.daum.net/v/20251020145947364",
+    "publisher": "전자신문(다음뉴스)",
+    "title": "통신 3사 데이터센터 용량 450MW 넘었다",
+    "pub_date": "2025-10-20",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "RFS"
+    ],
+    "excerpt": "SK텔레콤 가산 46MW, 지난해 말 개소.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:30:00+09:00"
+  },
+  {
+    "id": "e-skb-gasan-2",
+    "dc_id": "skb-gasan",
+    "url": "https://www.etnews.com/20200605000170",
+    "publisher": "전자신문",
+    "title": "SK브로드밴드, 서울 최대 규모 데이터센터 설립",
+    "pub_date": "2020-06-05",
+    "grade": "B",
+    "fields": [
+      "주소"
+    ],
+    "excerpt": "금천구 가산동 지식산업센터 부지, 약 6.9만㎡.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:30:00+09:00"
+  },
+  {
+    "id": "e-skb-guro-0",
+    "dc_id": "skb-guro",
+    "url": "https://news.sktelecom.com/213527",
+    "publisher": "SKT 뉴스룸",
+    "title": "SKT 울산 AI 데이터센터 추진 계획: 2027년 첫 가동·2030년 300MW",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "준공월"
+    ],
+    "excerpt": "서울 구로 DC 2030년 완공 목표.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-guro-1",
+    "dc_id": "skb-guro",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "상태",
+      "운영사"
+    ],
+    "excerpt": "구로 신규 AIDC 건설 중. SK브로드밴드에서 분할한 SK호라이즌이 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-guro-2",
+    "dc_id": "skb-guro",
+    "url": "https://www.investchosun.com/site/data/html_dir/2026/08/27/2026082780166.html",
+    "publisher": "인베스트조선",
+    "title": "SK텔레콤, SKB 데이터센터 분할해 SK호라이즌 출범…KKR·IMM 3조",
+    "pub_date": "2026-08-27",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "SK호라이즌: 기존 8개 + 울산·구로 신규 AIDC 포함 약 318MW. 2027-02 출범.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:00:00+09:00"
+  },
+  {
+    "id": "e-skb-ilsan1-0",
+    "dc_id": "skb-ilsan1",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-ilsan2-0",
+    "dc_id": "skb-ilsan2",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-pangyo-0",
+    "dc_id": "skb-pangyo",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-pangyo-1",
+    "dc_id": "skb-pangyo",
+    "url": "https://newstomato.com/ReadNews.aspx?no=1265971",
+    "publisher": "뉴스토마토",
+    "title": "SK브로드밴드, 울산에 이어 판교까지…DC 확장에 재무경고",
+    "pub_date": "2025",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "판교 데이터센터 IT 30MW, 2015년 개소, 가동률 90%, 5,068억 인수.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T14:30:00+09:00"
+  },
+  {
+    "id": "e-skb-seocho-0",
+    "dc_id": "skb-seocho",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skb-yangju-0",
+    "dc_id": "skb-yangju",
+    "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/28/20260828032004",
+    "publisher": "서울신문",
+    "title": "SKT AI 데이터센터 ‘호라이즌’ 세운다",
+    "pub_date": "2026-08-28",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "상태"
+    ],
+    "excerpt": "SK브로드밴드는 서초·일산(2)·분당·가산·센텀·양주·판교 8개 데이터센터 운영. 분할 신설 SK호라이즌이 약 318MW 운영·확장.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skt-ulsan-0",
+    "dc_id": "skt-ulsan",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "RFS",
+      "준공월"
+    ],
+    "excerpt": "SK·AWS Ulsan AIDC: 41 MW rising to 103 MW; phase 1 operation Nov 2027; full completion Feb 2029.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-skt-ulsan-1",
+    "dc_id": "skt-ulsan",
+    "url": "https://www.fnnews.com/news/202511171041595230",
+    "publisher": "파이낸셜뉴스",
+    "title": "SK 울산 AI 데이터센터 (SK에코플랜트 시공)",
+    "pub_date": "2025-11-17",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "착공월",
+      "IT Load"
+    ],
+    "excerpt": "2027년 약 40MW → 2029년 100MW. 2025-08-29 기공식, A동 2027-05-31 준공 예정. 공사계약 4,169억.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-skt-ulsan-2",
+    "dc_id": "skt-ulsan",
+    "url": "https://news.sktelecom.com/213527",
+    "publisher": "SKT 뉴스룸",
+    "title": "SKT 울산 AI 데이터센터 추진 계획: 2027년 첫 가동·2030년 300MW",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "RFS",
+      "운영사"
+    ],
+    "excerpt": "2027년 첫 가동, 2030년 울산·구로 등 누적 300MW+ 목표. AWS 수요 확보.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T09:00:00+09:00"
+  },
+  {
+    "id": "e-smilegate-munbong-0",
+    "dc_id": "smilegate-munbong",
+    "url": "https://newsway.co.kr/news/view?ud=2026052916103935064",
+    "publisher": "뉴스웨이",
+    "title": "AI 데이터센터 짓는 스마일게이트",
+    "pub_date": "2026-05-29",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "발주처",
+      "운영사"
+    ],
+    "excerpt": "고양 문봉동·식사동 각 50MW, 2.8조, 스마일게이트자산운용 주도, 넥사서비스 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-smilegate-siksa-0",
+    "dc_id": "smilegate-siksa",
+    "url": "https://newsway.co.kr/news/view?ud=2026052916103935064",
+    "publisher": "뉴스웨이",
+    "title": "AI 데이터센터 짓는 스마일게이트",
+    "pub_date": "2026-05-29",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "발주처",
+      "운영사"
+    ],
+    "excerpt": "고양 문봉동·식사동 각 50MW, 2.8조, 스마일게이트자산운용 주도, 넥사서비스 운영.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-stt-seoul1-0",
+    "dc_id": "stt-seoul1",
+    "url": "https://www.ai-dc.co.kr/international/en/research/2026-korea-data-center-development-permit-power-census",
+    "publisher": "AI-DC KOREA",
+    "title": "2026 Korea Data Center Development, Permitting & Power Census",
+    "pub_date": "2026-10",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "STT Seoul 1 (Geumcheon, Seoul) 30 MW IT, commercial operation.",
+    "source_id": "seed",
+    "collected_at": "2026-10-19T09:00:00+09:00"
+  },
+  {
+    "id": "e-stt-seoul1-1",
+    "dc_id": "stt-seoul1",
+    "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=421760",
+    "publisher": "시사저널e",
+    "title": "가산디지털단지 한복판 40MW 데이터센터, 7월 가동",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "한전 수전 40MW 중 IT 30MW. 1단계 18MW 2026-07-01 가동, 이후 연말·2027-07 추가 공급.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-stt-seoul1-2",
+    "dc_id": "stt-seoul1",
+    "url": "https://www.sttgdc.com/kr/newsroom/st-telemedia-global-data-centres-expands-its-south-korea-footprint-with-second-data-centre",
+    "publisher": "STT GDC",
+    "title": "STT GDC, 두 번째 데이터센터로 한국 입지 확대",
+    "pub_date": "2022-06-08",
+    "grade": "A",
+    "fields": [
+      "IT Load",
+      "주소"
+    ],
+    "excerpt": "금천구 가산동, 연면적 31,205㎡, IT 30MW 개발 가능, 2025 상반기 RFS 계획(2022 발표).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-venefos-gangjin-0",
+    "dc_id": "venefos-gangjin",
+    "url": "https://www.smarttoday.co.kr/ko-kr/articles/101310",
+    "publisher": "스마트투데이",
+    "title": "대우건설, 전남에 500MW급 AI 데이터센터 조성",
+    "pub_date": "2026-01",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "발주처"
+    ],
+    "excerpt": "강진군 300MW, 베네포스 시행.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-venefos-jangseong-0",
+    "dc_id": "venefos-jangseong",
+    "url": "https://www.smarttoday.co.kr/ko-kr/articles/101310",
+    "publisher": "스마트투데이",
+    "title": "대우건설, 전남에 500MW급 AI 데이터센터 조성",
+    "pub_date": "2026-01",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "발주처",
+      "시공사"
+    ],
+    "excerpt": "장성 200MW·강진 300MW, 시행 베네포스, KT 등 11개 기관 MOU, 대우건설 설계·조달·시공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T16:30:00+09:00"
+  },
+  {
+    "id": "e-kt-gaebong-1",
+    "dc_id": "kt-gaebong",
+    "url": "https://dealsite.co.kr/articles/134572",
+    "publisher": "딜사이트",
+    "title": "캡스톤, 구로 개봉동 데이터센터 본PF 3840억 전환",
+    "pub_date": "2025-01-08",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "시공사",
+      "수전용량",
+      "준공월"
+    ],
+    "excerpt": "구로 개봉동 166-2 일대, 수전 30MW, 개봉PFV(캡스톤), 본PF 3,840억, SK에코플랜트 시공, 2028 준공 계획.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-metainfra-asan-0",
+    "dc_id": "metainfra-asan",
+    "url": "https://www.wikitree.co.kr/articles/1084411",
+    "publisher": "위키트리",
+    "title": "아산에 3200억 AI 데이터센터… 아산시·메타인프라 MOU",
+    "pub_date": "2025-09-26",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "주소",
+      "착공월"
+    ],
+    "excerpt": "아산 음봉면 스마트밸리 7,022㎡, 3,200억, 메타인프라 시행·캡스톤 투자·KT 컨소시엄, 2025-11 착공 예정·32개월.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-metainfra-asan-1",
+    "dc_id": "metainfra-asan",
+    "url": "https://www.kharn.kr/news/article.html?no=30173",
+    "publisher": "한국냉난방공조신문",
+    "title": "[인터뷰] 손태영 메타인프라 대표",
+    "pub_date": "2026-02-27",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "운영사",
+      "착공월"
+    ],
+    "excerpt": "수전 약 20MW, 2026-05 착공 계획, 2028년 중 오픈, KT·KT클라우드 운영 파트너.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-kamsquare-dc-1",
+    "dc_id": "kamsquare-dc",
+    "url": "https://dealsite.co.kr/articles/157007",
+    "publisher": "딜사이트",
+    "title": "캄스퀘어용인데이터센터PFV, 롯데이노베이트 위탁운영·브릿지론 600억",
+    "pub_date": "2026",
+    "grade": "A",
+    "fields": [
+      "운영사",
+      "수전용량",
+      "IT Load",
+      "RFS"
+    ],
+    "excerpt": "캄스퀘어용인데이터센터PFV, 지곡동 236-6, 수전 60MW·IT 40MW, 롯데이노베이트 위탁운영 695억(2030-05~2035-10), 10월 착공 계획.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-kamsquare-dc-2",
+    "dc_id": "kamsquare-dc",
+    "url": "https://news.nate.com/view/20250923n13339",
+    "publisher": "파이낸셜뉴스",
+    "title": "한국대체투자자산운용, 국내 데이터센터 전략 발표",
+    "pub_date": "2025-09-23",
+    "grade": "B",
+    "fields": [
+      "IT Load"
+    ],
+    "excerpt": "KAAM 용인 지곡동 IT 40MW Tier III+, 차이나모바일(CMI) MOU.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-kaam-sihwa-0",
+    "dc_id": "kaam-sihwa",
+    "url": "https://news.nate.com/view/20250923n13339",
+    "publisher": "파이낸셜뉴스",
+    "title": "한국대체투자자산운용, 국내 데이터센터 전략 발표",
+    "pub_date": "2025-09-23",
+    "grade": "B",
+    "fields": [
+      "IT Load",
+      "상태"
+    ],
+    "excerpt": "안산 시화 80MW급(IT), 인허가·재원 조달 완료.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-kaam-sihwa-1",
+    "dc_id": "kaam-sihwa",
+    "url": "https://junglim.com/kaam-square-idc-ansan/",
+    "publisher": "정림건축",
+    "title": "캄스퀘어 안산 데이터센터 (KAAM Square IDC, Ansan)",
+    "pub_date": "2023",
+    "grade": "B",
+    "fields": [
+      "준공월",
+      "주소"
+    ],
+    "excerpt": "시화국가산단, 지하5~지상7층, 연면적 76,459㎡, 2027 준공 예정.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-megadata-wonju-0",
+    "dc_id": "megadata-wonju",
+    "url": "https://www.fnnews.com/news/202601150949536569",
+    "publisher": "파이낸셜뉴스",
+    "title": "메가데이타코리아, 원주 데이터센터 착공식",
+    "pub_date": "2026-01-15",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "착공월",
+      "운영사"
+    ],
+    "excerpt": "원주 단구동 도시첨단산단, 40MW급 3개 동·설비 99MW(최대 120MW), 1.4조, 2026-01-15 착공, 킨드릴코리아 협력.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-kcold-incheon-0",
+    "dc_id": "kcold-incheon",
+    "url": "https://www.kyeongin.com/article/1759503",
+    "publisher": "경인일보",
+    "title": "인천신항 콜드체인 클러스터, 데이터센터 건립으로 계획 변경",
+    "pub_date": "2026-02-25",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "주소"
+    ],
+    "excerpt": "인천신항 배후부지 2만7천㎡에 20MW급 데이터센터, LNG 냉열·해수 냉각, 전력 인허가 마무리.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-kcold-incheon-1",
+    "dc_id": "kcold-incheon",
+    "url": "https://www.finance-scope.com/article/view/scp202610120003",
+    "publisher": "파이낸스스코프",
+    "title": "한국초저온인천, 인천신항 콜드체인·데이터센터 임대차 계약",
+    "pub_date": "2026-10-12",
+    "grade": "B",
+    "fields": [
+      "상태",
+      "착공월"
+    ],
+    "excerpt": "2026-09 임대차 계약, 인허가 2027 하반기 완료 후 착공, 데이터센터 연면적 약 2만 700㎡.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T18:00:00+09:00"
+  },
+  {
+    "id": "e-sczeus-seoul-1",
+    "dc_id": "sczeus-seoul",
+    "url": "https://www.sccpasia.com/wp-content/uploads/2023/09/Strategically-investing-in-data-centres-in-Japan-South-Korea_SCCP.pdf",
+    "publisher": "SC Capital Partners",
+    "title": "Strategically investing in data centres in Japan & South Korea",
+    "pub_date": "2023-09",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "수전용량"
+    ],
+    "excerpt": "Bucheon, near Gasan Digital Valley, 50MW power secured, land acquired, design & permitting in progress, phase 1 target 2025, US$480~520m.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-sczeus-seoul-2",
+    "dc_id": "sczeus-seoul",
+    "url": "https://www.kyeonggi.com/article/20230831580127",
+    "publisher": "경기일보",
+    "title": "부천 춘의동 데이터센터 특고압선 지중화… 인근 공장 근로자 반발 예고",
+    "pub_date": "2023-09-02",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "전기확보"
+    ],
+    "excerpt": "춘의동 65-2 공장용지, 대지 11,455㎡·연면적 26,800㎡·지하1~지상5층, 한전 154kV 특고압 지중화, 심의 절차 남음.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-sczeus-seoul-3",
+    "dc_id": "sczeus-seoul",
+    "url": "https://www.datacenterdynamics.com/en/news/singapores-sc-capital-partners-launches-new-data-center-firm-plans-hyperscale-facility-in-seoul/",
+    "publisher": "DCD",
+    "title": "SC Capital Partners launches new data center firm, plans hyperscale facility in Seoul",
+    "pub_date": "2022",
+    "grade": "B",
+    "fields": [
+      "IT Load"
+    ],
+    "excerpt": "SC Zeus 45MW, 45,000㎡, US$500m hyperscale facility (2022).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-bucheon-1",
+    "dc_id": "pacific-bucheon",
+    "url": "https://www.ajunews.com/view/20260326140337228",
+    "publisher": "아주경제",
+    "title": "[단독] MS·구글·AWS 등 빅테크 부천으로...99MW 수도권 AI DC 시동",
+    "pub_date": "2026-03-26",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "상태"
+    ],
+    "excerpt": "부천 오정구 내동 99MW, 공사비 1.4조, CPPIB 800억 투자, 2026년 내 착공 목표, 빅테크 협의.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-bucheon-2",
+    "dc_id": "pacific-bucheon",
+    "url": "https://www.kyeonggi.com/article/20260219580313",
+    "publisher": "경기일보",
+    "title": "선허가 후대책 빈축…부천시 내동 데이터센터, 2년 넘게 착공도 못 해",
+    "pub_date": "2026-02-21",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "건축허가",
+      "민원"
+    ],
+    "excerpt": "내동 222-13 외 29필지 17,907㎡, 지하2~지상6층 연면적 55,367㎡, 2023-05 건축허가, 지중선로 주민 반발로 미착공.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-bucheon-3",
+    "dc_id": "pacific-bucheon",
+    "url": "https://www.bucheonnews.net/news/articleView.html?idxno=47327",
+    "publisher": "부천신문",
+    "title": "부천시, 특고압 전력확보 없는데…데이터센터 건축 허가 내줘 빈축",
+    "pub_date": "2024-03-06",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "건축허가"
+    ],
+    "excerpt": "엠디에이3호(부천 내동 데이터센터) 내동 222-13 외 10필지, 2023-05-16 허가.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-pacific-bucheon-4",
+    "dc_id": "pacific-bucheon",
+    "url": "https://www.urimts.co.kr/23.html",
+    "publisher": "유림티에스",
+    "title": "유림티에스 데이터센터 사업 현황 (시행·지분참여·시공참여)",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "수전용량"
+    ],
+    "excerpt": "유림티에스 시행 부천 데이터센터 수전 100MW, B2/6F.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-kt-bucheon-1",
+    "dc_id": "kt-bucheon",
+    "url": "https://www.ajunews.com/view/20231114144102974",
+    "publisher": "아주경제",
+    "title": "[단독] KT클라우드, 6000억 규모 부천 데이터센터 추진",
+    "pub_date": "2023-11-14",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "준공월"
+    ],
+    "excerpt": "KT클라우드 부천 삼정동 48MW(2개 동 각 24MW), 지하5~지상7층, PF 6,000억, 2026-07 준공 목표.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-kt-bucheon-2",
+    "dc_id": "kt-bucheon",
+    "url": "https://www.kyeonggi.com/article/20240123580181",
+    "publisher": "경기일보",
+    "title": "대책도 없이… 부천, 데이터센터 건축 프리패스",
+    "pub_date": "2024-01-24",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "시공사",
+      "착공월"
+    ],
+    "excerpt": "퍼시픽 피치에프브이 삼정동 13-15, 연면적 71,160㎡, 2022-07 허가, 2023-05 착공, 시공 DL건설, 2026-04 준공 목표.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-urim-mullae-0",
+    "dc_id": "urim-mullae",
+    "url": "https://kpinews.kr/newsView/1065604069793835",
+    "publisher": "KPI뉴스",
+    "title": "AI 핵심 플랫폼 데이터센터…혐오시설 시선에 곳곳서 진통",
+    "pub_date": "2025-11",
+    "grade": "B",
+    "fields": [
+      "수전용량",
+      "착공월",
+      "민원"
+    ],
+    "excerpt": "영등포 문래동, 최대 80MW, 2021 한전 계약·2022 부지 매입/건축허가·2025-10 착공신고 승인, 주민 반대.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-urim-mullae-1",
+    "dc_id": "urim-mullae",
+    "url": "https://www.sijung.co.kr/news/articleView.html?idxno=419612",
+    "publisher": "시정일보",
+    "title": "영등포구, 문래 데이터센터 건립 관련 기자 간담회",
+    "pub_date": "2025-11-17",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "영등포구 기자간담회: 착공신고 수리 불가피, 전자파·소음·열섬 대책, 민관 협의체.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-urim-mullae-2",
+    "dc_id": "urim-mullae",
+    "url": "https://www.urimts.co.kr/23.html",
+    "publisher": "유림티에스",
+    "title": "유림티에스 데이터센터 사업 현황 (시행·지분참여·시공참여)",
+    "pub_date": "2026",
+    "grade": "B",
+    "fields": [
+      "수전용량"
+    ],
+    "excerpt": "문래 데이터센터 80MW, B5/8F, 시행.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-kaam-gapyeong-0",
+    "dc_id": "kaam-gapyeong",
+    "url": "https://www.thebell.co.kr/front/newsview.asp?key=202607231554104200106421",
+    "publisher": "더벨",
+    "title": "한국대체투자자산운용, 가평 데이터센터 개발사업 추진",
+    "pub_date": "2026-07-23",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "상태"
+    ],
+    "excerpt": "한국대체투자자산운용, 가평 데이터센터 개발사업 추진(2026-07-23).",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-kaam-gapyeong-1",
+    "dc_id": "kaam-gapyeong",
+    "url": "https://dailian.co.kr/news/view/1261008",
+    "publisher": "데일리안",
+    "title": "가평군 국내 최대 규모 데이터센터 건립 추진",
+    "pub_date": "2023-08-07",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "수전용량"
+    ],
+    "excerpt": "가평읍 하색리, 120MW(40MW×3), 1.6조, 부지 117,415㎡, 2028 완공 목표, 마스턴·엔필드.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-kaam-gapyeong-2",
+    "dc_id": "kaam-gapyeong",
+    "url": "https://v.daum.net/v/3xaYojYxh3",
+    "publisher": "다음(뉴스)",
+    "title": "마스턴운용, 가평에 축구장 18개 규모 데이터센터 개발한다",
+    "pub_date": "2023-08-08",
+    "grade": "C",
+    "fields": [
+      "수전용량"
+    ],
+    "excerpt": "마스턴 가평 120MW, 연면적 약 13.3만㎡, 수력 전력·PUE 1.5 목표.",
+    "source_id": "seed",
+    "collected_at": "2026-10-20T20:00:00+09:00"
+  }
+]
