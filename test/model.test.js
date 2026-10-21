@@ -203,3 +203,23 @@ test('건축HUB 빈 응답·XML 한도 초과도 재시도', async () => {
   try { assert.deepEqual(await fetchPermits({ sigunguCd: '1', bjdongCd: '2', bun: '3' }, 'k', fake), []); assert.equal(i, 3); }
   finally { Object.assign(LIMIT, saved); }
 });
+
+test('자동수집 반영(ingest): 신규·갱신·고정 필드 제안·근거 중복 방지', async () => {
+  const { ingest } = await import('../scripts/ingest.mjs');
+  const read = n => JSON.parse(readFileSync(new URL(`../data/${n}.json`, import.meta.url)));
+  const base = { dcs: read('dcs'), evidence: read('evidence'), history: read('history'), sources: read('sources'), runs: read('runs') };
+  const target = base.dcs[0];
+  base.dcs = base.dcs.map(d => (d.id === target.id ? { ...d, locked: { ...(d.locked || {}), owner: true } } : d));
+  const ev = { url: 'https://example.com/a', title: 't', publisher: 'p', pub_date: '2026-10-21', grade: 'B', fields: ['상태'], excerpt: 'x', source_id: 's01' };
+  const findings = { sources: [{ id: 's01', hits: 2 }], summary: '테스트', items: [
+    { dc_id: target.id, updates: { owner: { value: '다른회사', conf: '추정', note: 'n' }, rfs_ym: { value: '2028-Q2', conf: '추정', note: 'n' } }, evidence: [ev, ev] },
+    { new: { name: '테스트 신규 데이터센터', category: '상용', address: '경기도 화성시', status: '착공', it_mw: 40 }, evidence: [ev] }] };
+  const out = ingest(base, findings, NOW);
+  assert.deepEqual(validateData(out), []);
+  assert.equal(out.stats.new_dcs, 1); assert.equal(out.stats.proposals, 1); assert.equal(out.stats.evidence, 2);
+  assert.equal(out.dcs.find(d => d.id === target.id).owner, target.owner); // 고정 필드 유지
+  const nd = out.dcs.find(d => d.name === '테스트 신규 데이터센터');
+  assert.equal(nd.status, '착공'); assert.equal(nd.it_mw, 40); assert.equal(nd.sido, '경기');
+  assert.equal(out.sources.find(s => s.id === 's01').last_hits, 2);
+  assert.equal(out.runs.at(-1).kind, '자동수집');
+});

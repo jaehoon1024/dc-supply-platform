@@ -52,7 +52,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 | 시각(KST) | 무엇 | 방식 |
 |---|---|---|
 | 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) |
-| 매일 | 30개 소스 뉴스·공시·발표 | Claude 예약 작업이 저장소에 커밋 |
+| 06:47 | 30개 소스 뉴스·공시·발표 | Claude 예약 작업 → `scripts/ingest.mjs`로 반영 후 저장소에 커밋 |
 
 자동수집은 `lib/model.js`의 `applyAuto`를 따릅니다. 고정된 필드는 바꾸지 않고 히스토리에 `proposal`(제안)로 남깁니다.
 
