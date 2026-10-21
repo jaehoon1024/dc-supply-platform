@@ -1,0 +1,18 @@
+# 일회성: 정밀 주소 → 좌표(OpenStreetMap Nominatim) 조회. 결과는 실행 로그의 RESULT 줄. 확인 후 삭제 예정.
+name: geocode-once
+on:
+  push:
+    branches: [main]
+    paths: ['tools/geocode-addr.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node tools/geocode.mjs
