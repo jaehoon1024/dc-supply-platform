@@ -47,6 +47,10 @@ data/                             dcs, evidence, history, sources, runs, permits
 
 환경변수가 없으면 배포본에 포함된 데이터로 **보기 전용**으로 동작합니다.
 
+## 입장 비밀번호
+
+`middleware.js`가 모든 요청 앞에서 비밀번호를 확인합니다. 비밀번호는 Vercel 환경변수 `SITE_PASSWORD`(Sensitive)에만 두며, 바꾸려면 값을 수정하고 Redeploy하면 기존 로그인은 모두 해제됩니다. 로그아웃: `/__logout`. Vercel Cron 동기화는 통과합니다.
+
 ## 일일 수집
 
 | 시각(KST) | 무엇 | 방식 |
