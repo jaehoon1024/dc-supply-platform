@@ -56,6 +56,7 @@
       <div class="fgroup" id="fStatus"><span class="flabel">상태</span></div>
       <div class="fgroup"><span class="flabel">준비단계</span><select id="fPrep" aria-label="준비단계"><option value="">전체</option><option>부지확보 단계</option><option>전기확보 단계</option><option>건축허가 단계</option><option>착공 대기</option><option value="미분류">설계중 · 미분류</option></select></div>
       <div class="fgroup"><span class="flabel">DBO</span><select id="fDbo" aria-label="DBO"><option value="">전체</option><option value="ext">DBO·마스터리스 전체</option><option>DBO</option><option>부분 DBO</option><option>마스터리스</option><option>자체</option><option>미상</option></select></div>
+      <div class="fgroup"><span class="flabel">민원</span><select id="fCm" aria-label="민원"><option value="">전체</option><option value="risk">심각·주의</option><option>심각</option><option>주의</option><option>해소</option></select></div>
       <div class="legend" style="margin-left:auto"><span><span class="conf-k c">확정</span> 근거 확인</span><span><span class="est">12.0</span> 추정값</span><span id="coFilter"></span><span id="countLbl"></span></div>
     </div>
     <div class="tablebox"><table>
@@ -101,7 +102,7 @@
       <div class="fgroup"><span class="flabel">대상</span><div class="seg" id="valScope"><button data-v="" aria-pressed="true">전체</button><button data-v="dev" aria-pressed="false">개발 중</button><button data-v="pre" aria-pressed="false">착공 전</button></div></div>
       <span class="note" id="valNote"></span>
     </div>
-    <div class="panel"><h3>센터 가치점수 순위 <span class="note" style="font-weight:400">· 자동 산정 + 수동 보정 · 목록 탭의 필터(권역·사업자 등)가 함께 적용됩니다 · 행을 누르면 상세에서 점수를 고칠 수 있습니다</span></h3><div style="overflow-x:auto" id="valTable"></div></div>
+    <div class="panel"><h3>센터 가치점수 순위 <span class="note" style="font-weight:400">· 자동 산정 + 수동 보정 · 목록 탭의 필터(권역·사업자 등)가 함께 적용됩니다 · 행을 누르면 상세에서 점수를 고칠 수 있습니다</span></h3><div id="valDef"></div><div style="overflow-x:auto" id="valTable"></div></div>
     <div class="panel" style="margin-top:16px"><h3>산정 기준</h3><div id="valSpec"></div></div>
   </section>
   <section id="v-company" hidden>

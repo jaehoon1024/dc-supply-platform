@@ -137,12 +137,14 @@ test('가치점수: 자동 산정 + 수동 보정', async () => {
   const d = dcs.find(x => x.id === 'kamsquare-dc');
   const s = valueScore(d, { dcs, evidence });
   assert.equal(s.items.length, SCORE_ITEMS.length);
-  assert.equal(SCORE_ITEMS.reduce((a, i) => a + i.max, 0), 100);
+  const { SCORE_VIEWS } = await import('../lib/model.js');
+  for (const v of Object.values(SCORE_VIEWS)) assert.equal(Object.values(v.points).reduce((a, b) => a + b, 0), 100);
+  assert.equal(s.breakdown('invest').reduce((a, b) => a + b.points, 0), 100);
   assert.ok(s.nearOwn && s.nearOwn.km > 0);
   const t = s.total('balanced'); assert.ok(t > 0 && t <= 100);
   const m = valueScore({ ...d, score_manual: { complaint: 0 } }, { dcs, evidence });
   assert.equal(m.items.find(i => i.key === 'complaint').score, 0); assert.ok(m.total() < t);
-  assert.throws(() => normalizeScoreManual({ complaint: 9 }), /민원/);
+  assert.throws(() => normalizeScoreManual({ complaint: 11 }), /민원/);
   const r = applyEdit(dcs, [], { id: d.id, changes: { score_manual: { access: 6, note: '현장 확인' } }, editor: 'a' }, NOW);
   assert.equal(r.dcs.find(x => x.id === d.id).score_manual.access, 6);
 });
@@ -260,4 +262,16 @@ test('DBO 구분: 마스터리스 허용, 예전 위탁운영은 부분 DBO로 �
   assert.equal(normalizeDbo({ type: '마스터리스', provider: 'KT클라우드' }).type, '마스터리스');
   assert.equal(normalizeDbo({ type: '위탁운영', provider: 'LG CNS', scope: ['O'] }).type, '부분 DBO');
   assert.throws(() => normalizeDbo({ type: '임대' }));
+});
+
+test('민원·인허가 리스크: 기록 우선, 없으면 비고 자동 감지·상태 기본값', async () => {
+  const { complaintRisk, normalizeComplaints } = await import('../lib/model.js');
+  assert.equal(complaintRisk({ status: '설계중', complaints: [{ type: '주민 반대·집단민원', level: '심각', status: '진행', note: 'x' }] }).v, 1);
+  assert.equal(complaintRisk({ status: '착공', complaints: [{ type: '전자파·소음·열', level: '주의', status: '진행', note: 'x' }] }).v, 5);
+  assert.equal(complaintRisk({ status: '운영중', complaints: [{ type: '행정심판·소송', level: '심각', status: '해소', note: 'x' }] }).v, 9);
+  assert.equal(complaintRisk({ status: '설계중' }, '착공신고 반려').level, '심각');
+  assert.equal(complaintRisk({ status: '설계중' }, '').v, 6);
+  assert.equal(complaintRisk({ status: '운영중' }, '').v, 10);
+  assert.equal(normalizeComplaints([{ type: '없는유형', note: 'a' }])[0].type, '기타');
+  assert.throws(() => normalizeComplaints([{ note: 'a', url: 'ftp://x' }]));
 });

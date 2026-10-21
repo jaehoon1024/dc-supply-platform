@@ -8701,5 +8701,137 @@
     "evidence_url": "",
     "by": "auto",
     "note": "OSM 지오코딩(도로 단위, 근사)"
+  },
+  {
+    "id": "h-urim-mullae-20261021062650-complaints",
+    "dc_id": "urim-mullae",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
+  },
+  {
+    "id": "h-pacific-bucheon-20261021062650-complaints",
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
+  },
+  {
+    "id": "h-magna-goyang-20261021062650-complaints",
+    "dc_id": "magna-goyang",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
+  },
+  {
+    "id": "h-magna-goyang-20261021062650-evidence-307",
+    "dc_id": "magna-goyang",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "지자체 '데이터센터 반려' 줄패소…건설사 안도",
+    "by": "auto",
+    "evidence_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01338246639058496",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-icn11-20261021062650-complaints",
+    "dc_id": "icn11",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
+  },
+  {
+    "id": "h-icn11-20261021062650-evidence-308",
+    "dc_id": "icn11",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "김포 구래동 데이터센터 착공신고 반려 취소(행정심판 인용)",
+    "by": "auto",
+    "evidence_url": "https://www.fnnews.com/news/202410271825186696",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-icn11-20261021062650-evidence-309",
+    "dc_id": "icn11",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "지자체 '데이터센터 반려' 줄패소…건설사 안도",
+    "by": "auto",
+    "evidence_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01338246639058496",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-smilegate-siksa-20261021062650-complaints",
+    "dc_id": "smilegate-siksa",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
+  },
+  {
+    "id": "h-smilegate-siksa-20261021062650-evidence-310",
+    "dc_id": "smilegate-siksa",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "강남엔 안 짓고 왜 우리 동네만? '깜깜이 착공'에 번진 데이터센터 공포",
+    "by": "auto",
+    "evidence_url": "https://www.hankookilbo.com/news/article/A2026090713220005464",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-smilegate-munbong-20261021062650-complaints",
+    "dc_id": "smilegate-munbong",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
+  },
+  {
+    "id": "h-smilegate-munbong-20261021062650-evidence-311",
+    "dc_id": "smilegate-munbong",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "고양 문봉·식사 데이터센터 전자파 측정·지역상생안",
+    "by": "auto",
+    "evidence_url": "https://www.kyeonggi.com/article/20250320580173",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-lgu-pyeongchon2-20261021062650-complaints",
+    "dc_id": "lgu-pyeongchon2",
+    "at": "2026-10-21T06:26:50.698Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "민원·인허가 리스크 기록(보도 기준)"
   }
 ]

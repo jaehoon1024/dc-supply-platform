@@ -4934,5 +4934,85 @@
     "source_id": "s19",
     "collected_at": "2026-10-21T05:45:05.445Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-magna-goyang-20261021062650-307",
+    "dc_id": "magna-goyang",
+    "title": "지자체 '데이터센터 반려' 줄패소…건설사 안도",
+    "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01338246639058496",
+    "publisher": "이데일리",
+    "pub_date": "2024-10-31",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "고양 덕이동(마그나PFV)·김포 구래동(디지털리얼티) 착공신고 반려를 경기도 행정심판위원회가 부당 판단.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T06:26:50.698Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-icn11-20261021062650-308",
+    "dc_id": "icn11",
+    "title": "김포 구래동 데이터센터 착공신고 반려 취소(행정심판 인용)",
+    "url": "https://www.fnnews.com/news/202410271825186696",
+    "publisher": "파이낸셜뉴스",
+    "pub_date": "2024-10-27",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "김포시 착공신고 반려를 경기도 행심위가 취소(10/21). 주민은 초교 100m 앞 특고압선·전자파·소음 우려로 반발.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T06:26:50.698Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-icn11-20261021062650-309",
+    "dc_id": "icn11",
+    "title": "지자체 '데이터센터 반려' 줄패소…건설사 안도",
+    "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01338246639058496",
+    "publisher": "이데일리",
+    "pub_date": "2024-10-31",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "김포 구래동(디지털리얼티) 착공신고 반려를 행심위가 부당 판단.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T06:26:50.698Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-smilegate-siksa-20261021062650-310",
+    "dc_id": "smilegate-siksa",
+    "title": "강남엔 안 짓고 왜 우리 동네만? '깜깜이 착공'에 번진 데이터센터 공포",
+    "url": "https://www.hankookilbo.com/news/article/A2026090713220005464",
+    "publisher": "한국일보",
+    "pub_date": "2026-09-22",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "고양 식사동: 아파트 경계 54m·초교 200m 미만, 주민 비대위 반대. 2024-09 허가 신청, 조건부 심의 통과 후 착공 전.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T06:26:50.698Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-smilegate-munbong-20261021062650-311",
+    "dc_id": "smilegate-munbong",
+    "title": "고양 문봉·식사 데이터센터 전자파 측정·지역상생안",
+    "url": "https://www.kyeonggi.com/article/20250320580173",
+    "publisher": "경기일보",
+    "pub_date": "2025-03-20",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "주민 동행 2차 전자파 측정(3/5), 운영 교육·일자리 10억·GTX 대곡역 셔틀 13억 등 상생안, 식사 DC 60MW(지하5·지상3층).",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T06:26:50.698Z",
+    "added_by": "auto"
   }
 ]

@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -20,7 +20,7 @@ const store = {
 const state = {
   dcs: [], evidence: [], history: [], sources: [], runs: [], permits: [], grid: [], targets: [], companies: [],
   meta: { source: '', sha: '', repo: '', editable: false }, loaded: false, tab: 'list',
-  filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', dbo: '', company: null, status: new Set(), q: '', sort: 'power' },
+  filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', dbo: '', cm: '', company: null, status: new Set(), q: '', sort: 'power' },
   mapView: 'all', mapStatus: new Set(STATUSES), supMetric: 'it_mw', supSplit: 'player', supMode: 'weighted'
 };
 
@@ -62,6 +62,7 @@ function campusChip(dc) {
   const plan = g && g.plan_mw != null ? ` · 전체 ${fmtPlan(g.plan_mw)}${g.basis !== '미상' ? ' ' + g.basis : ''}` : '';
   return `<div class="campchip" title="${esc([c.name, c.note].filter(Boolean).join(' · '))}${g && g.unassigned ? esc(` · 미배정 ${g.unassigned}MW(공급 추정 제외)`) : ''}">캠퍼스 ${esc(c.phase || '')}${plan}</div>`;
 }
+function listCm(dc) { const c = complaintRisk(dc, dc.note || ''); return ['심각', '주의'].includes(c.level) ? ` <span class="cmchip l-${c.level}" title="${esc(c.basis)}">민원 ${c.level}</span>` : ''; }
 function dboBadge(dc) {
   const d = dboOf(dc);
   if (d.type === '미상') return '';
@@ -120,6 +121,7 @@ function filtered() {
     if (f.company && !ROLES.some(r => (!f.company.role || f.company.role === r.key) && companyMatch(dc[r.field], state.companies).includes(f.company.id))) return false;
     if (f.status.size && !f.status.has(dc.status)) return false;
     if (f.prep) { const p = prepOf(dc); if (f.prep === '미분류' ? (dc.status !== '설계중' || p.known) : p.stage !== f.prep || (dc.status === '설계중' && !p.known)) return false; }
+    if (f.cm) { const c = complaintRisk(dc, dc.note || '').level; if (f.cm === 'risk' ? !['심각', '주의'].includes(c) : c !== f.cm) return false; }
     if (f.dbo) { const t = dboOf(dc).type; if (f.dbo === 'ext' ? !DBO_EXTERNAL.includes(t) : t !== f.dbo) return false; }
     if (q && ![dc.name, dboOf(dc).provider, dc.campus?.name, (dc.aliases || []).join(' '), watchOf(dc).join(' '), dc.owner, dc.contractor, dc.operator, dc.address, playerOf(dc), locOf(dc).sido, locOf(dc).sigungu, locOf(dc).area].join(' ').toLowerCase().includes(q)) return false;
     return true;
@@ -149,7 +151,7 @@ function renderList() {
       <td class="r num">${val(dc, 'power_mw', fmtMW(dc.power_mw))}</td>
       <td class="r num">${val(dc, 'it_mw', fmtMW(dc.it_mw))}</td>
       <td class="num">${val(dc, 'start_ym')}</td><td class="num">${val(dc, 'complete_ym')}</td><td class="num">${val(dc, 'rfs_ym')}</td>
-      <td class="parties"><div><b>개발</b>${val(dc, 'owner')}</div><div><b>시공</b>${val(dc, 'contractor')}</div><div><b>운영</b>${val(dc, 'operator')}</div>${dboBadge(dc)}</td>
+      <td class="parties"><div><b>개발</b>${val(dc, 'owner')}</div><div><b>시공</b>${val(dc, 'contractor')}</div><div><b>운영</b>${val(dc, 'operator')}</div>${dboBadge(dc)}${listCm(dc)}</td>
       <td class="num" style="font-size:12px;color:var(--muted)">${fmtDate(dc.updated_at)}</td></tr>`;
   }).join('');
 }
@@ -266,24 +268,26 @@ function renderValue() {
   if (scope === 'pre') arr = arr.filter(d => d.status === '설계중');
   const rows = arr.map(dc => ({ dc, s: scoreOf(dc) })).map(r => ({ ...r, t: r.s.total(view) })).sort((a, b) => b.t - a.t);
   $('#valNote').textContent = `${rows.length}곳 · 관점: ${SCORE_VIEWS[view].label}`;
-  const w = SCORE_VIEWS[view].w;
+  const V = SCORE_VIEWS[view], w = V.w;
   const bar = (v, m) => `<span class="vbar"><i style="width:${Math.max(0, Math.min(100, v / m * 100))}%"></i></span>`;
-  $('#valTable').innerHTML = rows.length ? `<table class="vtable"><thead><tr><th>#</th><th>센터</th><th>상태</th><th class="r">점수</th>${SCORE_AXES.map(a => `<th>${a.label}<span class="wt">×${w[a.key]}</span></th>`).join('')}<th>자사센터</th><th>보정</th></tr></thead><tbody>${rows.map((r, i) => `<tr data-open="${esc(r.dc.id)}" tabindex="0"><td class="num">${i + 1}</td><td><div class="name">${esc(r.dc.name)}${pchip(r.dc)}</div><div class="alias">${esc(locOf(r.dc).sido)} ${esc(locOf(r.dc).sigungu)}</div></td><td>${statusPill(r.dc.status)}</td><td class="r"><b class="vtot">${r.t.toFixed(1)}</b>${bar(r.t, 100)}</td>${SCORE_AXES.map(a => `<td title="${esc(r.s.items.filter(x => x.axis === a.key).map(x => `${x.label} ${x.score}/${x.max} · ${x.basis}`).join('\n'))}"><span class="num">${r.s.axes[a.key].score.toFixed(1)}</span><span class="of">/${r.s.axes[a.key].max}</span>${bar(r.s.axes[a.key].score, r.s.axes[a.key].max)}</td>`).join('')}<td class="num" style="font-size:12px">${r.s.nearOwn ? r.s.nearOwn.km.toFixed(1) + 'km' : '—'}</td><td>${r.s.manualCount ? `<span class="mtag">수동 ${r.s.manualCount}</span>` : '<span class="of">자동</span>'}</td></tr>`).join('')}</tbody></table>` : '<div class="empty"><b>대상 센터가 없습니다</b>필터를 줄여 보세요.</div>';
+  $('#valDef').innerHTML = `<div class="vdef"><b>${esc(V.label)}</b> — ${esc(V.q)}</div><div class="vpts">${SCORE_ITEMS.filter(it => V.points[it.key]).sort((a, b) => V.points[b.key] - V.points[a.key]).map(it => `<span title="${esc(VALUE_RULE[it.key])}">${esc(it.label)} <b>${V.points[it.key]}</b></span>`).join('')}<span class="of">= 100점 · 항목 점수/만점 × 배점의 합</span></div>`;
+  $('#valTable').innerHTML = rows.length ? `<table class="vtable"><thead><tr><th>#</th><th>센터</th><th>상태</th><th class="r">${esc(V.label)}</th>${SCORE_AXES.map(a => `<th class="${w[a.key] ? '' : 'off'}">${a.label}<span class="wt">${w[a.key] ? '배점 ' + w[a.key] : '미반영'}</span></th>`).join('')}<th>민원</th><th>보정</th></tr></thead><tbody>${rows.map((r, i) => { const bd = r.s.breakdown(view); return `<tr data-open="${esc(r.dc.id)}" tabindex="0"><td class="num">${i + 1}</td><td><div class="name">${esc(r.dc.name)}${pchip(r.dc)}</div><div class="alias">${esc(locOf(r.dc).sido)} ${esc(locOf(r.dc).sigungu)}</div></td><td>${statusPill(r.dc.status)}</td><td class="r" title="${esc(bd.map(b => `${b.label} ${b.got}/${b.points}`).join('\n'))}"><b class="vtot">${r.t.toFixed(1)}</b>${bar(r.t, 100)}</td>${SCORE_AXES.map(a => { const its = bd.filter(b => r.s.items.find(x => x.key === b.key).axis === a.key), got = its.reduce((t, b) => t + b.got, 0); return w[a.key] ? `<td title="${esc(its.map(b => `${b.label} ${b.got}/${b.points} · ${b.basis}`).join('\n'))}"><span class="num">${got.toFixed(1)}</span><span class="of">/${w[a.key]}</span>${bar(got, w[a.key])}</td>` : '<td class="off"><span class="of">—</span></td>'; }).join('')}<td>${cmBadge(r.s.complaint)}</td><td>${r.s.manualCount ? `<span class="mtag">수동 ${r.s.manualCount}</span>` : '<span class="of">자동</span>'}</td></tr>`; }).join('')}</tbody></table>` : '<div class="empty"><b>대상 센터가 없습니다</b>필터를 줄여 보세요.</div>';
   $('#valTable').querySelectorAll('[data-open]').forEach(tr => tr.onclick = () => openDetail(tr.dataset.open));
-  $('#valSpec').innerHTML = `<div class="spec"><table><thead><tr><th>축</th><th>항목</th><th>배점</th><th>자동 산정 방식</th></tr></thead><tbody>${SCORE_ITEMS.map(it => `<tr><td>${SCORE_AXES.find(a => a.key === it.axis).label}</td><td>${it.label}</td><td class="num">${it.max}</td><td>${VALUE_RULE[it.key]}</td></tr>`).join('')}</tbody></table></div>
-    <p class="note" style="margin-top:8px">관점별 가중치: ${Object.values(SCORE_VIEWS).map(v => `<b>${v.label}</b> ${SCORE_AXES.map(a => `${a.label}×${v.w[a.key]}`).join(' · ')}`).join('<br>')}. 총점은 가중 합계를 100점으로 환산합니다. 상세 페이지에서 항목별 점수를 직접 입력하면 자동값 대신 쓰이고(비우면 자동으로 복귀), 수정 이력이 남습니다.</p>`;
+  $('#valSpec').innerHTML = `<div class="spec"><table><thead><tr><th>축</th><th>항목</th><th>만점</th><th>자동 산정 방식</th>${Object.values(SCORE_VIEWS).map(v => `<th class="r">${esc(v.label)}<br>배점</th>`).join('')}</tr></thead><tbody>${SCORE_ITEMS.map(it => `<tr><td>${SCORE_AXES.find(a => a.key === it.axis).label}</td><td>${it.label}</td><td class="num">${it.max}</td><td>${VALUE_RULE[it.key]}</td>${Object.values(SCORE_VIEWS).map(v => `<td class="r num">${v.points[it.key] || '<span class="of">—</span>'}</td>`).join('')}</tr>`).join('')}<tr><td colspan="4"><b>합계</b></td>${Object.values(SCORE_VIEWS).map(() => '<td class="r num"><b>100</b></td>').join('')}</tr></tbody></table></div>
+    <p class="note" style="margin-top:8px">${Object.values(SCORE_VIEWS).map(v => `<b>${v.label}</b>: ${esc(v.q)}`).join('<br>')}<br>총점 = Σ(항목 점수 ÷ 만점 × 관점 배점). 상세 화면에서 항목 점수를 직접 넣으면 자동값 대신 쓰이고(비우면 자동 복귀), 수정 이력이 남습니다.</p>`;
 }
+const cmBadge = c => (!c || c.level === '없음' ? '<span class="of">—</span>' : `<span class="cmchip l-${esc(c.level)}" title="${esc(c.basis)}">${esc(c.level)}</span>`);
 const VALUE_RULE = {
   power_size: '수전 100MW↑10 · 50↑8 · 30↑6 · 10↑4 · 그 외 2 (IT만 있으면 ×1.4 환산, 추정값 ×0.85)',
   power_secure: '준비단계 전기확보: 확보(확정·착공 이후)10 · 확보(추정)8 · 협의중5 · 미확보1 · 정보 없음3',
   region: '서울6 · 수도권5 · 광역시/세종3 · 기타2',
   own_distance: '최근접 LG유플러스 센터: 5km 이내8 · 15km6 · 30km4 · 60km2 · 그 이상0 (좌표 기준 직선거리)',
   access: '최근접 업무·고객 거점(서울 도심·강남·판교·부산·대전·광주·대구): 10km6 · 25km5 · 45km3 · 80km2 · 그 이상1',
-  complaint: '비고·근거에 민원·주민 반대·소송·전자파·갈등·철회 등 언급 시 1, 없으면 4 (확인된 무민원은 수동 5)',
+  complaint: '① 상세 화면의 민원 기록 우선: 진행 중 심각1 · 주의4 · 경미6 · 모두 해소7(운영·준공이면 9), 착공 이후 진행 중이면 +1 ② 기록이 없으면 비고·근거 자동 감지: 반려·소송·행정심판·집단민원·비대위 등 2 · 민원·전자파·소음·반대 4~5 · 해소·합의 언급 7 ③ 언급도 없으면 상태 기본값: 운영중10 · 준공9 · 착공/개발중8 · 설계중6(미확인 리스크)',
   stage: '운영중10 · 준공9 · 개발중8 · 착공7 · 설계중은 준비단계(착공 대기6 · 건축허가4 · 전기확보3 · 부지확보/미분류2)',
   evidence: '입력 필드 중 확정 근거 비율 × 5',
   finance: '본PF·투자 확정5 · 착공 이후/자체 투자4 · 브릿지론3 · 정보 없음1',
-  tenant: '자체 사용8 · 임차확약·위탁운영 등 계약6 · 운영중6 · 임차 협의/MOU4 · 정보 없음2',
+  tenant: '자체 사용8 · 임차확약·장기임대·위탁운영 등 계약6 · 운영중6 · 임차 협의/MOU4 · 정보 없음2',
   timing: '공급 시점 2027~2029년7 · 운영중/올해5 · 2030년 이후4 · 미상2',
   ai_ready: 'AI·GPU·액침·D2C·고밀도·하이퍼스케일 언급5, 없으면2',
   efficiency: 'PUE·Tier·LEED·Uptime 언급4, 없으면2',
@@ -454,6 +458,7 @@ bindSeg('#fPhase', v => { state.filters.phase = v; renderList(); });
 bindSeg('#fConf', v => { state.filters.conf = v; renderList(); });
 $('#fPrep').addEventListener('change', e => { state.filters.prep = e.target.value; renderList(); });
 $('#fDbo').addEventListener('change', e => { state.filters.dbo = e.target.value; renderList(); });
+$('#fCm').addEventListener('change', e => { state.filters.cm = e.target.value; renderList(); });
 bindSeg('#mapView', v => { state.mapView = v; fitMap(); });
 bindSeg('#supMetric', v => { state.supMetric = v; renderSupply(); });
 bindSeg('#supSplit', v => { state.supSplit = v; renderSupply(); });
@@ -555,7 +560,7 @@ function openDetail(id, preset = null) {
   renderSheet();
 }
 
-const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus'];
+const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus', 'complaints'];
 const same = (a, b) => JSON.stringify(a ?? '') === JSON.stringify(b ?? '');
 function diff() {
   const d = sheet.draft, o = sheet.orig, changes = {}, conf = {}, locked = {};
@@ -597,6 +602,7 @@ function renderSheet() {
     </div></section>
     ${dboSection(d)}
     ${campusSection(d)}
+    ${complaintSection(d)}
     <section class="sec"><h3>준비단계 <span class="hint">부지확보 → 전기확보 → 건축허가 → 착공 · 설계중 센터의 공급 확률에 반영</span></h3>
       ${prepStepper(d)}
       <div class="frm prepfrm">${PREP_STEPS.map(st => { const x = (d.prep || {})[st.key] || {}; const dirty = !same(x, ((sheet.orig.prep || {})[st.key]) || {}); return `<div class="fld full ${dirty ? 'dirty' : ''}"><label>${st.label}</label><div class="row">
@@ -676,6 +682,23 @@ function campusSection(d) {
     </div></section>`;
 }
 
+function complaintSection(d) {
+  const list = d.complaints || [], dirty = !same(d.complaints || null, sheet.orig.complaints || null);
+  const r = complaintRisk(d, [d.note, ...(state.evidence.filter(e => e.dc_id === sheet.id).map(e => `${e.title || ''} ${e.excerpt || ''}`))].join(' '));
+  const row = (c, i) => `<div class="cmrow" data-cm="${i}">
+      <select data-cmk="type" aria-label="유형">${COMPLAINT_TYPES.map(t => `<option ${t === c.type ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <select data-cmk="level" aria-label="심각도">${COMPLAINT_LEVELS.map(t => `<option ${t === c.level ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <select data-cmk="status" aria-label="상태">${['진행', '해소'].map(t => `<option ${t === (c.status || '진행') ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <input class="inp num" data-cmk="ym" value="${esc(c.ym || '')}" placeholder="YYYY-MM" aria-label="시점" style="max-width:96px">
+      <input class="inp" data-cmk="note" value="${esc(c.note || '')}" placeholder="내용 (예: 초교 200m·아파트 54m, 비대위 반대)" aria-label="내용">
+      <input class="inp" data-cmk="url" value="${esc(c.url || '')}" placeholder="근거 URL" aria-label="근거 URL" style="max-width:200px">
+      <button type="button" class="btn sm" data-cmdel="${i}" aria-label="삭제">삭제</button></div>`;
+  return `<section class="sec"><h3>민원·인허가 리스크 <span class="hint">주민 반대·전자파·송전선로·학교 인접·행정심판·인허가 반려 등을 건별로 기록 · 가치점수 '민원·인허가 리스크' 항목에 바로 반영</span></h3>
+    <div class="cmsum">현재 판정: ${cmBadge(r)} <b>${r.v}/10</b> <span class="of">${esc(r.basis)}</span></div>
+    <div class="cmlist ${dirty ? 'dirty' : ''}">${list.map(row).join('') || '<div class="of" style="font-size:13px">기록된 민원이 없습니다.</div>'}</div>
+    <button type="button" class="btn sm" id="cmAdd" style="margin-top:8px">+ 민원·인허가 이슈 추가</button></section>`;
+}
+
 function bindSheet() {
   const body = $('#shBody');
   ['owner', 'operator', 'contractor'].forEach(f => { const el = $('#f_' + f); if (el) el.setAttribute('list', 'coNames'); });
@@ -739,6 +762,10 @@ function bindSheet() {
   body.querySelectorAll('[data-camp]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setCamp(el.dataset.camp, el.value.trim(), el.tagName === 'SELECT')));
   body.querySelector('[data-campc]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setCamp('c', b.dataset.v, true); });
   body.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => { if (b.dataset.goto !== sheet.id) openDetail(b.dataset.goto); }));
+  const setCm = (fn, rerender) => { const list = structuredClone(sheet.draft.complaints || []); fn(list); sheet.draft.complaints = list.length ? list : null; sheet.draft.locked.complaints = true; if (rerender) renderSheet(); else updateFooter(); };
+  body.querySelectorAll('[data-cm]').forEach(rw => rw.querySelectorAll('[data-cmk]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setCm(l => { l[+rw.dataset.cm][el.dataset.cmk] = el.value.trim(); }, el.tagName === 'SELECT'))));
+  body.querySelectorAll('[data-cmdel]').forEach(b => b.addEventListener('click', () => setCm(l => l.splice(+b.dataset.cmdel, 1), true)));
+  $('#cmAdd')?.addEventListener('click', () => setCm(l => l.push({ type: '주민 반대·집단민원', level: '주의', status: '진행', ym: '', note: '' }), true));
   body.querySelectorAll('[data-score]').forEach(el => el.addEventListener('input', () => {
     const k = el.dataset.score, cur = { ...(sheet.draft.score_manual || {}) }, v = el.value.trim();
     if (!v) delete cur[k]; else cur[k] = k === 'note' ? v : (isNum(v) ? Number(v) : v);

@@ -343,3 +343,14 @@ dialog .fld{margin-top:12px}
 .campchip{display:inline-block;margin-top:3px;font-size:11px;padding:1px 6px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
 .campsum{font-size:13px;color:var(--muted);padding:8px 10px;background:var(--surface-2);border-radius:6px}
 .camplist{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+
+/* 가치점수 관점 정의 · 민원 */
+.vdef{font-size:13px;color:var(--muted);margin:0 0 6px}.vdef b{color:var(--ink)}
+.vpts{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;font-size:12px}
+.vpts span{padding:2px 8px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}.vpts span.of{border:0;background:none}
+.vtable th.off,.vtable td.off{opacity:.45}
+.cmchip{display:inline-block;font-size:11px;padding:1px 6px;border-radius:4px;border:1px solid var(--line);white-space:nowrap}
+.cmchip.l-심각{border-color:#d33;color:#d33}.cmchip.l-주의{border-color:#c78a00;color:#c78a00}.cmchip.l-해소,.cmchip.l-경미{color:var(--ok);border-color:var(--ok)}
+.cmsum{font-size:13px;margin-bottom:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cmrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}.cmrow .inp{flex:1 1 160px;min-width:0}
+.cmlist.dirty{outline:2px solid var(--accent-soft);border-radius:6px}
