@@ -223,3 +223,24 @@ test('자동수집 반영(ingest): 신규·갱신·고정 필드 제안·근거 
   assert.equal(out.sources.find(s => s.id === 's01').last_hits, 2);
   assert.equal(out.runs.at(-1).kind, '자동수집');
 });
+
+test('플레이어 업데이트(ingest): 회사 프로필·핵심 4사 목표, 사람이 고친 필드는 유지', async () => {
+  const { ingest } = await import('../scripts/ingest.mjs');
+  const read = n => JSON.parse(readFileSync(new URL(`../data/${n}.json`, import.meta.url)));
+  const base = { dcs: read('dcs'), evidence: read('evidence'), history: read('history'), sources: read('sources'), runs: read('runs'), companies: read('companies'), targets: read('targets') };
+  const c0 = base.companies[0], c1 = base.companies[1];
+  base.companies = base.companies.map(c => (c.id === c1.id ? { ...c, log: [...(c.log || []), { at: NOW, editor: '홍길동', fields: ['note'], note: '' }] } : c));
+  const out = ingest(base, { kind: '플레이어 업데이트', summary: '주간', companies: [
+    { id: c0.id, note: '최근 동향: 신규 캠퍼스 발표', url: 'https://example.com' },
+    { id: c1.id, note: '자동이 덮으면 안 됨' },
+    { name: '테스트신규자산운용', type: '자산운용·펀드', roles: ['dev'] }],
+    targets: [{ player: 'KT', reported_mw: 170, reported_n: 16 }, { player: '없는회사', target_mw: 1 }] }, NOW);
+  assert.equal(out.companies.find(c => c.id === c0.id).note, '최근 동향: 신규 캠퍼스 발표');
+  assert.equal(out.companies.find(c => c.id === c0.id).updated_by, 'auto');
+  assert.equal(out.companies.find(c => c.id === c1.id).note, c1.note);
+  assert.ok(out.companies.some(c => c.name === '테스트신규자산운용'));
+  assert.equal(out.targets.find(t => t.player === 'KT').reported_mw, 170);
+  assert.equal(out.stats.targets, 1); assert.equal(out.stats.errors, 1); assert.equal(out.stats.proposals, 1);
+  assert.equal(out.runs.at(-1).kind, '플레이어 업데이트');
+  const { validateCompanies } = await import('../lib/model.js'); assert.deepEqual(validateCompanies(out.companies), []);
+});
