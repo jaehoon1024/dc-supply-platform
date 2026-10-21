@@ -50,3 +50,19 @@ test('api/data: GitHub 최신 커밋을 읽는다', async () => {
   const r = resMock(); await data({ method: 'GET' }, r);
   assert.equal(r.code, 200); assert.equal(r.body.source, 'github'); assert.ok(r.body.dcs.length > 40); assert.deepEqual(r.body.permits, []);
 });
+
+test('api/permits: 묶음(batch) 단위로 나눠 조회하고 next로 이어진다', async () => {
+  const { LIMIT } = await import('../scripts/permits.mjs'); Object.assign(LIMIT, { gapMs: 0 });
+  delete process.env.GITHUB_TOKEN; process.env.BUILDING_HUB_KEY = 'k';
+  const n = JSON.parse(read('dcs')).filter(d => d.permit_ref?.sigunguCd && d.permit_ref?.bjdongCd).length;
+  globalThis.fetch = async () => new Response(JSON.stringify({ response: { header: { resultCode: '00' }, body: { totalCount: 0, items: '' } } }));
+  const { default: permits } = await import('../api/permits.js');
+  let b = 0, checked = 0, rounds = 0;
+  while (b != null) {
+    const r = resMock(); await permits({ url: `/api/permits?batch=${b}`, headers: {} }, r);
+    assert.equal(r.code, 200); assert.equal(r.body.ok, true); assert.ok(r.body.checked <= 6);
+    checked += r.body.checked; b = r.body.next; rounds++;
+  }
+  assert.equal(checked, n); assert.equal(rounds, Math.max(1, Math.ceil(n / 6)));
+  delete process.env.BUILDING_HUB_KEY;
+});

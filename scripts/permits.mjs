@@ -1,4 +1,4 @@
-// 국토교통부 건축HUB 건축인허가 기본개요 동기화 (GitHub Actions에서 매일 08:00 KST 실행)
+// 국토교통부 건축HUB 건축인허가 기본개요 동기화 (Vercel Cron이 매일 08:00 KST에 /api/permits?sync=1 호출)
 // - data/dcs.json 중 permit_ref(시군구코드·법정동코드·번·지)가 있는 센터를 조회합니다.
 // - 허가·착공·사용승인일을 data/permits.json에 저장하고, 센터의 착공월·준공월·상태를 A등급 근거로 갱신합니다.
 // - 사람이 고정한 필드는 덮어쓰지 않고 히스토리에 '제안'으로만 남깁니다.
@@ -13,11 +13,29 @@ const ym = d => (/^\d{8}$/.test(String(d || '').trim()) ? `${String(d).slice(0, 
 const day = d => (/^\d{8}$/.test(String(d || '').trim()) ? `${String(d).slice(0, 4)}-${String(d).slice(4, 6)}-${String(d).slice(6, 8)}` : '');
 export const stageOf = p => (p.useAprDay ? '준공' : p.realStcnsDay ? '공사 중' : '착공 전');
 
+// 건축HUB는 초당 요청 수 제한이 있어(초과 시 HTTP 429) 요청 간격을 두고, 429·5xx는 지수 백오프로 재시도합니다.
+export const LIMIT = { gapMs: Number(process.env.PERMIT_GAP_MS ?? 250), retries: 4, backoffMs: 1000 };
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let nextSlot = 0;
+async function throttle() {
+  const now = Date.now(), wait = Math.max(0, nextSlot - now);
+  nextSlot = Math.max(now, nextSlot) + LIMIT.gapMs;
+  if (wait) await sleep(wait);
+}
+
 async function fetchPage(ref, key, pageNo, fetchImpl) {
   const q = new URLSearchParams({ serviceKey: key, sigunguCd: ref.sigunguCd, bjdongCd: ref.bjdongCd, numOfRows: '100', pageNo: String(pageNo), _type: 'json' });
   if (ref.bun) { q.set('platGbCd', ref.platGbCd === '1' ? '1' : '0'); q.set('bun', ref.bun.padStart(4, '0')); q.set('ji', (ref.ji || '0').padStart(4, '0')); }
-  const res = await fetchImpl(`${ENDPOINT}?${q}`);
-  const text = await res.text();
+  let res, text;
+  for (let attempt = 0; ; attempt++) {
+    await throttle();
+    res = await fetchImpl(`${ENDPOINT}?${q}`);
+    text = await res.text();
+    const retryable = res.status === 429 || res.status >= 500;
+    if (!retryable || attempt >= LIMIT.retries) break;
+    const ra = Number(res.headers?.get?.('retry-after'));
+    await sleep(ra > 0 ? ra * 1000 : LIMIT.backoffMs * 2 ** attempt + Math.random() * 300);
+  }
   if (!res.ok) throw new Error(`건축HUB HTTP ${res.status}: ${text.slice(0, 200)}`);
   let j; try { j = JSON.parse(text); } catch { throw new Error(`건축HUB 응답이 JSON이 아닙니다(인증키·활용신청 확인): ${text.slice(0, 160)}`); }
   const code = j?.response?.header?.resultCode;
@@ -67,10 +85,12 @@ export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date
   const dongKey = d => `${d.permit_ref.sigunguCd}${d.permit_ref.bjdongCd}`;
   const shareCount = {}; targets.forEach(d => { shareCount[dongKey(d)] = (shareCount[dongKey(d)] || 0) + 1; });
   const stats = { checked: 0, matched: 0, updated: 0, proposals: 0, evidence: 0, errors: 0, notes: [] };
+  const cache = new Map(); // 같은 법정동·지번은 한 번만 조회
+  const get = ref => { const k = JSON.stringify(ref); if (!cache.has(k)) cache.set(k, fetchPermits(ref, key, fetchImpl)); return cache.get(k); };
   for (const dc of targets) {
     stats.checked++;
     try {
-      const it = pickPermit(await fetchPermits(dc.permit_ref, key, fetchImpl), dc, { dongLevel: !dc.permit_ref.bun, shared: shareCount[dongKey(dc)] });
+      const it = pickPermit(await get(dc.permit_ref), dc, { dongLevel: !dc.permit_ref.bun, shared: shareCount[dongKey(dc)] });
       if (!it) { stats.notes.push(`${dc.name}: 일치하는 인허가 없음`); continue; }
       stats.matched++;
       const p = toPermit(it, dc.id, now);

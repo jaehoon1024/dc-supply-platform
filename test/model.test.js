@@ -178,3 +178,18 @@ test('건축HUB: 법정동 단위 매칭은 보수적으로', async () => {
   assert.equal(pickPermit([b, c, { ...c, bldNm: 'X' }], { name: '다른 센터' }, { dongLevel: true }), null);
   assert.ok(isDcPermit(c) && !isDcPermit(b));
 });
+
+test('건축HUB 429: 대기 후 재시도해서 성공', async () => {
+  const { LIMIT, fetchPermits } = await import('../scripts/permits.mjs');
+  const saved = { ...LIMIT }; Object.assign(LIMIT, { gapMs: 0, backoffMs: 1 });
+  let calls = 0;
+  const fake = async () => { calls++; return calls < 3
+    ? new Response('{"error":"per-second limit"}', { status: 429 })
+    : new Response(JSON.stringify({ response: { header: { resultCode: '00' }, body: { totalCount: 1, items: { item: [{ mgmPmsrgstPk: 'X' }] } } } })); };
+  try {
+    const items = await fetchPermits({ sigunguCd: '1', bjdongCd: '2', bun: '3' }, 'k', fake);
+    assert.equal(calls, 3); assert.equal(items[0].mgmPmsrgstPk, 'X');
+    calls = -10; // 재시도 한도 초과 시 오류
+    await assert.rejects(fetchPermits({ sigunguCd: '1', bjdongCd: '2', bun: '3' }, 'k', fake), /HTTP 429/);
+  } finally { Object.assign(LIMIT, saved); }
+});

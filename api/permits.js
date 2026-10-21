@@ -1,8 +1,11 @@
-// GET /api/permits        — 건축HUB 인허가 실시간 조회(12시간 캐시): 센터별 연결 결과 + 데이터센터성 신규 인허가 후보
+// GET /api/permits?batch=N — 건축HUB 인허가 실시간 조회(12시간 캐시). 센터를 BATCH_SIZE개씩 나눠 N번째 묶음만 조회합니다.
+//                            응답의 next가 null이 될 때까지 batch를 올려 호출하면 전체 결과가 됩니다(요청 한도·함수 시간 초과 방지).
 // GET /api/permits?sync=1 — (Vercel Cron 전용) 조회 결과를 착공·준공·상태에 반영해 GitHub에 커밋
 // 필요: 환경변수 BUILDING_HUB_KEY (data.go.kr '국토교통부_건축HUB_건축인허가정보 서비스' 일반 인증키, Decoding)
 import { readData, transact, githubEnabled } from '../lib/store.js';
 import { fetchPermits, pickPermit, toPermit, isDcPermit, syncPermits } from '../scripts/permits.mjs';
+
+const BATCH_SIZE = 6;
 
 async function pool(items, n, fn) {
   let i = 0;
@@ -33,16 +36,23 @@ export default async function handler(req, res) {
 
   try {
     const { data } = await readData(['dcs']);
-    const targets = (data.dcs || []).filter(d => d.permit_ref?.sigunguCd && d.permit_ref?.bjdongCd);
-    if (!targets.length) return res.status(200).json({ configured: true, checked: 0, linked: [], candidates: [], errors: [] });
-    // 인증키·활용신청 확인용 1회 호출 (실패 시 전체 중단)
-    try { await fetchPermits(targets[0].permit_ref, key, fetch, 1); }
-    catch (e) { return res.status(200).json({ configured: true, ok: false, error: String(e.message || e) }); }
+    const all = (data.dcs || []).filter(d => d.permit_ref?.sigunguCd && d.permit_ref?.bjdongCd)
+      .sort((a, b) => String(a.id).localeCompare(String(b.id)));
+    const batches = Math.ceil(all.length / BATCH_SIZE);
+    const batch = Math.min(Math.max(0, parseInt(url.searchParams.get('batch') || '0', 10) || 0), Math.max(0, batches - 1));
+    const targets = all.slice(batch * BATCH_SIZE, (batch + 1) * BATCH_SIZE);
+    const page = { total: all.length, batch, batches, next: batch + 1 < batches ? batch + 1 : null };
+    if (!targets.length) return res.status(200).json({ configured: true, ok: true, checked: 0, ...page, next: null, linked: [], candidates: [], errors: [] });
+    // 인증키·활용신청 확인용 (첫 묶음에서만, 실패 시 중단)
+    if (batch === 0) {
+      try { await fetchPermits(targets[0].permit_ref, key, fetch, 1); }
+      catch (e) { return res.status(200).json({ configured: true, ok: false, error: String(e.message || e) }); }
+    }
     const cache = new Map();
     const get = ref => { const k = JSON.stringify(ref); if (!cache.has(k)) cache.set(k, fetchPermits(ref, key, fetch, ref.bun ? 1 : 3)); return cache.get(k); };
-    const share = {}; targets.forEach(d => { const k = d.permit_ref.sigunguCd + d.permit_ref.bjdongCd; share[k] = (share[k] || 0) + 1; });
+    const share = {}; all.forEach(d => { const k = d.permit_ref.sigunguCd + d.permit_ref.bjdongCd; share[k] = (share[k] || 0) + 1; });
     const linked = [], errors = [], seen = new Set();
-    await pool(targets, 8, async dc => {
+    await pool(targets, 2, async dc => {
       const ref = dc.permit_ref.bun ? dc.permit_ref : { sigunguCd: dc.permit_ref.sigunguCd, bjdongCd: dc.permit_ref.bjdongCd };
       try {
         const it = pickPermit(await get(ref), dc, { dongLevel: !ref.bun, shared: share[ref.sigunguCd + ref.bjdongCd] });
@@ -59,6 +69,6 @@ export default async function handler(req, res) {
       }
     }
     res.setHeader('Cache-Control', 'public, s-maxage=43200, stale-while-revalidate=86400');
-    return res.status(200).json({ configured: true, ok: true, fetched_at: now, checked: targets.length, linked, candidates, errors: errors.slice(0, 20) });
+    return res.status(200).json({ configured: true, ok: true, fetched_at: now, checked: targets.length, ...page, linked, candidates, errors: errors.slice(0, 20) });
   } catch (e) { return res.status(502).json({ configured: true, ok: false, error: String(e.message || e) }); }
 }

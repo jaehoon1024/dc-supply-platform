@@ -332,8 +332,26 @@ let permitLive = null, permitLoading = false;
 async function loadPermitsLive() {
   if (permitLoading || permitLive) return;
   permitLoading = true; renderPermits();
-  try { const r = await fetch('/api/permits'); permitLive = r.ok ? await r.json() : { configured: null, error: `HTTP ${r.status}` }; }
-  catch { permitLive = { configured: null, error: '실시간 조회 API에 연결할 수 없습니다(미리보기 환경)' }; }
+  // 서버가 센터를 묶음(batch)으로 나눠 조회하므로 next가 없을 때까지 차례로 받아 합칩니다.
+  let failed = false;
+  const acc = { configured: true, ok: true, fetched_at: null, checked: 0, total: 0, linked: [], candidates: [], errors: [] };
+  try {
+    for (let b = 0; b !== null && b !== undefined;) {
+      const r = await fetch(`/api/permits?batch=${b}`);
+      const j = r.ok ? await r.json() : { configured: null, error: `HTTP ${r.status}` };
+      if (j.configured !== true || j.ok === false || j.error) { permitLive = j; failed = true; break; }
+      acc.fetched_at = acc.fetched_at || j.fetched_at; acc.checked += j.checked || 0; acc.total = j.total ?? acc.checked;
+      acc.linked.push(...(j.linked || [])); acc.errors.push(...(j.errors || []));
+      (j.candidates || []).forEach(c => { if (!acc.candidates.some(x => x.id === c.id)) acc.candidates.push(c); });
+      acc.progress = j.next == null ? null : `${j.batch + 1}/${j.batches}`;
+      permitLive = { ...acc }; renderPermits();
+      b = j.next;
+    }
+    if (!failed) {
+      const linkedIds = new Set(acc.linked.map(p => p.id));
+      permitLive = { ...acc, progress: null, candidates: acc.candidates.filter(c => !linkedIds.has(c.id)) };
+    }
+  } catch { permitLive = acc.checked ? { ...acc, progress: null, errors: [...acc.errors, '일부 묶음 조회 중 연결이 끊겼습니다'] } : { configured: null, error: '실시간 조회 API에 연결할 수 없습니다(미리보기 환경)' }; }
   permitLoading = false; renderPermits();
 }
 function renderPermits() {
@@ -344,7 +362,7 @@ function renderPermits() {
   (L.linked || []).forEach(p => byId.set(p.id, { ...(byId.get(p.id) || {}), ...p, src: '실시간' }));
   const rows = [...byId.values()].sort((a, b) => String(b.archPmsDay).localeCompare(String(a.archPmsDay)));
   const nRef = state.dcs.filter(d => d.permit_ref?.sigunguCd).length, nBun = state.dcs.filter(d => d.permit_ref?.bun).length;
-  const status = permitLoading ? '<span class="note">건축HUB 실시간 조회 중… (최대 1분)</span>'
+  const status = permitLoading ? `<span class="note">건축HUB 실시간 조회 중…${L.progress ? ` (${L.progress} 묶음 완료 · 연결 센터 ${L.checked}/${L.total}곳)` : ''}</span>`
     : !permitLive ? ''
     : L.configured === false ? '<div class="warnbox"><b>data.go.kr 인증키가 아직 등록되지 않았습니다.</b> ① data.go.kr에서 「국토교통부_건축HUB_건축인허가정보 서비스」 활용신청 → ② 발급된 일반 인증키(Decoding)를 Vercel → Settings → Environment Variables에 <code>BUILDING_HUB_KEY</code>(Sensitive)로 등록 → ③ Redeploy. 등록 즉시 이 탭에서 실시간 조회됩니다.</div>'
     : L.ok === false || L.error ? `<div class="warnbox"><b>건축HUB 조회 실패</b> ${esc(L.error || '')} <span class="note">· 활용신청 승인(보통 1~2시간)·인증키(Decoding 값) 확인</span></div>`
