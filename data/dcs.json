@@ -113,7 +113,7 @@
     "owner": "이지스자산운용",
     "contractor": "삼성물산",
     "operator": "롯데이노베이트",
-    "address": "경기도 안산시 단원구 초지동",
+    "address": "경기도 안산시 단원구 초지동 624-3 일원",
     "lat": 37.315,
     "lng": 126.805,
     "power_mw": 40,
@@ -132,7 +132,7 @@
     },
     "locked": {},
     "note": "약 40MW 규모(단위 미상). 롯데이노베이트 5년 운영계약, 아이티센씨티에스 운영 인력 지원 MOU.",
-    "updated_at": "2026-10-21T05:21:31.294Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -144,9 +144,9 @@
     "sido": "경기",
     "sigungu": "안산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T05:21:31.294Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "부분 DBO",
@@ -496,11 +496,11 @@
     "owner": "코람코자산운용 · DCI Data Centers",
     "contractor": "현대건설",
     "operator": "DCI Korea",
-    "address": "경기도 안산시 단원구 성곡동",
+    "address": "경기도 안산시 단원구 성곡동 712",
     "lat": 37.305,
     "lng": 126.745,
     "power_mw": 40,
-    "it_mw": null,
+    "it_mw": 27,
     "start_ym": "2026-06",
     "complete_ym": "",
     "rfs_ym": "2028",
@@ -512,11 +512,12 @@
       "rfs_ym": "추정",
       "contractor": "확정",
       "operator": "확정",
-      "start_ym": "확정"
+      "start_ym": "확정",
+      "it_mw": "확정"
     },
     "locked": {},
     "note": "",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -528,9 +529,9 @@
     "sido": "경기",
     "sigungu": "안산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -546,7 +547,7 @@
     "owner": "Digital Edge",
     "contractor": "",
     "operator": "Digital Edge",
-    "address": "부산광역시",
+    "address": "부산광역시 해운대구 센텀7로 32",
     "lat": 35.18,
     "lng": 129.075,
     "power_mw": null,
@@ -566,18 +567,18 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "de-pus1",
     "name": "Digital Edge PUS1",
     "status": "운영중",
     "phase": "운영",
     "sido": "부산",
-    "sigungu": "",
+    "sigungu": "해운대구",
     "addr_check": {
-      "status": "주소불완전",
-      "note": "시·군·구가 없습니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -593,7 +594,7 @@
     "owner": "Digital Edge",
     "contractor": "",
     "operator": "Digital Edge",
-    "address": "서울특별시 강남구",
+    "address": "서울특별시 강남구 역삼동 646-1",
     "lat": 37.503,
     "lng": 127.041,
     "power_mw": null,
@@ -613,7 +614,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "de-sel1",
     "name": "Digital Edge SEL1",
@@ -622,9 +623,9 @@
     "sido": "서울",
     "sigungu": "강남구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -801,7 +802,7 @@
     "owner": "디노티시아 · 디노코어 (신화철강 공동개발)",
     "contractor": "",
     "operator": "",
-    "address": "경상남도 창원시 의창구 팔용동",
+    "address": "경상남도 창원시 의창구 팔용동 23-3·23-5 일원",
     "lat": 35.25,
     "lng": 128.63,
     "power_mw": 100,
@@ -825,7 +826,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-20T13:00:00+09:00",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "dinotisia-changwon",
     "name": "창원 방산 전용 AI 데이터센터",
@@ -834,9 +835,9 @@
     "sido": "경남",
     "sigungu": "창원시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-20T13:00:00+09:00"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "prep": {
       "site": {
@@ -865,7 +866,7 @@
     "owner": "디지털리얼티",
     "contractor": "",
     "operator": "디지털리얼티",
-    "address": "서울특별시 마포구 상암동",
+    "address": "서울특별시 마포구 월드컵북로60길 12",
     "lat": 37.578,
     "lng": 126.889,
     "power_mw": null,
@@ -882,7 +883,7 @@
     },
     "locked": {},
     "note": "ICN11과 가상 캠퍼스로 운영 계획.",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -894,9 +895,9 @@
     "sido": "서울",
     "sigungu": "마포구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -1284,7 +1285,7 @@
     "owner": "Equinix",
     "contractor": "",
     "operator": "Equinix",
-    "address": "서울특별시 마포구 상암동",
+    "address": "서울특별시 마포구 월드컵북로60길 24 (삼성SDS 상암IT센터 3층)",
     "lat": 37.578,
     "lng": 126.886,
     "power_mw": null,
@@ -1308,7 +1309,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "equinix-sl1",
     "name": "Equinix SL1",
@@ -1317,9 +1318,9 @@
     "sido": "서울",
     "sigungu": "마포구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -1442,7 +1443,7 @@
     "owner": "KINX (가비아 계열)",
     "contractor": "",
     "operator": "KINX",
-    "address": "경기도 과천시 갈현동",
+    "address": "경기도 과천시 과천대로7나길 34",
     "lat": 37.43,
     "lng": 126.99,
     "power_mw": null,
@@ -1468,7 +1469,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "gabia-gwacheon",
     "name": "KINX 과천 데이터센터",
@@ -1477,9 +1478,9 @@
     "sido": "경기",
     "sigungu": "과천시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -2123,7 +2124,7 @@
     "owner": "카카오",
     "contractor": "",
     "operator": "카카오",
-    "address": "경기도 안산시 상록구 사동 1271",
+    "address": "경기도 안산시 상록구 한양대학로 55 (사동 1271)",
     "lat": 37.297,
     "lng": 126.835,
     "power_mw": null,
@@ -2148,7 +2149,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T12:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kakao-ansan",
     "name": "카카오 데이터센터 안산",
@@ -2159,7 +2160,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -2446,7 +2447,7 @@
     "owner": "KINX",
     "contractor": "",
     "operator": "KINX",
-    "address": "서울특별시 강남구 도곡동",
+    "address": "서울특별시 강남구 언주로30길 13",
     "lat": 37.49,
     "lng": 127.05,
     "power_mw": null,
@@ -2470,7 +2471,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T16:30:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kinx-dogok",
     "name": "KINX 도곡 데이터센터",
@@ -2479,9 +2480,9 @@
     "sido": "서울",
     "sigungu": "강남구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -2580,7 +2581,7 @@
     "owner": "코람코자산운용",
     "contractor": "현대건설",
     "operator": "LG유플러스",
-    "address": "서울특별시 금천구 가산동",
+    "address": "서울특별시 금천구 가산동 319-19",
     "lat": 37.477,
     "lng": 126.887,
     "power_mw": 40,
@@ -2609,7 +2610,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T05:21:31.294Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "koramco-gasan",
     "name": "케이스퀘어 데이터센터 가산",
@@ -2618,9 +2619,9 @@
     "sido": "서울",
     "sigungu": "금천구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T05:21:31.294Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "부분 DBO",
@@ -2977,7 +2978,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "경기도 성남시 분당구",
+    "address": "경기도 성남시 분당구 성남대로925번길 36",
     "lat": 37.36,
     "lng": 127.11,
     "power_mw": null,
@@ -2990,13 +2991,13 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-bundang",
     "name": "KT클라우드 분당 데이터센터",
@@ -3005,9 +3006,9 @@
     "sido": "경기",
     "sigungu": "성남시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3023,7 +3024,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "충청남도 천안시",
+    "address": "충청남도 천안시 동남구 성남면 대흥리 266-5",
     "lat": 36.81,
     "lng": 127.15,
     "power_mw": null,
@@ -3036,13 +3037,13 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-cheonan",
     "name": "KT클라우드 천안 CDC 데이터센터",
@@ -3051,9 +3052,9 @@
     "sido": "충남",
     "sigungu": "천안시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3161,7 +3162,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "대전광역시",
+    "address": "대전광역시 서구 문정로48번길 30",
     "lat": 36.35,
     "lng": 127.385,
     "power_mw": null,
@@ -3169,29 +3170,29 @@
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "",
-    "note": "공공 DR 선호. 용량 미공개. 위치는 시·구 단위.",
+    "note": "공공 DR 선호. 용량 미공개. 위치는 시·구 단위. 운영사 건물표: DC 전용 전원 최대 1MW",
     "conf": {
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-daejeon",
     "name": "KT클라우드 대전 데이터센터",
     "status": "운영중",
     "phase": "운영",
     "sido": "대전",
-    "sigungu": "",
+    "sigungu": "서구",
     "addr_check": {
-      "status": "주소불완전",
-      "note": "시·군·구가 없습니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3273,7 +3274,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "서울특별시 강남구 테헤란로",
+    "address": "서울특별시 강남구 언주로 517",
     "lat": 37.505,
     "lng": 127.04,
     "power_mw": null,
@@ -3286,13 +3287,13 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-gangnam",
     "name": "KT클라우드 강남 데이터센터",
@@ -3301,9 +3302,9 @@
     "sido": "서울",
     "sigungu": "강남구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3466,10 +3467,10 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "서울특별시 양천구 목동",
+    "address": "서울특별시 양천구 목동동로 233-5",
     "lat": 37.527,
     "lng": 126.875,
-    "power_mw": null,
+    "power_mw": 40,
     "it_mw": null,
     "start_ym": "",
     "complete_ym": "",
@@ -3479,7 +3480,8 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정",
+      "power_mw": "확정"
     },
     "locked": {},
     "permit_ref": {
@@ -3490,7 +3492,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-mokdong1",
     "name": "KT클라우드 목동1 데이터센터",
@@ -3499,9 +3501,9 @@
     "sido": "서울",
     "sigungu": "양천구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3517,7 +3519,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "서울특별시 양천구 목동",
+    "address": "서울특별시 양천구 목동동로 323",
     "lat": 37.528,
     "lng": 126.877,
     "power_mw": null,
@@ -3530,7 +3532,7 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": {
@@ -3541,7 +3543,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-mokdong2",
     "name": "KT클라우드 목동2 데이터센터",
@@ -3550,9 +3552,9 @@
     "sido": "서울",
     "sigungu": "양천구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3568,7 +3570,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로31길 61",
     "lat": 37.485,
     "lng": 126.887,
     "power_mw": null,
@@ -3581,14 +3583,14 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "rfs_ym": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-namguro",
     "name": "KT클라우드 남구로 데이터센터",
@@ -3597,9 +3599,9 @@
     "sido": "서울",
     "sigungu": "구로구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3837,7 +3839,7 @@
     "owner": "KT클라우드",
     "contractor": "",
     "operator": "KT클라우드",
-    "address": "서울특별시 용산구",
+    "address": "서울특별시 용산구 원효로41길 33",
     "lat": 37.53,
     "lng": 126.965,
     "power_mw": null,
@@ -3845,19 +3847,19 @@
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "2020-11",
-    "note": "2020-11 개소, 154kV 이중 수전, 서버 10만 대+ 하이퍼스케일. 용량 미공개. 위치는 시·구 단위.",
+    "note": "2020-11 개소, 154kV 이중 수전, 서버 10만 대+ 하이퍼스케일. 용량 미공개. 위치는 시·구 단위. UPS 약 40.8MW(N+1)·약 5,000랙, 154kV 이원화, 수전 최대 400MW 확장 설계(현재 수전 아님), 연면적 48,000㎡",
     "conf": {
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "rfs_ym": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "kt-yongsan",
     "name": "KT클라우드 용산 데이터센터",
@@ -3866,9 +3868,9 @@
     "sido": "서울",
     "sigungu": "용산구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -3884,7 +3886,7 @@
     "owner": "LG CNS",
     "contractor": "",
     "operator": "LG CNS",
-    "address": "부산광역시 강서구 미음동",
+    "address": "부산광역시 강서구 미음산단로 153",
     "lat": 35.12,
     "lng": 128.88,
     "power_mw": 40,
@@ -3897,7 +3899,7 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "power_mw": "추정"
     },
     "locked": {},
@@ -3909,7 +3911,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgcns-busan",
     "name": "LG CNS 부산 글로벌 클라우드 데이터센터",
@@ -3918,9 +3920,9 @@
     "sido": "부산",
     "sigungu": "강서구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4034,7 +4036,7 @@
     "owner": "LG CNS",
     "contractor": "",
     "operator": "LG CNS",
-    "address": "서울특별시 마포구 상암동",
+    "address": "서울특별시 마포구 월드컵북로 424",
     "lat": 37.579,
     "lng": 126.887,
     "power_mw": 18,
@@ -4042,12 +4044,12 @@
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "",
-    "note": "금융 특화 프리미엄 센터, 수전 18,000kVA(≈18MW).",
+    "note": "금융 특화 프리미엄 센터, 수전 18,000kVA(≈18MW). 같은 주소에 KINX 상암1 IDC 입주",
     "conf": {
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "power_mw": "추정"
     },
     "locked": {},
@@ -4059,7 +4061,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgcns-sangam",
     "name": "LG CNS 상암 IT센터",
@@ -4068,9 +4070,9 @@
     "sido": "서울",
     "sigungu": "마포구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4086,7 +4088,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "경기도 안양시 만안구 안양동 200-12",
+    "address": "경기도 안양시 만안구 덕천로48번길 37 (안양동 200-12)",
     "lat": 37.395,
     "lng": 126.93,
     "power_mw": null,
@@ -4110,7 +4112,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-anyang",
     "name": "LG유플러스 안양센터",
@@ -4121,7 +4123,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4137,7 +4139,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "부산광역시 서구 부민동1가 30-1",
+    "address": "부산광역시 서구 대청로6번길 14 (부민동1가 30-1)",
     "lat": 35.101,
     "lng": 129.018,
     "power_mw": null,
@@ -4161,7 +4163,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-busan-ami",
     "name": "LG유플러스 부산 아미센터",
@@ -4172,7 +4174,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4239,7 +4241,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "대구광역시 중구 동인동1가 295-1",
+    "address": "대구광역시 중구 동덕로 186 (동인동1가 295-1)",
     "lat": 35.872,
     "lng": 128.604,
     "power_mw": null,
@@ -4263,7 +4265,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-daegu",
     "name": "LG유플러스 대구센터",
@@ -4274,7 +4276,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4290,7 +4292,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "대전광역시 서구 탄방동 663",
+    "address": "대전광역시 서구 계룡로553번길 66 (탄방동 663)",
     "lat": 36.346,
     "lng": 127.394,
     "power_mw": null,
@@ -4314,7 +4316,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-daejeon",
     "name": "LG유플러스 대전센터",
@@ -4325,7 +4327,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4341,7 +4343,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "서울특별시 금천구 가산동 459-9",
+    "address": "서울특별시 금천구 가산디지털1로 189 (가산동 459-9)",
     "lat": 37.478,
     "lng": 126.885,
     "power_mw": 40,
@@ -4366,7 +4368,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-gasan",
     "name": "LG유플러스 가산센터",
@@ -4377,7 +4379,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4393,7 +4395,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "광주광역시 광산구 우산동 1598-2",
+    "address": "광주광역시 광산구 무진대로 262 (우산동 1598-2)",
     "lat": 35.163,
     "lng": 126.807,
     "power_mw": null,
@@ -4417,7 +4419,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-gwangju",
     "name": "LG유플러스 광주센터",
@@ -4428,7 +4430,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4444,7 +4446,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "서울특별시 강남구 논현동 261-1",
+    "address": "서울특별시 강남구 언주로 616 (논현동 261-1)",
     "lat": 37.511,
     "lng": 127.034,
     "power_mw": 20,
@@ -4469,7 +4471,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-nonhyeon",
     "name": "LG유플러스 논현센터",
@@ -4480,7 +4482,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4500,7 +4502,7 @@
     "owner": "LG유플러스",
     "contractor": "GS건설",
     "operator": "LG유플러스",
-    "address": "경기도 파주시",
+    "address": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
     "lat": 37.76,
     "lng": 126.78,
     "power_mw": 50,
@@ -4518,8 +4520,8 @@
       "contractor": "추정"
     },
     "locked": {},
-    "note": "캠퍼스 전체 200MW 전력 확정, 연면적 약 15만㎡. 1동 2027-06 준공·완판. 1동 50MW는 시설 기준(센서스). 2~4동은 별도 항목. LG전자 액체냉각·LG엔솔 UPS·LS일렉트릭 DC 800V.",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "note": "캠퍼스 전체 200MW 전력 확정, 연면적 약 15만㎡. 1동 2027-06 준공·완판. 1동 50MW는 시설 기준(센서스). 2~4동은 별도 항목. LG전자 액체냉각·LG엔솔 UPS·LS일렉트릭 DC 800V. 2026-06 공정률 약 20%, 1동·부속동 2027-06 준공 예정",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
@@ -4528,7 +4530,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4544,7 +4546,7 @@
     "owner": "LG유플러스",
     "contractor": "GS건설",
     "operator": "LG유플러스",
-    "address": "경기도 파주시",
+    "address": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
     "lat": 37.761,
     "lng": 126.782,
     "power_mw": 150,
@@ -4552,7 +4554,7 @@
     "start_ym": "",
     "complete_ym": "2028",
     "rfs_ym": "",
-    "note": "1.3조 추가 투자로 2·3동 건설, 4동 설계 착수. 2~4동 2028년까지 준공 목표. 150MW는 캠퍼스 200MW − 1동 50MW로 역산. AIDC 총 2조 자체 조달.",
+    "note": "1.3조 추가 투자로 2·3동 건설, 4동 설계 착수. 2~4동 2028년까지 준공 목표. 150MW는 캠퍼스 200MW − 1동 50MW로 역산. AIDC 총 2조 자체 조달. 전산동 4개(1동 포함) 2027~2028 순차 가동, 전체 수전 200MW",
     "conf": {
       "owner": "확정",
       "operator": "확정",
@@ -4566,7 +4568,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-paju-2",
     "name": "LG유플러스 파주 AIDC 2~4동",
@@ -4577,7 +4579,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4595,7 +4597,7 @@
     "owner": "LG유플러스",
     "contractor": "GS건설",
     "operator": "LG유플러스",
-    "address": "경기도 안양시 동안구 관양동 1743-1",
+    "address": "경기도 안양시 동안구 시민대로327번길 29 (관양동 1743-1)",
     "lat": 37.398,
     "lng": 126.968,
     "power_mw": 165,
@@ -4621,7 +4623,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-pyeongchon1",
     "name": "LG유플러스 평촌 메가센터",
@@ -4632,7 +4634,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4650,7 +4652,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "경기도 안양시 동안구 평촌동",
+    "address": "경기도 안양시 동안구 벌말로 113",
     "lat": 37.396,
     "lng": 126.966,
     "power_mw": 45,
@@ -4663,7 +4665,7 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "power_mw": "확정",
       "complete_ym": "확정"
     },
@@ -4676,7 +4678,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-pyeongchon2",
     "name": "LG유플러스 평촌2센터",
@@ -4685,9 +4687,9 @@
     "sido": "경기",
     "sigungu": "안양시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4703,10 +4705,10 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "서울특별시 마포구 상암동 1600",
+    "address": "서울특별시 마포구 월드컵북로 416 (상암동 1600)",
     "lat": 37.579,
     "lng": 126.889,
-    "power_mw": 20,
+    "power_mw": 19.25,
     "it_mw": null,
     "start_ym": "",
     "complete_ym": "",
@@ -4728,7 +4730,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-sangam",
     "name": "LG유플러스 상암센터",
@@ -4739,7 +4741,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4755,7 +4757,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "서울특별시 서초구 서초동 1423-1",
+    "address": "서울특별시 서초구 남부순환로 2481 (서초동 1423-1)",
     "lat": 37.483,
     "lng": 127.017,
     "power_mw": 9.5,
@@ -4780,7 +4782,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-seocho1",
     "name": "LG유플러스 서초1센터",
@@ -4791,7 +4793,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -4807,7 +4809,7 @@
     "owner": "LG유플러스",
     "contractor": "",
     "operator": "LG유플러스",
-    "address": "서울특별시 서초구 서초동 1421-1",
+    "address": "서울특별시 서초구 남부순환로337가길 40 (서초동 1421-1)",
     "lat": 37.484,
     "lng": 127.015,
     "power_mw": 7.5,
@@ -4832,7 +4834,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "lgu-seocho2",
     "name": "LG유플러스 서초2센터",
@@ -4843,7 +4845,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -5385,7 +5387,7 @@
     "owner": "네이버",
     "contractor": "",
     "operator": "네이버클라우드",
-    "address": "강원특별자치도 춘천시",
+    "address": "강원특별자치도 춘천시 순환대로 1231",
     "lat": 37.89,
     "lng": 127.73,
     "power_mw": null,
@@ -5399,13 +5401,13 @@
       "operator": "확정",
       "status": "확정",
       "complete_ym": "추정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T12:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "naver-chuncheon",
     "name": "네이버 각 춘천",
@@ -5414,9 +5416,9 @@
     "sido": "강원",
     "sigungu": "춘천시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -5438,7 +5440,7 @@
     "owner": "네이버",
     "contractor": "",
     "operator": "네이버클라우드",
-    "address": "세종특별자치시 집현동",
+    "address": "세종특별자치시 행복대로 824",
     "lat": 36.505,
     "lng": 127.255,
     "power_mw": null,
@@ -5449,22 +5451,22 @@
     "conf": {
       "owner": "확정",
       "operator": "확정",
-      "address": "추정",
+      "address": "확정",
       "it_mw": "추정",
       "status": "확정"
     },
     "locked": {},
-    "note": "부지 29.4만㎡, 최대 270MW 수전 가능, 6차 확장 시 서버 60만 대. AI 팩토리 55MW → 2028년 200MW(GPU 약 10만), 엔비디아 10억$·브룩필드 최대 90억$(LOI).",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "note": "부지 29.4만㎡, 최대 270MW 수전 가능, 6차 확장 시 서버 60만 대. AI 팩토리 55MW → 2028년 200MW(GPU 약 10만), 엔비디아 10억$·브룩필드 최대 90억$(LOI). 캠퍼스 최대 수전 270MW 설계",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
     "sido": "세종",
     "sigungu": "세종",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -5749,7 +5751,7 @@
     "owner": "퍼시픽자산운용 (CPPIB 공동투자) · 시행 유림티에스 (엠디에이3호)",
     "contractor": "",
     "operator": "",
-    "address": "경기도 부천시 오정구 내동 222-13",
+    "address": "경기도 부천시 오정구 내동 222-13 외 10필지",
     "lat": 37.516,
     "lng": 126.77,
     "power_mw": 99,
@@ -5761,7 +5763,7 @@
     "conf": {
       "owner": "확정",
       "status": "추정",
-      "address": "확정",
+      "address": "추정",
       "power_mw": "추정"
     },
     "locked": {},
@@ -5773,7 +5775,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-20T20:00:00+09:00",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "pacific-bucheon",
     "name": "퍼시픽 부천 내동 데이터센터",
@@ -5784,7 +5786,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-20T20:00:00+09:00"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "prep": {
       "site": {
@@ -5816,7 +5818,7 @@
     "owner": "퍼시픽자산운용 (CPPIB 공동투자)",
     "contractor": "현대건설",
     "operator": "LG CNS",
-    "address": "경기도 용인시 수지구 죽전동",
+    "address": "경기도 용인시 수지구 대지로 233",
     "lat": 37.33,
     "lng": 127.112,
     "power_mw": 100,
@@ -5833,7 +5835,7 @@
       "start_ym": "확정",
       "complete_ym": "확정",
       "status": "추정",
-      "address": "추정",
+      "address": "확정",
       "operator": "확정"
     },
     "locked": {},
@@ -5845,7 +5847,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T05:21:31.294Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "pacific-sunny",
     "name": "퍼시픽써니 죽전 데이터센터",
@@ -5854,9 +5856,9 @@
     "sido": "경기",
     "sigungu": "용인시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T05:21:31.294Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "부분 DBO",
@@ -5878,7 +5880,7 @@
     "owner": "ESR · 와이드크릭자산운용",
     "contractor": "",
     "operator": "Princeton Digital Group",
-    "address": "인천광역시 부평구",
+    "address": "인천광역시 부평구 청천동 414-2",
     "lat": 37.497,
     "lng": 126.735,
     "power_mw": 80,
@@ -5898,16 +5900,16 @@
     },
     "locked": {},
     "note": "ESR 한국 첫 데이터센터: ESR 설계, ESR·와이드크릭 골조·외장, PDG 임차 후 내부 인프라·운영. 지상 9층 80MW급(수전 추정), PDG IT 48MW, 투자 7억 달러. PDG 장기 500MW 확장 계획. 2022년 STACK·ESR 인천 48MW 계획과 동일 부지로 보고 통합.",
-    "updated_at": "2026-10-21T05:21:31.294Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
     "sido": "인천",
     "sigungu": "부평구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T05:21:31.294Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "마스터리스",
@@ -6044,7 +6046,7 @@
     "owner": "삼성SDS",
     "contractor": "",
     "operator": "삼성SDS",
-    "address": "강원특별자치도 춘천시 칠전동",
+    "address": "강원특별자치도 춘천시 옛경춘로 409-14",
     "lat": 37.85,
     "lng": 127.73,
     "power_mw": null,
@@ -6057,7 +6059,7 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": {
@@ -6068,7 +6070,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "sds-chuncheon",
     "name": "삼성SDS 춘천 데이터센터",
@@ -6077,9 +6079,9 @@
     "sido": "강원",
     "sigungu": "춘천시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6168,10 +6170,10 @@
     "owner": "삼성SDS",
     "contractor": "",
     "operator": "삼성SDS",
-    "address": "경기도 화성시 동탄",
+    "address": "경기도 화성시 동탄대로9나길 14",
     "lat": 37.205,
     "lng": 127.098,
-    "power_mw": null,
+    "power_mw": 40,
     "it_mw": 40,
     "start_ym": "",
     "complete_ym": "",
@@ -6183,13 +6185,14 @@
       "it_mw": "추정",
       "status": "확정",
       "rfs_ym": "확정",
-      "address": "추정"
+      "address": "확정",
+      "power_mw": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T02:39:20.113Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "sds-dongtan",
     "name": "삼성SDS 동탄 데이터센터",
@@ -6198,9 +6201,9 @@
     "sido": "경기",
     "sigungu": "화성시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T02:39:20.113Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6229,7 +6232,7 @@
     "owner": "삼성SDS",
     "contractor": "삼성물산",
     "operator": "삼성SDS",
-    "address": "경상북도 구미시 공단동",
+    "address": "경상북도 구미시 3공단3로 302",
     "lat": 36.12,
     "lng": 128.34,
     "power_mw": null,
@@ -6240,7 +6243,7 @@
     "conf": {
       "owner": "확정",
       "operator": "확정",
-      "address": "추정",
+      "address": "확정",
       "it_mw": "추정",
       "status": "확정",
       "rfs_ym": "추정",
@@ -6249,7 +6252,7 @@
     },
     "locked": {},
     "note": "구미국가1산단 옛 삼성전자 사업장 부지, 60MW. 투자 4,273억(최근 4,639억). 2029년 가동 목표.",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -6261,9 +6264,9 @@
     "sido": "경북",
     "sigungu": "구미시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6279,7 +6282,7 @@
     "owner": "삼성SDS",
     "contractor": "",
     "operator": "삼성SDS",
-    "address": "서울특별시 마포구 상암동",
+    "address": "서울특별시 마포구 월드컵북로60길 24",
     "lat": 37.58,
     "lng": 126.891,
     "power_mw": null,
@@ -6292,7 +6295,7 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": {
@@ -6303,7 +6306,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "sds-sangam",
     "name": "삼성SDS 상암 데이터센터",
@@ -6312,9 +6315,9 @@
     "sido": "서울",
     "sigungu": "마포구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6330,7 +6333,7 @@
     "owner": "삼성SDS",
     "contractor": "",
     "operator": "삼성SDS",
-    "address": "경기도 수원시 영통구",
+    "address": "경기도 수원시 영통구 삼성로168번길 10",
     "lat": 37.256,
     "lng": 127.052,
     "power_mw": null,
@@ -6343,13 +6346,13 @@
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "sds-suwon",
     "name": "삼성SDS 수원 데이터센터",
@@ -6358,9 +6361,9 @@
     "sido": "경기",
     "sigungu": "수원시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6376,7 +6379,7 @@
     "owner": "SGC에너지 (SGC AI인프라·SGC데이터파워)",
     "contractor": "현대엔지니어링",
     "operator": "KT클라우드",
-    "address": "전북특별자치도 군산시 비응도동",
+    "address": "전북특별자치도 군산시 외항로 1331 (비응도동, SGC그린파워 부지)",
     "lat": 35.94,
     "lng": 126.53,
     "power_mw": null,
@@ -6404,7 +6407,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T11:00:00+09:00",
-    "updated_at": "2026-10-21T02:39:20.113Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "sgc-gunsan",
     "name": "SGC 군산 AI 데이터센터 (1단계)",
@@ -6413,9 +6416,9 @@
     "sido": "전북",
     "sigungu": "군산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T02:39:20.113Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "DBO",
@@ -6536,7 +6539,7 @@
     "owner": "SK브로드밴드",
     "contractor": "",
     "operator": "SK호라이즌",
-    "address": "경기도 성남시 분당구",
+    "address": "경기도 성남시 분당구 성남대로2번길 12",
     "lat": 37.378,
     "lng": 127.115,
     "power_mw": null,
@@ -6549,13 +6552,13 @@
       "owner": "확정",
       "operator": "추정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "skb-bundang",
     "name": "SK브로드밴드 분당 데이터센터",
@@ -6564,9 +6567,9 @@
     "sido": "경기",
     "sigungu": "성남시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6633,7 +6636,7 @@
     "owner": "SK브로드밴드",
     "contractor": "",
     "operator": "SK호라이즌",
-    "address": "서울특별시 금천구 가산동",
+    "address": "서울특별시 금천구 가산로9길 80",
     "lat": 37.48,
     "lng": 126.885,
     "power_mw": 46,
@@ -6646,7 +6649,7 @@
       "owner": "확정",
       "operator": "추정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "power_mw": "추정",
       "rfs_ym": "추정"
     },
@@ -6659,7 +6662,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "skb-gasan",
     "name": "SK브로드밴드 가산 데이터센터",
@@ -6668,9 +6671,9 @@
     "sido": "서울",
     "sigungu": "금천구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6825,7 +6828,7 @@
     "owner": "SK브로드밴드",
     "contractor": "",
     "operator": "SK호라이즌",
-    "address": "경기도 성남시 분당구",
+    "address": "경기도 성남시 분당구 판교로255번길 46",
     "lat": 37.4,
     "lng": 127.108,
     "power_mw": null,
@@ -6838,7 +6841,7 @@
       "owner": "확정",
       "operator": "추정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "it_mw": "추정",
       "rfs_ym": "확정"
     },
@@ -6846,7 +6849,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "skb-pangyo",
     "name": "SK브로드밴드 판교 데이터센터",
@@ -6855,9 +6858,9 @@
     "sido": "경기",
     "sigungu": "성남시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6873,7 +6876,7 @@
     "owner": "SK브로드밴드",
     "contractor": "",
     "operator": "SK호라이즌",
-    "address": "서울특별시 서초구",
+    "address": "서울특별시 서초구 법원로1길 6",
     "lat": 37.484,
     "lng": 127.032,
     "power_mw": null,
@@ -6881,18 +6884,18 @@
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "",
-    "note": "SK호라이즌 총 약 318MW(기존 8개 + 신규 AIDC 포함). 센터별 용량 미공개.",
+    "note": "SK호라이즌 총 약 318MW(기존 8개 + 신규 AIDC 포함). 센터별 용량 미공개. 서초1 IDC 기준 주소(서초2 IDC 세부 주소 미공개)",
     "conf": {
       "owner": "확정",
       "operator": "추정",
       "status": "확정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "id": "skb-seocho",
     "name": "SK브로드밴드 서초 데이터센터",
@@ -6901,9 +6904,9 @@
     "sido": "서울",
     "sigungu": "서초구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -6969,7 +6972,7 @@
     "owner": "SK브로드밴드 · AWS",
     "contractor": "SK에코플랜트",
     "operator": "SK텔레콤",
-    "address": "울산광역시 남구",
+    "address": "울산광역시 남구 (울산미포국가산업단지)",
     "lat": 35.5,
     "lng": 129.36,
     "power_mw": null,
@@ -6980,7 +6983,7 @@
     "conf": {
       "owner": "확정",
       "operator": "추정",
-      "address": "추정",
+      "address": "확정",
       "it_mw": "추정",
       "status": "추정",
       "complete_ym": "추정",
@@ -6990,7 +6993,7 @@
     },
     "locked": {},
     "note": "IT 약 40MW(2027) → 100~103MW(2029). A동 2027-05-31 준공 예정, 시공 계약 4,169억. SK멀티유틸리티 LNG 열병합(300MW급) 전력.",
-    "updated_at": "2026-10-21T04:18:53.083Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
@@ -6999,7 +7002,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T04:18:53.083Z"
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
@@ -7146,7 +7149,7 @@
     "owner": "STT GDC",
     "contractor": "",
     "operator": "STT GDC코리아",
-    "address": "서울특별시 금천구 가산동",
+    "address": "서울특별시 금천구 가산동 345-26",
     "lat": 37.476,
     "lng": 126.884,
     "power_mw": 40,
@@ -7165,7 +7168,7 @@
     },
     "locked": {},
     "note": "수전 40MW(IT 30MW + 설비 10MW). 10층, 4~8층 데이터홀(층당 6MW). 1단계 4~6층 18MW 2026-07-01 가동, 2단계 연말·잔여 2027-07 공급. 연면적 31,205㎡(2022 발표). 2호 센터 추진 중이나 부지 미정.",
-    "updated_at": "2026-10-21T02:39:20.113Z",
+    "updated_at": "2026-10-21T05:45:05.445Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -7177,9 +7180,9 @@
     "sido": "서울",
     "sigungu": "금천구",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T02:39:20.113Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-21T05:45:05.445Z"
     },
     "dbo": {
       "type": "자체",
