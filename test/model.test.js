@@ -138,10 +138,14 @@ test('가치점수: 자동 산정 + 수동 보정', async () => {
   const s = valueScore(d, { dcs, evidence });
   assert.equal(s.items.length, SCORE_ITEMS.length);
   const { SCORE_VIEWS } = await import('../lib/model.js');
-  for (const v of Object.values(SCORE_VIEWS)) assert.equal(Object.values(v.points).reduce((a, b) => a + b, 0), 100);
-  assert.equal(s.breakdown('invest').reduce((a, b) => a + b.points, 0), 100);
+  for (const v of Object.values(SCORE_VIEWS)) if (!v.combo) assert.equal(Object.values(v.points).reduce((a, b) => a + b, 0), 100);
+  const owner = {}; for (const [k, v] of Object.entries(SCORE_VIEWS)) for (const it of Object.keys(v.points)) { assert.ok(!owner[it], `${it} 중복`); owner[it] = k; }
+  assert.equal(Object.keys(owner).length, SCORE_ITEMS.length);
+  assert.equal(Math.round(s.total('total')), Math.round((s.total('feasibility') + s.total('asset') + s.total('win')) / 3));
+  assert.equal(s.total('invest'), s.total('feasibility'));
+  assert.equal(s.breakdown('feasibility').reduce((a, b) => a + b.points, 0), 100);
   assert.ok(s.nearOwn && s.nearOwn.km > 0);
-  const t = s.total('balanced'); assert.ok(t > 0 && t <= 100);
+  const t = s.total('total'); assert.ok(t > 0 && t <= 100);
   const m = valueScore({ ...d, score_manual: { complaint: 0 } }, { dcs, evidence });
   assert.equal(m.items.find(i => i.key === 'complaint').score, 0); assert.ok(m.total() < t);
   assert.throws(() => normalizeScoreManual({ complaint: 11 }), /민원/);
