@@ -6586,6 +6586,47 @@
     }
   },
   {
+    "id": "seoul-daechi-aidc",
+    "name": "대치동 AIDC 데이터센터",
+    "aliases": [],
+    "category": "상용",
+    "status": "설계중",
+    "phase": "개발",
+    "owner": "한국리얼대치동AIDC PFV",
+    "contractor": "서한",
+    "operator": "",
+    "address": "서울특별시 강남구 대치동 999-8",
+    "lat": null,
+    "lng": null,
+    "power_mw": null,
+    "it_mw": 9,
+    "start_ym": "2026-11",
+    "complete_ym": "2029-02",
+    "rfs_ym": "",
+    "note": "서한 수주공시(2026-10-21): 대치동 AIDC 9MW 데이터센터 신축사업, 공사금액 1,296억(VAT 별도), 계약기간 2026-11-30~2029-02-28(착공 후 27개월). 9MW 기준(수전/IT) 미기재.",
+    "conf": {
+      "owner": "확정",
+      "contractor": "확정",
+      "address": "확정",
+      "start_ym": "추정",
+      "complete_ym": "추정",
+      "it_mw": "추정"
+    },
+    "locked": {},
+    "permit_ref": null,
+    "player": "",
+    "created_at": "2026-10-21T23:58:36.742Z",
+    "updated_at": "2026-10-21T23:58:36.742Z",
+    "updated_by": "auto",
+    "sido": "서울",
+    "sigungu": "강남구",
+    "addr_check": {
+      "status": "좌표없음",
+      "note": "위경도가 없습니다",
+      "at": "2026-10-21T23:58:36.742Z"
+    }
+  },
+  {
     "aliases": [],
     "category": "상용",
     "owner": "SGC에너지 (SGC AI인프라·SGC데이터파워)",

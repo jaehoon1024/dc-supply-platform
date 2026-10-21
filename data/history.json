@@ -9361,5 +9361,103 @@
     "by": "auto",
     "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000005e%2B21",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-create",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "_create",
+    "old": "",
+    "new": "대치동 AIDC 데이터센터",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-owner",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "owner",
+    "old": "",
+    "new": "한국리얼대치동AIDC PFV",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-contractor",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "contractor",
+    "old": "",
+    "new": "서한",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-address",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "address",
+    "old": "",
+    "new": "서울특별시 강남구 대치동 999-8",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-start_ym",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "start_ym",
+    "old": "",
+    "new": "2026-11",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-complete_ym",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "complete_ym",
+    "old": "",
+    "new": "2029-02",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-it_mw",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "it_mw",
+    "old": "",
+    "new": 9,
+    "evidence_url": "https://www.newstnt.com/news/articleView.html?idxno=724230",
+    "by": "auto",
+    "note": "공시상 9MW(수전/IT 구분 없음)"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-evidence-328",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "서한, 강남 대치동 1296억 데이터센터 신축공사 수주",
+    "by": "auto",
+    "evidence_url": "https://www.newstnt.com/news/articleView.html?idxno=724230",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-seoul-daechi-aidc-20261021235836-evidence-329",
+    "dc_id": "seoul-daechi-aidc",
+    "at": "2026-10-21T23:58:36.742Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "서한, 대치동 9MW 데이터센터 공사 1296억원 수주",
+    "by": "auto",
+    "evidence_url": "https://www.vegannews.co.kr/news/article.html?no=395294",
+    "note": "근거 자동 추가"
   }
 ]
