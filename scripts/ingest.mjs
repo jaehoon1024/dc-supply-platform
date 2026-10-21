@@ -8,7 +8,7 @@
 //       "updates": { "status": { "value": "착공", "conf": "확정", "note": "...", "evidence_url": "https://..." } },
 //       "evidence": [{ "url": "https://...", "title": "", "publisher": "", "pub_date": "YYYY-MM-DD", "grade": "A|B|C",
 //                      "fields": ["상태"], "excerpt": "", "source_id": "s01" }] },
-//     { "new": { "name": "신규 센터명", "category": "상용", "address": "..." },   // 신규 센터 (id는 자동 생성)
+//     { "new": { "id": "영문-슬러그(선택)", "name": "신규 센터명", "category": "상용", "address": "..." },   // 신규 센터
 //       "updates": { ... }, "evidence": [ ... ] }
 //   ],
 //   "companies": [                                            // (주간 플레이어 업데이트) 회사 프로필 갱신·신규
@@ -45,7 +45,8 @@ export function ingest(data, findings, now = new Date().toISOString()) {
         const dup = dcs.find(d => norm(d.name) === norm(name) || (d.aliases || []).some(a => norm(a) === norm(name)));
         if (dup) id = dup.id; // 이미 있는 센터면 갱신으로 처리
         else {
-          let nid = slug(name) || 'dc', n = 2; const base = nid;
+          const want = /^[a-z0-9][a-z0-9-]{1,39}$/.test(String(item.new.id || '')) ? item.new.id : slug(name);
+          let nid = want || 'dc', n = 2; const base = nid;
           while (dcs.some(d => d.id === nid)) nid = `${base}-${n++}`;
           const dc = { id: nid, name, aliases: Array.isArray(item.new.aliases) ? item.new.aliases : [], category: CATEGORIES.includes(item.new.category) ? item.new.category : '상용',
             status: '설계중', phase: '개발', owner: '', contractor: '', operator: '', address: '', lat: null, lng: null, power_mw: null, it_mw: null,
