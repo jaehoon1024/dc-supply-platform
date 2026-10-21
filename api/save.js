@@ -1,12 +1,9 @@
-import { timingSafeEqual } from 'node:crypto';
 import { transact } from '../lib/store.js';
+import { matches } from '../lib/gate.js';
 import { applyEdit, addEvidence, validateData, LABEL, applyCompanyEdit, validateCompanies } from '../lib/model.js';
 
-const okPassword = p => {
-  const want = process.env.EDIT_PASSWORD || '';
-  const a = Buffer.from(String(p || '')), b = Buffer.from(want);
-  return want.length > 0 && a.length === b.length && timingSafeEqual(a, b);
-};
+// 편집 비밀번호: 입장 비밀번호와 같은 규칙(앞뒤 공백·대소문자·한글 자판 입력 허용)
+const okPassword = p => matches(p, process.env.EDIT_PASSWORD || '');
 
 // POST /api/save
 // { password, editor, action:'edit', id?, changes, conf, locked }
