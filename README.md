@@ -25,7 +25,7 @@ scripts/permits.mjs               건축HUB 인허가 조회·매칭·동기화
 api/permits.js                    건축HUB 실시간 조회 API / Cron 동기화(?sync=1)
 scripts/validate.mjs              데이터 검증 (모든 push에서 실행)
 data/                             dcs, evidence, history, sources, runs, permits, grid, targets
-.github/workflows/                ci.yml(검증), daily-permits.yml(매일 08:00 KST)
+.github/workflows/                ci.yml(검증) — 인허가 동기화는 Vercel Cron 담당
 ```
 
 ## 배포 (처음 한 번)
@@ -41,7 +41,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 | `GITHUB_BRANCH` | `main` (생략 가능) |
 | `EDIT_PASSWORD` | 팀 편집 비밀번호 |
 
-4. **건축HUB 키(data.go.kr)**: "국토교통부_건축HUB_건축인허가정보 서비스" 활용 신청 → 일반 인증키(Decoding)를 **Vercel** Environment Variables에 `BUILDING_HUB_KEY`(Sensitive)로 등록 후 Redeploy. 인허가 탭에서 바로 실시간 조회되고, 매일 08:00 Vercel Cron이 결과를 GitHub에 커밋합니다(GITHUB_TOKEN 필요). 키는 저장소에 넣지 않습니다. (GitHub Actions로 돌리려면 같은 키를 Actions Secret에도 등록)
+4. **건축HUB 키(data.go.kr)**: "국토교통부_건축HUB_건축인허가정보 서비스" 활용 신청 → 일반 인증키(Decoding)를 **Vercel** Environment Variables에 `BUILDING_HUB_KEY`(Sensitive)로 등록 후 Redeploy. 인허가 탭에서 바로 실시간 조회되고, 매일 08:00 Vercel Cron이 결과를 GitHub에 커밋합니다(GITHUB_TOKEN 필요). 키는 저장소에 넣지 않습니다.
    - 센터 주소(지번)에서 시군구·법정동 코드를 자동 변환해 `permit_ref`에 넣어 두었습니다. 지번 단위는 정확 매칭, 법정동 단위는 이름 일치 또는 동 내 유일한 데이터센터성 인허가일 때만 연결합니다.
 5. (선택) 외부 공개를 막으려면 Vercel → Settings → Deployment Protection을 켜세요.
 
@@ -51,7 +51,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 
 | 시각(KST) | 무엇 | 방식 |
 |---|---|---|
-| 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) · GitHub Actions(선택) |
+| 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) |
 | 매일 | 30개 소스 뉴스·공시·발표 | Claude 예약 작업이 저장소에 커밋 |
 
 자동수집은 `lib/model.js`의 `applyAuto`를 따릅니다. 고정된 필드는 바꾸지 않고 히스토리에 `proposal`(제안)로 남깁니다.
