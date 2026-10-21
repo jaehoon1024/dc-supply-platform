@@ -6336,5 +6336,115 @@
     "old": "{\"type\":\"DBO\",\"provider\":\"LG유플러스\",\"scope\":[\"D\",\"B\",\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG유플러스 — 설계, 구축, 운영 참여\"}",
     "new": "{\"type\":\"DBO\",\"provider\":\"LG유플러스\",\"scope\":[\"D\",\"B\",\"O\"],\"c\":\"확정\",\"note\":\"운영사 LG유플러스 — 설계, 구축, 운영 참여\"}",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "id": "h-gs-donghae-20261021023920-campus",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"GS 동해 AI 데이터센터 캠퍼스\",\"phase\":\"1차\",\"plan_mw\":2400,\"basis\":\"미상\",\"plan_year\":\"2029\",\"c\":\"추정\",\"note\":\"1.2GW(2028)→2.4GW(2029) 계획, 총투자 15조\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-gangneung-anin-20261021023920-campus",
+    "dc_id": "gangneung-anin",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"강릉 안인 AI 데이터센터\",\"phase\":\"1단계\",\"plan_mw\":1000,\"basis\":\"미상\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"전체 1GW 중 2~5단계 940MW\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-sgc-gunsan-20261021023920-campus",
+    "dc_id": "sgc-gunsan",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"SGC 군산 AI 데이터센터\",\"phase\":\"1단계\",\"plan_mw\":300,\"basis\":\"IT\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"1단계 60MW 모듈형 → 전체 300MW 단계 확장, 2단계 컨소시엄 검토\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-pohang-ai-20261021023920-campus",
+    "dc_id": "pohang-ai",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"포항 AI 데이터센터\",\"phase\":\"1단계\",\"plan_mw\":300,\"basis\":\"수전\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"2단계(네오AI클라우드) 포함 300MW 목표\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-nfd-dangjin-20261021023920-campus",
+    "dc_id": "nfd-dangjin",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"NFD 당진 캠퍼스\",\"phase\":\"전체(초기 공표)\",\"plan_mw\":300,\"basis\":\"수전\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"300MW 캠퍼스 초기 공표, 현재 IT 140MW\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-nat-ai-haenam-20261021023920-campus",
+    "dc_id": "nat-ai-haenam",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"국가AI컴퓨팅센터\",\"phase\":\"1단계\",\"plan_mw\":80,\"basis\":\"IT\",\"plan_year\":\"2030\",\"c\":\"추정\",\"note\":\"1단계 40MW·GPU 1.5만장(2028) → 2030년 80MW·약 5만장\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-daou-jukjeon-20261021023920-campus",
+    "dc_id": "daou-jukjeon",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"다우 죽전 하이퍼스케일\",\"phase\":\"1~2단계\",\"plan_mw\":100,\"basis\":\"미상\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"1단계 20MW → 2단계 40MW, 100MW+ 증설 구상\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-sds-dongtan-20261021023920-campus",
+    "dc_id": "sds-dongtan",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"삼성SDS 동탄\",\"phase\":\"1·2동\",\"plan_mw\":40,\"basis\":\"IT\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"2개동 각 20MW, 2동 2026-Q1 가동\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-megadata-wonju-20261021023920-campus",
+    "dc_id": "megadata-wonju",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"메가데이타코리아 원주\",\"phase\":\"3개 동\",\"plan_mw\":120,\"basis\":\"수전\",\"plan_year\":\"\",\"c\":\"추정\",\"note\":\"40MW급 3개 동, 설비 99MW → 최대 120MW 확장\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
+  },
+  {
+    "id": "h-stt-seoul1-20261021023920-campus",
+    "dc_id": "stt-seoul1",
+    "at": "2026-10-21T02:39:20.113Z",
+    "field": "campus",
+    "old": "",
+    "new": "{\"name\":\"STT 서울1 (가산)\",\"phase\":\"층별 순차 오픈\",\"plan_mw\":40,\"basis\":\"수전\",\"plan_year\":\"2027-07\",\"c\":\"추정\",\"note\":\"1단계 4~6층 18MW(2026-07) → 2단계 연말 → 잔여 2027-07\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "캠퍼스·단계 초기 등록(비고 기준)"
   }
 ]

@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -54,6 +54,13 @@ function prepMini(dc) {
   const p = prepOf(dc);
   if (!p.known) return '<div class="prepmini unk">준비단계 미분류</div>';
   return `<div class="prepmini" title="${p.steps.map(s => `${s.label}: ${s.state || '미상'}${s.c ? ' (' + s.c + ')' : ''}`).join(' · ')}">${p.steps.map(s => `<span class="ps ${s.level}">${s.label.slice(0, 2)}</span>`).join('<i>›</i>')}</div>`;
+}
+const fmtPlan = mw => (mw >= 1000 ? `${Math.round(mw / 100) / 10}GW` : `${mw}MW`);
+function campusChip(dc) {
+  const c = dc.campus; if (!c || (!c.name && !c.phase)) return '';
+  const g = c.name ? campusPlans(state.dcs).find(x => x.name === c.name) : null;
+  const plan = g && g.plan_mw != null ? ` · 전체 ${fmtPlan(g.plan_mw)}${g.basis !== '미상' ? ' ' + g.basis : ''}` : '';
+  return `<div class="campchip" title="${esc([c.name, c.note].filter(Boolean).join(' · '))}${g && g.unassigned ? esc(` · 미배정 ${g.unassigned}MW(공급 추정 제외)`) : ''}">캠퍼스 ${esc(c.phase || '')}${plan}</div>`;
 }
 function dboBadge(dc) {
   const d = dboOf(dc);
@@ -114,7 +121,7 @@ function filtered() {
     if (f.status.size && !f.status.has(dc.status)) return false;
     if (f.prep) { const p = prepOf(dc); if (f.prep === '미분류' ? (dc.status !== '설계중' || p.known) : p.stage !== f.prep || (dc.status === '설계중' && !p.known)) return false; }
     if (f.dbo) { const t = dboOf(dc).type; if (f.dbo === 'ext' ? !DBO_EXTERNAL.includes(t) : t !== f.dbo) return false; }
-    if (q && ![dc.name, dboOf(dc).provider, (dc.aliases || []).join(' '), watchOf(dc).join(' '), dc.owner, dc.contractor, dc.operator, dc.address, playerOf(dc), locOf(dc).sido, locOf(dc).sigungu, locOf(dc).area].join(' ').toLowerCase().includes(q)) return false;
+    if (q && ![dc.name, dboOf(dc).provider, dc.campus?.name, (dc.aliases || []).join(' '), watchOf(dc).join(' '), dc.owner, dc.contractor, dc.operator, dc.address, playerOf(dc), locOf(dc).sido, locOf(dc).sigungu, locOf(dc).area].join(' ').toLowerCase().includes(q)) return false;
     return true;
   });
   const s = f.sort, num = (x, k) => (isNum(x[k]) ? +x[k] : -1);
@@ -135,7 +142,7 @@ function renderList() {
   tb.innerHTML = arr.map(dc => {
     const ac = addrCheck(dc);
     return `<tr data-id="${esc(dc.id)}" tabindex="0">
-      <td><div class="name">${esc(dc.name)}${pchip(dc)}</div>${(dc.aliases || []).length ? `<div class="alias">${esc(dc.aliases.join(' · '))}</div>` : ''}</td>
+      <td><div class="name">${esc(dc.name)}${pchip(dc)}</div>${(dc.aliases || []).length ? `<div class="alias">${esc(dc.aliases.join(' · '))}</div>` : ''}${campusChip(dc)}</td>
       <td><span class="cat">${esc(dc.category || '—')}</span></td>
       <td>${statusPill(dc.status)}<div class="phase">${phaseOf(dc.status)}</div>${dc.status === '설계중' ? prepMini(dc) : ''}</td>
       <td><div>${esc(locOf(dc).sido)} ${esc(locOf(dc).sigungu)}${locOf(dc).area ? `<span class="atag ${locOf(dc).area === '수도권' ? 'm' : ''}">${locOf(dc).area === '수도권' ? '수도권' : '지방·' + esc(locOf(dc).region)}</span>` : ''}</div><span class="addr"><span class="dot" style="background:var(${ADDR_COLOR[ac.status]})"></span>${esc(ac.status)}</span></td>
@@ -284,8 +291,20 @@ const VALUE_RULE = {
   competitor: '핵심 경쟁사(KT·SK·LG CNS) 미점유5 · 자사3 · 경쟁사 점유1'
 };
 
+function renderCampusPlans() {
+  const el = $('#supCampus'); if (!el) return;
+  const plans = campusPlans(state.dcs).filter(g => g.plan_mw != null);
+  const tot = plans.reduce((s, g) => s + (g.unassigned || 0), 0);
+  el.innerHTML = plans.length ? `<p class="note" style="margin:0 0 8px">사이트 전체 계획 중 아직 단계(센터)로 등록되지 않은 용량입니다. 시점·확률이 불확실해 위 공급 추정에는 넣지 않았습니다. 합계 <b>${Math.round(tot).toLocaleString()}MW</b></p>
+    <table class="ftable"><thead><tr><th>캠퍼스</th><th>등록 단계</th><th class="r">계획</th><th class="r">등록</th><th class="r">미배정</th><th>목표</th></tr></thead><tbody>${plans.map(g => `<tr>
+      <td>${esc(g.name)}</td><td>${g.members.map(m => `<a href="#dc/${esc(m.id)}" data-open="${esc(m.id)}">${esc(m.campus?.phase || m.name)}</a>`).join(' · ')}</td>
+      <td class="r num">${fmtPlan(g.plan_mw)}${g.basis !== '미상' ? ' <span class="of">' + g.basis + '</span>' : ''}</td><td class="r num">${g.assigned}</td><td class="r num"><b>${g.unassigned}</b></td><td class="num">${esc(g.plan_year || '—')}</td></tr>`).join('')}</tbody></table>`
+    : '<p class="note" style="margin:0">캠퍼스 계획 용량이 기록된 센터가 없습니다.</p>';
+  el.querySelectorAll('[data-open]').forEach(a => a.onclick = e => { e.preventDefault(); openDetail(a.dataset.open); });
+}
+
 function renderSupply() {
-  renderPlayerCards(); renderWatch();
+  renderPlayerCards(); renderWatch(); renderCampusPlans();
   const metric = state.supMetric, split = state.supSplit, mode = state.supMode, G = GROUPS[split];
   const fc = runForecast(metric, split), unit = metric === 'it_mw' ? 'IT Load' : '수전';
   const cols = ['기존', ...fc.years];
@@ -536,7 +555,7 @@ function openDetail(id, preset = null) {
   renderSheet();
 }
 
-const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo'];
+const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus'];
 const same = (a, b) => JSON.stringify(a ?? '') === JSON.stringify(b ?? '');
 function diff() {
   const d = sheet.draft, o = sheet.orig, changes = {}, conf = {}, locked = {};
@@ -577,6 +596,7 @@ function renderSheet() {
       <div class="fld full"><label>회사 매칭 <span class="note">(회사 탭의 회사명·별칭 기준 자동 · 눌러서 회사 정보)</span></label><div class="comatch" id="coMatch">${coMatchHTML(d)}</div></div>
     </div></section>
     ${dboSection(d)}
+    ${campusSection(d)}
     <section class="sec"><h3>준비단계 <span class="hint">부지확보 → 전기확보 → 건축허가 → 착공 · 설계중 센터의 공급 확률에 반영</span></h3>
       ${prepStepper(d)}
       <div class="frm prepfrm">${PREP_STEPS.map(st => { const x = (d.prep || {})[st.key] || {}; const dirty = !same(x, ((sheet.orig.prep || {})[st.key]) || {}); return `<div class="fld full ${dirty ? 'dirty' : ''}"><label>${st.label}</label><div class="row">
@@ -639,6 +659,23 @@ function dboSection(d) {
       <input class="inp" data-dbo="note" value="${esc(x.note || '')}" placeholder="메모·근거 요약 (예: 2026-02 설계·구축·운영 수주)" aria-label="DBO 메모" style="margin-top:6px"></div></div></section>`;
 }
 
+function campusSection(d) {
+  const x = d.campus || {}, dirty = !same(d.campus || null, sheet.orig.campus || null);
+  const g = x.name ? campusPlans(state.dcs.map(dc => (dc.id === sheet.id ? { ...dc, ...d } : dc)).concat(sheet.id ? [] : [d])).find(p => p.name === x.name) : null;
+  const sum = g ? `<div class="full campsum">등록된 단계 ${g.members.length}곳 · 합계 ${g.assigned}MW${g.plan_mw != null ? ` / 계획 ${g.plan_mw}MW → <b>미배정 ${g.unassigned}MW</b> (공급 추정 제외)` : ''}${g.members.length > 1 ? `<div class="camplist">${g.members.map(m => `<button type="button" class="btn sm" data-goto="${esc(m.id)}">${esc(m.campus?.phase || m.name)}</button>`).join('')}</div>` : ''}</div>` : '';
+  return `<section class="sec"><h3>캠퍼스 · 단계 <span class="hint">여러 동·단계로 나눠 짓는 사이트 · 이 센터는 현재 확정된 단계, 아래는 사이트 전체 계획 · 다음 단계가 구체화되면 같은 캠퍼스명으로 센터 추가</span></h3>
+    <div class="frm ${dirty ? 'dirty' : ''}">
+      <div class="fld"><label for="c_name">캠퍼스명</label><input class="inp" id="c_name" data-camp="name" value="${esc(x.name || '')}" placeholder="예: GS 동해 AI 데이터센터 캠퍼스"></div>
+      <div class="fld"><label for="c_phase">이 센터의 단계</label><input class="inp" id="c_phase" data-camp="phase" value="${esc(x.phase || '')}" placeholder="예: 1단계, 1차, 1~2동"></div>
+      <div class="fld"><label for="c_plan">캠퍼스 전체 계획 용량 (MW)</label><div class="row dborow"><input class="inp num" id="c_plan" data-camp="plan_mw" value="${esc(x.plan_mw ?? '')}" placeholder="예: 1000" inputmode="decimal">
+        <select data-camp="basis" aria-label="용량 기준">${CAMPUS_BASIS.map(b => `<option ${b === (x.basis || '미상') ? 'selected' : ''}>${b}</option>`).join('')}</select></div></div>
+      <div class="fld"><label for="c_year">전체 완성 목표</label><div class="row dborow"><input class="inp num" id="c_year" data-camp="plan_year" value="${esc(x.plan_year || '')}" placeholder="YYYY / YYYY-H2">
+        <span class="cf" data-campc>${['확정', '추정'].map(c => `<button type="button" data-v="${c}" aria-pressed="${(x.c || '') === c}">${c}</button>`).join('')}</span></div></div>
+      <div class="fld full"><label for="c_note">단계 계획 메모</label><input class="inp" id="c_note" data-camp="note" value="${esc(x.note || '')}" placeholder="예: 2~5단계 940MW, 2027년 이후 순차 착공"></div>
+      ${sum}
+    </div></section>`;
+}
+
 function bindSheet() {
   const body = $('#shBody');
   ['owner', 'operator', 'contractor'].forEach(f => { const el = $('#f_' + f); if (el) el.setAttribute('list', 'coNames'); });
@@ -692,6 +729,16 @@ function bindSheet() {
   body.querySelectorAll('[data-dbo]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setDbo(el.dataset.dbo, el.value.trim(), el.tagName === 'SELECT')));
   body.querySelector('[data-dboscope]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setDbo('scope', b.dataset.v, true); });
   body.querySelector('[data-dboc]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setDbo('c', b.dataset.v, true); });
+  const setCamp = (k, v, rerender) => {
+    const x = { name: '', phase: '', plan_mw: null, basis: '미상', plan_year: '', c: '추정', ...(sheet.draft.campus || {}) };
+    x[k] = k === 'plan_mw' ? (v === '' ? null : (isNum(v) ? Number(v) : v)) : v;
+    if (!x.note) delete x.note;
+    sheet.draft.campus = !x.name && !x.phase && x.plan_mw == null && !x.note ? null : x; sheet.draft.locked.campus = true;
+    if (rerender) renderSheet(); else updateFooter();
+  };
+  body.querySelectorAll('[data-camp]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setCamp(el.dataset.camp, el.value.trim(), el.tagName === 'SELECT')));
+  body.querySelector('[data-campc]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setCamp('c', b.dataset.v, true); });
+  body.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => { if (b.dataset.goto !== sheet.id) openDetail(b.dataset.goto); }));
   body.querySelectorAll('[data-score]').forEach(el => el.addEventListener('input', () => {
     const k = el.dataset.score, cur = { ...(sheet.draft.score_manual || {}) }, v = el.value.trim();
     if (!v) delete cur[k]; else cur[k] = k === 'note' ? v : (isNum(v) ? Number(v) : v);

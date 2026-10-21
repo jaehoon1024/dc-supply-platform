@@ -337,3 +337,8 @@ dialog .fld{margin-top:12px}
 .dborow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .dborow select{flex:none}.dborow .inp{flex:1 1 180px;min-width:0}
 .cf.scope button[aria-pressed="true"]{background:var(--accent);color:#fff}
+
+/* 캠퍼스·단계 */
+.campchip{display:inline-block;margin-top:3px;font-size:11px;padding:1px 6px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
+.campsum{font-size:13px;color:var(--muted);padding:8px 10px;background:var(--surface-2);border-radius:6px}
+.camplist{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}

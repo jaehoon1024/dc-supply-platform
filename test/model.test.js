@@ -244,3 +244,13 @@ test('플레이어 업데이트(ingest): 회사 프로필·핵심 4사 목표, �
   assert.equal(out.runs.at(-1).kind, '플레이어 업데이트');
   const { validateCompanies } = await import('../lib/model.js'); assert.deepEqual(validateCompanies(out.companies), []);
 });
+
+test('캠퍼스: 계획 용량 중 등록 단계 합계를 빼 미배정 용량 계산', async () => {
+  const { campusPlans, normalizeCampus } = await import('../lib/model.js');
+  const dcs = [{ id: 'a', power_mw: 60, campus: { name: 'X', phase: '1단계', plan_mw: 1000, basis: '수전' } },
+    { id: 'b', power_mw: 100, campus: { name: 'X', phase: '2단계' } }, { id: 'c', it_mw: 10 }];
+  const [g] = campusPlans(dcs);
+  assert.equal(g.members.length, 2); assert.equal(g.assigned, 160); assert.equal(g.unassigned, 840);
+  assert.throws(() => normalizeCampus({ name: 'X', plan_mw: -1 }));
+  assert.equal(normalizeCampus({}), null);
+});
