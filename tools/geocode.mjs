@@ -12,4 +12,5 @@ for (const it of list) {
   }
   res.push({ id: it.id, ...hit });
 }
-console.log('RESULT' + JSON.stringify(res));
+import('node:fs').then(fs => fs.writeFileSync('tools/geocode-result.json', JSON.stringify(res, null, 1) + '\n'));
+console.log('done', res.filter(r => r.lat).length, '/', res.length);
