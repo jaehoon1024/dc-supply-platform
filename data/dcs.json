@@ -2463,7 +2463,7 @@
     "lat": 35.082,
     "lng": 128.962,
     "power_mw": 40,
-    "it_mw": null,
+    "it_mw": 26.85,
     "start_ym": "2026-H1",
     "complete_ym": "",
     "rfs_ym": "",
@@ -2477,7 +2477,9 @@
       "status": "추정",
       "address": "추정"
     },
-    "locked": {},
+    "locked": {
+      "it_mw": true
+    },
     "permit_ref": {
       "sigunguCd": "26380",
       "bjdongCd": "10500",
@@ -2486,8 +2488,8 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-21T02:25:21.255Z",
+    "updated_by": "user:정재훈",
     "id": "koramco-busan",
     "name": "코람코 부산 장림 데이터센터",
     "status": "설계중",
@@ -2497,7 +2499,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T02:25:21.255Z"
     },
     "prep": {
       "site": {

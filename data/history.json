@@ -6303,5 +6303,16 @@
     "evidence_url": "",
     "by": "auto",
     "note": "DBO 초기 분류(기존 운영사·비고 기준)"
+  },
+  {
+    "dc_id": "koramco-busan",
+    "at": "2026-10-21T02:25:21.255Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-koramco-busan-20261021022521-it_mw-0",
+    "field": "it_mw",
+    "old": "",
+    "new": 26.85,
+    "note": "수동 변경 · 필드 고정"
   }
 ]
