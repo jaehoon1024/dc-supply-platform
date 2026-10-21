@@ -650,10 +650,10 @@ function valueSection(d) {
 
 function dboSection(d) {
   const x = d.dbo || {}, dirty = !same(d.dbo || null, sheet.orig.dbo || null);
-  return `<section class="sec"><h3>DBO <span class="hint">설계(D)·구축(B)·운영(O)을 발주처가 아닌 사업자가 맡는지 · 수정하면 고정되어 자동수집이 덮어쓰지 않습니다</span></h3>
+  return `<section class="sec"><h3>DBO <span class="hint">DBO=설계(D)·구축(B)·운영(O) 일괄 · 부분 DBO=일부(운영만=위탁운영) · 마스터리스=운영사가 건물 전체 장기 임차 · 수정하면 고정되어 자동수집이 덮어쓰지 않습니다</span></h3>
     <div class="frm"><div class="fld full ${dirty ? 'dirty' : ''}"><div class="row dborow">
       <select data-dbo="type" aria-label="DBO 구분">${DBO_TYPES.map(t => `<option ${t === (x.type || '미상') ? 'selected' : ''}>${t}</option>`).join('')}</select>
-      <input class="inp" data-dbo="provider" list="coNames" value="${esc(x.provider || '')}" placeholder="DBO·운영 사업자 (예: KT클라우드)" aria-label="DBO 사업자">
+      <input class="inp" data-dbo="provider" list="coNames" value="${esc(x.provider || '')}" placeholder="DBO 사업자·마스터리스 임차인 (예: KT클라우드)" aria-label="DBO 사업자">
       <span class="cf scope" data-dboscope>${DBO_SCOPE.map(s => `<button type="button" data-v="${s.key}" aria-pressed="${(x.scope || []).includes(s.key)}" title="${s.label}">${s.key} ${s.label}</button>`).join('')}</span>
       <span class="cf" data-dboc>${['확정', '추정'].map(c => `<button type="button" data-v="${c}" aria-pressed="${(x.c || '') === c}">${c}</button>`).join('')}</span></div>
       <input class="inp" data-dbo="note" value="${esc(x.note || '')}" placeholder="메모·근거 요약 (예: 2026-02 설계·구축·운영 수주)" aria-label="DBO 메모" style="margin-top:6px"></div></div></section>`;
@@ -721,7 +721,7 @@ function bindSheet() {
     if (k === 'scope') x.scope = x.scope.includes(v) ? x.scope.filter(s => s !== v) : DBO_SCOPE.map(s => s.key).filter(s => s === v || x.scope.includes(s));
     else x[k] = v;
     if (k === 'type' && v === 'DBO' && !x.scope.length) x.scope = ['D', 'B', 'O'];
-    if (k === 'type' && v === '위탁운영' && !x.scope.length) x.scope = ['O'];
+    if (k === 'type' && v === '마스터리스') x.scope = [];
     if (!x.note) delete x.note;
     sheet.draft.dbo = x.type === '미상' && !x.provider && !x.note ? null : x; sheet.draft.locked.dbo = true;
     if (rerender) renderSheet(); else updateFooter();
@@ -844,7 +844,7 @@ function renderCompanies() {
   const tot = rows.reduce((t, r) => t + r.s.n, 0);
   $('#coNote').textContent = `${ROLE_LABEL[role]} ${rows.length}곳 · 연결 센터 ${tot}건`;
   const mw = v => (v == null ? '<span class="of">—</span>' : fmtMW(v));
-  $('#coTable').innerHTML = rows.length ? `<table class="ctable"><thead><tr><th>회사</th><th>유형</th><th class="r">센터</th><th class="r">운영 / 개발</th><th class="r">수전 MW</th><th class="r">IT MW</th><th class="r">개발 중 수전</th><th class="r" title="DBO·부분 DBO·위탁운영 사업자로 기록된 센터 수">DBO 수행</th><th>주요 지역</th><th>최근 변경</th></tr></thead><tbody>${rows.map(({ c, s, dbo }) => `<tr data-co="${esc(c.id)}" tabindex="0">
+  $('#coTable').innerHTML = rows.length ? `<table class="ctable"><thead><tr><th>회사</th><th>유형</th><th class="r">센터</th><th class="r">운영 / 개발</th><th class="r">수전 MW</th><th class="r">IT MW</th><th class="r">개발 중 수전</th><th class="r" title="DBO·부분 DBO 사업자 또는 마스터리스 임차인으로 기록된 센터 수">DBO 수행</th><th>주요 지역</th><th>최근 변경</th></tr></thead><tbody>${rows.map(({ c, s, dbo }) => `<tr data-co="${esc(c.id)}" tabindex="0">
     <td><div class="name">${c.major ? '<span class="star" title="주요 회사">★</span>' : ''}${esc(c.name)}</div><div class="alias">${esc([c.parent && '그룹 ' + c.parent, ...(c.roles || []).filter(r => r !== role).map(r => ROLE_LABEL[r] + ' 겸업')].filter(Boolean).join(' · '))}</div></td>
     <td><span class="cotype">${esc(c.type)}</span></td>
     <td class="r num">${s.n || '<span class="of">0</span>'}</td><td class="r num">${s.op} / ${s.dev}</td>

@@ -6655,5 +6655,148 @@
     "evidence_url": "",
     "by": "auto",
     "note": "정합성 점검"
+  },
+  {
+    "id": "h-ansan-gcc-20261021052131-dbo",
+    "dc_id": "ansan-gcc",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"롯데이노베이트\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 롯데이노베이트 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"롯데이노베이트\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 롯데이노베이트 — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-egis-samsong-20261021052131-dbo",
+    "dc_id": "egis-samsong",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"LG CNS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG CNS — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"LG CNS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG CNS — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-gs-donghae-20261021052131-dbo",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"디씨브릿지\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 디씨브릿지 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"디씨브릿지\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 디씨브릿지 — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-kamsquare-dc-20261021052131-dbo",
+    "dc_id": "kamsquare-dc",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"롯데이노베이트\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"롯데이노베이트 위탁운영(2030-05~2035-10, 약 695억)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"롯데이노베이트\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"롯데이노베이트 위탁운영(2030-05~2035-10, 약 695억)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-koramco-gasan-20261021052131-dbo",
+    "dc_id": "koramco-gasan",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"LG유플러스\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG유플러스 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"LG유플러스\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG유플러스 — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-ksquare-ujb-20261021052131-dbo",
+    "dc_id": "ksquare-ujb",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"LG CNS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG CNS — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"LG CNS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG CNS — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-kt-bucheon-20261021052131-dbo",
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"KT클라우드\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 KT클라우드 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"마스터리스\",\"provider\":\"KT클라우드\",\"scope\":[],\"c\":\"추정\",\"note\":\"KT클라우드 브랜드IDC(파트너 자산 임차형) — 퍼시픽 PFV 소유 건물 임차·운영\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-kt-gaebong-20261021052131-dbo",
+    "dc_id": "kt-gaebong",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"KT클라우드\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 KT클라우드 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"마스터리스\",\"provider\":\"KT클라우드\",\"scope\":[],\"c\":\"추정\",\"note\":\"KT클라우드 임차·운영으로 추정(개봉 AIDC, 확인 필요)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-magna-goyang-20261021052131-dbo",
+    "dc_id": "magna-goyang",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"디씨브릿지\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 디씨브릿지 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"디씨브릿지\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 디씨브릿지 — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-metainfra-asan-20261021052131-dbo",
+    "dc_id": "metainfra-asan",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"KT클라우드\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 KT클라우드 (KT AI 컨소시엄) — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"KT클라우드\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 KT클라우드 (KT AI 컨소시엄) — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-nat-ai-haenam-20261021052131-dbo",
+    "dc_id": "nat-ai-haenam",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"삼성SDS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 삼성SDS 컨소시엄 — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"삼성SDS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 삼성SDS 컨소시엄 — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-pacific-sunny-20261021052131-dbo",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"위탁운영\",\"provider\":\"LG CNS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG CNS — 운영 위탁으로 추정(설계·구축 참여 여부 미확인)\"}",
+    "new": "{\"type\":\"부분 DBO\",\"provider\":\"LG CNS\",\"scope\":[\"O\"],\"c\":\"추정\",\"note\":\"운영사 LG CNS — 운영(O)만 맡는 부분 DBO(위탁운영)로 추정(설계·구축 참여 여부 미확인)\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
+  },
+  {
+    "id": "h-pdg-se1-20261021052131-dbo",
+    "dc_id": "pdg-se1",
+    "at": "2026-10-21T05:21:31.294Z",
+    "field": "dbo",
+    "old": "{\"type\":\"자체\",\"provider\":\"Princeton Digital Group\",\"scope\":[],\"c\":\"추정\",\"note\":\"발주처 계열 운영사가 운영\"}",
+    "new": "{\"type\":\"마스터리스\",\"provider\":\"Princeton Digital Group\",\"scope\":[],\"c\":\"추정\",\"note\":\"ESR·와이드크릭 소유 건물을 PDG가 임차 후 내부 인프라 구축·운영\"}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "DBO 구분 개편: 위탁운영 → 부분 DBO(O), 임차 운영 → 마스터리스"
   }
 ]

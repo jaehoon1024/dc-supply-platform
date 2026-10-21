@@ -254,3 +254,10 @@ test('캠퍼스: 계획 용량 중 등록 단계 합계를 빼 미배정 용량 
   assert.throws(() => normalizeCampus({ name: 'X', plan_mw: -1 }));
   assert.equal(normalizeCampus({}), null);
 });
+
+test('DBO 구분: 마스터리스 허용, 예전 위탁운영은 부분 DBO로 변환', async () => {
+  const { normalizeDbo } = await import('../lib/model.js');
+  assert.equal(normalizeDbo({ type: '마스터리스', provider: 'KT클라우드' }).type, '마스터리스');
+  assert.equal(normalizeDbo({ type: '위탁운영', provider: 'LG CNS', scope: ['O'] }).type, '부분 DBO');
+  assert.throws(() => normalizeDbo({ type: '임대' }));
+});

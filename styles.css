@@ -333,6 +333,7 @@ dialog .fld{margin-top:12px}
 .dbochip.t-0,.dbochip.t-1{border-color:var(--accent);color:var(--accent)}
 .dbochip.t-0 .dt,.dbochip.t-1 .dt{color:var(--accent)}
 .dbochip.t-2{border-color:var(--ok)}
+.dbochip.t-2 .dt{color:var(--ok)}
 .dbochip.guess{border-style:dashed}
 .dborow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .dborow select{flex:none}.dborow .inp{flex:1 1 180px;min-width:0}
