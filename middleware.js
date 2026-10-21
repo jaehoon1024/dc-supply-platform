@@ -1,26 +1,19 @@
 // 사이트 입장 비밀번호 (Vercel Routing Middleware)
 // - 모든 페이지·데이터·API 요청 전에 실행됩니다. 비밀번호는 Vercel 환경변수 SITE_PASSWORD(Sensitive)에만 있습니다.
-// - 맞게 입력하면 30일간 유지되는 쿠키를 발급합니다. 쿠키에는 비밀번호가 아닌 해시만 들어갑니다.
+// - 비밀번호 확인·쿠키 발급은 api/gate.js(서버 함수)가 합니다. 맞게 입력하면 30일간 유지되는 쿠키를 발급합니다. 쿠키에는 비밀번호가 아닌 해시만 들어갑니다.
 // - 비밀번호를 바꾸면(SITE_PASSWORD 변경 후 Redeploy) 기존 쿠키는 모두 무효가 됩니다.
 // - Vercel Cron(인허가 동기화)은 api/permits.js가 자체 확인하므로 통과시킵니다.
 // - SITE_PASSWORD가 없으면 잠긴 상태로 안내만 보여 줍니다(실수로 공개되지 않도록).
 
 export const config = { matcher: '/((?!favicon\\.ico).*)' };
 
-const COOKIE = 'dcs_gate';
-const MAX_AGE = 60 * 60 * 24 * 30;
-
-async function tokenOf(pw) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`dc-supply-gate:${pw}`));
-  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
-}
+import { COOKIE, tokenOf } from './lib/gate.js';
 
 const cookieOf = (req, name) => {
   const m = (req.headers.get('cookie') || '').match(new RegExp(`(?:^|;\\s*)${name}=([^;]+)`));
   return m ? decodeURIComponent(m[1]) : '';
 };
 
-const safeNext = v => (typeof v === 'string' && v.startsWith('/') && !v.startsWith('//') && !v.startsWith('/__gate') ? v : '/');
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
 function page({ next = '/', error = '', locked = false } = {}) {
@@ -41,9 +34,9 @@ button{width:100%;margin-top:14px;font:inherit;font-weight:600;padding:11px;bord
 </style></head><body><main class="card">
 <h1>DC공급현황</h1><p>대한민국 데이터센터 공급 관리</p>
 ${locked ? '<div class="err">입장 비밀번호가 설정되지 않았습니다. 관리자에게 문의하세요.</div>' : `
-<form method="post" action="/__gate" autocomplete="off">
+<form method="post" action="/api/gate" autocomplete="off">
 <input type="hidden" name="next" value="${esc(next)}">
-<label for="pw">비밀번호</label><input id="pw" name="pw" type="password" required autofocus>
+<label for="pw">비밀번호</label><input id="pw" name="pw" type="password" required autofocus autocapitalize="off" autocorrect="off" spellcheck="false">
 <button type="submit">들어가기</button><div class="err" role="alert">${esc(error)}</div></form>`}
 </main></body></html>`;
   return new Response(html, { status: locked ? 503 : 401, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex' } });
@@ -59,19 +52,7 @@ export default async function middleware(request) {
   if (!pw) return page({ locked: true });
   const token = await tokenOf(pw);
 
-  if (url.pathname === '/__gate') {
-    if (request.method !== 'POST') return Response.redirect(new URL('/', url), 303);
-    const form = await request.formData().catch(() => null);
-    const next = safeNext(form?.get('next'));
-    if (form && String(form.get('pw') || '') === pw) {
-      return new Response(null, { status: 303, headers: {
-        location: next, 'cache-control': 'no-store',
-        'set-cookie': `${COOKIE}=${token}; Path=/; Max-Age=${MAX_AGE}; HttpOnly; Secure; SameSite=Lax`
-      } });
-    }
-    await new Promise(r => setTimeout(r, 800)); // 무차별 대입 완화
-    return page({ next, error: '비밀번호가 올바르지 않습니다.' });
-  }
+  if (url.pathname === '/api/gate') return; // 비밀번호 확인은 api/gate.js가 처리
 
   if (url.pathname === '/__logout') {
     return new Response(null, { status: 303, headers: { location: '/', 'set-cookie': `${COOKIE}=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax` } });
@@ -83,5 +64,7 @@ export default async function middleware(request) {
   if (url.pathname.startsWith('/api/') || url.pathname.startsWith('/data/')) {
     return new Response(JSON.stringify({ error: '로그인이 필요합니다' }), { status: 401, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
   }
-  return page({ next: url.pathname + url.search });
+  const failed = url.searchParams.get('gate') === 'fail';
+  if (failed) url.searchParams.delete('gate');
+  return page({ next: url.pathname + url.search, error: failed ? '비밀번호가 올바르지 않습니다.' : '' });
 }
