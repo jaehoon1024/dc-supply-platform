@@ -14,7 +14,7 @@ const day = d => (/^\d{8}$/.test(String(d || '').trim()) ? `${String(d).slice(0,
 export const stageOf = p => (p.useAprDay ? '준공' : p.realStcnsDay ? '공사 중' : '착공 전');
 
 // 건축HUB는 초당 요청 수 제한이 있어(초과 시 HTTP 429) 요청 간격을 두고, 429·5xx는 지수 백오프로 재시도합니다.
-export const LIMIT = { gapMs: Number(process.env.PERMIT_GAP_MS ?? 250), retries: 4, backoffMs: 1000 };
+export const LIMIT = { gapMs: Number(process.env.PERMIT_GAP_MS ?? 350), retries: 4, backoffMs: 1000 };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let nextSlot = 0;
 async function throttle() {
@@ -31,13 +31,15 @@ async function fetchPage(ref, key, pageNo, fetchImpl) {
     await throttle();
     res = await fetchImpl(`${ENDPOINT}?${q}`);
     text = await res.text();
-    const retryable = res.status === 429 || res.status >= 500;
+    // 한도 초과는 429 외에 빈 응답·XML 오류(LIMITED_NUMBER_OF_SERVICE_REQUESTS…)로 오기도 해서 함께 재시도합니다.
+    const body = text.trim();
+    const retryable = res.status === 429 || res.status >= 500 || (res.ok && (!body || (body[0] !== '{' && /LIMIT|EXCEED|초과/i.test(body))));
     if (!retryable || attempt >= LIMIT.retries) break;
     const ra = Number(res.headers?.get?.('retry-after'));
     await sleep(ra > 0 ? ra * 1000 : LIMIT.backoffMs * 2 ** attempt + Math.random() * 300);
   }
   if (!res.ok) throw new Error(`건축HUB HTTP ${res.status}: ${text.slice(0, 200)}`);
-  let j; try { j = JSON.parse(text); } catch { throw new Error(`건축HUB 응답이 JSON이 아닙니다(인증키·활용신청 확인): ${text.slice(0, 160)}`); }
+  let j; try { j = JSON.parse(text); } catch { throw new Error(text.trim() ? `건축HUB 응답이 JSON이 아닙니다(인증키·활용신청 확인): ${text.slice(0, 160)}` : '건축HUB 빈 응답(요청 한도 초과로 추정, 재시도 후에도 실패)'); }
   const code = j?.response?.header?.resultCode;
   if (code && code !== '00') throw new Error(`건축HUB 오류 ${code}: ${j.response.header.resultMsg}`);
   const items = j?.response?.body?.items?.item;

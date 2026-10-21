@@ -193,3 +193,13 @@ test('건축HUB 429: 대기 후 재시도해서 성공', async () => {
     await assert.rejects(fetchPermits({ sigunguCd: '1', bjdongCd: '2', bun: '3' }, 'k', fake), /HTTP 429/);
   } finally { Object.assign(LIMIT, saved); }
 });
+
+test('건축HUB 빈 응답·XML 한도 초과도 재시도', async () => {
+  const { LIMIT, fetchPermits } = await import('../scripts/permits.mjs');
+  const saved = { ...LIMIT }; Object.assign(LIMIT, { gapMs: 0, backoffMs: 1 });
+  const seq = ['', '<OpenAPI_ServiceResponse><returnAuthMsg>LIMITED_NUMBER_OF_SERVICE_REQUESTS_PER_SECOND_EXCEEDS_ERROR</returnAuthMsg></OpenAPI_ServiceResponse>',
+    JSON.stringify({ response: { header: { resultCode: '00' }, body: { totalCount: 0, items: '' } } })];
+  let i = 0; const fake = async () => new Response(seq[i++]);
+  try { assert.deepEqual(await fetchPermits({ sigunguCd: '1', bjdongCd: '2', bun: '3' }, 'k', fake), []); assert.equal(i, 3); }
+  finally { Object.assign(LIMIT, saved); }
+});
