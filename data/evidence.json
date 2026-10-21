@@ -5014,5 +5014,279 @@
     "source_id": "s30",
     "collected_at": "2026-10-21T06:26:50.698Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-actis-yangpyeong-20261021234933-312",
+    "dc_id": "actis-yangpyeong",
+    "title": "건축인허가 기본개요 – 양평동3가 77-80 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1020100087011",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2021-09-09 · 착공 2021-12-22 · 사용승인 2024-10-11 · 연면적 26445.38㎡ · 서울특별시 영등포구 양평동3가 77-80번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-sel2-20261021234933-313",
+    "dc_id": "de-sel2",
+    "title": "건축인허가 기본개요 – 청천동 422",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000007e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월"
+    ],
+    "excerpt": "허가 2025-03-31 · 착공 2025-05-14 · 사용승인 - · 연면적 85821.54㎡ · 인천광역시 부평구 청천동 422번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-empyrion-kr1-20261021234933-314",
+    "dc_id": "empyrion-kr1",
+    "title": "건축인허가 기본개요 – 엠피리온 디지털 AI 캠퍼스",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1023100142294",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2022-03-17 · 착공 2023-03-24 · 사용승인 2025-06-27 · 연면적 55436.06㎡ · 서울특별시 서초구 양재동 224번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-gangneung-anin-20261021234933-315",
+    "dc_id": "gangneung-anin",
+    "title": "건축인허가 기본개요 – ORIENTE IDC",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000009e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined"
+    ],
+    "excerpt": "허가 2026-01-28 · 착공 - · 사용승인 - · 연면적 52491.58㎡ · 강원특별자치도 강릉시 강동면 안인진리 300-31번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kamsquare-dc-20261021234933-316",
+    "dc_id": "kamsquare-dc",
+    "title": "건축인허가 기본개요 – 지곡동 236-6",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.000000000000001e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined"
+    ],
+    "excerpt": "허가 2026-09-03 · 착공 - · 사용승인 - · 연면적 49308.04㎡ · 경기도 용인시 기흥구 지곡동 236-6번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-bucheon-20261021234933-317",
+    "dc_id": "kt-bucheon",
+    "title": "건축인허가 기본개요 – PEACH PFV DATA CENTER",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1097100076386",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월"
+    ],
+    "excerpt": "허가 2022-07-04 · 착공 2023-04-25 · 사용승인 - · 연면적 71160.33㎡ · 경기도 부천시 오정구 삼정동 13-15번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-gaebong-20261021234933-318",
+    "dc_id": "kt-gaebong",
+    "title": "건축인허가 기본개요 – 구로 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000003e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월"
+    ],
+    "excerpt": "허가 2022-12-29 · 착공 2023-12-29 · 사용승인 - · 연면적 19255.39㎡ · 서울특별시 구로구 개봉동 166-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-yeouido-20261021234933-319",
+    "dc_id": "kt-yeouido",
+    "title": "건축인허가 기본개요 – 여의도동 18 방송통신시설 (한국방송공사)",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1020100005407",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined"
+    ],
+    "excerpt": "허가 2008-06-30 · 착공 - · 사용승인 - · 연면적 132331.77㎡ · 서울특별시 영등포구 여의도동 18번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-daegu-20261021234933-320",
+    "dc_id": "lgu-daegu",
+    "title": "건축인허가 기본개요 – 엘지유플러스 대구동인사옥",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000004e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2023-09-10 · 착공 2023-10-05 · 사용승인 2024-01-11 · 연면적 5429.18㎡ · 대구광역시 중구 동인동1가 295-1번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-daejeon-20261021234933-321",
+    "dc_id": "lgu-daejeon",
+    "title": "건축인허가 기본개요 – 엘지유플러스 탄방국사",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000007e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2025-05-08 · 착공 2025-05-14 · 사용승인 2025-11-28 · 연면적 3538.65㎡ · 대전광역시 서구 탄방동 663번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-nonhyeon-20261021234933-322",
+    "dc_id": "lgu-nonhyeon",
+    "title": "건축인허가 기본개요 – 주식회사 데이콤 KIDC",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#10244516",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined"
+    ],
+    "excerpt": "허가 2000-04-21 · 착공 - · 사용승인 - · 연면적 28058.78㎡ · 서울특별시 강남구 논현동 261-1번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-nfd-yongin-20261021234933-323",
+    "dc_id": "nfd-yongin",
+    "title": "건축인허가 기본개요 – 용인 덕성리 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000004e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월"
+    ],
+    "excerpt": "허가 2023-09-27 · 착공 2025-09-03 · 사용승인 - · 연면적 55655.39㎡ · 경기도 용인시 처인구 이동읍 덕성리 448-5번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-bucheon-20261021234933-324",
+    "dc_id": "pacific-bucheon",
+    "title": "건축인허가 기본개요 – 부천 내동 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000003e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "착공월",
+      "상태"
+    ],
+    "excerpt": "허가 2023-05-16 · 착공 2026-05-26 · 사용승인 - · 연면적 26080.59㎡ · 경기도 부천시 오정구 내동 222-13번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sczeus-seoul-20261021234933-325",
+    "dc_id": "sczeus-seoul",
+    "title": "건축인허가 기본개요 – Olympus Data Center",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000008e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월",
+      "상태"
+    ],
+    "excerpt": "허가 2025-05-26 · 착공 2026-03-30 · 사용승인 - · 연면적 26186.89㎡ · 경기도 부천시 원미구 춘의동 65-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-smilegate-munbong-20261021234933-326",
+    "dc_id": "smilegate-munbong",
+    "title": "건축인허가 기본개요 – 문봉동 방송통신시설",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000008e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined"
+    ],
+    "excerpt": "허가 2025-07-18 · 착공 - · 사용승인 - · 연면적 48533.95㎡ · 경기도 고양시 일산동구 문봉동 16-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-smilegate-siksa-20261021234933-327",
+    "dc_id": "smilegate-siksa",
+    "title": "건축인허가 기본개요 – 일산2 IDC",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000005e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "undefined",
+      "착공월",
+      "준공월",
+      "상태"
+    ],
+    "excerpt": "허가 2024-03-21 · 착공 2024-07-03 · 사용승인 2025-01-24 · 연면적 44580.27㎡ · 경기도 고양시 일산동구 식사동 2-8번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-21T23:49:33.507Z",
+    "added_by": "auto"
   }
 ]
