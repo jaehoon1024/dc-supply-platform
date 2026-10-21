@@ -4043,5 +4043,60 @@
     "source_id": "s30",
     "collected_at": "2026-10-21T00:52:11.680Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-jangseong-pine-20261021041853-252",
+    "dc_id": "jangseong-pine",
+    "title": "대우건설, 전남 1호 '장성 파인데이터센터' 짓는다",
+    "url": "https://m-economynews.com/mobile/article.html?no=62799",
+    "publisher": "이코노미뉴스",
+    "pub_date": "2025-12",
+    "grade": "B",
+    "fields": [
+      "발주처",
+      "수전용량",
+      "준공월"
+    ],
+    "excerpt": "시행법인 파인디씨PFV와 공사도급계약(12/8). 남면 첨단3지구 연구3BL, 수전 26MW급, 사업비 3,959억, 24개월·2027년 12월 말 준공 예정. 대우건설 출자자 겸 시공사.",
+    "source_id": "s17",
+    "collected_at": "2026-10-21T04:18:53.083Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-jangseong-pine-20261021041853-253",
+    "dc_id": "jangseong-pine",
+    "title": "장성군, 전남 1호 데이터센터 '장성파인데이터센터' 착공",
+    "url": "https://www.twig24.com/news/local_govern/news_local/2025/12/16/20251216500048",
+    "publisher": "트위그24",
+    "pub_date": "2025-12-16",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "수전용량",
+      "RFS"
+    ],
+    "excerpt": "12/15 착공식. 26MW급 1기, 추후 60MW 확대 목표. 2028년 2월경 공사 마무리, 3월 운영 시작 계획. 참여: CJ올리브네트웍스·현대차증권·대우건설·파인앤파트너스자산운용.",
+    "source_id": "s04",
+    "collected_at": "2026-10-21T04:18:53.083Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-nat-ai-haenam-20261021041853-254",
+    "dc_id": "nat-ai-haenam",
+    "title": "'국가 AI 컴퓨팅센터' 해남서 첫 삽…삼성SDS 컨소시엄이 맡아",
+    "url": "https://news.mtn.co.kr/news-detail/2026080309311558007",
+    "publisher": "MTN",
+    "pub_date": "2026-08-03",
+    "grade": "B",
+    "fields": [
+      "상태",
+      "착공월",
+      "준공월",
+      "운영사"
+    ],
+    "excerpt": "8/3 해남 솔라시도 데이터센터파크에서 착공식. 운영법인 KOAC(7/10 설립), 삼성SDS 컨소시엄(네이버클라우드·삼성물산·카카오·삼성전자·KT 등). 2028년까지 첨단 AI칩 1.5만장 구축.",
+    "source_id": "s13",
+    "collected_at": "2026-10-21T04:18:53.083Z",
+    "added_by": "auto"
   }
 ]
