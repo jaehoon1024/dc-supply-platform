@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -20,7 +20,7 @@ const store = {
 const state = {
   dcs: [], evidence: [], history: [], sources: [], runs: [], permits: [], grid: [], targets: [], companies: [],
   meta: { source: '', sha: '', repo: '', editable: false }, loaded: false, tab: 'list',
-  filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', company: null, status: new Set(), q: '', sort: 'power' },
+  filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', dbo: '', company: null, status: new Set(), q: '', sort: 'power' },
   mapView: 'all', mapStatus: new Set(STATUSES), supMetric: 'it_mw', supSplit: 'player', supMode: 'weighted'
 };
 
@@ -54,6 +54,12 @@ function prepMini(dc) {
   const p = prepOf(dc);
   if (!p.known) return '<div class="prepmini unk">준비단계 미분류</div>';
   return `<div class="prepmini" title="${p.steps.map(s => `${s.label}: ${s.state || '미상'}${s.c ? ' (' + s.c + ')' : ''}`).join(' · ')}">${p.steps.map(s => `<span class="ps ${s.level}">${s.label.slice(0, 2)}</span>`).join('<i>›</i>')}</div>`;
+}
+function dboBadge(dc) {
+  const d = dboOf(dc);
+  if (d.type === '미상') return '';
+  const scope = d.scope && d.scope.length ? ` (${d.scope.join('')})` : '';
+  return `<div class="dbochip t-${DBO_TYPES.indexOf(d.type)}${d.c === '추정' ? ' guess' : ''}" title="${esc(dboLabel(d) + scope + (d.c ? ' · ' + d.c : '') + (d.note ? ' · ' + d.note : ''))}"><span class="dt">${esc(d.type)}</span>${d.provider && DBO_EXTERNAL.includes(d.type) ? ' ' + esc(d.provider) : ''}${scope}</div>`;
 }
 function prepStepper(dc) {
   const p = prepOf(dc);
@@ -107,7 +113,8 @@ function filtered() {
     if (f.company && !ROLES.some(r => (!f.company.role || f.company.role === r.key) && companyMatch(dc[r.field], state.companies).includes(f.company.id))) return false;
     if (f.status.size && !f.status.has(dc.status)) return false;
     if (f.prep) { const p = prepOf(dc); if (f.prep === '미분류' ? (dc.status !== '설계중' || p.known) : p.stage !== f.prep || (dc.status === '설계중' && !p.known)) return false; }
-    if (q && ![dc.name, (dc.aliases || []).join(' '), watchOf(dc).join(' '), dc.owner, dc.contractor, dc.operator, dc.address, playerOf(dc), locOf(dc).sido, locOf(dc).sigungu, locOf(dc).area].join(' ').toLowerCase().includes(q)) return false;
+    if (f.dbo) { const t = dboOf(dc).type; if (f.dbo === 'ext' ? !DBO_EXTERNAL.includes(t) : t !== f.dbo) return false; }
+    if (q && ![dc.name, dboOf(dc).provider, (dc.aliases || []).join(' '), watchOf(dc).join(' '), dc.owner, dc.contractor, dc.operator, dc.address, playerOf(dc), locOf(dc).sido, locOf(dc).sigungu, locOf(dc).area].join(' ').toLowerCase().includes(q)) return false;
     return true;
   });
   const s = f.sort, num = (x, k) => (isNum(x[k]) ? +x[k] : -1);
@@ -135,7 +142,7 @@ function renderList() {
       <td class="r num">${val(dc, 'power_mw', fmtMW(dc.power_mw))}</td>
       <td class="r num">${val(dc, 'it_mw', fmtMW(dc.it_mw))}</td>
       <td class="num">${val(dc, 'start_ym')}</td><td class="num">${val(dc, 'complete_ym')}</td><td class="num">${val(dc, 'rfs_ym')}</td>
-      <td class="parties"><div><b>개발</b>${val(dc, 'owner')}</div><div><b>시공</b>${val(dc, 'contractor')}</div><div><b>운영</b>${val(dc, 'operator')}</div></td>
+      <td class="parties"><div><b>개발</b>${val(dc, 'owner')}</div><div><b>시공</b>${val(dc, 'contractor')}</div><div><b>운영</b>${val(dc, 'operator')}</div>${dboBadge(dc)}</td>
       <td class="num" style="font-size:12px;color:var(--muted)">${fmtDate(dc.updated_at)}</td></tr>`;
   }).join('');
 }
@@ -427,6 +434,7 @@ bindSeg('#fCat', v => { state.filters.cat = v; renderList(); });
 bindSeg('#fPhase', v => { state.filters.phase = v; renderList(); });
 bindSeg('#fConf', v => { state.filters.conf = v; renderList(); });
 $('#fPrep').addEventListener('change', e => { state.filters.prep = e.target.value; renderList(); });
+$('#fDbo').addEventListener('change', e => { state.filters.dbo = e.target.value; renderList(); });
 bindSeg('#mapView', v => { state.mapView = v; fitMap(); });
 bindSeg('#supMetric', v => { state.supMetric = v; renderSupply(); });
 bindSeg('#supSplit', v => { state.supSplit = v; renderSupply(); });
@@ -528,7 +536,7 @@ function openDetail(id, preset = null) {
   renderSheet();
 }
 
-const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual'];
+const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo'];
 const same = (a, b) => JSON.stringify(a ?? '') === JSON.stringify(b ?? '');
 function diff() {
   const d = sheet.draft, o = sheet.orig, changes = {}, conf = {}, locked = {};
@@ -568,6 +576,7 @@ function renderSheet() {
       <div class="fld"><label>단계 (상태에서 자동)</label><div class="inp" style="background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:7px 9px">${phaseOf(d.status)}</div></div>
       <div class="fld full"><label>회사 매칭 <span class="note">(회사 탭의 회사명·별칭 기준 자동 · 눌러서 회사 정보)</span></label><div class="comatch" id="coMatch">${coMatchHTML(d)}</div></div>
     </div></section>
+    ${dboSection(d)}
     <section class="sec"><h3>준비단계 <span class="hint">부지확보 → 전기확보 → 건축허가 → 착공 · 설계중 센터의 공급 확률에 반영</span></h3>
       ${prepStepper(d)}
       <div class="frm prepfrm">${PREP_STEPS.map(st => { const x = (d.prep || {})[st.key] || {}; const dirty = !same(x, ((sheet.orig.prep || {})[st.key]) || {}); return `<div class="fld full ${dirty ? 'dirty' : ''}"><label>${st.label}</label><div class="row">
@@ -619,6 +628,17 @@ function valueSection(d) {
   </section>`;
 }
 
+function dboSection(d) {
+  const x = d.dbo || {}, dirty = !same(d.dbo || null, sheet.orig.dbo || null);
+  return `<section class="sec"><h3>DBO <span class="hint">설계(D)·구축(B)·운영(O)을 발주처가 아닌 사업자가 맡는지 · 수정하면 고정되어 자동수집이 덮어쓰지 않습니다</span></h3>
+    <div class="frm"><div class="fld full ${dirty ? 'dirty' : ''}"><div class="row dborow">
+      <select data-dbo="type" aria-label="DBO 구분">${DBO_TYPES.map(t => `<option ${t === (x.type || '미상') ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <input class="inp" data-dbo="provider" list="coNames" value="${esc(x.provider || '')}" placeholder="DBO·운영 사업자 (예: KT클라우드)" aria-label="DBO 사업자">
+      <span class="cf scope" data-dboscope>${DBO_SCOPE.map(s => `<button type="button" data-v="${s.key}" aria-pressed="${(x.scope || []).includes(s.key)}" title="${s.label}">${s.key} ${s.label}</button>`).join('')}</span>
+      <span class="cf" data-dboc>${['확정', '추정'].map(c => `<button type="button" data-v="${c}" aria-pressed="${(x.c || '') === c}">${c}</button>`).join('')}</span></div>
+      <input class="inp" data-dbo="note" value="${esc(x.note || '')}" placeholder="메모·근거 요약 (예: 2026-02 설계·구축·운영 수주)" aria-label="DBO 메모" style="margin-top:6px"></div></div></section>`;
+}
+
 function bindSheet() {
   const body = $('#shBody');
   ['owner', 'operator', 'contractor'].forEach(f => { const el = $('#f_' + f); if (el) el.setAttribute('list', 'coNames'); });
@@ -659,6 +679,19 @@ function bindSheet() {
   };
   body.querySelectorAll('[data-prep]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setPrep(el.dataset.prep, el.dataset.k, el.value.trim(), el.tagName === 'SELECT')));
   body.querySelectorAll('[data-prepc]').forEach(g => g.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setPrep(g.dataset.prepc, 'c', b.dataset.v, true); }));
+  const setDbo = (k, v, rerender) => {
+    const x = { type: '미상', provider: '', scope: [], c: '추정', ...(sheet.draft.dbo || {}) };
+    if (k === 'scope') x.scope = x.scope.includes(v) ? x.scope.filter(s => s !== v) : DBO_SCOPE.map(s => s.key).filter(s => s === v || x.scope.includes(s));
+    else x[k] = v;
+    if (k === 'type' && v === 'DBO' && !x.scope.length) x.scope = ['D', 'B', 'O'];
+    if (k === 'type' && v === '위탁운영' && !x.scope.length) x.scope = ['O'];
+    if (!x.note) delete x.note;
+    sheet.draft.dbo = x.type === '미상' && !x.provider && !x.note ? null : x; sheet.draft.locked.dbo = true;
+    if (rerender) renderSheet(); else updateFooter();
+  };
+  body.querySelectorAll('[data-dbo]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setDbo(el.dataset.dbo, el.value.trim(), el.tagName === 'SELECT')));
+  body.querySelector('[data-dboscope]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setDbo('scope', b.dataset.v, true); });
+  body.querySelector('[data-dboc]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setDbo('c', b.dataset.v, true); });
   body.querySelectorAll('[data-score]').forEach(el => el.addEventListener('input', () => {
     const k = el.dataset.score, cur = { ...(sheet.draft.score_manual || {}) }, v = el.value.trim();
     if (!v) delete cur[k]; else cur[k] = k === 'note' ? v : (isNum(v) ? Number(v) : v);
@@ -759,16 +792,17 @@ function renderCompanies() {
     .filter(({ c }) => scope !== 'major' || c.major)
     .filter(({ c }) => !type || c.type === type)
     .filter(({ c }) => !q || [c.name, ...(c.aliases || []), c.parent, c.note].join(' ').toLowerCase().includes(q))
-    .map(r => ({ ...r, s: companyStats(r.list) }))
+    .map(r => ({ ...r, s: companyStats(r.list), dbo: state.dcs.filter(d => { const x = dboOf(d); return DBO_EXTERNAL.includes(x.type) && x.provider && companyMatch(x.provider, state.companies).includes(r.c.id); }) }))
     .sort((a, b) => b.s.n - a.s.n || (b.s.power || 0) - (a.s.power || 0) || a.c.name.localeCompare(b.c.name, 'ko'));
   const tot = rows.reduce((t, r) => t + r.s.n, 0);
   $('#coNote').textContent = `${ROLE_LABEL[role]} ${rows.length}곳 · 연결 센터 ${tot}건`;
   const mw = v => (v == null ? '<span class="of">—</span>' : fmtMW(v));
-  $('#coTable').innerHTML = rows.length ? `<table class="ctable"><thead><tr><th>회사</th><th>유형</th><th class="r">센터</th><th class="r">운영 / 개발</th><th class="r">수전 MW</th><th class="r">IT MW</th><th class="r">개발 중 수전</th><th>주요 지역</th><th>최근 변경</th></tr></thead><tbody>${rows.map(({ c, s }) => `<tr data-co="${esc(c.id)}" tabindex="0">
+  $('#coTable').innerHTML = rows.length ? `<table class="ctable"><thead><tr><th>회사</th><th>유형</th><th class="r">센터</th><th class="r">운영 / 개발</th><th class="r">수전 MW</th><th class="r">IT MW</th><th class="r">개발 중 수전</th><th class="r" title="DBO·부분 DBO·위탁운영 사업자로 기록된 센터 수">DBO 수행</th><th>주요 지역</th><th>최근 변경</th></tr></thead><tbody>${rows.map(({ c, s, dbo }) => `<tr data-co="${esc(c.id)}" tabindex="0">
     <td><div class="name">${c.major ? '<span class="star" title="주요 회사">★</span>' : ''}${esc(c.name)}</div><div class="alias">${esc([c.parent && '그룹 ' + c.parent, ...(c.roles || []).filter(r => r !== role).map(r => ROLE_LABEL[r] + ' 겸업')].filter(Boolean).join(' · '))}</div></td>
     <td><span class="cotype">${esc(c.type)}</span></td>
     <td class="r num">${s.n || '<span class="of">0</span>'}</td><td class="r num">${s.op} / ${s.dev}</td>
     <td class="r num">${mw(s.power)}</td><td class="r num">${mw(s.it)}</td><td class="r num">${mw(s.pipeline)}</td>
+    <td class="r num" title="${esc(dbo.map(d => d.name + ' (' + dboOf(d).type + ')').join('\n'))}">${dbo.length || '<span class="of">0</span>'}</td>
     <td style="font-size:12px">${esc(s.regions.join(' · ')) || '<span class="of">—</span>'}</td>
     <td class="num" style="font-size:12px;color:var(--muted)">${fmtDate(s.updated)}</td></tr>`).join('')}</tbody></table>`
     : '<div class="empty"><b>조건에 맞는 회사가 없습니다</b>범위를 \'전체\'로 바꾸거나 검색어를 지워 보세요.</div>';

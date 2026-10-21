@@ -115,7 +115,7 @@ export function ingest(data, findings, now = new Date().toISOString()) {
   const hits = new Map((findings.sources || []).map(x => [x.id, Number(x.hits || 0)]));
   sources = sources.map(src => (hits.has(src.id) ? { ...src, last_run: now, last_hits: hits.get(src.id) } : src));
   const kind = findings.kind || '자동수집';
-  const run = { id: `r-${stamp(now).slice(0, 8)}-${kind === '자동수집' ? 'news' : 'players'}`, at: now, kind, checked: hits.size || (findings.companies || []).length, new_dcs: s.new_dcs, updated: s.updated + s.companies + s.targets,
+  const run = { id: `r-${stamp(now).slice(0, 8)}-${kind === '자동수집' ? 'news' : kind === '플레이어 업데이트' ? 'players' : 'misc-' + stamp(now).slice(8, 12)}`, at: now, kind, checked: hits.size || (findings.companies || []).length, new_dcs: s.new_dcs, updated: s.updated + s.companies + s.targets,
     evidence: s.evidence, proposals: s.proposals, errors: s.errors,
     summary: String(findings.summary || '').trim() || (s.new_dcs + s.updated + s.evidence + s.proposals + s.companies + s.new_companies + s.targets ? '' : '변경 없음') + (s.notes.length ? ` 오류: ${s.notes.slice(0, 3).join(' / ')}` : '') };
   runs = [...runs.filter(r => r.id !== run.id), run].slice(-400);
