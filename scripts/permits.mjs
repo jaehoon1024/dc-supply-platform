@@ -81,15 +81,23 @@ export function pickPermit(items, dc, { dongLevel = false, shared = 1 } = {}) {
   return nameHit && isDcPermit(top.it) ? top.it : dcOnes.length === 1 && shared <= 1 ? dcOnes[0] : null; // 같은 동에 센터가 여럿이면 이름 일치만 허용
 }
 
-export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date().toISOString(), log = console.log } = {}) {
+// budgetMs: 이 시간 안에서만 조회하고 멈춥니다. 다음 실행은 직전 실행 기록(runs의 cursor)부터 이어서 조회합니다.
+export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date().toISOString(), log = console.log, budgetMs = Infinity } = {}) {
+  const t0 = Date.now();
   let { dcs, evidence, history, permits, runs } = data;
-  const targets = dcs.filter(d => d.permit_ref && d.permit_ref.sigunguCd && d.permit_ref.bjdongCd);
+  const all = dcs.filter(d => d.permit_ref && d.permit_ref.sigunguCd && d.permit_ref.bjdongCd).sort((a, b) => a.id.localeCompare(b.id));
+  const lastRun = [...runs].reverse().find(r => r.kind === '건축HUB 동기화' && Number.isInteger(r.cursor));
+  const start = lastRun && lastRun.cursor < all.length ? lastRun.cursor : 0;
+  const targets = [...all.slice(start), ...all.slice(0, start)]; // 직전 위치부터 한 바퀴
+  let cursor = start, partial = false;
   const dongKey = d => `${d.permit_ref.sigunguCd}${d.permit_ref.bjdongCd}`;
   const shareCount = {}; targets.forEach(d => { shareCount[dongKey(d)] = (shareCount[dongKey(d)] || 0) + 1; });
   const stats = { checked: 0, matched: 0, updated: 0, proposals: 0, evidence: 0, errors: 0, notes: [] };
   const cache = new Map(); // 같은 법정동·지번은 한 번만 조회
   const get = ref => { const k = JSON.stringify(ref); if (!cache.has(k)) cache.set(k, fetchPermits(ref, key, fetchImpl)); return cache.get(k); };
   for (const dc of targets) {
+    if (Date.now() - t0 > budgetMs) { partial = true; break; }
+    cursor = (cursor + 1) % all.length;
     stats.checked++;
     try {
       const it = pickPermit(await get(dc.permit_ref), dc, { dongLevel: !dc.permit_ref.bun, shared: shareCount[dongKey(dc)] });
@@ -122,8 +130,8 @@ export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date
     } catch (e) { stats.errors++; stats.notes.push(`${dc.name}: ${e.message}`); log(`오류 ${dc.name}: ${e.message}`); }
   }
   const run = { id: `r-${stamp(now)}-permits`, at: now, kind: '건축HUB 동기화', checked: stats.checked, new_dcs: 0, updated: stats.updated,
-    evidence: stats.evidence, proposals: stats.proposals, errors: stats.errors,
-    summary: targets.length ? `인허가 연결 센터 ${targets.length}곳 조회, ${stats.matched}곳 일치, 필드 ${stats.updated}개 갱신, 제안 ${stats.proposals}건.${stats.notes.length ? ' ' + stats.notes.slice(0, 3).join(' / ') : ''}`
+    evidence: stats.evidence, proposals: stats.proposals, errors: stats.errors, cursor: partial ? cursor : 0,
+    summary: targets.length ? `인허가 연결 센터 ${all.length}곳 중 ${stats.checked}곳 조회${partial ? `(시간 제한으로 중단 — 다음 실행에서 이어서)` : ''}, ${stats.matched}곳 일치, 필드 ${stats.updated}개 갱신, 제안 ${stats.proposals}건.${stats.notes.length ? ' ' + stats.notes.slice(0, 3).join(' / ') : ''}`
       : '인허가 연결(permit_ref)이 설정된 센터가 없습니다. 상세 페이지에서 시군구·법정동 코드를 입력하세요.' };
   return { dcs, evidence, history, permits, runs: [...runs, run].slice(-400), stats };
 }

@@ -279,3 +279,18 @@ test('민원·인허가 리스크: 기록 우선, 없으면 비고 자동 감지
   assert.equal(normalizeComplaints([{ type: '없는유형', note: 'a' }])[0].type, '기타');
   assert.throws(() => normalizeComplaints([{ note: 'a', url: 'ftp://x' }]));
 });
+
+test('건축HUB 동기화: 시간 제한에 걸리면 cursor를 남기고 다음 실행에서 이어서 조회', async () => {
+  const { syncPermits, LIMIT } = await import('../scripts/permits.mjs');
+  const saved = { ...LIMIT }; Object.assign(LIMIT, { gapMs: 0 });
+  const mk = (id, bun) => ({ ...dcs[0], id, name: id, permit_ref: { sigunguCd: '11111', bjdongCd: '22222', bun, ji: '' } });
+  const base = { dcs: [mk('a', '1'), mk('b', '2'), mk('c', '3')], evidence: [], history: [], permits: [], runs: [] };
+  let n = 0;
+  const fake = async () => { n++; await new Promise(r => setTimeout(r, 30)); return new Response(JSON.stringify({ response: { header: { resultCode: '00' }, body: { totalCount: 0, items: '' } } })); };
+  try {
+    const r1 = await syncPermits(base, { key: 'k', fetchImpl: fake, now: NOW, log: () => {}, budgetMs: 40 });
+    const run1 = r1.runs.at(-1); assert.ok(run1.checked >= 1 && run1.checked < 3); assert.ok(run1.cursor > 0);
+    const r2 = await syncPermits({ ...base, runs: r1.runs }, { key: 'k', fetchImpl: fake, now: NOW, log: () => {} });
+    assert.equal(r2.runs.at(-1).cursor, 0); assert.equal(r2.runs.at(-1).checked, 3);
+  } finally { Object.assign(LIMIT, saved); }
+});

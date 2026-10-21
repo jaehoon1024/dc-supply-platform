@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     try {
       let summary = '';
       const out = await transact(['dcs', 'evidence', 'history', 'permits', 'runs'], async d => {
-        const r = await syncPermits({ ...d, permits: d.permits || [], runs: d.runs || [] }, { key, now });
+        const r = await syncPermits({ ...d, permits: d.permits || [], runs: d.runs || [] }, { key, now, budgetMs: 150000 }); // 함수 제한(300초) 안에서 커밋까지 끝내도록 조회는 150초까지
         summary = r.runs.at(-1)?.summary || '';
         return { files: { dcs: r.dcs, evidence: r.evidence, history: r.history, permits: r.permits, runs: r.runs }, message: `data: 건축HUB 인허가 동기화 ${now.slice(0, 10)}` };
       });
