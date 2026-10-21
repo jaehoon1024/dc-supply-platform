@@ -245,19 +245,20 @@ function renderPlayerCards() {
   });
 }
 
+// 주요 회사(회사 탭 ★) × 역할(개발사·운영사·시공사)별 공급. 한 센터가 여러 회사에 걸리면 각 회사 행에 모두 셉니다(합계 아님).
 function renderWatch() {
-  const metric = state.supMetric, mode = state.supMode;
-  const devFc = forecast(state.dcs, { metric, from: FROM, to: TO, groupBy: dc => watchOf(dc).find(w => !BUILDERS.includes(w)) || '기타' });
-  const bFc = forecast(state.dcs, { metric, from: FROM, to: TO, groupBy: dc => watchOf(dc).find(w => BUILDERS.includes(w)) || '기타' });
+  const metric = state.supMetric, mode = state.supMode, unit = metric === 'it_mw' ? 'IT' : '수전';
+  const idx = companyIndex(state.dcs, state.companies);
   const sum = (arr, k) => (arr.some(d => isNum(d[k])) ? arr.reduce((t, d) => t + (isNum(d[k]) ? +d[k] : 0), 0) : null);
-  const rows = WATCH_NAMES.map(w => {
-    const mine = state.dcs.filter(d => watchOf(d).includes(w));
-    const op = mine.filter(d => d.status === '운영중');
-    const fc = BUILDERS.includes(w) ? bFc : devFc;
-    const cum = (fc.base.groups[w] || 0) + fc.years.reduce((t, y) => t + yv(fc.byYear[y], w, mode), 0);
-    return `${w === BUILDERS[0] ? '<tr class="tot" style="cursor:default"><td colspan="7">주요 시공사 (시공 물량 기준)</td></tr>' : ''}<tr data-watch="${esc(w)}"><td class="name">${esc(w)}</td><td class="r num">${mine.length}</td><td class="r num">${op.length} / ${mine.length - op.length}</td><td class="r num">${fmtMW(sum(mine, 'power_mw')) || '—'}</td><td class="r num">${fmtMW(sum(mine, 'it_mw')) || '—'}</td><td class="r num">${fmtMW(cum) || '—'}</td><td class="r num">${mine.filter(d => capacityOf(d, metric).mw === null).length}</td></tr>`;
-  }).join('');
-  $('#watchTable').innerHTML = `<table class="ftable"><thead><tr><th>회사</th><th class="r">센터</th><th class="r">운영 / 개발</th><th class="r">수전 MW</th><th class="r">IT MW</th><th class="r">2031 누적 ${metric === 'it_mw' ? 'IT' : '수전'} (${mode === 'weighted' ? '가중' : '계획'})</th><th class="r">용량 미상</th></tr></thead><tbody>${rows}</tbody></table>`;
+  const cumOf = list => { if (!list.length) return 0; const fc = forecast(list, { metric, from: FROM, to: TO, groupBy: () => 'x' }); return (fc.base.groups.x || 0) + fc.years.reduce((t, y) => t + yv(fc.byYear[y], 'x', mode), 0); };
+  const role = state.watchRole || 'dev';
+  const rows = state.companies.filter(c => c.major).map(c => ({ c, list: idx.byId[c.id].roles[role] })).filter(r => r.list.length)
+    .map(r => ({ ...r, cum: cumOf(r.list), dev: cumOf(r.list.filter(d => phaseOf(d.status) === '개발')) })).sort((a, b) => b.cum - a.cum || b.list.length - a.list.length);
+  $('#watchTable').innerHTML = `<div class="seg" id="watchRole" style="margin-bottom:8px">${ROLES.map(r => `<button data-v="${r.key}" aria-pressed="${r.key === role}">${r.label}</button>`).join('')}</div>
+    <table class="ftable"><thead><tr><th>회사 (★ 주요)</th><th class="r">센터</th><th class="r">운영 / 개발</th><th class="r">수전 MW</th><th class="r">IT MW</th><th class="r">2031 누적 ${unit}<br><span class="of">${mode === 'weighted' ? '가중' : '계획'}</span></th><th class="r">그중 개발 중</th><th class="r">용량 미상</th></tr></thead><tbody>${rows.map(({ c, list, cum, dev }) => `<tr data-co="${esc(c.id)}" tabindex="0"><td class="name">${esc(c.name)} <span class="of">${esc(c.type)}</span></td><td class="r num">${list.length}</td><td class="r num">${list.filter(d => d.status === '운영중').length} / ${list.filter(d => phaseOf(d.status) === '개발').length}</td><td class="r num">${fmtMW(sum(list, 'power_mw')) || '—'}</td><td class="r num">${fmtMW(sum(list, 'it_mw')) || '—'}</td><td class="r num"><b>${cum > 0 ? fmtMW(cum) : '—'}</b></td><td class="r num">${dev > 0 ? fmtMW(dev) : '—'}</td><td class="r num">${list.filter(d => capacityOf(d, metric).mw === null).length}</td></tr>`).join('') || `<tr><td colspan="8" class="of">★ 주요 회사 중 ${ROLE_LABEL[role]}로 연결된 센터가 없습니다.</td></tr>`}</tbody></table>
+    <p class="note" style="margin-top:6px">회사 탭에서 ★(주요)로 표시한 회사만 나옵니다 · ${ROLE_LABEL[role]} 칸에 회사명·별칭이 들어간 센터 기준 · 공동 사업은 참여 회사마다 모두 세므로 행을 더하면 중복됩니다 · 2031 누적은 위 공급 추정과 같은 방식(기존 운영 + 연도별 공급)으로 계산 · 행을 누르면 목록에서 해당 센터만 봅니다</p>`;
+  $('#watchTable').querySelectorAll('#watchRole button').forEach(b => b.onclick = () => { state.watchRole = b.dataset.v; renderWatch(); });
+  $('#watchTable').querySelectorAll('tr[data-co]').forEach(tr => { const go = () => { state.filters.company = { id: tr.dataset.co, role }; setTab('list'); renderList(); }; tr.onclick = go; tr.onkeydown = e => { if (e.key === 'Enter') go(); }; });
 }
 /* ---------------- 가치점수 ---------------- */
 const scoreOf = dc => valueScore(dc, { dcs: state.dcs, evidence: state.evidence });
@@ -502,7 +503,6 @@ $('#gridToggle').addEventListener('change', renderMap);
 for (const id of ['#tbody', '#mlist', '#supList', '#permitBody']) {
   $(id).addEventListener('click', e => { const r = e.target.closest('[data-id]'); if (r && r.dataset.id) openDetail(r.dataset.id); });
 }
-$('#watchTable').addEventListener('click', e => { const r = e.target.closest('[data-watch]'); if (!r) return; state.filters.player = 'w:' + r.dataset.watch; $('#fPlayer').value = state.filters.player; setTab('list'); renderList(); });
 $('#tbody').addEventListener('keydown', e => { if (e.key === 'Enter') { const tr = e.target.closest('tr[data-id]'); if (tr) openDetail(tr.dataset.id); } });
 $('#btnAdd').addEventListener('click', () => openDetail(null));
 
