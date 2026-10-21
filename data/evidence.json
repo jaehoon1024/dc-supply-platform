@@ -3971,5 +3971,77 @@
     "excerpt": "마스턴 가평 120MW, 연면적 약 13.3만㎡, 수력 전력·PUE 1.5 목표.",
     "source_id": "seed",
     "collected_at": "2026-10-20T20:00:00+09:00"
+  },
+  {
+    "id": "e-gs-donghae-20261021005211-248",
+    "dc_id": "gs-donghae",
+    "title": "동해 AI 데이터센터 12월 초 착공 추진…전력 지중선로 공사 시작",
+    "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261020010006613",
+    "publisher": "아시아투데이",
+    "pub_date": "2026-10-20",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "IT용량",
+      "준공월"
+    ],
+    "excerpt": "1차 시설 수전 100MW·IT 약 70MW. 10/1 건축허가, 12월 초 착공 추진, 2028년 3분기 가동 목표. 지중선로 공사 10/15께 시작.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T00:52:11.680Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-gs-donghae-20261021005211-249",
+    "dc_id": "gs-donghae",
+    "title": "1.2GW 동해 AI데이터센터 인허가 마치고 착공 단계 진입",
+    "url": "https://www.fnnews.com/news/202610060934305665",
+    "publisher": "파이낸셜뉴스",
+    "pub_date": "2026-10-06",
+    "grade": "B",
+    "fields": [
+      "상태",
+      "준공월"
+    ],
+    "excerpt": "동해에이아이제3캠퍼스 신청 1차 100MW급 건축허가 10/1 처리, 연내 착공·2028년 하반기 준공 목표.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T00:52:11.680Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-ansan-our-20261021005211-250",
+    "dc_id": "ansan-our",
+    "title": "안산 반월공단 '아워DC' 착공… 2027년 하반기 운영 목표",
+    "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03857286645613248",
+    "publisher": "이데일리",
+    "pub_date": "2026-10-15",
+    "grade": "B",
+    "fields": [
+      "착공월",
+      "수전용량",
+      "IT용량",
+      "시공사",
+      "운영사"
+    ],
+    "excerpt": "10/12 착공. 수전 7.6MW·IT 4.82MW 엣지 DC, CJ대한통운 책임준공, 총사업비 1,390억(PF 1,110억), 2027년 하반기 운영 목표.",
+    "source_id": "s17",
+    "collected_at": "2026-10-21T00:52:11.680Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sk-sejong-aidc-20261021005211-251",
+    "dc_id": "sk-sejong-aidc",
+    "title": "세종시, 360㎿ 규모 데이터센터 건립 7조원 투자 유치",
+    "url": "https://biz.sbs.co.kr/amp/article/20000339055",
+    "publisher": "SBS Biz",
+    "pub_date": "2026-10-08",
+    "grade": "B",
+    "fields": [
+      "사업자",
+      "용량"
+    ],
+    "excerpt": "세종시·SK증권·메테우스자산운용·시드에이치 협약. SK증권이 360MW 규모 AIDC 건립 추진, 2029년까지 7조원 투입.",
+    "source_id": "s30",
+    "collected_at": "2026-10-21T00:52:11.680Z",
+    "added_by": "auto"
   }
 ]

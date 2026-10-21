@@ -4885,5 +4885,136 @@
     "new": "{\"sigunguCd\":\"11545\",\"bjdongCd\":\"10100\",\"bun\":\"\",\"ji\":\"\"}",
     "by": "auto",
     "note": "주소 → 법정동코드 자동 변환(법정동 단위)"
+  },
+  {
+    "id": "h-gs-donghae-20261021005211-start_ym",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "start_ym",
+    "old": "2026-H2",
+    "new": "2026-12",
+    "evidence_url": "https://www.asiatoday.co.kr/kn/view.php?key=20261020010006613",
+    "by": "auto",
+    "note": "12월 초 착공 추진(안전관리계획 등 절차 후 착공식). 전력 인입 지중선로 공사 10/15께 시작"
+  },
+  {
+    "id": "h-gs-donghae-20261021005211-it_mw",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "it_mw",
+    "old": "",
+    "new": 70,
+    "evidence_url": "https://www.asiatoday.co.kr/kn/view.php?key=20261020010006613",
+    "by": "auto",
+    "note": "1차 수전 100MW 중 IT 약 70MW 계획"
+  },
+  {
+    "id": "h-gs-donghae-20261021005211-complete_ym",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "complete_ym",
+    "old": "2028-H2",
+    "new": "2028-Q3",
+    "evidence_url": "https://www.asiatoday.co.kr/kn/view.php?key=20261020010006613",
+    "by": "auto",
+    "note": "준공·가동 목표 2028년 3분기"
+  },
+  {
+    "id": "h-gs-donghae-20261021005211-evidence-248",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "동해 AI 데이터센터 12월 초 착공 추진…전력 지중선로 공사 시작",
+    "by": "auto",
+    "evidence_url": "https://www.asiatoday.co.kr/kn/view.php?key=20261020010006613",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-gs-donghae-20261021005211-evidence-249",
+    "dc_id": "gs-donghae",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "1.2GW 동해 AI데이터센터 인허가 마치고 착공 단계 진입",
+    "by": "auto",
+    "evidence_url": "https://www.fnnews.com/news/202610060934305665",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-ansan-our-20261021005211-operator",
+    "dc_id": "ansan-our",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "operator",
+    "old": "",
+    "new": "아워디씨",
+    "evidence_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03857286645613248",
+    "by": "auto",
+    "note": "시행·개발·운영 아워디씨(이데일리)"
+  },
+  {
+    "id": "h-ansan-our-20261021005211-evidence-250",
+    "dc_id": "ansan-our",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "안산 반월공단 '아워DC' 착공… 2027년 하반기 운영 목표",
+    "by": "auto",
+    "evidence_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03857286645613248",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-sk-sejong-aidc-20261021005211-create",
+    "dc_id": "sk-sejong-aidc",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "_create",
+    "old": "",
+    "new": "세종 AIDC (SK증권·메테우스자산운용)",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-sk-sejong-aidc-20261021005211-owner",
+    "dc_id": "sk-sejong-aidc",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "owner",
+    "old": "",
+    "new": "SK증권 · 메테우스자산운용 · 시드에이치",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-sk-sejong-aidc-20261021005211-address",
+    "dc_id": "sk-sejong-aidc",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "address",
+    "old": "",
+    "new": "세종특별자치시",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-sk-sejong-aidc-20261021005211-it_mw",
+    "dc_id": "sk-sejong-aidc",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "it_mw",
+    "old": "",
+    "new": 360,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-sk-sejong-aidc-20261021005211-evidence-251",
+    "dc_id": "sk-sejong-aidc",
+    "at": "2026-10-21T00:52:11.680Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "세종시, 360㎿ 규모 데이터센터 건립 7조원 투자 유치",
+    "by": "auto",
+    "evidence_url": "https://biz.sbs.co.kr/amp/article/20000339055",
+    "note": "근거 자동 추가"
   }
 ]

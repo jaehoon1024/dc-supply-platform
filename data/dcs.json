@@ -146,7 +146,7 @@
     "phase": "개발",
     "owner": "아워서킷 (AMC: 파인앤파트너스자산운용)",
     "contractor": "CJ대한통운 건설부문",
-    "operator": "",
+    "operator": "아워디씨",
     "address": "경기도 안산시 단원구 신원로91번길 79",
     "lat": 37.307,
     "lng": 126.786,
@@ -163,11 +163,12 @@
       "it_mw": "확정",
       "status": "확정",
       "start_ym": "확정",
-      "complete_ym": "추정"
+      "complete_ym": "추정",
+      "operator": "추정"
     },
     "locked": {},
     "note": "총사업비 1,390억(에쿼티 280억 + PF 1,110억). 임차: 세종네트웍스, CJ올리브네트웍스. 한전 3MW 추가 확보 시 9.75MW.",
-    "updated_at": "2026-10-20T12:00:00+09:00",
+    "updated_at": "2026-10-21T00:52:11.680Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
@@ -176,7 +177,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-20T12:00:00+09:00"
+      "at": "2026-10-21T00:52:11.680Z"
     }
   },
   {
@@ -1343,9 +1344,9 @@
     "lat": 37.47,
     "lng": 129.13,
     "power_mw": 100,
-    "it_mw": null,
-    "start_ym": "2026-H2",
-    "complete_ym": "2028-H2",
+    "it_mw": 70,
+    "start_ym": "2026-12",
+    "complete_ym": "2028-Q3",
     "rfs_ym": "",
     "note": "북평2일반산단. 2026-10-01 건축허가(1차 100MW). 캠퍼스 1.2GW(2028)→2.4GW(2029) 계획, 총투자 15조(PF 약 12조). 시공사 11월까지 선정 예정, GS건설 5조+ 수주 기대. 자이에스앤디 설계·시공 협력, 디씨브릿지 임대·운영.",
     "conf": {
@@ -1356,7 +1357,8 @@
       "start_ym": "추정",
       "complete_ym": "추정",
       "status": "확정",
-      "address": "추정"
+      "address": "추정",
+      "it_mw": "추정"
     },
     "locked": {},
     "permit_ref": {
@@ -1367,7 +1369,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T11:00:00+09:00",
-    "updated_at": "2026-10-20T11:00:00+09:00",
+    "updated_at": "2026-10-21T00:52:11.680Z",
     "updated_by": "auto",
     "id": "gs-donghae",
     "name": "GS 동해 AI 데이터센터 캠퍼스 (1차)",
@@ -1378,7 +1380,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-20T11:00:00+09:00"
+      "at": "2026-10-21T00:52:11.680Z"
     },
     "prep": {
       "site": {
@@ -5607,6 +5609,46 @@
         "c": "확정",
         "note": "송변전 부재로 한전 협의 중"
       }
+    }
+  },
+  {
+    "id": "sk-sejong-aidc",
+    "name": "세종 AIDC (SK증권·메테우스자산운용)",
+    "aliases": [
+      "세종 360MW AI 데이터센터"
+    ],
+    "category": "상용",
+    "status": "설계중",
+    "phase": "개발",
+    "owner": "SK증권 · 메테우스자산운용 · 시드에이치",
+    "contractor": "",
+    "operator": "",
+    "address": "세종특별자치시",
+    "lat": null,
+    "lng": null,
+    "power_mw": null,
+    "it_mw": 360,
+    "start_ym": "",
+    "complete_ym": "",
+    "rfs_ym": "",
+    "note": "2026-10-08 세종시와 투자협약. 360MW 규모·7조원(2029년까지) — 단위 미상(수전/IT 구분 없음). 부지·착공 일정 미공개, 세종시가 부지·전력·용수 지원.",
+    "conf": {
+      "owner": "확정",
+      "address": "추정",
+      "it_mw": "추정"
+    },
+    "locked": {},
+    "permit_ref": null,
+    "player": "",
+    "created_at": "2026-10-21T00:52:11.680Z",
+    "updated_at": "2026-10-21T00:52:11.680Z",
+    "updated_by": "auto",
+    "sido": "세종",
+    "sigungu": "세종",
+    "addr_check": {
+      "status": "좌표없음",
+      "note": "위경도가 없습니다",
+      "at": "2026-10-21T00:52:11.680Z"
     }
   },
   {
