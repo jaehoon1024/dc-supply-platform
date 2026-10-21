@@ -548,8 +548,8 @@
     "contractor": "",
     "operator": "Digital Edge",
     "address": "부산광역시 해운대구 센텀7로 32",
-    "lat": 35.18,
-    "lng": 129.075,
+    "lat": 35.17499,
+    "lng": 129.12729,
     "power_mw": null,
     "it_mw": 4.5,
     "start_ym": "",
@@ -567,7 +567,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "de-pus1",
     "name": "Digital Edge PUS1",
@@ -578,7 +578,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -867,8 +867,8 @@
     "contractor": "",
     "operator": "디지털리얼티",
     "address": "서울특별시 마포구 월드컵북로60길 12",
-    "lat": 37.578,
-    "lng": 126.889,
+    "lat": 37.58217,
+    "lng": 126.88559,
     "power_mw": null,
     "it_mw": 12,
     "start_ym": "",
@@ -883,7 +883,7 @@
     },
     "locked": {},
     "note": "ICN11과 가상 캠퍼스로 운영 계획.",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -897,7 +897,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -1178,8 +1178,8 @@
     "contractor": "대우건설",
     "operator": "Empyrion Digital",
     "address": "서울특별시 서초구 양재동 224",
-    "lat": 37.468,
-    "lng": 127.042,
+    "lat": 37.48402,
+    "lng": 127.03508,
     "power_mw": 40,
     "it_mw": 29.4,
     "start_ym": "",
@@ -1198,7 +1198,7 @@
     },
     "locked": {},
     "note": "IT 29.4MW, 40MW급(대우건설 발표). 2025-07-02 그랜드 오픈. 강남권 10년 만의 신규 대형 DC.",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -1212,7 +1212,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -1286,8 +1286,8 @@
     "contractor": "",
     "operator": "Equinix",
     "address": "서울특별시 마포구 월드컵북로60길 24 (삼성SDS 상암IT센터 3층)",
-    "lat": 37.578,
-    "lng": 126.886,
+    "lat": 37.58321,
+    "lng": 126.88665,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -1309,7 +1309,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "equinix-sl1",
     "name": "Equinix SL1",
@@ -1320,7 +1320,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -1444,8 +1444,8 @@
     "contractor": "",
     "operator": "KINX",
     "address": "경기도 과천시 과천대로7나길 34",
-    "lat": 37.43,
-    "lng": 126.99,
+    "lat": 37.41676,
+    "lng": 126.9781,
     "power_mw": null,
     "it_mw": 10,
     "start_ym": "",
@@ -1469,7 +1469,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "gabia-gwacheon",
     "name": "KINX 과천 데이터센터",
@@ -1480,7 +1480,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -1641,8 +1641,8 @@
     "contractor": "",
     "operator": "현대오토에버",
     "address": "광주광역시 광산구 진곡산단중앙로 75",
-    "lat": 35.215,
-    "lng": 126.84,
+    "lat": 35.19665,
+    "lng": 126.78718,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -1659,7 +1659,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T16:30:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "hae-gwangju",
     "name": "현대오토에버 광주 데이터센터",
@@ -1670,7 +1670,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -1687,8 +1687,8 @@
     "contractor": "",
     "operator": "현대오토에버",
     "address": "경기도 파주시 조리읍 팔학골길 148-43",
-    "lat": 37.74,
-    "lng": 126.82,
+    "lat": 37.73898,
+    "lng": 126.83022,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -1705,7 +1705,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T16:30:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "hae-paju",
     "name": "현대오토에버 파주 데이터센터",
@@ -1716,7 +1716,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -1733,8 +1733,8 @@
     "contractor": "",
     "operator": "현대오토에버",
     "address": "경기도 의왕시 철도박물관로 37",
-    "lat": 37.31,
-    "lng": 126.95,
+    "lat": 37.32581,
+    "lng": 126.94933,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -1751,7 +1751,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T16:30:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "hae-uiwang",
     "name": "현대오토에버 의왕 데이터센터",
@@ -1762,7 +1762,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -2125,8 +2125,8 @@
     "contractor": "",
     "operator": "카카오",
     "address": "경기도 안산시 상록구 한양대학로 55 (사동 1271)",
-    "lat": 37.297,
-    "lng": 126.835,
+    "lat": 37.29667,
+    "lng": 126.83501,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -2149,7 +2149,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T12:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "kakao-ansan",
     "name": "카카오 데이터센터 안산",
@@ -2160,7 +2160,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -2448,8 +2448,8 @@
     "contractor": "",
     "operator": "KINX",
     "address": "서울특별시 강남구 언주로30길 13",
-    "lat": 37.49,
-    "lng": 127.05,
+    "lat": 37.48821,
+    "lng": 127.05112,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -2471,7 +2471,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T16:30:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "kinx-dogok",
     "name": "KINX 도곡 데이터센터",
@@ -2482,7 +2482,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -3163,8 +3163,8 @@
     "contractor": "",
     "operator": "KT클라우드",
     "address": "대전광역시 서구 문정로48번길 30",
-    "lat": 36.35,
-    "lng": 127.385,
+    "lat": 36.34653,
+    "lng": 127.38459,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -3181,7 +3181,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "kt-daejeon",
     "name": "KT클라우드 대전 데이터센터",
@@ -3192,7 +3192,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -3275,8 +3275,8 @@
     "contractor": "",
     "operator": "KT클라우드",
     "address": "서울특별시 강남구 언주로 517",
-    "lat": 37.505,
-    "lng": 127.04,
+    "lat": 37.50477,
+    "lng": 127.04135,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -3293,7 +3293,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "kt-gangnam",
     "name": "KT클라우드 강남 데이터센터",
@@ -3304,7 +3304,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -3571,8 +3571,8 @@
     "contractor": "",
     "operator": "KT클라우드",
     "address": "서울특별시 구로구 디지털로31길 61",
-    "lat": 37.485,
-    "lng": 126.887,
+    "lat": 37.48591,
+    "lng": 126.89156,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -3590,7 +3590,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "kt-namguro",
     "name": "KT클라우드 남구로 데이터센터",
@@ -3601,7 +3601,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -3840,8 +3840,8 @@
     "contractor": "",
     "operator": "KT클라우드",
     "address": "서울특별시 용산구 원효로41길 33",
-    "lat": 37.53,
-    "lng": 126.965,
+    "lat": 37.53579,
+    "lng": 126.95979,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -3859,7 +3859,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "kt-yongsan",
     "name": "KT클라우드 용산 데이터센터",
@@ -3870,7 +3870,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -3887,8 +3887,8 @@
     "contractor": "",
     "operator": "LG CNS",
     "address": "부산광역시 강서구 미음산단로 153",
-    "lat": 35.12,
-    "lng": 128.88,
+    "lat": 35.13841,
+    "lng": 128.85982,
     "power_mw": 40,
     "it_mw": null,
     "start_ym": "",
@@ -3911,7 +3911,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgcns-busan",
     "name": "LG CNS 부산 글로벌 클라우드 데이터센터",
@@ -3922,7 +3922,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4089,8 +4089,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "경기도 안양시 만안구 덕천로48번길 37 (안양동 200-12)",
-    "lat": 37.395,
-    "lng": 126.93,
+    "lat": 37.38615,
+    "lng": 126.93827,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -4112,7 +4112,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-anyang",
     "name": "LG유플러스 안양센터",
@@ -4123,7 +4123,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4140,8 +4140,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "부산광역시 서구 대청로6번길 14 (부민동1가 30-1)",
-    "lat": 35.101,
-    "lng": 129.018,
+    "lat": 35.10224,
+    "lng": 129.02046,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -4163,7 +4163,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-busan-ami",
     "name": "LG유플러스 부산 아미센터",
@@ -4174,7 +4174,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4242,8 +4242,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "대구광역시 중구 동덕로 186 (동인동1가 295-1)",
-    "lat": 35.872,
-    "lng": 128.604,
+    "lat": 35.86473,
+    "lng": 128.60387,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -4265,7 +4265,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-daegu",
     "name": "LG유플러스 대구센터",
@@ -4276,7 +4276,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4293,8 +4293,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "대전광역시 서구 계룡로553번길 66 (탄방동 663)",
-    "lat": 36.346,
-    "lng": 127.394,
+    "lat": 36.34508,
+    "lng": 127.38507,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -4316,7 +4316,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-daejeon",
     "name": "LG유플러스 대전센터",
@@ -4327,7 +4327,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4344,8 +4344,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "서울특별시 금천구 가산디지털1로 189 (가산동 459-9)",
-    "lat": 37.478,
-    "lng": 126.885,
+    "lat": 37.48234,
+    "lng": 126.87965,
     "power_mw": 40,
     "it_mw": null,
     "start_ym": "",
@@ -4368,7 +4368,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-gasan",
     "name": "LG유플러스 가산센터",
@@ -4379,7 +4379,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4396,8 +4396,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "광주광역시 광산구 무진대로 262 (우산동 1598-2)",
-    "lat": 35.163,
-    "lng": 126.807,
+    "lat": 35.16041,
+    "lng": 126.80922,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -4419,7 +4419,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-gwangju",
     "name": "LG유플러스 광주센터",
@@ -4430,7 +4430,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4598,8 +4598,8 @@
     "contractor": "GS건설",
     "operator": "LG유플러스",
     "address": "경기도 안양시 동안구 시민대로327번길 29 (관양동 1743-1)",
-    "lat": 37.398,
-    "lng": 126.968,
+    "lat": 37.39672,
+    "lng": 126.96551,
     "power_mw": 165,
     "it_mw": null,
     "start_ym": "",
@@ -4623,7 +4623,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-pyeongchon1",
     "name": "LG유플러스 평촌 메가센터",
@@ -4634,7 +4634,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -4810,8 +4810,8 @@
     "contractor": "",
     "operator": "LG유플러스",
     "address": "서울특별시 서초구 남부순환로337가길 40 (서초동 1421-1)",
-    "lat": 37.484,
-    "lng": 127.015,
+    "lat": 37.48426,
+    "lng": 127.02315,
     "power_mw": 7.5,
     "it_mw": null,
     "start_ym": "",
@@ -4834,7 +4834,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "lgu-seocho2",
     "name": "LG유플러스 서초2센터",
@@ -4845,7 +4845,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -6283,8 +6283,8 @@
     "contractor": "",
     "operator": "삼성SDS",
     "address": "서울특별시 마포구 월드컵북로60길 24",
-    "lat": 37.58,
-    "lng": 126.891,
+    "lat": 37.58321,
+    "lng": 126.88665,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -6306,7 +6306,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "sds-sangam",
     "name": "삼성SDS 상암 데이터센터",
@@ -6317,7 +6317,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -6334,8 +6334,8 @@
     "contractor": "",
     "operator": "삼성SDS",
     "address": "경기도 수원시 영통구 삼성로168번길 10",
-    "lat": 37.256,
-    "lng": 127.052,
+    "lat": 37.25976,
+    "lng": 127.05895,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -6352,7 +6352,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "sds-suwon",
     "name": "삼성SDS 수원 데이터센터",
@@ -6363,7 +6363,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -6540,8 +6540,8 @@
     "contractor": "",
     "operator": "SK호라이즌",
     "address": "경기도 성남시 분당구 성남대로2번길 12",
-    "lat": 37.378,
-    "lng": 127.115,
+    "lat": 37.3349,
+    "lng": 127.11051,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -6558,7 +6558,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "skb-bundang",
     "name": "SK브로드밴드 분당 데이터센터",
@@ -6569,7 +6569,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -6637,8 +6637,8 @@
     "contractor": "",
     "operator": "SK호라이즌",
     "address": "서울특별시 금천구 가산로9길 80",
-    "lat": 37.48,
-    "lng": 126.885,
+    "lat": 37.47579,
+    "lng": 126.88783,
     "power_mw": 46,
     "it_mw": null,
     "start_ym": "",
@@ -6662,7 +6662,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "skb-gasan",
     "name": "SK브로드밴드 가산 데이터센터",
@@ -6673,7 +6673,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -6829,8 +6829,8 @@
     "contractor": "",
     "operator": "SK호라이즌",
     "address": "경기도 성남시 분당구 판교로255번길 46",
-    "lat": 37.4,
-    "lng": 127.108,
+    "lat": 37.40591,
+    "lng": 127.09827,
     "power_mw": null,
     "it_mw": 30,
     "start_ym": "",
@@ -6849,7 +6849,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "skb-pangyo",
     "name": "SK브로드밴드 판교 데이터센터",
@@ -6860,7 +6860,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
@@ -6877,8 +6877,8 @@
     "contractor": "",
     "operator": "SK호라이즌",
     "address": "서울특별시 서초구 법원로1길 6",
-    "lat": 37.484,
-    "lng": 127.032,
+    "lat": 37.49307,
+    "lng": 127.00945,
     "power_mw": null,
     "it_mw": null,
     "start_ym": "",
@@ -6895,7 +6895,7 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-21T05:45:05.445Z",
+    "updated_at": "2026-10-21T06:09:43.198Z",
     "updated_by": "auto",
     "id": "skb-seocho",
     "name": "SK브로드밴드 서초 데이터센터",
@@ -6906,7 +6906,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-21T05:45:05.445Z"
+      "at": "2026-10-21T06:09:43.198Z"
     },
     "dbo": {
       "type": "자체",
