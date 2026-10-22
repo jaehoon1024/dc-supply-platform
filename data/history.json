@@ -12753,5 +12753,38 @@
     "old": "추정",
     "new": "확정",
     "note": "근거 구분 변경"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T04:40:34.745Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022044034-aliases-0",
+    "field": "aliases",
+    "old": "PEACH PFV 방송통신시설, 퍼시픽 부천 삼정 데이터센터",
+    "new": "27년_경기_부천삼정동_퍼시픽_1동",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T04:40:34.745Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022044034-power_mw-1",
+    "field": "power_mw",
+    "old": 48,
+    "new": 40,
+    "note": "수동 변경 · 필드 고정 · 근거 확정"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T04:40:34.745Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022044034-it_mw-2",
+    "field": "it_mw",
+    "old": "",
+    "new": 24,
+    "note": "수동 변경 · 필드 고정 · 근거 확정"
   }
 ]

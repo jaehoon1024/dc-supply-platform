@@ -3782,8 +3782,7 @@
   },
   {
     "aliases": [
-      "PEACH PFV 방송통신시설",
-      "퍼시픽 부천 삼정 데이터센터"
+      "27년_경기_부천삼정동_퍼시픽_1동"
     ],
     "category": "상용",
     "owner": "퍼시픽 피치PFV (퍼시픽자산운용)",
@@ -3792,8 +3791,8 @@
     "address": "경기도 부천시 오정구 삼정동 13-15",
     "lat": 37.5195,
     "lng": 126.7745,
-    "power_mw": 48,
-    "it_mw": null,
+    "power_mw": 40,
+    "it_mw": 24,
     "start_ym": "2023-04",
     "complete_ym": "2026-07",
     "rfs_ym": "2027",
@@ -3805,12 +3804,17 @@
       "status": "추정",
       "address": "추정",
       "contractor": "확정",
-      "power_mw": "추정",
+      "power_mw": "확정",
       "start_ym": "확정",
       "area_m2": "확정",
-      "rfs_ym": "추정"
+      "rfs_ym": "추정",
+      "it_mw": "확정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true,
+      "power_mw": true,
+      "it_mw": true
+    },
     "permit_ref": {
       "sigunguCd": "41196",
       "bjdongCd": "10700",
@@ -3819,8 +3823,8 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-22T02:00:22.882Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T04:40:34.745Z",
+    "updated_by": "user:정재훈",
     "id": "kt-bucheon",
     "name": "KT클라우드 부천 데이터센터 (삼정동)",
     "status": "개발중",
@@ -3830,7 +3834,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T02:00:22.882Z"
+      "at": "2026-10-22T04:40:34.745Z"
     },
     "dbo": {
       "type": "마스터리스",
