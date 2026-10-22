@@ -401,3 +401,15 @@ test('건축HUB 관리번호(20자리)는 문자열로 보존', async () => {
   const out = await syncPermits({ dcs: [dc], evidence: [], history: [], permits: [{ id: '1.0000000000000003e+21', dc_id: 'pk1' }], runs: [] }, { key: 'k', fetchImpl, now: NOW, log: () => {} });
   assert.deepEqual(out.permits.map(p => p.id), [pk]);
 });
+
+test('게시판: 등록 → 관리자 처리(상태·답변) → 삭제', async () => {
+  const { applyBoardOp } = await import('../lib/model.js');
+  assert.throws(() => applyBoardOp([], 'create', { title: '', author: 'a' }), /제목/);
+  let r = applyBoardOp([], 'create', { title: '용인 센터 추가 요청', body: '내용', author: '홍길동', category: '요청' }, '', NOW);
+  const id = r.id; let b = r.board;
+  assert.equal(b[0].status, '접수'); assert.equal(b[0].category, '요청');
+  r = applyBoardOp(b, 'reply', { id, status: '완료', reply: '추가했습니다' }, '재훈', NOW); b = r.board;
+  assert.equal(b[0].status, '완료'); assert.equal(b[0].reply, '추가했습니다'); assert.equal(b[0].replied_by, '재훈'); assert.equal(b[0].log.length, 2);
+  assert.ok(applyBoardOp(b, 'reply', { id, status: '완료', reply: '추가했습니다' }, '재훈', NOW).unchanged);
+  assert.equal(applyBoardOp(b, 'delete', { id }).board.length, 0);
+});

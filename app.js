@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf, SALE_STATUS, SALE_SRC, SALE_SRC_NOTE, MARKET_METRICS, PRICE_UNIT, salesData, salesOf } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf, SALE_STATUS, SALE_SRC, SALE_SRC_NOTE, MARKET_METRICS, PRICE_UNIT, salesData, salesOf, BOARD_CATEGORIES, BOARD_STATUS } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -18,7 +18,7 @@ const store = {
 };
 
 const state = {
-  dcs: [], evidence: [], history: [], sources: [], runs: [], permits: [], grid: [], targets: [], companies: [], sales: salesData(null),
+  dcs: [], evidence: [], history: [], sources: [], runs: [], permits: [], grid: [], targets: [], companies: [], sales: salesData(null), board: [], bd: { filter: 'open', open: null, q: '' },
   salesFull: false, sl: { scope: 'has', q: '', region: '' },
   meta: { source: '', sha: '', repo: '', editable: false }, loaded: false, tab: 'list',
   filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', dbo: '', cm: '', company: null, status: new Set(), q: '', sort: 'power' },
@@ -34,11 +34,11 @@ async function load(fresh = false) {
     if (full && r.status === 401) { state.salesFull = false; store.set('dc-pw', '', sessionStorage); toastMsg('편집 비밀번호가 맞지 않아 단가·내부 정보를 열 수 없습니다'); r = await fetch(`/api/data?t=${Date.now()}`); }
     if (!r.ok) throw new Error(String(r.status));
     const j = await r.json();
-    Object.assign(state, { dcs: j.dcs || [], evidence: j.evidence || [], history: j.history || [], sources: j.sources || [], runs: j.runs || [], permits: j.permits || [], grid: j.grid || [], targets: j.targets || [], companies: j.companies || [], sales: { ...salesData(j.sales), redacted: j.sales?.redacted !== false, hidden: j.sales?.hidden || 0 } });
+    Object.assign(state, { dcs: j.dcs || [], evidence: j.evidence || [], history: j.history || [], sources: j.sources || [], runs: j.runs || [], permits: j.permits || [], grid: j.grid || [], targets: j.targets || [], companies: j.companies || [], board: Array.isArray(j.board) ? j.board : [], sales: { ...salesData(j.sales), redacted: j.sales?.redacted !== false, hidden: j.sales?.hidden || 0 } });
     state.meta = { source: j.source, sha: j.sha, repo: j.repo || '', editable: !!j.editable, repoPrivate: j.repo_private };
   } catch {
     // API가 없는 환경(로컬 정적 미리보기)에서는 정적 data/ 파일을 읽습니다.
-    const names = ['dcs', 'evidence', 'history', 'sources', 'runs', 'permits', 'grid', 'targets', 'companies', 'sales'];
+    const names = ['dcs', 'evidence', 'history', 'sources', 'runs', 'permits', 'grid', 'targets', 'companies', 'sales', 'board'];
     const got = await Promise.all(names.map(n => fetch(`/data/${n}.json`).then(r => (r.ok ? r.json() : [])).catch(() => [])));
     names.forEach((n, i) => { state[n] = got[i]; });
     state.sales = { ...salesData(state.sales), redacted: true, hidden: state.sales?.hidden || 0 };
@@ -451,12 +451,13 @@ function renderAll() {
   if (state.tab === 'value') renderValue();
   if (state.tab === 'company') renderCompanies();
   if (state.tab === 'sales') renderSales();
+  if (state.tab === 'board') renderBoard();
   if (csheet && csheet.id && !csheetDirty()) { const c = state.companies.find(x => x.id === csheet.id); if (c) { csheet.orig = structuredClone(c); csheet.draft = structuredClone(c); renderCSheet(); } }
   if (sheet && sheet.id) { const dc = state.dcs.find(d => d.id === sheet.id); if (dc && !isDirty()) { sheet.orig = structuredClone(dc); sheet.draft = structuredClone(dc); normDraft(); renderSheet(); } else { renderEvidence(); renderHistory(); } }
 }
 
 /* ---------------- tabs & filters ---------------- */
-const TABS = ['list', 'map', 'supply', 'sales', 'value', 'company', 'permits', 'sources', 'design'];
+const TABS = ['list', 'map', 'supply', 'sales', 'value', 'company', 'permits', 'sources', 'design', 'board'];
 function setTab(t) {
   state.tab = t;
   document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
@@ -467,6 +468,7 @@ function setTab(t) {
   if (t === 'value') renderValue();
   if (t === 'company') renderCompanies();
   if (t === 'sales') renderSales();
+  if (t === 'board') renderBoard();
   if (t === 'permits') loadPermitsLive();
   if (location.hash.slice(1) !== t && !location.hash.startsWith('#dc/')) history.replaceState(null, '', '#' + t);
 }
@@ -1134,3 +1136,68 @@ function renderSales() {
   const nameOf = id => state.dcs.find(d => d.id === id)?.name || id;
   $('#slLog').innerHTML = log.length ? log.map(l => `<div class="runrow"><div><div class="num">${fmtDT(l.at)}</div><div class="of">${esc(l.editor === 'auto' ? '자동수집' : l.editor)}</div></div><div>${l.dc_id ? `<b>${esc(nameOf(l.dc_id))}</b> · ` : ''}${esc(l.note)}</div></div>`).join('') : '<div class="note">변경 이력이 없습니다.</div>';
 }
+
+
+/* ---------------- 게시판 ---------------- */
+// 글쓰기는 입장한 누구나, 처리 상태·답변·삭제는 편집(관리자) 비밀번호
+function bdVar(st) { return ({ 접수: '--none', 검토중: '--warn', 처리중: '--accent', 완료: '--ok', 보류: '--faint' })[st] || '--none'; }
+async function boardPost(payload, admin = false) {
+  let ed = editor();
+  if (admin && !ed.pw) { if (!(await askEditor())) throw new Error('관리자(편집) 비밀번호가 필요합니다'); ed = editor(); }
+  const r = await fetch('/api/board', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...payload, ...(admin ? { password: ed.pw, editor: ed.name || '관리자' } : {}) }) });
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401) store.set('dc-pw', '', sessionStorage);
+  if (!r.ok) throw new Error(j.error || `저장 실패 (${r.status})`);
+  await load(true);
+  return j;
+}
+function renderBoard() {
+  const bd = state.bd, q = bd.q.trim().toLowerCase();
+  const all = state.board.slice().sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));
+  const list = all.filter(p => (bd.filter === 'open' ? !['완료', '보류'].includes(p.status) : bd.filter === 'done' ? ['완료', '보류'].includes(p.status) : true)
+    && (!q || [p.title, p.body, p.author, p.reply].join(' ').toLowerCase().includes(q)));
+  const cnt = s => all.filter(p => p.status === s).length;
+  $('#bdCounts').innerHTML = BOARD_STATUS.map(s => `<span class="bdst" style="--c:var(${bdVar(s)})">${s} ${cnt(s)}</span>`).join('');
+  if (!$('#bdAuthor').value) $('#bdAuthor').value = editor().name || '';
+  $('#bdList').innerHTML = list.length ? list.map(p => {
+    const open = bd.open === p.id;
+    return `<article class="bdpost ${open ? 'open' : ''}" data-bd="${esc(p.id)}">
+      <div class="bdhead" tabindex="0"><span class="bdcat">${esc(p.category)}</span><span class="bdst" style="--c:var(${bdVar(p.status)})">${esc(p.status)}</span>
+        <b class="bdtitle">${esc(p.title)}</b>${p.reply ? '<span class="of">💬 답변</span>' : ''}<span class="of bdmeta">${esc(p.author)} · ${fmtDate(p.created_at)}</span></div>
+      ${open ? `<div class="bdbody">${p.body ? `<div class="bdtext">${esc(p.body)}</div>` : '<div class="of">(내용 없음)</div>'}
+        ${p.reply ? `<div class="bdreply"><div class="of">처리 내용 · ${esc(p.replied_by || '관리자')} · ${fmtDT(p.replied_at)}</div><div class="bdtext">${esc(p.reply)}</div></div>` : ''}
+        <details class="bdadmin"><summary>관리자 처리 (편집 비밀번호)</summary>
+          <div class="row"><select data-bdstatus>${BOARD_STATUS.map(s => `<option ${s === p.status ? 'selected' : ''}>${s}</option>`).join('')}</select></div>
+          <textarea class="inp" data-bdreply rows="4" placeholder="처리 내용 및 결과">${esc(p.reply || '')}</textarea>
+          <div class="row"><button class="btn primary" type="button" data-bdsave>처리 저장</button><button class="btn" type="button" data-bddel>삭제</button><span class="msg" data-bdmsg></span></div>
+          ${(p.log || []).length ? `<div class="of" style="margin-top:6px">${(p.log || []).map(l => `${fmtDT(l.at)} ${esc(l.by)} · ${esc(l.note)}`).join('<br>')}</div>` : ''}
+        </details></div>` : ''}
+    </article>`;
+  }).join('') : `<div class="note">${bd.filter === 'open' ? '진행 중인 글이 없습니다.' : '글이 없습니다.'}</div>`;
+  $('#bdList').querySelectorAll('.bdhead').forEach(h => {
+    const go = () => { const id = h.closest('[data-bd]').dataset.bd; bd.open = bd.open === id ? null : id; renderBoard(); };
+    h.onclick = go; h.onkeydown = e => { if (e.key === 'Enter') go(); };
+  });
+  $('#bdList').querySelectorAll('.bdpost.open').forEach(el => {
+    const id = el.dataset.bd, msg = el.querySelector('[data-bdmsg]');
+    el.querySelector('[data-bdsave]').onclick = async () => {
+      msg.textContent = '저장하는 중…';
+      try { await boardPost({ op: 'reply', id, status: el.querySelector('[data-bdstatus]').value, reply: el.querySelector('[data-bdreply]').value }, true); } catch (e) { msg.innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+    };
+    el.querySelector('[data-bddel]').onclick = async () => {
+      if (!confirmDel()) return;
+      try { await boardPost({ op: 'delete', id }, true); bd.open = null; } catch (e) { msg.innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+    };
+  });
+}
+$('#bdForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const msg = $('#bdMsg'), btn = $('#bdSubmit');
+  const payload = { op: 'create', category: $('#bdCat').value, title: $('#bdTitle').value, body: $('#bdBody').value, author: $('#bdAuthor').value };
+  btn.disabled = true; msg.textContent = '등록하는 중…';
+  try { const j = await boardPost(payload); $('#bdTitle').value = ''; $('#bdBody').value = ''; state.bd.open = j.id; state.bd.filter = 'open'; msg.textContent = '등록했습니다'; renderBoard(); }
+  catch (err) { msg.innerHTML = `<span class="err">${esc(err.message)}</span>`; }
+  btn.disabled = false;
+});
+bindSeg('#bdFilter', v => { state.bd.filter = v; renderBoard(); });
+$('#bdQ').addEventListener('input', e => { state.bd.q = e.target.value; renderBoard(); });

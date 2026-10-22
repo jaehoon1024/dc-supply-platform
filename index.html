@@ -34,6 +34,7 @@
     <button class="tab" role="tab" data-tab="permits" aria-selected="false">인허가</button>
     <button class="tab" role="tab" data-tab="sources" aria-selected="false">수집 소스</button>
     <button class="tab" role="tab" data-tab="design" aria-selected="false">기준</button>
+    <button class="tab" role="tab" data-tab="board" aria-selected="false">게시판</button>
   </nav></div>
 </header>
 
@@ -143,6 +144,22 @@
     </div>
   </section>
 
+  <section id="v-board" hidden>
+    <div class="panel">
+      <h3>건의·요청 등록 <span class="note" style="font-weight:400">· 등록하면 관리자가 처리 상태와 결과를 답변합니다 · GitHub 저장소에 기록됩니다</span></h3>
+      <form id="bdForm" class="bdform" autocomplete="off">
+        <div class="row"><select id="bdCat" aria-label="분류"><option>건의</option><option>요청</option><option>오류</option><option>데이터 수정</option><option>기타</option></select><input class="inp" id="bdTitle" placeholder="제목" maxlength="120" required><input class="inp" id="bdAuthor" placeholder="작성자" maxlength="40" required style="max-width:140px"></div>
+        <textarea class="inp" id="bdBody" rows="4" maxlength="4000" placeholder="내용 (어떤 화면·센터인지, 원하는 결과 등)"></textarea>
+        <div class="row"><button class="btn primary" id="bdSubmit" type="submit">등록</button><span class="msg" id="bdMsg"></span></div>
+      </form>
+    </div>
+    <div class="maptools" style="margin-top:16px">
+      <div class="fgroup"><span class="flabel">보기</span><div class="seg" id="bdFilter"><button data-v="open" aria-pressed="true">진행 중</button><button data-v="done" aria-pressed="false">완료·보류</button><button data-v="" aria-pressed="false">전체</button></div></div>
+      <input type="search" id="bdQ" placeholder="제목·내용·작성자" aria-label="게시판 검색">
+      <span id="bdCounts" class="bdcounts" style="margin-left:auto"></span>
+    </div>
+    <div id="bdList"></div>
+  </section>
   <section id="v-design" hidden>
     <div class="doc">
       <h2>용어 · 기준</h2>

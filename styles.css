@@ -377,3 +377,17 @@ dialog .fld{margin-top:12px}
 .slform .row{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.slform .row .inp{flex:1;min-width:110px}
 .btn.sm{padding:2px 8px;font-size:12px}
 .sec h3 [data-slunlock]{float:right;font-size:12px;padding:2px 8px}
+
+/* 게시판 */
+.bdform .row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}.bdform .row .inp{flex:1;min-width:140px}
+.bdform textarea,.bdadmin textarea{width:100%;margin-bottom:6px;font:inherit}
+.bdcounts{display:flex;gap:6px;flex-wrap:wrap}
+.bdst{font-size:12px;font-weight:600;padding:1px 7px;border-radius:10px;border:1px solid var(--c);color:var(--c);white-space:nowrap}
+.bdcat{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;white-space:nowrap}
+.bdpost{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-top:8px}
+.bdhead{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 12px;cursor:pointer}
+.bdtitle{flex:1;min-width:160px}.bdmeta{white-space:nowrap}
+.bdbody{padding:0 12px 12px;border-top:1px solid var(--line-2)}
+.bdtext{white-space:pre-wrap;overflow-wrap:anywhere;margin-top:8px}
+.bdreply{margin-top:10px;padding:10px;border-radius:8px;background:var(--accent-soft)}
+.bdadmin{margin-top:10px}.bdadmin summary{cursor:pointer;font-size:12px;color:var(--muted)}.bdadmin .row{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}
