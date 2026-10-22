@@ -2622,10 +2622,8 @@
     "id": "incheon-dohwa",
     "name": "인천 도화 데이터센터 (ESR켄달스퀘어·산은인프라)",
     "aliases": [
-      "도화동 데이터센터",
-      "미추홀 도화 데이터센터",
-      "도화데이터센터",
-      "ESR켄달스퀘어 도화"
+      "29년_DBO_파이프라인",
+      "31년_DBO_파이프라인"
     ],
     "category": "상용",
     "status": "착공",
@@ -2637,7 +2635,7 @@
     "lat": null,
     "lng": null,
     "power_mw": 80,
-    "it_mw": 56,
+    "it_mw": 52,
     "start_ym": "2026-10",
     "complete_ym": "",
     "rfs_ym": "",
@@ -2650,12 +2648,16 @@
       "it_mw": "확정",
       "start_ym": "추정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true,
+      "it_mw": true,
+      "steps": true
+    },
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-22T01:45:06.154Z",
-    "updated_at": "2026-10-22T01:45:06.154Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T08:29:31.203Z",
+    "updated_by": "user:정재훈",
     "prep": {
       "site": {
         "state": "확보",
@@ -2707,8 +2709,26 @@
     "addr_check": {
       "status": "좌표없음",
       "note": "위경도가 없습니다",
-      "at": "2026-10-22T01:45:06.154Z"
-    }
+      "at": "2026-10-22T08:29:31.203Z"
+    },
+    "steps": [
+      {
+        "label": "1동",
+        "power_mw": 40,
+        "it_mw": 26,
+        "ym": "2029",
+        "status": "계획",
+        "c": "추정"
+      },
+      {
+        "label": "2동",
+        "power_mw": 40,
+        "it_mw": 26,
+        "ym": "2031",
+        "status": "계획",
+        "c": "추정"
+      }
+    ]
   },
   {
     "id": "incheon-wonchang",

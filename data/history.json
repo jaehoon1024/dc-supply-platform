@@ -13891,5 +13891,38 @@
     "old": "경기_안산성곡_코람코3",
     "new": "경기_안산성곡_코람코",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T08:29:31.203Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-dohwa-20261022082931-aliases-0",
+    "field": "aliases",
+    "old": "도화동 데이터센터, 미추홀 도화 데이터센터, 도화데이터센터, ESR켄달스퀘어 도화",
+    "new": "29년_DBO_파이프라인, 31년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T08:29:31.203Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-dohwa-20261022082931-it_mw-1",
+    "field": "it_mw",
+    "old": 56,
+    "new": 52,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T08:29:31.203Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-dohwa-20261022082931-steps-2",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
