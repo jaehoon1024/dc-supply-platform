@@ -6134,11 +6134,11 @@
     "address": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
     "lat": 37.76,
     "lng": 126.78,
-    "power_mw": 50,
-    "it_mw": null,
+    "power_mw": 51,
+    "it_mw": 31.8,
     "start_ym": "",
     "complete_ym": "2027-06",
-    "rfs_ym": "",
+    "rfs_ym": "2027",
     "conf": {
       "owner": "확정",
       "operator": "확정",
@@ -6149,10 +6149,13 @@
       "contractor": "추정"
     },
     "locked": {
-      "aliases": true
+      "aliases": true,
+      "power_mw": true,
+      "it_mw": true,
+      "rfs_ym": true
     },
     "note": "캠퍼스 전체 200MW 전력 확정, 연면적 약 15만㎡. 1동 2027-06 준공·완판. 1동 50MW는 시설 기준(센서스). 2~4동은 별도 항목. LG전자 액체냉각·LG엔솔 UPS·LS일렉트릭 DC 800V. 2026-06 공정률 약 20%, 1동·부속동 2027-06 준공 예정",
-    "updated_at": "2026-10-22T07:02:01.632Z",
+    "updated_at": "2026-10-22T07:25:16.739Z",
     "updated_by": "user:정재훈",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
@@ -6161,7 +6164,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T07:02:01.632Z"
+      "at": "2026-10-22T07:25:16.739Z"
     },
     "dbo": {
       "type": "자체",
