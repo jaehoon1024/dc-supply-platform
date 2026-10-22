@@ -13781,5 +13781,16 @@
     "old": "[object Object], [object Object], [object Object], [object Object]",
     "new": "[object Object], [object Object], [object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "lgu-paju",
+    "at": "2026-10-22T08:09:32.259Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-lgu-paju-20261022080932-it_mw-0",
+    "field": "it_mw",
+    "old": "",
+    "new": 129,
+    "note": "수동 변경 · 필드 고정"
   }
 ]
