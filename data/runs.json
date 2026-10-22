@@ -394,5 +394,17 @@
     "proposals": 0,
     "errors": 0,
     "summary": "구로 항동(퍼시픽, 52MW, 현대건설 책임준공 PF 6,000억) 신규 등록, 개봉동 부지 이력(블루리본→PDG 우협→캡스톤) 근거 추가."
+  },
+  {
+    "id": "r-20261022-misc-0229",
+    "at": "2026-10-22T02:29:31.712Z",
+    "kind": "수동 반영",
+    "checked": 0,
+    "new_dcs": 0,
+    "updated": 2,
+    "evidence": 0,
+    "proposals": 0,
+    "errors": 0,
+    "summary": "코어허브 시흥 정왕 좌표 이동"
   }
 ]

@@ -6572,5 +6572,55 @@
     "source_id": "s30",
     "collected_at": "2026-10-22T02:17:30.254Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-gabia-ansan-20261022022924-405",
+    "dc_id": "gabia-ansan",
+    "title": "코어허브, 시흥 데이터센터 건립사업 인수...이달 말 시공사 선정",
+    "url": "https://www.dealbook.co.kr/koeoheobeu-siheung-deiteosenteo-geonribsaeob-insu-idal-mal-sigongsa-seonjeong/",
+    "publisher": "딜북뉴스",
+    "pub_date": "2026-09-09",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "개발사",
+      "상태"
+    ],
+    "excerpt": "코어허브(MAIF4·가비아)가 시흥 정왕동 시화국가산단 메이플 클라우드 데이터센터 건립 프로젝트 인수, 9월 말 시공사 선정 예정",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:29:24.454Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-gabia-ansan-20261022022924-406",
+    "dc_id": "gabia-ansan",
+    "title": "[가비아 M&A] 맥쿼리와 데이터센터 합작 본격화…상반기 104억 출자",
+    "url": "https://www.bloter.net/news/articleView.html?idxno=671351",
+    "publisher": "블로터",
+    "pub_date": "2026-08-20",
+    "grade": "B",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "1호 40MW 안산 사업, 프로젝트 법인 코어허브시화PFV(2026-06 설립), 그룹 지분 6.4%(가비아 0.5%·KINX 5.9%)",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:29:24.454Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-keppel-ansan-20261022022924-407",
+    "dc_id": "keppel-ansan",
+    "title": "케펠, 안산 데이터센터 개발사업 8000억 본PF 조달 시동",
+    "url": "https://www.dealbook.co.kr/tag/deiteosenteogaebalsaeob/",
+    "publisher": "딜북뉴스",
+    "pub_date": "2026-09-23",
+    "grade": "C",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "Keppel 안산 데이터센터 본PF 8,000억 조달 착수",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:29:24.454Z",
+    "added_by": "auto"
   }
 ]

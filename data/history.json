@@ -12424,5 +12424,115 @@
     "by": "auto",
     "evidence_url": "https://dealsite.co.kr/articles/105634",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-name",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "name",
+    "old": "맥쿼리·가비아 안산 하이퍼스케일 IDC",
+    "new": "코어허브 시흥 정왕 데이터센터 (메이플 클라우드 · 맥쿼리·가비아)",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "코어허브 1호(40MW) = 시화산단 정왕동 메이플 클라우드 사업으로 판단"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-aliases",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "aliases",
+    "old": "",
+    "new": "맥쿼리·가비아 안산 하이퍼스케일 IDC, 코어허브시화PFV, 메이플 클라우드 데이터센터, Corehub Siheung",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "명칭 연결"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-address",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "address",
+    "old": "경기도 안산시",
+    "new": "경기도 시흥시 정왕동 (시화국가산업단지)",
+    "evidence_url": "https://www.dealbook.co.kr/koeoheobeu-siheung-deiteosenteo-geonribsaeob-insu-idal-mal-sigongsa-seonjeong/",
+    "by": "auto",
+    "note": "딜북 2026-09: 코어허브가 시흥 정왕동 시화산단 메이플 클라우드 데이터센터 건립사업 인수 / 블로터 2026-08: 1호 '안산' 40MW 사업 법인명 코어허브시화PFV — 같은 사업으로 판단"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-owner",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "owner",
+    "old": "맥쿼리자산운용(MAIF4) · 가비아",
+    "new": "코어허브 (맥쿼리 MAIF4 · 가비아 7.5%) — 코어허브시화PFV",
+    "evidence_url": "https://www.bloter.net/news/articleView.html?idxno=671351",
+    "by": "auto",
+    "note": "코어허브 = MAIF4·가비아 합작, 시화PFV 그룹 지분 6.4%(가비아 0.5%·KINX 5.9%)"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-note",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "note",
+    "old": "6년간 6,000억 공동투자 플랫폼의 1호(누적 100MW+ 목표). 맥쿼리 부지·인허가·PF, KINX 설계·네트워크·운영. 2026-02-25 계약.",
+    "new": "코어허브(맥쿼리 MAIF4·가비아 합작, 2026-02-25 계약, 4~6년 6,000억·누적 100MW+ 목표)의 1호 40MW 사업. 2026-06 코어허브시화PFV 설립(가비아 0.5%·KINX 5.9%), 2026-09 시흥 정왕동 시화산단 '메이플 클라우드 데이터센터' 건립사업 인수·9월 말 시공사 선정 예정(딜북). 초기 보도는 '안산'으로 표기 — 시화산단(정왕동) 사업으로 판단, 지번 미공개. 맥쿼리 부지·인허가·PF, 가비아·KINX 설계·네트워크·운영. 2026-07 맥쿼리 측 가비아 공개매수.",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-evidence-405",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "코어허브, 시흥 데이터센터 건립사업 인수...이달 말 시공사 선정",
+    "by": "auto",
+    "evidence_url": "https://www.dealbook.co.kr/koeoheobeu-siheung-deiteosenteo-geonribsaeob-insu-idal-mal-sigongsa-seonjeong/",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022924-evidence-406",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "[가비아 M&A] 맥쿼리와 데이터센터 합작 본격화…상반기 104억 출자",
+    "by": "auto",
+    "evidence_url": "https://www.bloter.net/news/articleView.html?idxno=671351",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-keppel-ansan-20261022022924-evidence-407",
+    "dc_id": "keppel-ansan",
+    "at": "2026-10-22T02:29:24.454Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "케펠, 안산 데이터센터 개발사업 8000억 본PF 조달 시동",
+    "by": "auto",
+    "evidence_url": "https://www.dealbook.co.kr/tag/deiteosenteogaebalsaeob/",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022931-lat",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:31.712Z",
+    "field": "lat",
+    "old": 37.315,
+    "new": 37.34,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "시흥 정왕동 시화산단 대략 좌표(지번 미공개)"
+  },
+  {
+    "id": "h-gabia-ansan-20261022022931-lng",
+    "dc_id": "gabia-ansan",
+    "at": "2026-10-22T02:29:31.712Z",
+    "field": "lng",
+    "old": 126.83,
+    "new": 126.735,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "시흥 정왕동 시화산단 대략 좌표(지번 미공개)"
   }
 ]

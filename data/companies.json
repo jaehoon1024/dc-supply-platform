@@ -964,6 +964,42 @@
     ]
   },
   {
+    "id": "코어허브",
+    "name": "코어허브",
+    "aliases": [
+      "Corehub",
+      "코어허브시화PFV"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "맥쿼리자산운용 MAIF4 · 가비아",
+    "note": "맥쿼리 MAIF4·가비아 데이터센터 합작 플랫폼. 1호 시흥 정왕(시화산단) 40MW",
+    "url": "https://www.bloter.net/news/articleView.html?idxno=671351",
+    "created_at": "2026-10-22T02:29:24.454Z",
+    "updated_at": "2026-10-22T02:29:24.454Z",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-22T02:29:24.454Z",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
+      }
+    ]
+  },
+  {
     "id": "킨드릴코리아",
     "name": "킨드릴코리아",
     "aliases": [
