@@ -13979,5 +13979,82 @@
     "old": "",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-aliases-0",
+    "field": "aliases",
+    "old": "가평 하색리 데이터센터",
+    "new": "30년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-contractor-1",
+    "field": "contractor",
+    "old": "",
+    "new": "현대건설",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-operator-2",
+    "field": "operator",
+    "old": "",
+    "new": "LG유플러스",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-power_mw-3",
+    "field": "power_mw",
+    "old": 120,
+    "new": 60,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-it_mw-4",
+    "field": "it_mw",
+    "old": "",
+    "new": 40,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-complete_ym-5",
+    "field": "complete_ym",
+    "old": "",
+    "new": "2030",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-gapyeong",
+    "at": "2026-10-22T08:35:19.420Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-gapyeong-20261022083519-rfs_ym-6",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2030",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
