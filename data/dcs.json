@@ -1,9 +1,7 @@
 [
   {
     "aliases": [
-      "프로젝트 팀북투",
-      "TIMBUKTU",
-      "안산그린에너지PFV"
+      "경기_안산_액티스"
     ],
     "category": "상용",
     "owner": "액티스 (안산그린에너지PFV)",
@@ -27,12 +25,14 @@
       "start_ym": "추정",
       "complete_ym": "추정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true
+    },
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-22T02:00:22.882Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T07:12:47.814Z",
+    "updated_by": "user:정재훈",
     "id": "actis-ansan",
     "name": "액티스 안산 데이터센터",
     "status": "개발중",
@@ -42,7 +42,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T02:00:22.882Z"
+      "at": "2026-10-22T07:12:47.814Z"
     },
     "dbo": {
       "type": "자체",
