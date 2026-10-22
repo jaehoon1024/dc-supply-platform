@@ -13924,5 +13924,27 @@
     "old": "",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T08:30:06.734Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-dohwa-20261022083006-contractor-0",
+    "field": "contractor",
+    "old": "",
+    "new": "현대건설",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T08:30:06.734Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-dohwa-20261022083006-operator-1",
+    "field": "operator",
+    "old": "",
+    "new": "LG유플러스",
+    "note": "수동 변경 · 필드 고정"
   }
 ]

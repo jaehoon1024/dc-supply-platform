@@ -2629,8 +2629,8 @@
     "status": "착공",
     "phase": "개발",
     "owner": "ESR켄달스퀘어 · 산은인프라자산운용 (시행 도화데이터센터)",
-    "contractor": "",
-    "operator": "",
+    "contractor": "현대건설",
+    "operator": "LG유플러스",
     "address": "인천광역시 미추홀구 도화동 765-18",
     "lat": null,
     "lng": null,
@@ -2651,12 +2651,14 @@
     "locked": {
       "aliases": true,
       "it_mw": true,
-      "steps": true
+      "steps": true,
+      "contractor": true,
+      "operator": true
     },
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-22T01:45:06.154Z",
-    "updated_at": "2026-10-22T08:29:31.203Z",
+    "updated_at": "2026-10-22T08:30:06.734Z",
     "updated_by": "user:정재훈",
     "prep": {
       "site": {
@@ -2709,7 +2711,7 @@
     "addr_check": {
       "status": "좌표없음",
       "note": "위경도가 없습니다",
-      "at": "2026-10-22T08:29:31.203Z"
+      "at": "2026-10-22T08:30:06.734Z"
     },
     "steps": [
       {
