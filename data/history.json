@@ -14386,5 +14386,16 @@
     "by": "auto",
     "evidence_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03788406642068224",
     "note": "근거 자동 추가"
+  },
+  {
+    "dc_id": "icn11",
+    "at": "2026-10-22T08:59:33.247Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-icn11-20261022085933-aliases-0",
+    "field": "aliases",
+    "old": "경기_김포구래_디지털리얼티",
+    "new": "28년_DBO_파이프라인, 29년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
