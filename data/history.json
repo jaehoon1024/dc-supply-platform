@@ -13203,5 +13203,27 @@
     "new": "[{\"label\":\"1단계 4~6층\",\"mw\":18,\"basis\":\"IT\",\"ym\":\"2026-07\",\"status\":\"운영\",\"c\":\"확정\",\"note\":\"2026-07-01 가동\"},{\"label\":\"2단계\",\"mw\":6,\"basis\":\"IT\",\"ym\":\"2026-12\",\"status\":\"공사\",\"c\":\"추정\",\"note\":\"연말 오픈(층당 6MW 가정)\"},{\"label\":\"잔여\",\"mw\":6,\"basis\":\"IT\",\"ym\":\"2027-07\",\"status\":\"계획\",\"c\":\"추정\"}]",
     "by": "auto",
     "note": "캠퍼스·단계를 단계별 일정으로 통합"
+  },
+  {
+    "dc_id": "kaam-sihwa",
+    "at": "2026-10-22T06:58:29.533Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-sihwa-20261022065829-operator-0",
+    "field": "operator",
+    "old": "",
+    "new": "카카오엔터프라이즈",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-sihwa",
+    "at": "2026-10-22T06:58:29.533Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-sihwa-20261022065829-steps-1",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
