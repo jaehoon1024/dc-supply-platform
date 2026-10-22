@@ -7804,7 +7804,7 @@
     "category": "상용",
     "owner": "퍼시픽자산운용 (CPPIB 공동투자) · 시행 유림티에스 (엠디에이3호)",
     "contractor": "",
-    "operator": "",
+    "operator": "KT클라우드",
     "address": "경기도 부천시 오정구 내동 222-13 외 29필지",
     "lat": 37.516,
     "lng": 126.77,
@@ -7827,7 +7827,8 @@
       "status": true,
       "it_mw": true,
       "complete_ym": true,
-      "rfs_ym": true
+      "rfs_ym": true,
+      "operator": true
     },
     "permit_ref": {
       "sigunguCd": "41196",
@@ -7837,7 +7838,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-22T09:02:25.612Z",
+    "updated_at": "2026-10-22T09:03:07.544Z",
     "updated_by": "user:정재훈",
     "id": "pacific-bucheon",
     "name": "퍼시픽 부천 내동 데이터센터",
@@ -7848,7 +7849,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T09:02:25.612Z"
+      "at": "2026-10-22T09:03:07.544Z"
     },
     "prep": {
       "site": {

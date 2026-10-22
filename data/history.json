@@ -14452,5 +14452,16 @@
     "old": "",
     "new": "2032",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T09:03:07.544Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-bucheon-20261022090307-operator-0",
+    "field": "operator",
+    "old": "",
+    "new": "KT클라우드",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
