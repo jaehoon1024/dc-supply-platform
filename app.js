@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, CORE4, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf, SALE_STATUS, SALE_SRC, SALE_SRC_NOTE, MARKET_METRICS, PRICE_UNIT, salesData, salesOf, BOARD_CATEGORIES, BOARD_STATUS } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, CORE4, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf, SALE_STATUS, SALE_SRC, SALE_SRC_NOTE, MARKET_METRICS, PRICE_UNIT, salesData, salesOf, STEP_STATUS, stepProgress, stepsCheck, BOARD_CATEGORIES, BOARD_STATUS } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 카카오엔터프라이즈: '--p-kakao', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip ${p === '카카오엔터프라이즈' ? 'dk' : ''}" style="--pc:var(${PLAYER_VAR[p]})">${esc(p === '카카오엔터프라이즈' ? '카카오' : p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -68,6 +68,10 @@ function prepMini(dc) {
   return `<div class="prepmini" title="${p.steps.map(s => `${s.label}: ${s.state || '미상'}${s.c ? ' (' + s.c + ')' : ''}`).join(' · ')}">${p.steps.map(s => `<span class="ps ${s.level}">${s.label.slice(0, 2)}</span>`).join('<i>›</i>')}</div>`;
 }
 const fmtPlan = mw => (mw >= 1000 ? `${Math.round(mw / 100) / 10}GW` : `${mw}MW`);
+function stepChip(dc) {
+  const p = stepProgress(dc); if (!p) return '';
+  return `<span class="stepchip" title="${esc((dc.steps || []).map(x => `${x.label} ${x.mw ?? '?'}MW ${x.status}${x.ym ? ' ' + x.ym : ''}`).join(' / '))}">동별 ${p.label}${p.next?.ym ? ` · 다음 ${esc(p.next.label)} ${esc(p.next.ym)}` : ''}</span>`;
+}
 function campusChip(dc) {
   const c = dc.campus; if (!c || (!c.name && !c.phase)) return '';
   const g = c.name ? campusPlans(state.dcs).find(x => x.name === c.name) : null;
@@ -156,7 +160,7 @@ function renderList() {
   tb.innerHTML = arr.map(dc => {
     const ac = addrCheck(dc);
     return `<tr data-id="${esc(dc.id)}" tabindex="0">
-      <td><div class="name">${esc(dc.name)}${pchip(dc)}</div>${(dc.aliases || []).length ? `<div class="alias">${esc(dc.aliases.join(' · '))}</div>` : ''}${campusChip(dc)}</td>
+      <td><div class="name">${esc(dc.name)}${pchip(dc)}</div>${(dc.aliases || []).length ? `<div class="alias">${esc(dc.aliases.join(' · '))}</div>` : ''}${campusChip(dc)}${stepChip(dc)}</td>
       <td><span class="cat">${esc(dc.category || '—')}</span></td>
       <td>${statusPill(dc.status)}<div class="phase">${phaseOf(dc.status)}</div>${dc.status === '설계중' ? prepMini(dc) : ''}</td>
       <td><div>${esc(locOf(dc).sido)} ${esc(locOf(dc).sigungu)}${locOf(dc).area ? `<span class="atag ${locOf(dc).area === '수도권' ? 'm' : ''}">${locOf(dc).area === '수도권' ? '수도권' : '지방·' + esc(locOf(dc).region)}</span>` : ''}</div><span class="addr"><span class="dot" style="background:var(${ADDR_COLOR[ac.status]})"></span>${esc(ac.status)}</span></td>
@@ -365,7 +369,7 @@ function renderSupply() {
     <p class="note">용량 미상 ${fc.unknown.length}곳은 제외 · 2032년 이후 ${fc.later.length}곳 · ${unit} 값이 없고 다른 지표만 있으면 PUE ${PUE_RATIO}로 환산(추정)</p>`;
   // evidence rows
   const rows = fc.rows.filter(r => r.year !== 'base' && r.year >= FROM).sort((a, b) => a.year - b.year || b.mw - a.mw);
-  $('#supList').innerHTML = rows.map(r => `<div class="mrow" data-id="${esc(r.dc.id)}"><span>${r.year} · ${esc(r.dc.name)}${pchip(r.dc)}</span><span class="note num">${fmtMW(r.mw)}MW${r.cap.how === '환산' ? '(환산)' : r.cap.how === '연면적 환산' ? '(연면적 환산)' : r.cap.how === '추정' ? '(추정)' : ''} × ${Math.round(r.prob * 100)}% · ${esc(r.timing.how === '리드타임 추정' ? `${r.dc.status} → ${r.timing.ym} 추정` : `${r.timing.how} ${r.timing.ym}`)}</span></div>`).join('') || '<div class="note">해당 기간 공급 예정 센터가 없습니다.</div>';
+  $('#supList').innerHTML = rows.map(r => `<div class="mrow" data-id="${esc(r.dc.id)}"><span>${r.year} · ${esc(r.dc.name)}${r.step ? ` <span class="of">· ${esc(r.step)}</span>` : ''}${pchip(r.dc)}</span><span class="note num">${fmtMW(r.mw)}MW${r.cap.how === '환산' ? '(환산)' : r.cap.how === '연면적 환산' ? '(연면적 환산)' : r.cap.how === '추정' ? '(추정)' : ''} × ${Math.round(r.prob * 100)}% · ${esc(r.timing.how === '리드타임 추정' ? `${r.dc.status} → ${r.timing.ym} 추정` : `${r.timing.how} ${r.timing.ym}`)}</span></div>`).join('') || '<div class="note">해당 기간 공급 예정 센터가 없습니다.</div>';
   $('#supAssume').innerHTML = `
     <p><b>공급 시점</b> RFS → 없으면 준공월 → 없으면 오늘 기준 상태별 소요기간(${Object.entries(STATUS_LEAD_MONTHS).map(([k, v]) => `${k} ${v}개월`).join(', ')})으로 추정합니다. 분기·반기 표기는 그 기간의 마지막 달로 봅니다.</p>
     <p><b>가중 추정</b> 개발 중인 센터는 상태별 실현확률을 곱합니다: ${Object.entries(STATUS_PROB).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(', ')}. 설계중 센터는 준비단계 정보가 있으면 진척도로 보정합니다: ${Object.entries(PREP_PROB).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(', ')}. '계획 그대로'는 확률을 적용하지 않습니다.</p>
@@ -584,7 +588,7 @@ function openDetail(id, preset = null) {
   renderSheet();
 }
 
-const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'area_m2', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus', 'complaints'];
+const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'area_m2', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus', 'complaints', 'steps'];
 const same = (a, b) => JSON.stringify(a ?? '') === JSON.stringify(b ?? '');
 function diff() {
   const d = sheet.draft, o = sheet.orig, changes = {}, conf = {}, locked = {};
@@ -626,6 +630,7 @@ function renderSheet() {
     </div></section>
     ${dboSection(d)}
     ${sheet.id ? salesSection(d) : ''}
+    ${stepsSection(d)}
     ${campusSection(d)}
     ${complaintSection(d)}
     <section class="sec"><h3>준비단계 <span class="hint">부지확보 → 전기확보 → 건축허가 → 착공 · 설계중 센터의 공급 확률에 반영</span></h3>
@@ -709,6 +714,23 @@ function campusSection(d) {
     </div></section>`;
 }
 
+function stepsSection(d) {
+  const list = d.steps || [], dirty = !same(d.steps || null, sheet.orig.steps || null);
+  const err = stepsCheck({ ...d, steps: list.map(x => ({ ...x, mw: x.mw === '' ? null : x.mw })) });
+  const row = (x, i) => `<div class="cmrow" data-st="${i}">
+      <input class="inp" data-stk="label" value="${esc(x.label || '')}" placeholder="동·단계 (A동, 1단계, 4~6층)" aria-label="동·단계" style="max-width:150px">
+      <input class="inp num" data-stk="mw" value="${esc(x.mw ?? '')}" placeholder="MW" aria-label="용량" style="max-width:70px">
+      <select data-stk="basis" aria-label="기준">${['IT', '수전'].map(t => `<option ${t === (x.basis || 'IT') ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <input class="inp num" data-stk="ym" value="${esc(x.ym || '')}" placeholder="가동 YYYY-MM" aria-label="가동 시점" style="max-width:110px">
+      <select data-stk="status" aria-label="상태">${STEP_STATUS.map(t => `<option ${t === (x.status || '계획') ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <select data-stk="c" aria-label="근거">${['추정', '확정'].map(t => `<option ${t === (x.c || '추정') ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <input class="inp" data-stk="note" value="${esc(x.note || '')}" placeholder="메모" aria-label="메모">
+      <button type="button" class="btn sm" data-stdel="${i}" aria-label="삭제">삭제</button></div>`;
+  return `<section class="sec"><h3>동별 오픈 일정 <span class="hint">같은 허가·사업자에서 동·층·단계별로 순차 가동 · 공급 추정에 동별로 반영, 나머지 용량은 센터 일정 · 별도 사업은 캠퍼스로</span></h3>
+    <div class="cmlist ${dirty ? 'dirty' : ''}">${list.map(row).join('') || '<div class="of" style="font-size:13px">동별 일정이 없습니다 — 센터 전체를 한 번에 공급하는 것으로 계산합니다.</div>'}</div>
+    ${err ? `<div class="note" style="color:var(--bad)">${esc(err)}</div>` : ''}
+    <button type="button" class="btn sm" id="stAdd" style="margin-top:8px">+ 동·단계 추가</button></section>`;
+}
 function complaintSection(d) {
   const list = d.complaints || [], dirty = !same(d.complaints || null, sheet.orig.complaints || null);
   const r = complaintRisk(d, [d.note, ...(state.evidence.filter(e => e.dc_id === sheet.id).map(e => `${e.title || ''} ${e.excerpt || ''}`))].join(' '));
@@ -793,6 +815,10 @@ function bindSheet() {
   const setCm = (fn, rerender) => { const list = structuredClone(sheet.draft.complaints || []); fn(list); sheet.draft.complaints = list.length ? list : null; sheet.draft.locked.complaints = true; if (rerender) renderSheet(); else updateFooter(); };
   body.querySelectorAll('[data-cm]').forEach(rw => rw.querySelectorAll('[data-cmk]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setCm(l => { l[+rw.dataset.cm][el.dataset.cmk] = el.value.trim(); }, el.tagName === 'SELECT'))));
   body.querySelectorAll('[data-cmdel]').forEach(b => b.addEventListener('click', () => setCm(l => l.splice(+b.dataset.cmdel, 1), true)));
+  const setSt = (fn, rerender) => { const list = structuredClone(sheet.draft.steps || []); fn(list); sheet.draft.steps = list.length ? list : null; sheet.draft.locked.steps = true; if (rerender) renderSheet(); else updateFooter(); };
+  body.querySelectorAll('[data-st]').forEach(rw => rw.querySelectorAll('[data-stk]').forEach(el => el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => setSt(l => { const k = el.dataset.stk, v = el.value.trim(); l[+rw.dataset.st][k] = k === 'mw' ? (v === '' ? null : isNum(v) ? Number(v) : v) : v; }, el.tagName === 'SELECT'))));
+  body.querySelectorAll('[data-stdel]').forEach(b => b.addEventListener('click', () => setSt(l => l.splice(+b.dataset.stdel, 1), true)));
+  $('#stAdd')?.addEventListener('click', () => setSt(l => l.push({ label: `${(sheet.draft.steps || []).length + 1}단계`, mw: null, basis: 'IT', ym: '', status: '계획', c: '추정' }), true));
   $('#cmAdd')?.addEventListener('click', () => setCm(l => l.push({ type: '주민 반대·집단민원', level: '주의', status: '진행', ym: '', note: '' }), true));
   body.querySelectorAll('[data-score]').forEach(el => el.addEventListener('input', () => {
     const k = el.dataset.score, cur = { ...(sheet.draft.score_manual || {}) }, v = el.value.trim();
@@ -1046,7 +1072,7 @@ function salesSection(d) {
       <div class="row">${inp('start_ym', '시작 YYYY-MM', '130px')}${inp('end_ym', '종료 YYYY-MM', '130px')}${sel('status', SALE_STATUS)}${sel('src', locked() ? SALE_SRC.filter(x => x !== '내부') : SALE_SRC)}${sel('c', ['추정', '확정'])}</div>`
     : `<div class="row">${inp('pct', '임대율 %', '110px')}${inp('ym', '기준 YYYY-MM', '130px')}${sel('src', locked() ? SALE_SRC.filter(x => x !== '내부') : SALE_SRC)}${sel('c', ['추정', '확정'])}</div>`;
   return `<section class="sec" id="secSales"><h3>판매 현황 <span class="hint">IT 기준 · 판매=계약 합계(없으면 공시 임대율) · 잔여=용량−판매 · 단가 ${PRICE_UNIT}</span> ${lockBtn()}</h3>
-    <div class="slsum"><div><b>${fmtMW(sv.cap) || '—'}</b><span>용량 MW${sv.capHow === '환산' || sv.capHow === '연면적 환산' ? '(환산)' : ''}</span></div><div><b>${sv.how ? fmtMW(sv.sold) : '—'}</b><span>판매 MW</span></div>
+    <div class="slsum"><div><b>${fmtMW(sv.cap) || '—'}</b><span>용량 MW${sv.capHow === '환산' || sv.capHow === '연면적 환산' ? '(환산)' : ''}${d.steps ? ` · 가동 ${fmtMW(sv.opened) || 0}` : ''}</span></div><div><b>${sv.how ? fmtMW(sv.sold) : '—'}</b><span>판매 MW</span></div>
       <div><b>${fmtMW(sv.nego) || '—'}</b><span>협상 MW</span></div><div><b>${sv.remain === null ? '—' : fmtMW(sv.remain)}</b><span>잔여 MW</span></div><div>${bar(sv.pct)}<span>판매율 ${sv.how ? '· ' + esc(sv.how) : ''}</span></div>
       <div><b>${sv.avgPrice === null ? (locked() && sv.contracts.some(x => x.price_hidden) ? '🔒' : '—') : fmtMW(sv.avgPrice)}</b><span>평균 단가</span></div></div>
     ${sv.contracts.length ? `<div style="overflow-x:auto"><table class="ftable sltable"><thead><tr><th>고객</th><th class="r">MW</th><th class="r">단가</th><th>기간</th><th>상태·출처</th><th></th><th></th></tr></thead><tbody>${sv.contracts.map(row).join('')}</tbody></table></div>` : '<div class="note">등록된 고객 계약이 없습니다.</div>'}

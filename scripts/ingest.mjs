@@ -8,6 +8,7 @@
 //       "updates": { "status": { "value": "착공", "conf": "확정", "note": "...", "evidence_url": "https://..." } },
 //       "evidence": [{ "url": "https://...", "title": "", "publisher": "", "pub_date": "YYYY-MM-DD", "grade": "A|B|C",
 //                      "fields": ["상태"], "excerpt": "", "source_id": "s01" }] },
+//     // updates에 "steps": { "value": [{ "label": "A동", "mw": 40, "basis": "IT", "ym": "2027-11", "status": "공사|운영|계획", "c": "추정" }] } 로 동별 오픈 일정 갱신
 //     { "new": { "id": "영문-슬러그(선택)", "name": "신규 센터명", "category": "상용", "address": "..." },   // 신규 센터
 //       "updates": { ... }, "evidence": [ ... ] }
 //   ],

@@ -413,3 +413,15 @@ test('게시판: 등록 → 관리자 처리(상태·답변) → 삭제', async 
   assert.ok(applyBoardOp(b, 'reply', { id, status: '완료', reply: '추가했습니다' }, '재훈', NOW).unchanged);
   assert.equal(applyBoardOp(b, 'delete', { id }).board.length, 0);
 });
+
+test('동별 오픈 일정: 공급 추정을 동별로 나누고 나머지는 센터 일정, 합계 초과는 검증 오류', async () => {
+  const { forecast, stepsCheck, stepProgress, normalizeSteps } = await import('../lib/model.js');
+  const dc = { id: 's', name: 'S', status: '개발중', category: '상용', it_mw: 100, complete_ym: '2029-02', steps: [
+    { label: 'A동', mw: 40, basis: 'IT', ym: '2027-11', status: '공사' }, { label: 'B동', mw: 20, basis: 'IT', ym: '2028-06', status: '계획' }] };
+  const fc = forecast([dc], { metric: 'it_mw', from: 2026, to: 2031, now: new Date('2026-10-01') });
+  assert.equal(fc.byYear[2027].nominal, 40); assert.equal(fc.byYear[2028].nominal, 20); assert.equal(fc.byYear[2029].nominal, 40);
+  assert.deepEqual(fc.rows.map(r => r.step), ['A동', 'B동', '나머지']);
+  assert.equal(stepProgress({ steps: [{ label: '1동', status: '운영' }, { label: '2동', status: '공사', ym: '2027' }] }).label, '1/2 운영');
+  assert.match(stepsCheck({ it_mw: 30, steps: [{ label: 'a', mw: 40, basis: 'IT' }] }), /넘습니다/);
+  assert.throws(() => normalizeSteps([{ label: 'x', mw: 'abc' }]), /숫자/);
+});

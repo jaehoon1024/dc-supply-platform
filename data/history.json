@@ -12896,5 +12896,93 @@
     "by": "auto",
     "evidence_url": "https://www.wikitree.co.kr/articles/1168223",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-skt-ulsan-20261022045628-steps",
+    "dc_id": "skt-ulsan",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "비고 기반 동별 일정"
+  },
+  {
+    "id": "h-kaam-sihwa-20261022045628-steps",
+    "dc_id": "kaam-sihwa",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "비고 기반 동별 일정"
+  },
+  {
+    "id": "h-stt-seoul1-20261022045628-steps",
+    "dc_id": "stt-seoul1",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "비고 기반 동별 일정"
+  },
+  {
+    "id": "h-daou-jukjeon-20261022045628-steps",
+    "dc_id": "daou-jukjeon",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "비고 기반 동별 일정"
+  },
+  {
+    "id": "h-lgu-paju-2-20261022045628-steps",
+    "dc_id": "lgu-paju-2",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "비고 기반 동별 일정(동별 50MW 균등 가정)"
+  },
+  {
+    "id": "h-sds-dongtan-20261022045628-steps",
+    "dc_id": "sds-dongtan",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "비고 기반 동별 일정"
+  },
+  {
+    "id": "h-pacific-sunny-20261022045628-steps",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "2개동(64MW 균등 가정)"
+  },
+  {
+    "id": "h-kt-bucheon-20261022045628-steps",
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T04:56:28.175Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "KT 발표 기반"
   }
 ]

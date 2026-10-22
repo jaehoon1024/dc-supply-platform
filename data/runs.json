@@ -442,5 +442,17 @@
     "proposals": 0,
     "errors": 0,
     "summary": "KT클라우드 안산 AIDC 착공(수전 50MW) 반영."
+  },
+  {
+    "id": "r-20261022-misc-0456",
+    "at": "2026-10-22T04:56:28.175Z",
+    "kind": "수동 반영",
+    "checked": 0,
+    "new_dcs": 0,
+    "updated": 8,
+    "evidence": 0,
+    "proposals": 0,
+    "errors": 0,
+    "summary": "동별 오픈 일정 1차 입력(8곳: SK 울산, 캄스퀘어, STT 서울1, 다우 죽전, LGU 파주 2~4동, SDS 동탄, 퍼시픽써니, KT 부천)."
   }
 ]
