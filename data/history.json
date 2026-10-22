@@ -12984,5 +12984,27 @@
     "evidence_url": "",
     "by": "auto",
     "note": "KT 발표 기반"
+  },
+  {
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T05:02:31.515Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-equinix-sl3x-20261022050231-aliases-0",
+    "field": "aliases",
+    "old": "27년_경기_고양향동_에퀴닉스",
+    "new": "경기_고양향동_에퀴닉스",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T05:02:31.515Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-equinix-sl3x-20261022050231-rfs_ym-1",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2027",
+    "note": "수동 변경 · 필드 고정 · 근거 확정"
   }
 ]
