@@ -12720,5 +12720,38 @@
     "by": "auto",
     "evidence_url": "https://www.datanet.co.kr/news/articleView.html?idxno=170153",
     "note": "근거 자동 추가"
+  },
+  {
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:35:12.063Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-equinix-sl3x-20261022043512-aliases-0",
+    "field": "aliases",
+    "old": "SL3x",
+    "new": "27년_경기_고양향동_에퀴닉스",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:35:12.063Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-equinix-sl3x-20261022043512-power_mw-1",
+    "field": "power_mw",
+    "old": "",
+    "new": 40,
+    "note": "수동 변경 · 필드 고정 · 근거 확정"
+  },
+  {
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:35:12.063Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-equinix-sl3x-20261022043512-it_mw-2",
+    "field": "it_mw",
+    "old": "추정",
+    "new": "확정",
+    "note": "근거 구분 변경"
   }
 ]
