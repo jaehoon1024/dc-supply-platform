@@ -11122,39 +11122,6 @@
     "note": "근거 자동 추가"
   },
   {
-    "id": "h-sk-gangneung-okgye-20261022010713-address",
-    "dc_id": "sk-gangneung-okgye",
-    "at": "2026-10-22T01:07:13.380Z",
-    "field": "address",
-    "old": "강원특별자치도 강릉시 옥계면",
-    "new": "강원특별자치도 강릉시 연곡면 동덕리 259-5 SK주유소",
-    "evidence_url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B0%95%EB%A6%89%EC%8B%9C%20%EC%97%B0%EA%B3%A1%EB%A9%B4%20%EB%8F%99%EB%8D%95%EB%A6%AC%20259-5%20SK%EC%A3%BC%EC%9C%A0%EC%86%8C",
-    "by": "auto",
-    "note": "도로명주소 API 건물명 일치(SK주유소) — 확인 필요"
-  },
-  {
-    "id": "h-sk-gangneung-okgye-20261022010713-permit_ref",
-    "dc_id": "sk-gangneung-okgye",
-    "at": "2026-10-22T01:07:13.380Z",
-    "field": "permit_ref",
-    "old": "",
-    "new": "{\"sigunguCd\":\"51150\",\"bjdongCd\":\"37023\",\"bun\":\"259\",\"ji\":\"5\"}",
-    "evidence_url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B0%95%EB%A6%89%EC%8B%9C%20%EC%97%B0%EA%B3%A1%EB%A9%B4%20%EB%8F%99%EB%8D%95%EB%A6%AC%20259-5%20SK%EC%A3%BC%EC%9C%A0%EC%86%8C",
-    "by": "auto",
-    "note": "도로명주소 API 법정동코드·번지 (강원특별자치도 강릉시 연곡면 동덕리 259-5 SK주유소)"
-  },
-  {
-    "id": "h-sk-gangneung-okgye-20261022010713-evidence-387",
-    "dc_id": "sk-gangneung-okgye",
-    "at": "2026-10-22T01:07:13.380Z",
-    "field": "_evidence",
-    "old": "",
-    "new": "도로명주소 – 강원특별자치도 강릉시 연곡면 동해대로 4091",
-    "by": "auto",
-    "evidence_url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B0%95%EB%A6%89%EC%8B%9C%20%EC%97%B0%EA%B3%A1%EB%A9%B4%20%EB%8F%99%EB%8D%95%EB%A6%AC%20259-5%20SK%EC%A3%BC%EC%9C%A0%EC%86%8C",
-    "note": "근거 자동 추가"
-  },
-  {
     "id": "h-skb-bundang-20261022010713-permit_ref",
     "dc_id": "skb-bundang",
     "at": "2026-10-22T01:07:13.380Z",
