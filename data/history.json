@@ -13759,5 +13759,27 @@
     "old": "[object Object], [object Object]",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "lgu-paju",
+    "at": "2026-10-22T07:52:44.619Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-lgu-paju-20261022075244-aliases-0",
+    "field": "aliases",
+    "old": "27년_경기_파주_유플러스_1동, LG유플러스 파주 AIDC 1동, LG유플러스 파주 AIDC 2~4동",
+    "new": "경기_파주_유플러스_1동~4동",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "lgu-paju",
+    "at": "2026-10-22T07:52:44.619Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-lgu-paju-20261022075244-steps-1",
+    "field": "steps",
+    "old": "[object Object], [object Object], [object Object], [object Object]",
+    "new": "[object Object], [object Object], [object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
