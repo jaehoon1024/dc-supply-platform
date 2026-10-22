@@ -14232,5 +14232,38 @@
     "old": 26.5,
     "new": 26.4,
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-gaebong",
+    "at": "2026-10-22T08:45:14.471Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-gaebong-20261022084514-aliases-0",
+    "field": "aliases",
+    "old": "개봉PFV, 구로 개봉동 데이터센터",
+    "new": "28년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-gaebong",
+    "at": "2026-10-22T08:45:14.471Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-gaebong-20261022084514-it_mw-1",
+    "field": "it_mw",
+    "old": "",
+    "new": 19.8,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-gaebong",
+    "at": "2026-10-22T08:45:14.471Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-gaebong-20261022084514-rfs_ym-2",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2028",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
