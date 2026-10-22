@@ -7893,21 +7893,20 @@
     "id": "pacific-guro-hangdong",
     "name": "퍼시픽 구로 항동 데이터센터",
     "aliases": [
-      "구로 항동 데이터센터",
-      "퍼시픽디구로62호",
-      "하양에너지파워 항동 데이터센터"
+      "30년_DBO_파이프라인",
+      "32년_DBO_파이프라인"
     ],
     "category": "상용",
     "status": "착공",
     "phase": "개발",
     "owner": "퍼시픽자산운용 (퍼시픽디구로62호 펀드, CPPIB 공동투자)",
     "contractor": "현대건설 (책임준공)",
-    "operator": "",
+    "operator": "KT클라우드",
     "address": "서울특별시 구로구 항동 236-7",
     "lat": null,
     "lng": null,
-    "power_mw": 52,
-    "it_mw": null,
+    "power_mw": 80,
+    "it_mw": 51.6,
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "",
@@ -7919,12 +7918,18 @@
       "address": "확정",
       "power_mw": "추정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true,
+      "operator": true,
+      "power_mw": true,
+      "it_mw": true,
+      "steps": true
+    },
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-22T02:17:30.254Z",
-    "updated_at": "2026-10-22T02:17:30.254Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T09:04:46.218Z",
+    "updated_by": "user:정재훈",
     "complaints": [
       {
         "type": "주민 반대·집단민원",
@@ -7940,8 +7945,26 @@
     "addr_check": {
       "status": "좌표없음",
       "note": "위경도가 없습니다",
-      "at": "2026-10-22T02:17:30.254Z"
-    }
+      "at": "2026-10-22T09:04:46.218Z"
+    },
+    "steps": [
+      {
+        "label": "1단계",
+        "power_mw": 40,
+        "it_mw": 25.8,
+        "ym": "2030",
+        "status": "계획",
+        "c": "추정"
+      },
+      {
+        "label": "2단계",
+        "power_mw": 40,
+        "it_mw": 25.8,
+        "ym": "2032",
+        "status": "계획",
+        "c": "추정"
+      }
+    ]
   },
   {
     "aliases": [

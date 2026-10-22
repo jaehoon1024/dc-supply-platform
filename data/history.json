@@ -14463,5 +14463,60 @@
     "old": "",
     "new": "KT클라우드",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T09:04:46.218Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-guro-hangdong-20261022090446-aliases-0",
+    "field": "aliases",
+    "old": "구로 항동 데이터센터, 퍼시픽디구로62호, 하양에너지파워 항동 데이터센터",
+    "new": "30년_DBO_파이프라인, 32년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T09:04:46.218Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-guro-hangdong-20261022090446-operator-1",
+    "field": "operator",
+    "old": "",
+    "new": "KT클라우드",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T09:04:46.218Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-guro-hangdong-20261022090446-power_mw-2",
+    "field": "power_mw",
+    "old": 52,
+    "new": 80,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T09:04:46.218Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-guro-hangdong-20261022090446-it_mw-3",
+    "field": "it_mw",
+    "old": "",
+    "new": 51.6,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T09:04:46.218Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-guro-hangdong-20261022090446-steps-4",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
