@@ -269,6 +269,24 @@
       "created_at": "2026-10-22T06:55:40.663Z",
       "updated_at": "2026-10-22T06:55:40.663Z",
       "updated_by": "user:정재훈"
+    },
+    {
+      "id": "k-20261022070359-15",
+      "dc_id": "de-sel2",
+      "customer": "구글",
+      "mw": 48,
+      "basis": "IT",
+      "price": null,
+      "start_ym": "",
+      "end_ym": "",
+      "status": "계약",
+      "src": "공개",
+      "c": "추정",
+      "url": "",
+      "note": "",
+      "created_at": "2026-10-22T07:03:59.567Z",
+      "updated_at": "2026-10-22T07:03:59.567Z",
+      "updated_by": "user:정재훈"
     }
   ],
   "occupancy": [],
@@ -554,6 +572,16 @@
       "dc_id": "ansan-gcc",
       "src": "공개",
       "note": "추가: SKT 25.8MW (계약)"
+    },
+    {
+      "at": "2026-10-22T07:03:59.567Z",
+      "editor": "정재훈",
+      "kind": "contract",
+      "op": "create",
+      "id": "k-20261022070359-15",
+      "dc_id": "de-sel2",
+      "src": "공개",
+      "note": "추가: 구글 48MW (계약)"
     }
   ]
 }
