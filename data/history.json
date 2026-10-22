@@ -14265,5 +14265,82 @@
     "old": "",
     "new": "2028",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-name-0",
+    "field": "name",
+    "old": "SC제우스 부천 데이터센터 (춘의동)",
+    "new": "캡스톤 부천 데이터센터 (춘의동)",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-aliases-1",
+    "field": "aliases",
+    "old": "SC Zeus Seoul, SC Zeus Bucheon, 캡스톤 부천 춘의동 데이터센터, 춘의동 데이터센터 (캡스톤인프라)",
+    "new": "30년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-operator-2",
+    "field": "operator",
+    "old": "SC제우스",
+    "new": "",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-power_mw-3",
+    "field": "power_mw",
+    "old": 50,
+    "new": 72,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-it_mw-4",
+    "field": "it_mw",
+    "old": "",
+    "new": 45,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-complete_ym-5",
+    "field": "complete_ym",
+    "old": "",
+    "new": "2029",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "sczeus-seoul",
+    "at": "2026-10-22T08:53:34.136Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-sczeus-seoul-20261022085334-rfs_ym-6",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2029",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
