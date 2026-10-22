@@ -5341,5 +5341,1071 @@
     "source_id": "s02",
     "collected_at": "2026-10-22T00:20:50.363Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-actis-yangpyeong-20261022010713-331",
+    "dc_id": "actis-yangpyeong",
+    "title": "도로명주소 – 서울특별시 영등포구 국회대로 527",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EC%96%91%ED%8F%89%EB%8F%993%EA%B0%80%2077-80%20%EC%96%91%ED%8F%89%EB%8F%993%EA%B0%80%2077-80%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 영등포구 국회대로 527 · 지번 서울특별시 영등포구 양평동3가 77-80 양평동3가 77-80 데이터센터 · 건물명 양평동3가 77-80 데이터센터 · 법정동코드 1156012700 · 좌표 37.529934, 126.893716",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-ansan-our-20261022010713-332",
+    "dc_id": "ansan-our",
+    "title": "도로명주소 – 경기도 안산시 단원구 신원로91번길 79",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%82%B0%EC%8B%9C%20%EB%8B%A8%EC%9B%90%EA%B5%AC%20%EC%84%B1%EA%B3%A1%EB%8F%99%20638-5%20%EC%95%84%EC%9B%8C",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 안산시 단원구 신원로91번길 79 · 지번 경기도 안산시 단원구 성곡동 638-5 아워 · 건물명 아워 · 법정동코드 4127310400 · 좌표 37.315225, 126.759217",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-bucheon-samjeong-20261022010713-333",
+    "dc_id": "bucheon-samjeong",
+    "title": "도로명주소 – 경기도 부천시 원미구 부천로 342",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EB%B6%80%EC%B2%9C%EC%8B%9C%20%EC%9B%90%EB%AF%B8%EA%B5%AC%20%EB%8F%84%EB%8B%B9%EB%8F%99%2075-3%20%EB%B6%80%EC%B2%9C%EC%8B%9C%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A7%81%EC%97%85%EC%9E%AC%ED%99%9C%EC%8B%9C%EC%84%A4",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 부천시 원미구 부천로 342 · 지번 경기도 부천시 원미구 도당동 75-3 부천시장애인직업재활시설 · 건물명 부천시장애인직업재활시설 · 법정동코드 4119210400 · 좌표 37.514508, 126.784887",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-cj-songdo-20261022010713-334",
+    "dc_id": "cj-songdo",
+    "title": "도로명주소 – 인천광역시 연수구 랜드마크로 20",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%97%B0%EC%88%98%EA%B5%AC%20%EC%86%A1%EB%8F%84%EB%8F%99%20312-1%20%ED%98%B8%EB%B0%98%20%EC%8D%A8%EB%B0%8B%20%EC%86%A1%EB%8F%84",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 인천광역시 연수구 랜드마크로 20 · 지번 인천광역시 연수구 송도동 312-1 호반 써밋 송도 · 건물명 호반 써밋 송도 · 법정동코드 2818510600 · 좌표 37.414964, 126.626364",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-daou-jukjeon-20261022010713-335",
+    "dc_id": "daou-jukjeon",
+    "title": "도로명주소 – 경기도 용인시 기흥구 죽전로 20",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EA%B8%B0%ED%9D%A5%EA%B5%AC%20%EB%B3%B4%EC%A0%95%EB%8F%99%201263%20%EC%A3%BD%EC%A0%84%EB%88%84%EB%A6%AC%EC%97%90%EB%9C%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 용인시 기흥구 죽전로 20 · 지번 경기도 용인시 기흥구 보정동 1263 죽전누리에뜰 · 건물명 죽전누리에뜰 · 법정동코드 4146311800 · 좌표 37.32037, 127.110902",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-pus1-20261022010713-336",
+    "dc_id": "de-pus1",
+    "title": "도로명주소 – 부산광역시 해운대구 센텀7로 32",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%EC%9A%B0%EB%8F%99%201453%20%EB%94%94%EC%A7%80%ED%84%B8%EC%97%A3%EC%A7%80%EC%BD%94%EB%A6%AC%EC%95%84",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 부산광역시 해운대구 센텀7로 32 · 지번 부산광역시 해운대구 우동 1453 디지털엣지코리아 · 건물명 디지털엣지코리아 · 법정동코드 2635010500 · 좌표 35.174933, 129.127356",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-sel2-20261022010713-337",
+    "dc_id": "de-sel2",
+    "title": "도로명주소 – 인천광역시 부평구 평천로 187",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%80%ED%8F%89%EA%B5%AC%20%EC%B2%AD%EC%B2%9C%EB%8F%99%20422",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 인천광역시 부평구 평천로 187 · 지번 인천광역시 부평구 청천동 422 · 법정동코드 2823710400 · 좌표 37.517895, 126.710929",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-dlr-icn10-20261022010713-338",
+    "dc_id": "dlr-icn10",
+    "title": "도로명주소 – 서울특별시 마포구 월드컵북로60길 12",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%83%81%EC%95%94%EB%8F%99%201588",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 마포구 월드컵북로60길 12 · 지번 서울특별시 마포구 상암동 1588 · 법정동코드 1144012700 · 좌표 37.582134, 126.886167",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-dreammark1-guro-20261022010713-339",
+    "dc_id": "dreammark1-guro",
+    "title": "도로명주소 – 서울특별시 구로구 디지털로31길 61",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EA%B5%AC%EB%A1%9C%EB%8F%99%20197-12%20%EB%93%9C%EB%A6%BC%EB%A7%88%ED%81%AC%EC%9B%90%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%83%80",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 구로구 디지털로31길 61 · 지번 서울특별시 구로구 구로동 197-12 드림마크원데이터센타 · 건물명 드림마크원데이터센타 · 법정동코드 1153010200 · 좌표 37.485911, 126.891542",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-empyrion-kr1-20261022010713-340",
+    "dc_id": "empyrion-kr1",
+    "title": "도로명주소 – 서울특별시 서초구 양재대로12길 56",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%96%91%EC%9E%AC%EB%8F%99%20224%20%EC%97%A0%ED%94%BC%EB%A6%AC%EC%98%A8%20%EB%94%94%EC%A7%80%ED%84%B8%20AI%20%EC%BA%A0%ED%8D%BC%EC%8A%A4",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 서초구 양재대로12길 56 · 지번 서울특별시 서초구 양재동 224 엠피리온 디지털 AI 캠퍼스 · 건물명 엠피리온 디지털 AI 캠퍼스 · 법정동코드 1165010200 · 좌표 37.458523, 127.037807",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl1-20261022010713-341",
+    "dc_id": "equinix-sl1",
+    "title": "도로명주소 – 서울특별시 마포구 월드컵북로60길 24",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%83%81%EC%95%94%EB%8F%99%201586%20%EC%82%BC%EC%84%B1SDS%20%EC%83%81%EC%95%94IT%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 마포구 월드컵북로60길 24 · 지번 서울특별시 마포구 상암동 1586 삼성SDS 상암IT센터 · 건물명 삼성SDS 상암IT센터 · 법정동코드 1144012700 · 좌표 37.582947, 126.887174",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl2x-20261022010713-342",
+    "dc_id": "equinix-sl2x",
+    "title": "도로명주소 – 경기도 고양시 덕양구 향동로 69",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EB%8D%95%EC%96%91%EA%B5%AC%20%ED%96%A5%EB%8F%99%EB%8F%99%20585",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 고양시 덕양구 향동로 69 · 지번 경기도 고양시 덕양구 향동동 585 · 법정동코드 4128113200 · 좌표 37.596434, 126.886597",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-gabia-gwacheon-20261022010713-343",
+    "dc_id": "gabia-gwacheon",
+    "title": "도로명주소 – 경기도 과천시 과천대로7나길 34",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B3%BC%EC%B2%9C%EC%8B%9C%20%EA%B0%88%ED%98%84%EB%8F%99%20422%20%EA%B0%80%EB%B9%84%EC%95%84%20%EC%95%B3",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 과천시 과천대로7나길 34 · 지번 경기도 과천시 갈현동 422 가비아 앳 · 건물명 가비아 앳 · 법정동코드 4129010300 · 좌표 37.417393, 126.978579",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-gangneung-anin-20261022010713-344",
+    "dc_id": "gangneung-anin",
+    "title": "도로명주소 – 강원특별자치도 강릉시 강동면 산두양지길 7-16",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B0%95%EB%A6%89%EC%8B%9C%20%EA%B0%95%EB%8F%99%EB%A9%B4%20%EC%95%88%EC%9D%B8%EC%A7%84%EB%A6%AC%20300-31",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 강원특별자치도 강릉시 강동면 산두양지길 7-16 · 지번 강원특별자치도 강릉시 강동면 안인진리 300-31 · 법정동코드 5115034024 · 좌표 37.720798, 128.983824",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-hae-gwangju-20261022010713-345",
+    "dc_id": "hae-gwangju",
+    "title": "도로명주소 – 전남광주통합특별시 광산구 진곡산단중앙로 75",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%A0%84%EB%82%A8%EA%B4%91%EC%A3%BC%ED%86%B5%ED%95%A9%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B4%91%EC%82%B0%EA%B5%AC%20%EC%98%A4%EC%84%A0%EB%8F%99%20555%20%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B4%91%EC%A3%BC%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 전남광주통합특별시 광산구 진곡산단중앙로 75 · 지번 전남광주통합특별시 광산구 오선동 555 현대자동차 광주 데이터센터 · 건물명 현대자동차 광주 데이터센터 · 법정동코드 1233020200 · 좌표 35.196618, 126.787248",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-hae-paju-20261022010713-346",
+    "dc_id": "hae-paju",
+    "title": "도로명주소 – 경기도 파주시 조리읍 팔학골길 148-43",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%ED%8C%8C%EC%A3%BC%EC%8B%9C%20%EC%A1%B0%EB%A6%AC%EC%9D%8D%20%EB%B4%89%EC%9D%BC%EC%B2%9C%EB%A6%AC%2073-6",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 파주시 조리읍 팔학골길 148-43 · 지번 경기도 파주시 조리읍 봉일천리 73-6 · 법정동코드 4148026221 · 좌표 37.737345, 126.829902",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-hae-uiwang-20261022010713-347",
+    "dc_id": "hae-uiwang",
+    "title": "도로명주소 – 경기도 의왕시 철도박물관로 37",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9D%98%EC%99%95%EC%8B%9C%20%EC%82%BC%EB%8F%99%20576%20%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8%EA%B7%B8%EB%A3%B9%20%EC%9D%98%EC%99%95%EC%97%B0%EA%B5%AC%EC%86%8C",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 의왕시 철도박물관로 37 · 지번 경기도 의왕시 삼동 576 현대자동차그룹 의왕연구소 · 건물명 현대자동차그룹 의왕연구소 · 법정동코드 4143010300 · 좌표 37.323501, 126.948814",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-hdec-saemangeum-20261022010713-348",
+    "dc_id": "hdec-saemangeum",
+    "title": "도로명주소 – 전북특별자치도 군산시 새만금로 2478",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B5%B0%EC%82%B0%EC%8B%9C%20%EB%B9%84%EC%9D%91%EB%8F%84%EB%8F%99%20129-1%20%EC%83%88%EB%A7%8C%EA%B8%88%EB%B0%A9%EC%A1%B0%EC%A0%9C%20%ED%95%B4%EB%84%98%EC%9D%B4%ED%9C%B4%EA%B2%8C%EC%86%8C",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 전북특별자치도 군산시 새만금로 2478 · 지번 전북특별자치도 군산시 비응도동 129-1 새만금방조제 해넘이휴게소 · 건물명 새만금방조제 해넘이휴게소 · 법정동코드 5213014800 · 좌표 35.89195, 126.516297",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-incheon-wonchang-20261022010713-349",
+    "dc_id": "incheon-wonchang",
+    "title": "도로명주소 – 대구광역시 서구 국채보상로 384",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%B9%84%EC%82%B0%EB%8F%99%20228%20%EB%8C%80%EA%B5%AC%EC%B2%AD%EB%9D%BC%EC%A4%91%ED%95%99%EA%B5%90.%EB%8C%80%EA%B5%AC%EC%A0%9C%EC%9D%BC%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 대구광역시 서구 국채보상로 384 · 지번 대구광역시 서구 비산동 228 대구청라중학교.대구제일고등학교 · 건물명 대구청라중학교.대구제일고등학교 · 법정동코드 2717010200 · 좌표 35.871874, 128.572904",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kakao-ansan-20261022010713-350",
+    "dc_id": "kakao-ansan",
+    "title": "도로명주소 – 경기도 안산시 상록구 한양대학로 55",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%82%B0%EC%8B%9C%20%EC%83%81%EB%A1%9D%EA%B5%AC%20%EC%82%AC%EB%8F%99%201271",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 안산시 상록구 한양대학로 55 · 지번 경기도 안산시 상록구 사동 1271 · 법정동코드 4127110300 · 좌표 37.300142, 126.837642",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kinx-dogok-20261022010713-351",
+    "dc_id": "kinx-dogok",
+    "title": "도로명주소 – 서울특별시 강남구 언주로30길 13",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EA%B3%A1%EB%8F%99%20467-6%20%EB%8C%80%EB%A6%BC%EC%95%84%ED%81%AC%EB%A1%9C%EB%B9%8C%2C%20%EB%8C%80%EB%A6%BC%EC%95%84%ED%81%AC%EB%A1%9C%ED%85%94",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 강남구 언주로30길 13 · 지번 서울특별시 강남구 도곡동 467-6 대림아크로빌, 대림아크로텔 · 건물명 대림아크로빌, 대림아크로텔 · 법정동코드 1168011800 · 좌표 37.487716, 127.051334",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-koramco-gasan-20261022010713-352",
+    "dc_id": "koramco-gasan",
+    "title": "도로명주소 – 서울특별시 금천구 가산디지털1로 64",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EA%B0%80%EC%82%B0%EB%8F%99%20319-19",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 금천구 가산디지털1로 64 · 지번 서울특별시 금천구 가산동 319-19 · 법정동코드 1154510100 · 좌표 37.471802, 126.886312",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-koscom-anyang-20261022010713-353",
+    "dc_id": "koscom-anyang",
+    "title": "도로명주소 – 경기도 안양시 동안구 엘에스로115번길 26",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%8F%99%EC%95%88%EA%B5%AC%20%ED%98%B8%EA%B3%84%EB%8F%99%201026-5%20%EC%BD%94%EC%8A%A4%EC%BD%A4",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 안양시 동안구 엘에스로115번길 26 · 지번 경기도 안양시 동안구 호계동 1026-5 코스콤 · 건물명 코스콤 · 법정동코드 4117310400 · 좌표 37.371281, 126.947561",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022010713-354",
+    "dc_id": "kt-ansan",
+    "title": "도로명주소 – 경기도 안산시 상록구 구룡로2길 13",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%82%B0%EC%8B%9C%20%EC%83%81%EB%A1%9D%EA%B5%AC%20%EC%9D%BC%EB%8F%99%20120%20SKT%EC%95%88%EC%82%B0%EC%9D%BC%EB%8F%99%20%EC%A0%84%EC%86%A1%EA%B5%AD%EC%82%AC",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 안산시 상록구 구룡로2길 13 · 지번 경기도 안산시 상록구 일동 120 SKT안산일동 전송국사 · 건물명 SKT안산일동 전송국사 · 법정동코드 4127110100 · 좌표 37.310733, 126.868206",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-bundang-20261022010713-355",
+    "dc_id": "kt-bundang",
+    "title": "도로명주소 – 경기도 성남시 분당구 성남대로925번길 36",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EC%95%BC%ED%83%91%EB%8F%99%20343-2%20KT",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 성남시 분당구 성남대로925번길 36 · 지번 경기도 성남시 분당구 야탑동 343-2 KT · 건물명 KT · 법정동코드 4113510700 · 좌표 37.412982, 127.124484",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-cheonan-20261022010713-356",
+    "dc_id": "kt-cheonan",
+    "title": "도로명주소 – 충청남도 천안시 동남구 성남면 대흥2길 89-28",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EC%B2%9C%EC%95%88%EC%8B%9C%20%EB%8F%99%EB%82%A8%EA%B5%AC%20%EC%84%B1%EB%82%A8%EB%A9%B4%20%EB%8C%80%ED%9D%A5%EB%A6%AC%20266-5",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 충청남도 천안시 동남구 성남면 대흥2길 89-28 · 지번 충청남도 천안시 동남구 성남면 대흥리 266-5 · 법정동코드 4413134023 · 좌표 36.728131, 127.243036",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-daejeon-20261022010713-357",
+    "dc_id": "kt-daejeon",
+    "title": "도로명주소 – 대전광역시 서구 문정로48번길 30",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%ED%83%84%EB%B0%A9%EB%8F%99%20649%20KTF%EB%8C%80%EC%A0%84%EC%82%AC%EC%98%A5",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 대전광역시 서구 문정로48번길 30 · 지번 대전광역시 서구 탄방동 649 KTF대전사옥 · 건물명 KTF대전사옥 · 법정동코드 3017010600 · 좌표 36.34537, 127.384051",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-gangnam-20261022010713-358",
+    "dc_id": "kt-gangnam",
+    "title": "도로명주소 – 서울특별시 강남구 언주로 517",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%97%AD%EC%82%BC%EB%8F%99%20675-3%20KT%EC%98%81%EB%8F%99%EC%A7%80%EC%82%AC%2C%20%EC%8B%A0%EB%9D%BC%20%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%98%B8%ED%85%94",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 서울특별시 강남구 언주로 517 · 지번 서울특별시 강남구 역삼동 675-3 KT영동지사, 신라 스테이호텔 · 건물명 KT영동지사, 신라 스테이호텔 · 법정동코드 1168010100 · 좌표 37.504769, 127.041449",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-gasan-20261022010713-359",
+    "dc_id": "kt-gasan",
+    "title": "도로명주소 – 서울특별시 금천구 한내로 56",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EB%8F%85%EC%82%B0%EB%8F%99%201093%20KT%EC%A0%84%ED%99%94%EA%B5%AD",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 금천구 한내로 56 · 지번 서울특별시 금천구 독산동 1093 KT전화국 · 건물명 KT전화국 · 법정동코드 1154510200 · 좌표 37.456096, 126.887465",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-namguro-20261022010713-360",
+    "dc_id": "kt-namguro",
+    "title": "도로명주소 – 서울특별시 구로구 디지털로31길 61",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EA%B5%AC%EB%A1%9C%EB%8F%99%20197-12%20%EB%93%9C%EB%A6%BC%EB%A7%88%ED%81%AC%EC%9B%90%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%83%80",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 서울특별시 구로구 디지털로31길 61 · 지번 서울특별시 구로구 구로동 197-12 드림마크원데이터센타 · 건물명 드림마크원데이터센타 · 법정동코드 1153010200 · 좌표 37.485911, 126.891542",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-songjeong-20261022010713-361",
+    "dc_id": "kt-songjeong",
+    "title": "도로명주소 – 부산광역시 해운대구 송정1로 20",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%EC%86%A1%EC%A0%95%EB%8F%99%20929%20%EC%86%A1%EC%A0%951%EB%8B%A8%EC%A7%80%EC%A3%BC%EA%B3%B5%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 부산광역시 해운대구 송정1로 20 · 지번 부산광역시 해운대구 송정동 929 송정1단지주공아파트 · 건물명 송정1단지주공아파트 · 법정동코드 2635010800 · 좌표 35.18281, 129.197958",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-yeouido-20261022010713-362",
+    "dc_id": "kt-yeouido",
+    "title": "도로명주소 – 서울특별시 영등포구 여의공원로 13",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EC%97%AC%EC%9D%98%EB%8F%84%EB%8F%99%2018%20%ED%95%9C%EA%B5%AD%EB%B0%A9%EC%86%A1%EA%B3%B5%EC%82%AC",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 영등포구 여의공원로 13 · 지번 서울특별시 영등포구 여의도동 18 한국방송공사 · 건물명 한국방송공사 · 법정동코드 1156011000 · 좌표 37.52414, 126.917248",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-yongsan-20261022010713-363",
+    "dc_id": "kt-yongsan",
+    "title": "도로명주소 – 서울특별시 용산구 원효로41길 33",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%EC%9B%90%ED%9A%A8%EB%A1%9C3%EA%B0%80%201-2",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 용산구 원효로41길 33 · 지번 서울특별시 용산구 원효로3가 1-2 · 법정동코드 1117011700 · 좌표 37.535357, 126.958943",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgcns-sangam-20261022010713-364",
+    "dc_id": "lgcns-sangam",
+    "title": "도로명주소 – 서울특별시 마포구 월드컵북로 424",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%83%81%EC%95%94%EB%8F%99%201591%20LG%20CNS%20%EC%83%81%EC%95%94IT%20%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 마포구 월드컵북로 424 · 지번 서울특별시 마포구 상암동 1591 LG CNS 상암IT 센터 · 건물명 LG CNS 상암IT 센터 · 법정동코드 1144012700 · 좌표 37.581096, 126.88687",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-busan-ami-20261022010713-365",
+    "dc_id": "lgu-busan-ami",
+    "title": "도로명주소 – 부산광역시 서구 대청로6번길 14",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%B6%80%EB%AF%BC%EB%8F%991%EA%B0%80%2030-1",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 부산광역시 서구 대청로6번길 14 · 지번 부산광역시 서구 부민동1가 30-1 · 법정동코드 2614010900 · 좌표 35.102693, 129.020283",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-busan-choryang-20261022010713-366",
+    "dc_id": "lgu-busan-choryang",
+    "title": "도로명주소 – 부산광역시 동구 중앙대로 299",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%B4%88%EB%9F%89%EB%8F%99%201145-7%20%EC%97%98%EC%A7%80%EC%9C%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EB%B6%80%EC%82%B0%EC%B4%88%EB%9F%89%EC%82%AC%EC%98%A5",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 부산광역시 동구 중앙대로 299 · 지번 부산광역시 동구 초량동 1145-7 엘지유플러스 부산초량사옥 · 건물명 엘지유플러스 부산초량사옥 · 법정동코드 2617010100 · 좌표 35.123459, 129.043821",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-daejeon-20261022010713-367",
+    "dc_id": "lgu-daejeon",
+    "title": "도로명주소 – 대전광역시 서구 계룡로553번길 66",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%ED%83%84%EB%B0%A9%EB%8F%99%20663",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 대전광역시 서구 계룡로553번길 66 · 지번 대전광역시 서구 탄방동 663 · 법정동코드 3017010600 · 좌표 36.345778, 127.385394",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-gwangju-20261022010713-368",
+    "dc_id": "lgu-gwangju",
+    "title": "도로명주소 – 전남광주통합특별시 광산구 무진대로 262",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%A0%84%EB%82%A8%EA%B4%91%EC%A3%BC%ED%86%B5%ED%95%A9%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B4%91%EC%82%B0%EA%B5%AC%20%EC%9A%B0%EC%82%B0%EB%8F%99%201598-2",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 전남광주통합특별시 광산구 무진대로 262 · 지번 전남광주통합특별시 광산구 우산동 1598-2 · 법정동코드 1233010900 · 좌표 35.161017, 126.809",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-nonhyeon-20261022010713-369",
+    "dc_id": "lgu-nonhyeon",
+    "title": "도로명주소 – 서울특별시 강남구 언주로 616",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%85%BC%ED%98%84%EB%8F%99%20261-1%20%EC%97%98%EC%A7%80%EC%9C%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EB%85%BC%ED%98%84IDC",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 강남구 언주로 616 · 지번 서울특별시 강남구 논현동 261-1 엘지유플러스 논현IDC · 건물명 엘지유플러스 논현IDC · 법정동코드 1168010800 · 좌표 37.511047, 127.036984",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-paju-2-20261022010713-370",
+    "dc_id": "lgu-paju-2",
+    "title": "도로명주소 – 경기도 파주시 금정2길 9",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%ED%8C%8C%EC%A3%BC%EC%8B%9C%20%EA%B8%88%EC%B4%8C%EB%8F%99%20786-28%20%ED%8C%8C%EC%A3%BC%EC%A0%9C%EC%9D%BC%ED%80%B5%EC%84%9C%EB%B9%84%EC%8A%A4",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 파주시 금정2길 9 · 지번 경기도 파주시 금촌동 786-28 파주제일퀵서비스 · 건물명 파주제일퀵서비스 · 법정동코드 4148010100 · 좌표 37.755948, 126.776914",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-pyeongchon1-20261022010713-371",
+    "dc_id": "lgu-pyeongchon1",
+    "title": "도로명주소 – 경기도 안양시 동안구 시민대로327번길 29",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%8F%99%EC%95%88%EA%B5%AC%20%EA%B4%80%EC%96%91%EB%8F%99%201743",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 안양시 동안구 시민대로327번길 29 · 지번 경기도 안양시 동안구 관양동 1743 · 법정동코드 4117310200 · 좌표 37.39843, 126.965513",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-pyeongchon2-20261022010713-372",
+    "dc_id": "lgu-pyeongchon2",
+    "title": "도로명주소 – 경기도 안양시 동안구 벌말로 113",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%8F%99%EC%95%88%EA%B5%AC%20%EA%B4%80%EC%96%91%EB%8F%99%20869%20LG%EC%9C%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8F%89%EC%B4%8C2%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 안양시 동안구 벌말로 113 · 지번 경기도 안양시 동안구 관양동 869 LG유플러스 평촌2센터 · 건물명 LG유플러스 평촌2센터 · 법정동코드 4117310200 · 좌표 37.398748, 126.968095",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lotte-yongin-20261022010713-373",
+    "dc_id": "lotte-yongin",
+    "title": "도로명주소 – 경기도 용인시 기흥구 마북로240번길 17-9",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EA%B8%B0%ED%9D%A5%EA%B5%AC%20%EB%A7%88%EB%B6%81%EB%8F%99%20102-18%20%EB%A1%AF%EB%8D%B0%EC%9D%B4%EB%85%B8%EB%B2%A0%EC%9D%B4%ED%8A%B8(%EC%A3%BC)",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 용인시 기흥구 마북로240번길 17-9 · 지번 경기도 용인시 기흥구 마북동 102-18 롯데이노베이트(주) · 건물명 롯데이노베이트(주) · 법정동코드 4146311300 · 좌표 37.305838, 127.138292",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-magna-goyang-20261022010713-374",
+    "dc_id": "magna-goyang",
+    "title": "도로명주소 – 경기도 고양시 일산서구 경의로 849",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EC%84%9C%EA%B5%AC%20%EB%8D%95%EC%9D%B4%EB%8F%99%20265%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%ED%98%84%EC%B6%A9%EC%A0%84%EC%8B%9C%EA%B4%80",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 고양시 일산서구 경의로 849 · 지번 경기도 고양시 일산서구 덕이동 265 고양시 현충전시관 · 건물명 고양시 현충전시관 · 법정동코드 4128710500 · 좌표 37.693288, 126.758947",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-naver-sejong-20261022010713-375",
+    "dc_id": "naver-sejong",
+    "title": "도로명주소 – 세종특별자치시 행복대로 824",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%B8%EC%A2%85%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EC%8B%9C%20%EC%A7%91%ED%98%84%EB%8F%99%20%EC%82%B0163%20%EC%95%88%EB%82%B4%EB%8F%99-1-1",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 세종특별자치시 행복대로 824 · 지번 세종특별자치시 집현동 산163 안내동-1-1 · 건물명 안내동-1-1 · 법정동코드 3611011800 · 좌표 36.506051, 127.33819",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-nfd-dangjin-20261022010713-376",
+    "dc_id": "nfd-dangjin",
+    "title": "도로명주소 – 충청남도 당진시 당진중앙1로 126",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EB%8B%B9%EC%A7%84%EC%8B%9C%20%EC%9D%8D%EB%82%B4%EB%8F%99%20226-4%20%EB%8B%B9%EC%A7%84%EC%8B%9C%EC%82%B0%EB%A6%BC%EC%A1%B0%ED%95%A9",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 충청남도 당진시 당진중앙1로 126 · 지번 충청남도 당진시 읍내동 226-4 당진시산림조합 · 건물명 당진시산림조합 · 법정동코드 4427010100 · 좌표 36.895178, 126.630893",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-sunny-20261022010713-377",
+    "dc_id": "pacific-sunny",
+    "title": "도로명주소 – 경기도 용인시 수지구 대지로 233",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%88%98%EC%A7%80%EA%B5%AC%20%EC%A3%BD%EC%A0%84%EB%8F%99%201358",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 용인시 수지구 대지로 233 · 지번 경기도 용인시 수지구 죽전동 1358 · 법정동코드 4146510200 · 좌표 37.329033, 127.13426",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pohang-ai-20261022010713-378",
+    "dc_id": "pohang-ai",
+    "title": "도로명주소 – 경상북도 포항시 북구 흥해읍 포항대학로 7",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84%20%ED%8F%AC%ED%95%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%ED%9D%A5%ED%95%B4%EC%9D%8D%20%EC%A3%BD%EC%B2%9C%EB%A6%AC%20311%20%ED%8F%AC%ED%95%AD%EB%8C%80%ED%95%99%EA%B5%90",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경상북도 포항시 북구 흥해읍 포항대학로 7 · 지번 경상북도 포항시 북구 흥해읍 죽천리 311 포항대학교 · 건물명 포항대학교 · 법정동코드 4711325035 · 좌표 36.084428, 129.409136",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-chuncheon-20261022010713-379",
+    "dc_id": "sds-chuncheon",
+    "title": "도로명주소 – 강원특별자치도 춘천시 옛경춘로 409-14",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EC%B6%98%EC%B2%9C%EC%8B%9C%20%EC%B9%A0%EC%A0%84%EB%8F%99%20650",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 강원특별자치도 춘천시 옛경춘로 409-14 · 지번 강원특별자치도 춘천시 칠전동 650 · 법정동코드 5111012600 · 좌표 37.84672, 127.701843",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-chuncheon-ai-20261022010713-380",
+    "dc_id": "sds-chuncheon-ai",
+    "title": "도로명주소 – 강원특별자치도 춘천시 춘천로 290-1",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EC%B6%98%EC%B2%9C%EC%8B%9C%20%ED%9B%84%ED%8F%89%EB%8F%99%20687-14%20%EC%B6%98%EC%B2%9C%EC%8B%9C%EC%82%B0%EB%A6%BC%EC%A1%B0%ED%95%A9",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "좌표"
+    ],
+    "excerpt": "도로명 강원특별자치도 춘천시 춘천로 290-1 · 지번 강원특별자치도 춘천시 후평동 687-14 춘천시산림조합 · 건물명 춘천시산림조합 · 법정동코드 5111012000 · 좌표 37.880732, 127.74554",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-dongtan-20261022010713-381",
+    "dc_id": "sds-dongtan",
+    "title": "도로명주소 – 경기도 화성시 동탄구 동탄대로9나길 14",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%ED%99%94%EC%84%B1%EC%8B%9C%20%EB%8F%99%ED%83%84%EA%B5%AC%20%EC%86%A1%EB%8F%99%20756-1%20%EC%82%BC%EC%84%B1SDS%20%EB%8F%99%ED%83%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 화성시 동탄구 동탄대로9나길 14 · 지번 경기도 화성시 동탄구 송동 756-1 삼성SDS 동탄 데이터센터 · 건물명 삼성SDS 동탄 데이터센터 · 법정동코드 4159711200 · 좌표 37.176751, 127.100164",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-gumi-20261022010713-382",
+    "dc_id": "sds-gumi",
+    "title": "도로명주소 – 경상북도 구미시 3공단3로 302",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84%20%EA%B5%AC%EB%AF%B8%EC%8B%9C%20%EC%9E%84%EC%88%98%EB%8F%99%2094-1%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%202%EA%B3%B5%EC%9E%A5",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경상북도 구미시 3공단3로 302 · 지번 경상북도 구미시 임수동 94-1 삼성전자 2공장 · 건물명 삼성전자 2공장 · 법정동코드 4719012500 · 좌표 36.107481, 128.417269",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-sangam-20261022010713-383",
+    "dc_id": "sds-sangam",
+    "title": "도로명주소 – 서울특별시 마포구 월드컵북로60길 24",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%83%81%EC%95%94%EB%8F%99%201586%20%EC%82%BC%EC%84%B1SDS%20%EC%83%81%EC%95%94IT%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 마포구 월드컵북로60길 24 · 지번 서울특별시 마포구 상암동 1586 삼성SDS 상암IT센터 · 건물명 삼성SDS 상암IT센터 · 법정동코드 1144012700 · 좌표 37.582947, 126.887174",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-suwon-20261022010713-384",
+    "dc_id": "sds-suwon",
+    "title": "도로명주소 – 경기도 수원시 영통구 삼성로168번길 10",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%A7%A4%ED%83%84%EB%8F%99%20410-1",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 수원시 영통구 삼성로168번길 10 · 지번 경기도 수원시 영통구 매탄동 410-1 · 법정동코드 4111710100 · 좌표 37.257795, 127.057574",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-seoul-daechi-aidc-20261022010713-385",
+    "dc_id": "seoul-daechi-aidc",
+    "title": "도로명주소 – 서울특별시 강남구 테헤란로114길 30",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8C%80%EC%B9%98%EB%8F%99%20999-8",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 강남구 테헤란로114길 30 · 지번 서울특별시 강남구 대치동 999-8 · 법정동코드 1168010600 · 좌표 37.507799, 127.066997",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sgc-gunsan-20261022010713-386",
+    "dc_id": "sgc-gunsan",
+    "title": "도로명주소 – 전북특별자치도 군산시 외항로 1331",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B5%B0%EC%82%B0%EC%8B%9C%20%EB%B9%84%EC%9D%91%EB%8F%84%EB%8F%99%2036-23",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 전북특별자치도 군산시 외항로 1331 · 지번 전북특별자치도 군산시 비응도동 36-23 · 법정동코드 5213014800 · 좌표 35.949659, 126.530646",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sk-gangneung-okgye-20261022010713-387",
+    "dc_id": "sk-gangneung-okgye",
+    "title": "도로명주소 – 강원특별자치도 강릉시 연곡면 동해대로 4091",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EA%B0%95%EB%A6%89%EC%8B%9C%20%EC%97%B0%EA%B3%A1%EB%A9%B4%20%EB%8F%99%EB%8D%95%EB%A6%AC%20259-5%20SK%EC%A3%BC%EC%9C%A0%EC%86%8C",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 강원특별자치도 강릉시 연곡면 동해대로 4091 · 지번 강원특별자치도 강릉시 연곡면 동덕리 259-5 SK주유소 · 건물명 SK주유소 · 법정동코드 5115037023",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-bundang-20261022010713-388",
+    "dc_id": "skb-bundang",
+    "title": "도로명주소 – 경기도 성남시 분당구 성남대로2번길 12",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EA%B5%AC%EB%AF%B8%EB%8F%99%20192-2%20SKB%20IDC%EB%B6%84%EB%8B%B9%EC%84%BC%ED%84%B0",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 경기도 성남시 분당구 성남대로2번길 12 · 지번 경기도 성남시 분당구 구미동 192-2 SKB IDC분당센터 · 건물명 SKB IDC분당센터 · 법정동코드 4113511400 · 좌표 37.334847, 127.110379",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-ilsan1-20261022010713-389",
+    "dc_id": "skb-ilsan1",
+    "title": "도로명주소 – 경기도 고양시 일산동구 일산로 39",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EB%B0%B1%EC%84%9D%EB%8F%99%201342%20%EC%9D%BC%EC%82%B0%EC%8B%A0%EC%84%B1%EA%B5%90%ED%9A%8C",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 고양시 일산동구 일산로 39 · 지번 경기도 고양시 일산동구 백석동 1342 일산신성교회 · 건물명 일산신성교회 · 법정동코드 4128510600 · 좌표 37.64237, 126.786686",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-ilsan2-20261022010713-390",
+    "dc_id": "skb-ilsan2",
+    "title": "도로명주소 – 경기도 고양시 일산동구 일산로 39",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EB%B0%B1%EC%84%9D%EB%8F%99%201342%20%EC%9D%BC%EC%82%B0%EC%8B%A0%EC%84%B1%EA%B5%90%ED%9A%8C",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "인허가 연결",
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 고양시 일산동구 일산로 39 · 지번 경기도 고양시 일산동구 백석동 1342 일산신성교회 · 건물명 일산신성교회 · 법정동코드 4128510600 · 좌표 37.64237, 126.786686",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-pangyo-20261022010713-391",
+    "dc_id": "skb-pangyo",
+    "title": "도로명주소 – 경기도 성남시 분당구 판교로255번길 46",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EC%82%BC%ED%8F%89%EB%8F%99%20611%20SK%20%ED%8C%90%EA%B5%90%EC%BA%A0%ED%8D%BC%EC%8A%A4%20A",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 경기도 성남시 분당구 판교로255번길 46 · 지번 경기도 성남시 분당구 삼평동 611 SK 판교캠퍼스 A · 건물명 SK 판교캠퍼스 A · 법정동코드 4113510900 · 좌표 37.40589, 127.098276",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-seocho-20261022010713-392",
+    "dc_id": "skb-seocho",
+    "title": "도로명주소 – 서울특별시 서초구 법원로1길 6",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%84%9C%EC%B4%88%EB%8F%99%201710-1",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "인허가 연결"
+    ],
+    "excerpt": "도로명 서울특별시 서초구 법원로1길 6 · 지번 서울특별시 서초구 서초동 1710-1 · 법정동코드 1165010800",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-smilegate-siksa-20261022010713-393",
+    "dc_id": "smilegate-siksa",
+    "title": "도로명주소 – 경기도 고양시 일산동구 사리현로 101-11",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EC%8B%9D%EC%82%AC%EB%8F%99%202-8",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 경기도 고양시 일산동구 사리현로 101-11 · 지번 경기도 고양시 일산동구 식사동 2-8 · 법정동코드 4128510100 · 좌표 37.690277, 126.828905",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-stt-seoul1-20261022010713-394",
+    "dc_id": "stt-seoul1",
+    "title": "도로명주소 – 서울특별시 금천구 가산디지털2로 54",
+    "url": "https://business.juso.go.kr/addrlink/main.do#%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EA%B0%80%EC%82%B0%EB%8F%99%20345-26",
+    "publisher": "행정안전부 도로명주소",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "좌표"
+    ],
+    "excerpt": "도로명 서울특별시 금천구 가산디지털2로 54 · 지번 서울특별시 금천구 가산동 345-26 · 법정동코드 1154510100 · 좌표 37.47345, 126.882775",
+    "source_id": "s03",
+    "collected_at": "2026-10-22T01:07:13.380Z",
+    "added_by": "auto"
   }
 ]
