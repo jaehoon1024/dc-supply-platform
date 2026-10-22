@@ -13368,5 +13368,16 @@
     "old": "프로젝트 팀북투, TIMBUKTU, 안산그린에너지PFV",
     "new": "경기_안산_액티스",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "actis-ansan",
+    "at": "2026-10-22T07:15:15.009Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-actis-ansan-20261022071515-steps-0",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
