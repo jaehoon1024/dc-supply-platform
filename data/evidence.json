@@ -7032,5 +7032,399 @@
     "source_id": "s03",
     "collected_at": "2026-10-22T22:22:25.366Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-ansan-our-20261022234933-432",
+    "dc_id": "ansan-our",
+    "title": "건축인허가 기본개요 – 아워디씨",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000918465",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적"
+    ],
+    "excerpt": "허가 2026-04-03 · 착공 - · 사용승인 - · 연면적 7047.66㎡ · 경기도 안산시 단원구 성곡동 638-5번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-pus1-20261022234933-433",
+    "dc_id": "de-pus1",
+    "title": "건축인허가 기본개요 – 디지털엣지코리아 PUS1데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000563344",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적"
+    ],
+    "excerpt": "허가 2024-07-31 · 착공 - · 사용승인 - · 연면적 14072.13㎡ · 부산광역시 해운대구 우동 1453번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-sel3-20261022234933-434",
+    "dc_id": "de-sel3",
+    "title": "건축인허가 기본개요 – 청천동 422",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000693140",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "착공월"
+    ],
+    "excerpt": "허가 2025-03-31 · 착공 2025-05-14 · 사용승인 - · 연면적 85821.54㎡ · 인천광역시 부평구 청천동 422번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl2x-20261022234933-435",
+    "dc_id": "equinix-sl2x",
+    "title": "건축인허가 기본개요 – 향동동 585",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000905742",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2026-03-18 · 착공 2026-04-20 · 사용승인 2026-07-07 · 연면적 21769㎡ · 경기도 고양시 덕양구 향동동 585번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl3x-20261022234933-436",
+    "dc_id": "equinix-sl3x",
+    "title": "건축인허가 기본개요 – 향동동 583 방송통신시설 (캐피탈랜드코리아제9호 전문투자형사모부동산투자회사)",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1104100086542",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월"
+    ],
+    "excerpt": "허가 2022-06-16 · 착공 2025-02-05 · 사용승인 - · 연면적 22027.34㎡ · 경기도 고양시 덕양구 향동동 583번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kaam-sihwa-20261022234933-437",
+    "dc_id": "kaam-sihwa",
+    "title": "건축인허가 기본개요 – 성곡동 670-4",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000596654",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월"
+    ],
+    "excerpt": "허가 2024-10-08 · 착공 2024-12-18 · 사용승인 - · 연면적 76459.01㎡ · 경기도 안산시 단원구 성곡동 670-4번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kamsquare-dc-20261022234933-438",
+    "dc_id": "kamsquare-dc",
+    "title": "건축인허가 기본개요 – 지곡동 236-6",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000001024415",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "연면적"
+    ],
+    "excerpt": "허가 2026-09-03 · 착공 - · 사용승인 - · 연면적 49308.04㎡ · 경기도 용인시 기흥구 지곡동 236-6번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022234933-439",
+    "dc_id": "kt-ansan",
+    "title": "건축인허가 기본개요 – 반월시화 국가산업단지 AI DC",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000817745",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적"
+    ],
+    "excerpt": "허가 2025-10-02 · 착공 - · 사용승인 - · 연면적 36762.57㎡ · 경기도 안산시 단원구 성곡동 640번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-bundang-20261022234933-440",
+    "dc_id": "kt-bundang",
+    "title": "건축인허가 기본개요 – 분당 KT-IDC",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1089107",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2000-04-17 · 착공 2000-04-26 · 사용승인 2001-07-30 · 연면적 31156.75㎡ · 경기도 성남시 분당구 야탑동 343-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-cheonan-20261022234933-441",
+    "dc_id": "kt-cheonan",
+    "title": "건축인허가 기본개요 – 성남면 대흥리 266-5 방송통신시설 (주식회사케이티)",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1169100050148",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2013-12-31 · 착공 2014-03-05 · 사용승인 2014-09-18 · 연면적 8790.69㎡ · 충청남도 천안시 동남구 성남면 대흥리 266-5번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-daejeon-20261022234933-442",
+    "dc_id": "kt-daejeon",
+    "title": "건축인허가 기본개요 – KTF대전사옥",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#10738547",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2003-05-06 · 착공 2005-05-04 · 사용승인 2008-05-07 · 연면적 35099.01㎡ · 대전광역시 서구 탄방동 649번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-gaebong-20261022234933-443",
+    "dc_id": "kt-gaebong",
+    "title": "건축인허가 기본개요 – 구로 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000205388",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "연면적",
+      "착공월"
+    ],
+    "excerpt": "허가 2022-12-29 · 착공 2023-12-29 · 사용승인 - · 연면적 19255.39㎡ · 서울특별시 구로구 개봉동 166-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-gangnam-20261022234933-444",
+    "dc_id": "kt-gangnam",
+    "title": "건축인허가 기본개요 – 역삼동 675-3 방송통신시설 (주식회사 케이티)",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1024100073968",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2015-05-19 · 착공 2015-06-03 · 사용승인 2015-06-11 · 연면적 53075.75㎡ · 서울특별시 강남구 역삼동 675-3번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-yongsan-20261022234933-445",
+    "dc_id": "kt-yongsan",
+    "title": "건축인허가 기본개요 – KT 용산 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1004100059192",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2018-03-05 · 착공 2018-05-04 · 사용승인 2020-10-15 · 연면적 48722.46㎡ · 서울특별시 용산구 원효로3가 1-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgu-daegu-20261022234933-446",
+    "dc_id": "lgu-daegu",
+    "title": "건축인허가 기본개요 – 엘지유플러스 대구동인사옥",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000369973",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2023-09-10 · 착공 2023-10-05 · 사용승인 2024-01-11 · 연면적 5429.18㎡ · 대구광역시 중구 동인동1가 295-1번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-bucheon-20261022234933-447",
+    "dc_id": "pacific-bucheon",
+    "title": "건축인허가 기본개요 – 부천 내동 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000294786",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "착공월",
+      "상태"
+    ],
+    "excerpt": "허가 2023-05-16 · 착공 2026-05-26 · 사용승인 - · 연면적 26080.59㎡ · 경기도 부천시 오정구 내동 222-13번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-guro-hangdong-20261022234933-448",
+    "dc_id": "pacific-guro-hangdong",
+    "title": "건축인허가 기본개요 – 구로 항동 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000350486",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월"
+    ],
+    "excerpt": "허가 2023-08-07 · 착공 2025-02-11 · 사용승인 - · 연면적 45156.29㎡ · 서울특별시 구로구 항동 236-7번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sczeus-seoul-20261022234933-449",
+    "dc_id": "sczeus-seoul",
+    "title": "건축인허가 기본개요 – Olympus Data Center",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000733097",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "연면적",
+      "착공월"
+    ],
+    "excerpt": "허가 2025-05-26 · 착공 2026-03-30 · 사용승인 - · 연면적 26186.89㎡ · 경기도 부천시 원미구 춘의동 65-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sds-suwon-20261022234933-450",
+    "dc_id": "sds-suwon",
+    "title": "건축인허가 기본개요 – 삼성SOFTWARE 연구소(데이터센터)",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1084926",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2006-10-20 · 착공 2006-11-13 · 사용승인 2008-12-31 · 연면적 84100.54㎡ · 경기도 수원시 영통구 매탄동 410-1번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-seoul-daechi-aidc-20261022234933-451",
+    "dc_id": "seoul-daechi-aidc",
+    "title": "건축인허가 기본개요 – 대치동 엣지 데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000942510",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적"
+    ],
+    "excerpt": "허가 2026-05-04 · 착공 - · 사용승인 - · 연면적 4949.62㎡ · 서울특별시 강남구 대치동 999-8번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-bundang-20261022234933-452",
+    "dc_id": "skb-bundang",
+    "title": "건축인허가 기본개요 –  ",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1089100075100",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "허가 2022-03-15 · 착공 2022-04-07 · 사용승인 2023-03-16 · 연면적 16597.89㎡ · 경기도 성남시 분당구 구미동 192-2번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skb-seocho-20261022234933-453",
+    "dc_id": "skb-seocho",
+    "title": "건축인허가 기본개요 – 하나로통신 인터넷데이터센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#10235518",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "준비단계",
+      "연면적",
+      "준공월"
+    ],
+    "excerpt": "허가 2004-11-30 · 착공 - · 사용승인 2006-10-24 · 연면적 35300.23㎡ · 서울특별시 서초구 서초동 1710-1번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T23:49:33.327Z",
+    "added_by": "auto"
   }
 ]
