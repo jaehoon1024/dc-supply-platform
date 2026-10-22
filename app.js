@@ -236,14 +236,14 @@ const yv = (b, g, mode) => { const x = b.groups[g]; return x ? x[mode] : 0; };
 
 function renderPlayerCards() {
   const fc = runForecast(state.supMetric, 'player'), mode = state.supMode, unit = state.supMetric === 'it_mw' ? 'IT' : '수전';
-  $('#playerCards').innerHTML = PLAYERS.map(p => {
+  $('#playerCards').innerHTML = CORE4.map(p => {
     const mine = state.dcs.filter(d => playerOf(d) === p);
     const op = mine.filter(d => d.status === '운영중').length;
     const unknown = mine.filter(d => capacityOf(d, state.supMetric).mw === null).length;
     const cum = (fc.base.groups[p] || 0) + fc.years.reduce((s, y) => s + yv(fc.byYear[y], p, mode), 0);
     const t = state.targets.find(x => x.player === p && x.target_mw);
     return `<div class="pcard" style="--pc:var(${PLAYER_VAR[p]})" data-player="${esc(p)}" tabindex="0" role="button" aria-label="${esc(p)} 센터 목록 보기">
-      <h4><span>${esc(p)}${CORE4.includes(p) ? '' : ' <small class="note">(핵심 4사 외)</small>'}</span><span class="note">${mine.length}곳 · 운영 ${op}</span></h4>
+      <h4><span>${esc(p)}</span><span class="note">${mine.length}곳 · 운영 ${op}</span></h4>
       <div class="note">2031 누적 ${unit} (${mode === 'weighted' ? '가중' : '계획'})</div>
       <div class="big">${fmtMW(cum) || 0}<small class="note"> MW</small></div>
       ${(() => { const rt = state.targets.find(x => x.player === p && x.reported_mw); const known = mine.filter(d => d.status === '운영중').reduce((s, d) => s + (isNum(d.power_mw) ? +d.power_mw : 0), 0); return rt ? `<div class="row2"><span>보도 총량 ${rt.reported_mw}MW · ${rt.reported_n}개</span><span title="${esc(rt.reported_basis)}">입력 운영 수전 ${fmtMW(known) || 0}</span></div>` : ''; })()}
