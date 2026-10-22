@@ -404,3 +404,4 @@ dialog .fld{margin-top:12px}
 .yritem:hover{background:var(--surface)}
 .yrname{font-size:13px;font-weight:600;overflow-wrap:anywhere}
 .yrmeta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:2px}
+.edgechip{font-size:10px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 4px;margin-left:4px;vertical-align:1px}
