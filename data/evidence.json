@@ -6763,5 +6763,173 @@
     "source_id": "s30",
     "collected_at": "2026-10-22T08:57:37.627Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022215213-416",
+    "dc_id": "kt-ansan",
+    "title": "[IT는 지금] KT클라우드, 50MW 규모 안산 AI 데이터센터 착공 外",
+    "url": "https://dealsite.co.kr/articles/171143",
+    "publisher": "딜사이트",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "연면적(㎡)",
+      "상태"
+    ],
+    "excerpt": "50MW 자체 데이터센터 안산 AIDC 착공, 연면적 약 3만6878㎡·지하2층·지상9층, 2029년 준공 목표, 전 서버실 액체냉각",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022215213-417",
+    "dc_id": "kt-ansan",
+    "title": "KT클라우드, 50MW 안산 AI 데이터센터 착공…2029년 준공 목표",
+    "url": "https://zdnet.co.kr/view/?no=20261022094632",
+    "publisher": "지디넷코리아",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "상태",
+      "수전용량(MW)"
+    ],
+    "excerpt": "KT클라우드 50MW 안산 AIDC 착공, 2029년 준공 목표",
+    "source_id": "s27",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022215213-418",
+    "dc_id": "kt-ansan",
+    "title": "CJ대한통운 건설부문, 3150억원 규모 KT클라우드 안산 AI데이터센터 수주",
+    "url": "https://www.fnnews.com/news/202610220943561454",
+    "publisher": "파이낸셜뉴스",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "시공사"
+    ],
+    "excerpt": "CJ대한통운 건설부문 50MW KT클라우드 안산 AIDC 신축공사 3,150억원 수주",
+    "source_id": "s17",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-actis-sejong-20261022215213-419",
+    "dc_id": "actis-sejong",
+    "title": "세종시, AI 데이터센터 거점 노크… 8.8조 투자 현실화 관건",
+    "url": "https://www.joongdo.co.kr/web/view.php?key=20261022010006447",
+    "publisher": "중도일보",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "개발사(발주처)",
+      "수전용량(MW)",
+      "착공월"
+    ],
+    "excerpt": "액티스코리아는 세종시 내부의 약 13만㎡ 부지에 100MW급 데이터센터를 건립할 계획(1.8조원 MOU 10/6, 2027년 착공 목표). 전력·용수·주민 수용성 미해결",
+    "source_id": "s04",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sk-sejong-aidc-20261022215213-420",
+    "dc_id": "sk-sejong-aidc",
+    "title": "세종시, AI 데이터센터 거점 노크… 8.8조 투자 현실화 관건",
+    "url": "https://www.joongdo.co.kr/web/view.php?key=20261022010006447",
+    "publisher": "중도일보",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "개발사(발주처)"
+    ],
+    "excerpt": "SK증권·메테우스자산운용·시드에이치 360MW급 7조원(10/8 협약), 2029년까지 건립 — 부지 미공개",
+    "source_id": "s04",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-hdec-saemangeum-20261022215213-421",
+    "dc_id": "hdec-saemangeum",
+    "title": "새만금 현대차그룹 AI 데이터센터 건축심의 착수",
+    "url": "https://www.jbjnews.com/news/articleView.html?idxno=326848",
+    "publisher": "전북제일신문",
+    "pub_date": "2026-09-22",
+    "grade": "A",
+    "fields": [
+      "연면적(㎡)",
+      "주소"
+    ],
+    "excerpt": "새만금 1산단 7공구, 대지면적 15만312㎡, 연면적 10만1950㎡, 지상 2층. 10월 중 심의 결과, 연내 건축허가, 2027년 3월 착공 지원",
+    "source_id": "s04",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-hdec-saemangeum-20261022215213-422",
+    "dc_id": "hdec-saemangeum",
+    "title": "현대차그룹, 새만금에 5.8조 'AI 데이터센터' 짓는다…GPU 5만장 투입",
+    "url": "https://www.the-tech.co.kr/news/article.html?no=41965",
+    "publisher": "더테크",
+    "pub_date": "2026-09-22",
+    "grade": "B",
+    "fields": [
+      "연면적(㎡)",
+      "착공월"
+    ],
+    "excerpt": "5.8조원·GPU 5만장, 2027년 3월 착공 목표 — 수전/IT MW 미공개",
+    "source_id": "s25",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-koscom-anyang-20261022215213-423",
+    "dc_id": "koscom-anyang",
+    "title": "코스콤, 760억원 규모 안양 데이터센터 본격 착공 나선다",
+    "url": "https://m.ddaily.co.kr/page/view/2024070813505612626",
+    "publisher": "디지털데일리",
+    "pub_date": "2024-07-08",
+    "grade": "B",
+    "fields": [
+      "수전용량(MW)",
+      "주소"
+    ],
+    "excerpt": "경기도 안양시 동안구 엘에스로 115번길 26(호계동) 부지, 지하5층·지상5층, 전산실 상면 약 5000㎡, 수전용량 14.75MW(기존 4.75MW + 신규 10MW), 공사기간 730일",
+    "source_id": "s26",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-magna-goyang-20261022215213-424",
+    "dc_id": "magna-goyang",
+    "title": "고양시, 덕이동 데이터센터 착공신고 '반려'",
+    "url": "https://www.mygoyang.com/news/articleView.html?idxno=80672",
+    "publisher": "고양신문",
+    "pub_date": "2024-08-29",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "연면적(㎡)"
+    ],
+    "excerpt": "덕이동 309-56번지 일대, 연면적 16,945㎡, 지하2층·지상5층, 높이 49.84m, 건축주 마그나PFV(GS건설 자회사)",
+    "source_id": "s04",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-magna-goyang-20261022215213-425",
+    "dc_id": "magna-goyang",
+    "title": "GS건설 개발 고양 덕이동 20MW 데이터센터 11월 착공",
+    "url": "https://www.dealbook.co.kr/gsgeonseol-goyangsie-deiteosenteo-caggong-heoga-deiteosenteo-buja-geonseolsa/comments/",
+    "publisher": "딜북",
+    "pub_date": "2024-10-31",
+    "grade": "B",
+    "fields": [
+      "수전용량(MW)"
+    ],
+    "excerpt": "경기 고양 덕이동 소재 20MW 데이터센터 개발사업, 대지 11,942㎡·연면적 16,345㎡",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T21:52:13.478Z",
+    "added_by": "auto"
   }
 ]

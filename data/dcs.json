@@ -80,6 +80,45 @@
     ]
   },
   {
+    "id": "actis-sejong",
+    "name": "액티스 세종 AI 데이터센터",
+    "aliases": [],
+    "category": "상용",
+    "status": "설계중",
+    "phase": "개발",
+    "owner": "액티스코리아",
+    "contractor": "",
+    "operator": "",
+    "address": "세종특별자치시",
+    "lat": null,
+    "lng": null,
+    "power_mw": 100,
+    "it_mw": null,
+    "start_ym": "2027",
+    "complete_ym": "",
+    "rfs_ym": "",
+    "note": "",
+    "conf": {
+      "address": "추정",
+      "owner": "추정",
+      "power_mw": "추정",
+      "start_ym": "추정"
+    },
+    "locked": {},
+    "permit_ref": null,
+    "player": "",
+    "created_at": "2026-10-22T21:52:13.478Z",
+    "updated_at": "2026-10-22T21:52:13.478Z",
+    "updated_by": "auto",
+    "sido": "세종",
+    "sigungu": "세종",
+    "addr_check": {
+      "status": "좌표없음",
+      "note": "위경도가 없습니다",
+      "at": "2026-10-22T21:52:13.478Z"
+    }
+  },
+  {
     "aliases": [
       "Ditto 양평센터",
       "Actis Seoul"
@@ -2450,7 +2489,7 @@
     "owner": "현대자동차그룹",
     "contractor": "현대건설",
     "operator": "",
-    "address": "전북특별자치도 군산시",
+    "address": "전북특별자치도 군산시 새만금국가산업단지 1산단 7공구",
     "lat": 35.86,
     "lng": 126.62,
     "power_mw": null,
@@ -2462,14 +2501,15 @@
     "conf": {
       "contractor": "추정",
       "status": "추정",
-      "address": "추정",
-      "owner": "확정"
+      "address": "확정",
+      "owner": "확정",
+      "area_m2": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T11:00:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T21:52:13.478Z",
     "updated_by": "auto",
     "id": "hdec-saemangeum",
     "name": "현대차그룹 새만금 AI 데이터센터",
@@ -2478,9 +2518,9 @@
     "sido": "전북",
     "sigungu": "군산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T01:10:35.363Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T21:52:13.478Z"
     },
     "prep": {
       "site": {
@@ -2512,7 +2552,9 @@
         "bdNm": "새만금방조제 해넘이휴게소"
       },
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "area_m2": 101950,
+    "gap_checked_at": "2026-10-22T21:52:13.478Z"
   },
   {
     "id": "icn11",
@@ -3662,10 +3704,10 @@
     "owner": "코스콤",
     "contractor": "",
     "operator": "코스콤",
-    "address": "경기도 안양시",
+    "address": "경기도 안양시 동안구 엘에스로115번길 26 (호계동)",
     "lat": 37.4,
     "lng": 126.96,
-    "power_mw": null,
+    "power_mw": 14.75,
     "it_mw": null,
     "start_ym": "",
     "complete_ym": "2026-12",
@@ -3673,22 +3715,23 @@
     "conf": {
       "owner": "확정",
       "operator": "확정",
-      "address": "추정",
+      "address": "확정",
       "status": "추정",
-      "complete_ym": "추정"
+      "complete_ym": "추정",
+      "power_mw": "확정"
     },
     "locked": {},
     "note": "자본시장 IT 인프라용 차세대 센터. 용량 미확인.",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T21:52:13.478Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
     "sido": "경기",
     "sigungu": "안양시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T01:10:35.363Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T21:52:13.478Z"
     },
     "dbo": {
       "type": "자체",
@@ -3707,7 +3750,8 @@
         "bdNm": "코스콤"
       },
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "gap_checked_at": "2026-10-22T21:52:13.478Z"
   },
   {
     "id": "ksquare-ujb",
@@ -3818,13 +3862,14 @@
       "address": "확정",
       "contractor": "확정",
       "start_ym": "확정",
-      "power_mw": "확정"
+      "power_mw": "확정",
+      "area_m2": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-22T04:48:52.751Z",
+    "updated_at": "2026-10-22T21:52:13.478Z",
     "updated_by": "auto",
     "id": "kt-ansan",
     "name": "KT클라우드 안산 AIDC",
@@ -3835,7 +3880,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T04:48:52.751Z"
+      "at": "2026-10-22T21:52:13.478Z"
     },
     "prep": {
       "site": {
@@ -3862,7 +3907,8 @@
         "bdNm": "SKT안산일동 전송국사"
       },
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "area_m2": 36878
   },
   {
     "aliases": [],
@@ -5003,7 +5049,8 @@
       "how": "건물명",
       "status": "미일치",
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "gap_checked_at": "2026-10-22T21:52:13.478Z"
   },
   {
     "aliases": [],
@@ -5213,7 +5260,8 @@
       "how": "건물명",
       "status": "미일치",
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "gap_checked_at": "2026-10-22T21:52:13.478Z"
   },
   {
     "aliases": [],
@@ -6800,10 +6848,10 @@
     "owner": "마그나PFV (GS건설 최대주주)",
     "contractor": "GS건설",
     "operator": "디씨브릿지",
-    "address": "경기도 고양시 일산서구 덕이동",
+    "address": "경기도 고양시 일산서구 덕이동 309-56 일대",
     "lat": 37.685,
     "lng": 126.755,
-    "power_mw": null,
+    "power_mw": 20,
     "it_mw": null,
     "start_ym": "",
     "complete_ym": "",
@@ -6814,7 +6862,9 @@
       "contractor": "확정",
       "operator": "추정",
       "status": "추정",
-      "address": "추정"
+      "address": "확정",
+      "area_m2": "추정",
+      "power_mw": "추정"
     },
     "locked": {},
     "permit_ref": {
@@ -6825,7 +6875,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T16:30:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T21:52:13.478Z",
     "updated_by": "auto",
     "id": "magna-goyang",
     "name": "고양 덕이동 마그나 데이터센터",
@@ -6834,9 +6884,9 @@
     "sido": "경기",
     "sigungu": "고양시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T01:10:35.363Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T21:52:13.478Z"
     },
     "dbo": {
       "type": "부분 DBO",
@@ -6875,7 +6925,9 @@
         "bdNm": "고양시 현충전시관"
       },
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "area_m2": 16945,
+    "gap_checked_at": "2026-10-22T21:52:13.478Z"
   },
   {
     "aliases": [
