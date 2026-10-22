@@ -13017,5 +13017,60 @@
     "old": "확정",
     "new": "추정",
     "note": "근거 구분 변경"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T05:06:50.518Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022050650-aliases-0",
+    "field": "aliases",
+    "old": "27년_경기_부천삼정동_퍼시픽_1동",
+    "new": "27년_경기_부천삼정동_퍼시픽",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T05:06:50.518Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022050650-power_mw-1",
+    "field": "power_mw",
+    "old": 40,
+    "new": 80,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T05:06:50.518Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022050650-it_mw-2",
+    "field": "it_mw",
+    "old": 24,
+    "new": 48,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T05:06:50.518Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022050650-steps-3",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T05:06:50.518Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022050650-rfs_ym-4",
+    "field": "rfs_ym",
+    "old": "자동",
+    "new": "고정",
+    "note": "고정 설정 변경"
   }
 ]
