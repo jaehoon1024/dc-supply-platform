@@ -13379,5 +13379,298 @@
     "old": "",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-name-1225",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "name",
+    "old": "Digital Edge SEL3",
+    "new": "Digital Edge SEL3 (인천 부평 청천 2동)",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-aliases-1226",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "aliases",
+    "old": "[]",
+    "new": "[\"27년_인천_부평청천_디지털엣지_2동\",\"부평 데이터센터 2단계\"]",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 별칭 이관"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-address-1227",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "address",
+    "old": "인천광역시 부평구",
+    "new": "인천광역시 부평구 청천동 422",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-lat-1228",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "lat",
+    "old": "37.507",
+    "new": "37.517895",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-lng-1229",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "lng",
+    "old": "126.722",
+    "new": "126.710929",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-power_mw-1230",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "power_mw",
+    "old": "null",
+    "new": "60",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — SEL2에 입력된 수전 60MW 이관(2동 60MW급)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-it_mw-1231",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "it_mw",
+    "old": "60",
+    "new": "48",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — SEL2에 입력된 IT 48MW 이관"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-owner-1232",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "owner",
+    "old": "Digital Edge",
+    "new": "Digital Edge 51% · SK에코플랜트 49% (공동 개발)",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-contractor-1233",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "contractor",
+    "old": "",
+    "new": "SK에코플랜트",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-status-1234",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "status",
+    "old": "개발중",
+    "new": "착공",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 건축HUB 착공 2025-05-14"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-start_ym-1235",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "start_ym",
+    "old": "",
+    "new": "2025-05",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-rfs_ym-1236",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "rfs_ym",
+    "old": "2027-Q4",
+    "new": "2027-Q4",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — RFS 목표 2027년 4분기"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-area_m2-1237",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "area_m2",
+    "old": "",
+    "new": "85821.54",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 건축HUB 연면적"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-permit_ref-1238",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "permit_ref",
+    "old": "null",
+    "new": "{\"sigunguCd\":\"28237\",\"bjdongCd\":\"10400\",\"bun\":\"422\",\"ji\":\"0\"}",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 청천동 422 인허가(2025-03 허가)는 2동"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-note-1239",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "note",
+    "old": "",
+    "new": "부평 청천 국가산단 디지털엣지 캠퍼스 2동(2단계, SEL3). 60MW급(수전 60·IT 48 — 사용자 입력 이관), 2025-03-31 건축허가, 2025-05-14 착공, 연면적 85,821㎡, RFS 2027-Q4. 녹색대출 8,000억(2025-07). SK에코플랜트 49%·디지털엣지 51% 공동 개발·시공. 캠퍼스 전체 96MW(IT, 1동 36+2동 60) / datacentermap 120MW.",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-name-1240",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "name",
+    "old": "Digital Edge SEL2",
+    "new": "Digital Edge SEL2 (인천 부평 청천 1동)",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-aliases-1241",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "aliases",
+    "old": "[\"27년_인천_부평청천_디지털엣지_2동\"]",
+    "new": "[\"부평 데이터센터 1단계\"]",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 2동 별칭은 SEL3로 이관"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-power_mw-1242",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "power_mw",
+    "old": "60",
+    "new": "null",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 수전 60MW는 2동 값으로 판단해 SEL3로 이관(1동 수전 미공개)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-it_mw-1243",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "it_mw",
+    "old": "48",
+    "new": "36",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 1단계 36MW(Mingtiandi 2024-10)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-rfs_ym-1244",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "rfs_ym",
+    "old": "2027",
+    "new": "2024-10",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 2024-10 개소"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-start_ym-1245",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "start_ym",
+    "old": "2025-05",
+    "new": "",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 2025-05 착공은 2동(SEL3) 일정"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-owner-1246",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "owner",
+    "old": "Digital Edge",
+    "new": "Digital Edge 51% · SK에코플랜트 49% (공동 개발)",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-contractor-1247",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "contractor",
+    "old": "",
+    "new": "SK에코플랜트",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-permit_ref-1248",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "permit_ref",
+    "old": "{\"sigunguCd\":\"28237\",\"bjdongCd\":\"10400\",\"bun\":\"422\",\"ji\":\"0\"}",
+    "new": "null",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS) — 422 인허가는 2동으로 이관"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-steps-1249",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "steps",
+    "old": "",
+    "new": "[{\"label\":\"1동 (SEL2)\",\"mw\":36,\"basis\":\"IT\",\"ym\":\"2024-10\",\"status\":\"운영\",\"c\":\"확정\"},{\"label\":\"2동 (SEL3)\",\"mw\":48,\"basis\":\"IT\",\"ym\":\"2027-Q4\",\"status\":\"공사\",\"c\":\"추정\",\"dc_id\":\"de-sel3\",\"note\":\"별도 센터로 등록\"}]",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-note-1250",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "note",
+    "old": "",
+    "new": "부평 청천 국가산단 디지털엣지 캠퍼스 1동(1단계, SEL2). IT 36MW, 2024-10 개소, 액체냉각 랙당 130kW·PUE 1.25 설계, 앵커 임차인 확보(미공개). 녹색대출 4,400억(5년). SK에코플랜트 49%·디지털엣지 51% 공동 개발·시공. 2동은 SEL3로 별도 등록.",
+    "by": "auto",
+    "note": "재조사(사용자 요청): 1동=SEL2(36MW, 2024-10 개소), 2동=SEL3(2025-05 착공, 2027-Q4 RFS)"
+  },
+  {
+    "id": "h-de-sel2-20261022072100-evidence-413",
+    "dc_id": "de-sel2",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "Digital Edge Switches on 36MW Data Centre in Incheon, Korea",
+    "by": "auto",
+    "evidence_url": "https://www.mingtiandi.com/real-estate/data-centres/digital-edge-switches-on-36mw-data-centre-in-incheon-korea/",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-evidence-414",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "SK에코플랜트, 부평 데이터센터 2단계 사업비 8000억 조달 성공",
+    "by": "auto",
+    "evidence_url": "https://www.theguru.co.kr/news/article.html?no=89250",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-de-sel3-20261022072100-evidence-415",
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:21:00.326Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "Digital Edge Incheon Campus Data Center (120 MW)",
+    "by": "auto",
+    "evidence_url": "https://www.datacentermap.com/south-korea/seoul/digital-edge-incheon-campus/",
+    "note": "근거 자동 추가"
   }
 ]

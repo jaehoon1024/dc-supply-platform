@@ -5035,7 +5035,7 @@
   },
   {
     "id": "e-de-sel2-20261021234933-313",
-    "dc_id": "de-sel2",
+    "dc_id": "de-sel3",
     "title": "건축인허가 기본개요 – 청천동 422",
     "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000007e%2B21",
     "publisher": "국토교통부 건축HUB",
@@ -6707,6 +6707,59 @@
     "excerpt": "수전 50MW, 연면적 약 36,878㎡ 지하2~지상9, 10/22 착공, 2029 준공, CJ대한통운 3,150억, 안산아이디씨 해외자본 8,000억",
     "source_id": "s15",
     "collected_at": "2026-10-22T04:48:52.751Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-sel2-20261022072100-413",
+    "dc_id": "de-sel2",
+    "title": "Digital Edge Switches on 36MW Data Centre in Incheon, Korea",
+    "url": "https://www.mingtiandi.com/real-estate/data-centres/digital-edge-switches-on-36mw-data-centre-in-incheon-korea/",
+    "publisher": "Mingtiandi",
+    "pub_date": "2024-10-16",
+    "grade": "B",
+    "fields": [
+      "IT",
+      "RFS"
+    ],
+    "excerpt": "SEL2 36MW, first phase of 100+MW campus, SK Ecoplant co-developed, green loan KRW 440bn, phase 2 construction 2025",
+    "source_id": "s23",
+    "collected_at": "2026-10-22T07:21:00.326Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-sel3-20261022072100-414",
+    "dc_id": "de-sel3",
+    "title": "SK에코플랜트, 부평 데이터센터 2단계 사업비 8000억 조달 성공",
+    "url": "https://www.theguru.co.kr/news/article.html?no=89250",
+    "publisher": "더구루",
+    "pub_date": "2025-07-11",
+    "grade": "B",
+    "fields": [
+      "IT",
+      "착공월",
+      "RFS",
+      "개발사"
+    ],
+    "excerpt": "2단계 SEL3 60MW급, 전체 96MW, 2025-05 착공, RFS 2027-Q4, SK에코플랜트 49%·디지털엣지 51%, 녹색대출 8,000억",
+    "source_id": "s17",
+    "collected_at": "2026-10-22T07:21:00.326Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-de-sel3-20261022072100-415",
+    "dc_id": "de-sel3",
+    "title": "Digital Edge Incheon Campus Data Center (120 MW)",
+    "url": "https://www.datacentermap.com/south-korea/seoul/digital-edge-incheon-campus/",
+    "publisher": "Data Center Map",
+    "pub_date": "2026-10-22",
+    "grade": "C",
+    "fields": [
+      "주소",
+      "IT"
+    ],
+    "excerpt": "422 Cheongcheon-dong, SEL2 36MW (2024-10) + SEL3 60MW (2027), campus 120MW",
+    "source_id": "s23",
+    "collected_at": "2026-10-22T07:21:00.326Z",
     "added_by": "auto"
   }
 ]

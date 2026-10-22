@@ -272,7 +272,7 @@
     },
     {
       "id": "k-20261022070359-15",
-      "dc_id": "de-sel2",
+      "dc_id": "de-sel3",
       "customer": "구글",
       "mw": 48,
       "basis": "IT",
@@ -283,9 +283,9 @@
       "src": "공개",
       "c": "추정",
       "url": "",
-      "note": "",
+      "note": "2동(SEL3) 계약으로 이관(재조사)",
       "created_at": "2026-10-22T07:03:59.567Z",
-      "updated_at": "2026-10-22T07:03:59.567Z",
+      "updated_at": "2026-10-22T07:21:00.326Z",
       "updated_by": "user:정재훈"
     }
   ],
@@ -582,6 +582,16 @@
       "dc_id": "de-sel2",
       "src": "공개",
       "note": "추가: 구글 48MW (계약)"
+    },
+    {
+      "at": "2026-10-22T07:21:00.326Z",
+      "editor": "auto",
+      "kind": "contract",
+      "op": "update",
+      "id": "k-20261022070359-15",
+      "dc_id": "de-sel3",
+      "src": "공개",
+      "note": "이관: 구글 48MW 계약 de-sel2 → de-sel3(2동)"
     }
   ]
 }
