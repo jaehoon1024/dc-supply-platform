@@ -11384,5 +11384,136 @@
     "by": "auto",
     "evidence_url": "https://www.ezyeconomy.com/news/articleView.html?idxno=220378",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-create",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "_create",
+    "old": "",
+    "new": "인천 도화 데이터센터 (ESR켄달스퀘어·산은인프라)",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-status",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "status",
+    "old": "설계중",
+    "new": "착공",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-owner",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "owner",
+    "old": "",
+    "new": "ESR켄달스퀘어 · 산은인프라자산운용 (시행 도화데이터센터)",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-address",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "address",
+    "old": "",
+    "new": "인천광역시 미추홀구 도화동 765-18",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-power_mw",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "power_mw",
+    "old": "",
+    "new": 80,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-it_mw",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "it_mw",
+    "old": "",
+    "new": 56,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-start_ym",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "start_ym",
+    "old": "",
+    "new": "2026-10",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-prep",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "prep",
+    "old": "",
+    "new": "{\"site\":{\"state\":\"확보\",\"ym\":\"\",\"c\":\"확정\",\"note\":\"산업단지 부지\"},\"power\":{\"state\":\"확보\",\"ym\":\"2026-05\",\"c\":\"추정\",\"note\":\"특고압 4.7km 지중화 도로굴착 조건부 허가(2026-05-20)\"},\"permit\":{\"state\":\"허가\",\"ym\":\"2023-04\",\"c\":\"확정\",\"note\":\"미추홀구 건축허가\"}}",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "보도 기반"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-complaints",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object], [object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "보도 기반"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-evidence-382",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "인천 도화 주민 등 \"주거지 데이터센터 난립 반대, 입지 기준 마련해야\"",
+    "by": "auto",
+    "evidence_url": "https://www.incheontoday.com/news/articleView.html?idxno=325239",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-evidence-383",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "미추홀구 데이터센터 추진… \"적환장 이어 기피시설만 두나\" 도화동 반발 극심",
+    "by": "auto",
+    "evidence_url": "https://www.joongboo.com/news/articleView.html?idxno=363691921",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-incheon-dohwa-20261022014506-evidence-384",
+    "dc_id": "incheon-dohwa",
+    "at": "2026-10-22T01:45:06.154Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "인천 미추홀구 도화동 데이터센터, 지역 정치권도 '일방 추진' 규탄 나서",
+    "by": "auto",
+    "evidence_url": "https://v.daum.net/v/20250911185952414",
+    "note": "근거 자동 추가"
   }
 ]

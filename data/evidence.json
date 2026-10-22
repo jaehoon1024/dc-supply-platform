@@ -6174,5 +6174,57 @@
     "source_id": "s30",
     "collected_at": "2026-10-22T01:41:08.787Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-incheon-dohwa-20261022014506-382",
+    "dc_id": "incheon-dohwa",
+    "title": "인천 도화 주민 등 \"주거지 데이터센터 난립 반대, 입지 기준 마련해야\"",
+    "url": "https://www.incheontoday.com/news/articleView.html?idxno=325239",
+    "publisher": "인천투데이",
+    "pub_date": "2026-10-21",
+    "grade": "B",
+    "fields": [
+      "상태",
+      "착공월",
+      "민원"
+    ],
+    "excerpt": "산은인프라자산운용 추진·시행 도화데이터센터, 765-18 일대 5만8천㎡ 80MW 지상7층, 2023-04 허가, 2026-04-17 착공신고 수리, 10월 착공 계획, 특고압 4.7km 2026-05-20 조건부 허가",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T01:45:06.154Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-incheon-dohwa-20261022014506-383",
+    "dc_id": "incheon-dohwa",
+    "title": "미추홀구 데이터센터 추진… \"적환장 이어 기피시설만 두나\" 도화동 반발 극심",
+    "url": "https://www.joongboo.com/news/articleView.html?idxno=363691921",
+    "publisher": "중부일보",
+    "pub_date": "2025-05-07",
+    "grade": "B",
+    "fields": [
+      "수전",
+      "IT",
+      "주소"
+    ],
+    "excerpt": "도화동 765-18 일대 5만8천㎡, 수전 80MW·IT 56MW, 2023-04 건축허가",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T01:45:06.154Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-incheon-dohwa-20261022014506-384",
+    "dc_id": "incheon-dohwa",
+    "title": "인천 미추홀구 도화동 데이터센터, 지역 정치권도 '일방 추진' 규탄 나서",
+    "url": "https://v.daum.net/v/20250911185952414",
+    "publisher": "경인일보(다음)",
+    "pub_date": "2025-09-11",
+    "grade": "B",
+    "fields": [
+      "민원"
+    ],
+    "excerpt": "주민설명회 보이콧, 구의회 문제 제기, 비대위 이전 협의 추진",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T01:45:06.154Z",
+    "added_by": "auto"
   }
 ]

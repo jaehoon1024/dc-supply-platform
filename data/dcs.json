@@ -2428,6 +2428,98 @@
     }
   },
   {
+    "id": "incheon-dohwa",
+    "name": "인천 도화 데이터센터 (ESR켄달스퀘어·산은인프라)",
+    "aliases": [
+      "도화동 데이터센터",
+      "미추홀 도화 데이터센터",
+      "도화데이터센터",
+      "ESR켄달스퀘어 도화"
+    ],
+    "category": "상용",
+    "status": "착공",
+    "phase": "개발",
+    "owner": "ESR켄달스퀘어 · 산은인프라자산운용 (시행 도화데이터센터)",
+    "contractor": "",
+    "operator": "",
+    "address": "인천광역시 미추홀구 도화동 765-18",
+    "lat": null,
+    "lng": null,
+    "power_mw": 80,
+    "it_mw": 56,
+    "start_ym": "2026-10",
+    "complete_ym": "",
+    "rfs_ym": "",
+    "note": "인천 미추홀구 도화동 765-18 일대(산업단지), 부지 약 58,000㎡, 지상 7층, 수전 80MW·IT 56MW. 2023-04 미추홀구 건축허가 → 2025-08 첫 주민설명회 → 2026-04-03 착공신고 접수·04-17 수리 → 시행사 2026-10 착공 계획. 특고압선 약 4.7km 지중 매설 도로굴착 2026-05-20 조건부 허가. 사업 주체: 보도상 산은인프라자산운용(시행 도화데이터센터) — ESR켄달스퀘어 관여는 사용자 제공 정보(공개 보도 미확인, 확인 필요). 민원: 약 150m 거리 아파트 5,200여 세대·300m 초등학교, 전자파·소음·폐열·배터리 화재 우려, 백지화 추진위, 2026-08-04 민관협의체 1차 회의 후 2차 미개최.",
+    "conf": {
+      "status": "추정",
+      "owner": "추정",
+      "address": "확정",
+      "power_mw": "확정",
+      "it_mw": "확정",
+      "start_ym": "추정"
+    },
+    "locked": {},
+    "permit_ref": null,
+    "player": "",
+    "created_at": "2026-10-22T01:45:06.154Z",
+    "updated_at": "2026-10-22T01:45:06.154Z",
+    "updated_by": "auto",
+    "prep": {
+      "site": {
+        "state": "확보",
+        "ym": "",
+        "c": "확정",
+        "note": "산업단지 부지"
+      },
+      "power": {
+        "state": "확보",
+        "ym": "2026-05",
+        "c": "추정",
+        "note": "특고압 4.7km 지중화 도로굴착 조건부 허가(2026-05-20)"
+      },
+      "permit": {
+        "state": "허가",
+        "ym": "2023-04",
+        "c": "확정",
+        "note": "미추홀구 건축허가"
+      }
+    },
+    "complaints": [
+      {
+        "type": "주민 반대·집단민원",
+        "level": "심각",
+        "status": "진행",
+        "ym": "2025-09",
+        "note": "아파트 5,200여 세대 비대위·백지화 추진위, 주민설명회 보이콧, 구의회 문제 제기",
+        "url": "https://www.incheontoday.com/news/articleView.html?idxno=317873"
+      },
+      {
+        "type": "학교·주거 인접",
+        "level": "주의",
+        "status": "진행",
+        "ym": "2026-10",
+        "note": "아파트 약 150m, 초등학교 약 300m",
+        "url": "https://www.incheontoday.com/news/articleView.html?idxno=325239"
+      },
+      {
+        "type": "송전선로·변전소",
+        "level": "주의",
+        "status": "진행",
+        "ym": "2026-05",
+        "note": "특고압 4.7km 지중화 학교 주변 통과 — 조건부 허가 철회 요구",
+        "url": "https://www.incheontoday.com/news/articleView.html?idxno=325239"
+      }
+    ],
+    "sido": "인천",
+    "sigungu": "미추홀구",
+    "addr_check": {
+      "status": "좌표없음",
+      "note": "위경도가 없습니다",
+      "at": "2026-10-22T01:45:06.154Z"
+    }
+  },
+  {
     "id": "incheon-wonchang",
     "name": "이도 청라(원창동) AI 데이터센터",
     "aliases": [

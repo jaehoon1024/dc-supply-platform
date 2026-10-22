@@ -385,6 +385,43 @@
     ]
   },
   {
+    "id": "산은인프라자산운용",
+    "name": "산은인프라자산운용",
+    "aliases": [
+      "KDB인프라자산운용",
+      "산은인프라",
+      "도화데이터센터"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "인천 미추홀구 도화동 데이터센터(수전 80MW) 추진, 시행사 도화데이터센터",
+    "url": "https://www.incheontoday.com/news/articleView.html?idxno=325239",
+    "created_at": "2026-10-22T01:45:16.330Z",
+    "updated_at": "2026-10-22T01:45:16.330Z",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-22T01:45:16.330Z",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
+      }
+    ]
+  },
+  {
     "id": "삼성물산",
     "name": "삼성물산",
     "aliases": [],
@@ -1494,10 +1531,10 @@
     ],
     "major": false,
     "parent": "",
-    "note": "",
+    "note": "물류 중심 부동산 개발·운용(ESR켄달스퀘어). 데이터센터: 인천 부평 청천동(PDG SE1, 와이드크릭 공동)·인천 도화동(산은인프라와 함께, 사용자 제공 — 공개 보도 미확인)",
     "url": "",
     "created_at": "2026-10-20T15:00:00+09:00",
-    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-22T01:45:06.154Z",
     "updated_by": "auto",
     "log": [
       {
@@ -1505,6 +1542,14 @@
         "editor": "auto",
         "fields": [],
         "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      },
+      {
+        "at": "2026-10-22T01:45:06.154Z",
+        "editor": "auto",
+        "fields": [
+          "note"
+        ],
+        "note": "note:  → 물류 중심 부동산 개발·운용(ESR켄달스퀘어). 데이터센터: 인천 부평 청천동(PDG SE1, 와이드크릭 공동)·인천 도화동(산은인프라와 함께, 사용자 제공 — 공개 보도 미확인)"
       }
     ]
   },
