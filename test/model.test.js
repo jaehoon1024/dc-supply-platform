@@ -392,3 +392,12 @@ test('판매 현황: 계약 합계·잔여·판매율, 단가·내부 비공개 
   assert.equal(d.price, null); assert.equal(d.src, '공개'); assert.equal(out.stats.proposals, 1);
   assert.equal(out.sales.contracts.find(c => c.customer === '고객B').mw, 14);
 });
+
+test('건축HUB 관리번호(20자리)는 문자열로 보존', async () => {
+  const pk = '10000000000000031234';
+  const body = `{"response":{"header":{"resultCode":"00"},"body":{"items":{"item":[{"mgmPmsrgstPk":${pk},"bldNm":"데이터센터","platPlc":"경기도 부천시 오정구 내동 222-13번지","mainPurpsCdNm":"방송통신시설","totArea":"100"}]},"totalCount":1}}}`;
+  const fetchImpl = async () => ({ ok: true, status: 200, text: async () => body });
+  const dc = { ...dcs[0], id: 'pk1', status: '설계중', locked: {}, conf: {}, permit_ref: { sigunguCd: '41194', bjdongCd: '10500', bun: '222', ji: '13' } };
+  const out = await syncPermits({ dcs: [dc], evidence: [], history: [], permits: [{ id: '1.0000000000000003e+21', dc_id: 'pk1' }], runs: [] }, { key: 'k', fetchImpl, now: NOW, log: () => {} });
+  assert.deepEqual(out.permits.map(p => p.id), [pk]);
+});

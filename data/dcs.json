@@ -1,30 +1,37 @@
 [
   {
-    "aliases": [],
+    "aliases": [
+      "프로젝트 팀북투",
+      "TIMBUKTU",
+      "안산그린에너지PFV"
+    ],
     "category": "상용",
-    "owner": "액티스",
-    "contractor": "",
+    "owner": "액티스 (안산그린에너지PFV)",
+    "contractor": "현대건설",
     "operator": "Epoch Digital Korea",
-    "address": "경기도 안산시",
+    "address": "경기도 안산시 단원구 성곡동 644-2",
     "lat": 37.318,
     "lng": 126.818,
     "power_mw": null,
     "it_mw": null,
-    "start_ym": "",
-    "complete_ym": "",
+    "start_ym": "2025-04",
+    "complete_ym": "2028-10",
     "rfs_ym": "",
-    "note": "PF 약 9,000억 조달 추진. 용량·일정 미확인.",
+    "note": "프로젝트 팀북투: 안산그린에너지PFV 발주, 성곡동 644-2(시화국가산단), 2개 동(각 지하4~지상10층). 현대건설 8,074억·42개월(2025-04 수주 공시). PF 약 9,000억(NH투자증권 7,500억, 2025-06). 운영 Epoch Digital Korea(액티스 플랫폼) 추정. 용량 미공개.",
     "conf": {
-      "owner": "확정",
+      "owner": "추정",
       "operator": "추정",
       "status": "추정",
-      "address": "추정"
+      "address": "확정",
+      "contractor": "확정",
+      "start_ym": "추정",
+      "complete_ym": "추정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "actis-ansan",
     "name": "액티스 안산 데이터센터",
@@ -33,9 +40,9 @@
     "sido": "경기",
     "sigungu": "안산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "dbo": {
       "type": "자체",
@@ -352,12 +359,12 @@
     "phase": "개발",
     "owner": "동양 · DC플랫폼 (유진그룹)",
     "contractor": "DL건설",
-    "operator": "",
+    "operator": "동양 (DBO 총괄, 운영 파트너 LG CNS)",
     "address": "경기도 부천시 오정구 삼정동",
     "lat": 37.521,
     "lng": 126.785,
-    "power_mw": null,
-    "it_mw": 9.8,
+    "power_mw": 9.8,
+    "it_mw": 7,
     "start_ym": "2026-06",
     "complete_ym": "2028-08",
     "rfs_ym": "",
@@ -365,14 +372,16 @@
       "owner": "확정",
       "contractor": "확정",
       "address": "추정",
-      "it_mw": "추정",
+      "it_mw": "확정",
       "status": "추정",
       "start_ym": "추정",
-      "complete_ym": "추정"
+      "complete_ym": "추정",
+      "power_mw": "확정",
+      "operator": "추정"
     },
     "locked": {},
     "note": "약 9.8MW(단위 미상). 공사비 1,268억, 공기 26개월 → 착공·준공월은 계약 시점 기준 역산 추정.",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
@@ -386,7 +395,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T01:10:35.361Z"
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "addr_std": {
       "src": "경기도 부천시 오정구 삼정동",
@@ -936,10 +945,10 @@
   {
     "aliases": [],
     "category": "상용",
-    "owner": "Digital Edge (Stonepeak)",
+    "owner": "Digital Edge (Stonepeak) · 한국투자리얼에셋운용 (공동 개발)",
     "contractor": "",
     "operator": "Digital Edge",
-    "address": "경기도 안산시 단원구",
+    "address": "경기도 안산시 단원구 성곡동",
     "lat": 37.312,
     "lng": 126.752,
     "power_mw": null,
@@ -949,17 +958,17 @@
     "rfs_ym": "",
     "note": "시화국가산단, 90MVA 전력계약, 154kV 변전소 2곳 이중 수전, PUE 1.25 미만 설계. 일정 미공개.",
     "conf": {
-      "owner": "확정",
+      "owner": "추정",
       "operator": "확정",
       "it_mw": "확정",
       "status": "추정",
-      "address": "추정"
+      "address": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "de-sel5",
     "name": "Digital Edge SEL5 (안산)",
@@ -970,7 +979,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "prep": {
       "site": {
@@ -2732,33 +2741,37 @@
   },
   {
     "aliases": [
-      "KAAM Square IDC Ansan"
+      "KAAM Square IDC Ansan",
+      "캄스퀘어안산데이터센터",
+      "안산 성곡동 데이터센터 (대주지엔아이 부지)"
     ],
     "category": "상용",
     "owner": "한국대체투자자산운용(KAAM)",
-    "contractor": "",
+    "contractor": "현대건설",
     "operator": "",
-    "address": "경기도 안산시 단원구 시화국가산업단지",
+    "address": "경기도 안산시 단원구 성곡동 670-4",
     "lat": 37.31,
     "lng": 126.73,
-    "power_mw": null,
-    "it_mw": 80,
+    "power_mw": 80,
+    "it_mw": null,
     "start_ym": "",
-    "complete_ym": "2027",
+    "complete_ym": "2027-12",
     "rfs_ym": "",
-    "note": "IT 80MW급. 지하5~지상7층, 연면적 76,459㎡(대지 13,341㎡), 정림건축 설계(2023). 2025-09 KAAM \"인허가·재원 조달 완료, 본격 개발\" 발표. 정림건축 기준 2027 준공 예정. 시공·운영사 미공개.",
+    "note": "시화국가산단 성곡동, 대지 13,340㎡·연면적 76,459㎡·지하5~지상7층, 정림건축 설계(2023). 부지: 대주지엔아이 매물(2023-02, 알스퀘어 주관, 한전 80MW 계약·중시화/성곡 변전소) → KAAM. 본PF 8,340억(삼성증권 주관, 2024-12), 현대건설 5,735억. 1단계 2027-12·2단계 2028-12 준공. 카카오엔터프라이즈 약 40% 선임차.",
     "conf": {
       "owner": "확정",
       "it_mw": "확정",
       "status": "추정",
       "complete_ym": "추정",
-      "address": "추정"
+      "address": "추정",
+      "power_mw": "확정",
+      "contractor": "확정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T18:00:00+09:00",
-    "updated_at": "2026-10-20T18:00:00+09:00",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "kaam-sihwa",
     "name": "캄스퀘어 안산 데이터센터 (시화)",
@@ -2767,9 +2780,9 @@
     "sido": "경기",
     "sigungu": "안산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-20T18:00:00+09:00"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "addr_std": {
       "src": "경기도 안산시 단원구 시화국가산업단지",
@@ -3075,14 +3088,18 @@
   {
     "id": "keppel-ansan",
     "name": "Keppel 안산 데이터센터",
-    "aliases": [],
+    "aliases": [
+      "Ansan Global Meta Data Centre",
+      "다올데이터센터1호PFV",
+      "신영 안산 데이터센터"
+    ],
     "category": "상용",
     "status": "설계중",
     "phase": "개발",
     "owner": "Keppel DC Fund III (약 73%) · 신영·NH투자증권·현대건설 (27%)",
     "contractor": "현대건설",
     "operator": "Keppel",
-    "address": "경기도 안산시",
+    "address": "경기도 안산시 단원구 원시동 726-4",
     "lat": 37.3,
     "lng": 126.84,
     "power_mw": 60,
@@ -3092,7 +3109,7 @@
     "rfs_ym": "2030",
     "conf": {
       "owner": "확정",
-      "address": "추정",
+      "address": "확정",
       "power_mw": "추정",
       "status": "확정",
       "rfs_ym": "확정",
@@ -3100,17 +3117,17 @@
       "operator": "추정"
     },
     "locked": {},
-    "note": "60MW 그린필드(단위 미상). 건축허가·전력 승인 확보. 2030년 RFS 목표. 현대건설은 SPV 지분 참여사(시공 참여 추정).",
-    "updated_at": "2026-10-21T01:22:50.125Z",
+    "note": "Ansan Global Meta Data Centre. 신영이 2022년 다올데이터센터1호PFV(신영 50%·다올드미루네 12%·신영플러스 10%·다올자산운용 8%·신한투자증권 20%)로 개발 → 2026-06 Keppel DC Fund III가 SPV 약 73% 인수, 신영·NH투자증권·현대건설 27%. 60MW 그린필드, 건축허가·전력 승인 확보, Tier III급, 2030 RFS. 총사업비 약 1조.",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
     "sido": "경기",
     "sigungu": "안산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T01:22:50.125Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "prep": {
       "site": {
@@ -3530,40 +3547,42 @@
     "aliases": [],
     "category": "상용",
     "owner": "KT클라우드",
-    "contractor": "",
+    "contractor": "CJ대한통운 건설부문",
     "operator": "KT클라우드",
-    "address": "경기도 안산시",
+    "address": "경기도 안산시 단원구 성곡동 640",
     "lat": 37.322,
     "lng": 126.832,
     "power_mw": null,
     "it_mw": null,
-    "start_ym": "",
-    "complete_ym": "2029",
+    "start_ym": "2026-10",
+    "complete_ym": "2029-12",
     "rfs_ym": "",
-    "note": "KT 2031년 1GW·약 20개 사이트·6조 투자 로드맵 중 하나. 용량 미공개.",
+    "note": "KT 2031년 1GW 로드맵 중 하나(2029 안산 공급). 성곡동 640 일원, CJ대한통운 3,150억(2026-10-21 공시, 2029-12-15까지). 인접 성곡동 638-5에 안산 OUR(같은 CJ대한통운 시공) — 별개 사업. 용량 미공개.",
     "conf": {
       "owner": "확정",
       "operator": "확정",
       "complete_ym": "추정",
       "status": "추정",
-      "address": "추정"
+      "address": "확정",
+      "contractor": "확정",
+      "start_ym": "추정"
     },
     "locked": {},
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "kt-ansan",
     "name": "KT클라우드 안산 AIDC",
-    "status": "설계중",
+    "status": "착공",
     "phase": "개발",
     "sido": "경기",
     "sigungu": "안산시",
     "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T01:10:35.363Z"
+      "status": "정상",
+      "note": "주소·시도·좌표가 일치합니다",
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "prep": {
       "site": {
@@ -3722,7 +3741,7 @@
     "it_mw": null,
     "start_ym": "2023-04",
     "complete_ym": "2026-07",
-    "rfs_ym": "",
+    "rfs_ym": "2027",
     "note": "KT클라우드 브랜드IDC(파트너 자산 임차형). 48MW, 2개 동(각 24MW), 지하5~지상7층, 연면적 약 71,160㎡. PF 약 6,000억. 2022-07 건축허가, 2023-05 착공(DL건설), 2026-04~07 준공 목표. ※ PEACH PFV(삼정동 13-15)와 KT 부천 48MW를 같은 사업으로 판단(동·규모·일정 일치, 추정).",
     "conf": {
       "owner": "추정",
@@ -3733,7 +3752,8 @@
       "contractor": "확정",
       "power_mw": "추정",
       "start_ym": "확정",
-      "area_m2": "확정"
+      "area_m2": "확정",
+      "rfs_ym": "추정"
     },
     "locked": {},
     "permit_ref": {
@@ -3744,7 +3764,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T09:00:00+09:00",
-    "updated_at": "2026-10-22T00:20:50.363Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "kt-bucheon",
     "name": "KT클라우드 부천 데이터센터 (삼정동)",
@@ -3755,7 +3775,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T00:20:50.363Z"
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "dbo": {
       "type": "마스터리스",
@@ -4564,7 +4584,7 @@
   {
     "aliases": [],
     "category": "상용",
-    "owner": "KT클라우드",
+    "owner": "드림마크원 (건물) · KT클라우드 (임차 운영)",
     "contractor": "",
     "operator": "KT클라우드",
     "address": "서울특별시 구로구 디지털로31길 61",
@@ -4575,7 +4595,7 @@
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "2021-05",
-    "note": "2021-05 개소, 335랙. 용량 미공개. 위치는 시·구 단위.",
+    "note": "2021-05 개소, 335랙. 드림마크원 구로 데이터센터(구로동 197-12) 건물 내 KT클라우드 임차 공간 — 같은 주소의 dreammark1-guro와 중복이 아니라 임차 관계. 용량 미공개.",
     "conf": {
       "owner": "확정",
       "operator": "확정",
@@ -4592,7 +4612,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "kt-namguro",
     "name": "KT클라우드 남구로 데이터센터",
@@ -4603,7 +4623,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T01:07:13.380Z"
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "dbo": {
       "type": "자체",
@@ -7407,7 +7427,7 @@
     "owner": "퍼시픽자산운용 (CPPIB 공동투자) · 시행 유림티에스 (엠디에이3호)",
     "contractor": "",
     "operator": "",
-    "address": "경기도 부천시 오정구 내동 222-13 외 10필지",
+    "address": "경기도 부천시 오정구 내동 222-13 외 29필지",
     "lat": 37.516,
     "lng": 126.77,
     "power_mw": 99,
@@ -7415,11 +7435,11 @@
     "start_ym": "2026-05",
     "complete_ym": "",
     "rfs_ym": "",
-    "note": "하이퍼스케일 AI DC 99MW(유림티에스 공시 100MW, 지하2~지상6층). 공사비 약 1.4조(GPU 포함 5조). CPPIB 800억 투자, 착공 시 1,000억+ 추가 예정. MS·구글·AWS 초기 협의(앵커 미확정). 2026년 내 착공 목표. 특고압 지중선로 민원으로 2년 넘게 미착공 — 허가 만료(2026-05) 여부 확인 필요.",
+    "note": "하이퍼스케일 AI DC 99MW(유림티에스 공시 100MW). 부지 확대: 당초 222-13 외 10필지·대지 10,451㎡·연면적 26,080㎡(지하1~지상4, 2023-05 허가, 시행 엠디에이3호) → 222-13 외 29필지·대지 17,907㎡·연면적 55,367㎡(지하2~지상6, 2026-02 보도) — 빅테크 요구로 인접 필지 추가 매입. 건축HUB: 2026-05-26 착공(허가 만료 직전). 공사비 약 1.4조(GPU 포함 5조). 퍼시픽자산운용·CPPIB(800억 투자, 착공 시 1,000억+ 추가). MS·구글·AWS 협의(앵커 미확정, 2026-03). 특고압 154kV 지중선로 경과지 민원 협의 중.",
     "conf": {
       "owner": "확정",
       "status": "확정",
-      "address": "추정",
+      "address": "확정",
       "power_mw": "추정",
       "start_ym": "확정",
       "area_m2": "확정"
@@ -7433,7 +7453,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-22T00:20:50.363Z",
+    "updated_at": "2026-10-22T02:00:22.882Z",
     "updated_by": "auto",
     "id": "pacific-bucheon",
     "name": "퍼시픽 부천 내동 데이터센터",
@@ -7444,7 +7464,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T00:20:50.363Z"
+      "at": "2026-10-22T02:00:22.882Z"
     },
     "prep": {
       "site": {

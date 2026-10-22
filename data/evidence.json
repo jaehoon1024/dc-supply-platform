@@ -6226,5 +6226,161 @@
     "source_id": "s30",
     "collected_at": "2026-10-22T01:45:06.154Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-kt-bucheon-20261022020022-385",
+    "dc_id": "kt-bucheon",
+    "title": "KT, 2027년 부천 데이터센터부터 순차 가동",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=496230",
+    "publisher": "핀포인트뉴스",
+    "pub_date": "2026-10-18",
+    "grade": "C",
+    "fields": [
+      "RFS"
+    ],
+    "excerpt": "2027년 부천 1·2센터를 시작으로 2028년 개봉·군산·용인, 2029년 안산",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-bucheon-samjeong-20261022020022-386",
+    "dc_id": "bucheon-samjeong",
+    "title": "[심층 분석] 유진 동양, 부천 AI 데이터센터 착공",
+    "url": "https://www.newsvalue.kr/news/articleView.html?idxno=23739",
+    "publisher": "뉴스밸류",
+    "pub_date": "2026-05-21",
+    "grade": "B",
+    "fields": [
+      "수전",
+      "IT",
+      "운영사"
+    ],
+    "excerpt": "삼정동 일원, 수전 9.8MW·IT 7MW, 동양 DBO 총괄, LG CNS·디씨플랫폼 파트너, DL건설 시공, 준공 2028년 이후, 임차인 확보 과제",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-actis-ansan-20261022020022-387",
+    "dc_id": "actis-ansan",
+    "title": "현대건설, 8000억대 데이터센터 신축공사 수주… '프로젝트 팀북투'",
+    "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=560222",
+    "publisher": "디지털투데이",
+    "pub_date": "2025-04-04",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "시공사",
+      "일정"
+    ],
+    "excerpt": "발주 안산그린에너지PFV, 성곡동 644-2, 2개동 지하4~지상10층, 8,074억, 42개월",
+    "source_id": "s17",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kaam-sihwa-20261022020022-388",
+    "dc_id": "kaam-sihwa",
+    "title": "캄스퀘어안산데이터센터, 8340억 본PF 조달 완료",
+    "url": "https://www.gynews.kr/news/articleView.html?idxno=38711",
+    "publisher": "경기연합신문",
+    "pub_date": "2025-02-20",
+    "grade": "B",
+    "fields": [
+      "시공사",
+      "준공월",
+      "판매"
+    ],
+    "excerpt": "성곡동, 연면적 76,459㎡ 지하5~지상7, 현대건설 5,735억, 본PF 8,340억, 1단계 2027-12·2단계 2028-12, 카카오엔터프라이즈 약 40% 선임차",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kaam-sihwa-20261022020022-389",
+    "dc_id": "kaam-sihwa",
+    "title": "안산 데이터센터 부지, 매물로 등장",
+    "url": "https://dealsite.co.kr/articles/99496",
+    "publisher": "딜사이트",
+    "pub_date": "2023-02-21",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "수전"
+    ],
+    "excerpt": "성곡동 670-4 일원 대지 13,340㎡, 연면적 89,129㎡ 계획, 대주지엔아이 소유, 한전 80MW 전기사용계약",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-keppel-ansan-20261022020022-390",
+    "dc_id": "keppel-ansan",
+    "title": "Digital Edge, Keppel Buy Greater Seoul Data Centre Projects",
+    "url": "https://www.mingtiandi.com/real-estate/data-centres/digital-edge-keppel-buy-greater-seoul-data-centre-projects/",
+    "publisher": "Mingtiandi",
+    "pub_date": "2026-06-09",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "개발사"
+    ],
+    "excerpt": "Keppel: Ansan Global Meta DC, 726-4 Wonsi-dong, Shinyoung via Daol Data Center No.1 PFV (2022); Digital Edge SEL5: Seonggok-dong, Korea Investment Real Asset co-developer",
+    "source_id": "s23",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-keppel-ansan-20261022020022-391",
+    "dc_id": "keppel-ansan",
+    "title": "신영 '안산 데이터센터 개발' 400억 차입금, 오는 12월 만기",
+    "url": "https://marketin.edaily.co.kr/News/Read?newsId=03630966638861040",
+    "publisher": "이데일리",
+    "pub_date": "2024-04-29",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "개발사"
+    ],
+    "excerpt": "원시동 726-4 일대, 사업시행자 다올데이터센터1호PFV, 지분 신영 50%·신한투자증권 20% 등",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022020022-392",
+    "dc_id": "kt-ansan",
+    "title": "CJ대한통운, KT클라우드 안산 AIDC 신축 공사 수주",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16253710",
+    "publisher": "톱스타뉴스",
+    "pub_date": "2026-10-21",
+    "grade": "A",
+    "fields": [
+      "주소",
+      "시공사",
+      "일정"
+    ],
+    "excerpt": "성곡동 640 일원, 3,150억, 2026-10-21~2029-12-15, 계약상대 KT클라우드",
+    "source_id": "s10",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-namguro-20261022020022-393",
+    "dc_id": "kt-namguro",
+    "title": "KT, 남구로 IDC 개소…IDC 전문 업체에 임차 운영",
+    "url": "https://zdnet.co.kr/view/?no=20210512094217",
+    "publisher": "지디넷코리아",
+    "pub_date": "2021-05-12",
+    "grade": "B",
+    "fields": [
+      "개발사",
+      "운영사"
+    ],
+    "excerpt": "KT 남구로 IDC, IDC 전문 업체(드림마크원) 건물 임차 운영",
+    "source_id": "s27",
+    "collected_at": "2026-10-22T02:00:22.882Z",
+    "added_by": "auto"
   }
 ]

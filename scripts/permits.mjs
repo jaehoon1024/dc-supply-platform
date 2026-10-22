@@ -39,7 +39,8 @@ async function fetchPage(ref, key, pageNo, fetchImpl) {
     await sleep(ra > 0 ? ra * 1000 : LIMIT.backoffMs * 2 ** attempt + Math.random() * 300);
   }
   if (!res.ok) throw new Error(`건축HUB HTTP ${res.status}: ${text.slice(0, 200)}`);
-  let j; try { j = JSON.parse(text); } catch { throw new Error(text.trim() ? `건축HUB 응답이 JSON이 아닙니다(인증키·활용신청 확인): ${text.slice(0, 160)}` : '건축HUB 빈 응답(요청 한도 초과로 추정, 재시도 후에도 실패)'); }
+  // 관리번호(mgmPmsrgstPk)는 20자리 숫자라 JSON 숫자로 읽으면 정밀도가 깨집니다 → 문자열로 바꿔 읽기
+  let j; try { j = JSON.parse(text.replace(/"mgmPmsrgstPk"\s*:\s*(\d+)/g, '"mgmPmsrgstPk":"$1"')); } catch { throw new Error(text.trim() ? `건축HUB 응답이 JSON이 아닙니다(인증키·활용신청 확인): ${text.slice(0, 160)}` : '건축HUB 빈 응답(요청 한도 초과로 추정, 재시도 후에도 실패)'); }
   const code = j?.response?.header?.resultCode;
   if (code && code !== '00') throw new Error(`건축HUB 오류 ${code}: ${j.response.header.resultMsg}`);
   const items = j?.response?.body?.items?.item;
@@ -104,7 +105,7 @@ export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date
       if (!it) { stats.notes.push(`${dc.name}: 일치하는 인허가 없음`); continue; }
       stats.matched++;
       const p = toPermit(it, dc.id, now);
-      permits = [...permits.filter(x => x.id !== p.id), p];
+      permits = [...permits.filter(x => x.id !== p.id && !(x.dc_id === p.dc_id && /e\+/.test(x.id))), p]; // 예전 정밀도 깨진 id(1.0e+21 등) 정리
       const url = `https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#${encodeURIComponent(p.id)}`;
       const note = `건축HUB 인허가 (${p.bldNm || p.platPlc})`;
       const upd = {};

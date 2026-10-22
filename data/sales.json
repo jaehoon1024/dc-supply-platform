@@ -179,6 +179,42 @@
       "created_at": "2026-10-22T01:49:12.541Z",
       "updated_at": "2026-10-22T01:49:12.541Z",
       "updated_by": "auto"
+    },
+    {
+      "id": "k-20261022020022-10",
+      "dc_id": "kaam-sihwa",
+      "customer": "카카오엔터프라이즈",
+      "mw": null,
+      "basis": "IT",
+      "price": null,
+      "start_ym": "",
+      "end_ym": "",
+      "status": "계약",
+      "src": "공개",
+      "c": "추정",
+      "url": "https://www.gynews.kr/news/articleView.html?idxno=38711",
+      "note": "약 40% 선임차(용량 미공개)",
+      "created_at": "2026-10-22T02:00:22.882Z",
+      "updated_at": "2026-10-22T02:00:22.882Z",
+      "updated_by": "auto"
+    },
+    {
+      "id": "k-20261022020022-11",
+      "dc_id": "dreammark1-guro",
+      "customer": "KT클라우드",
+      "mw": null,
+      "basis": "IT",
+      "price": null,
+      "start_ym": "2021-05",
+      "end_ym": "",
+      "status": "계약",
+      "src": "공개",
+      "c": "확정",
+      "url": "https://zdnet.co.kr/view/?no=20210512094217",
+      "note": "KT 남구로 IDC로 임차 운영, 335랙",
+      "created_at": "2026-10-22T02:00:22.882Z",
+      "updated_at": "2026-10-22T02:00:22.882Z",
+      "updated_by": "auto"
     }
   ],
   "occupancy": [],
@@ -414,6 +450,26 @@
       "dc_id": "daou-jukjeon",
       "src": "공개",
       "note": "수정: 네이버클라우드 26MW (계약) · mw, basis, note"
+    },
+    {
+      "at": "2026-10-22T02:00:22.882Z",
+      "editor": "auto",
+      "kind": "contract",
+      "op": "create",
+      "id": "k-20261022020022-10",
+      "dc_id": "kaam-sihwa",
+      "src": "공개",
+      "note": "추가: 카카오엔터프라이즈 (계약)"
+    },
+    {
+      "at": "2026-10-22T02:00:22.882Z",
+      "editor": "auto",
+      "kind": "contract",
+      "op": "create",
+      "id": "k-20261022020022-11",
+      "dc_id": "dreammark1-guro",
+      "src": "공개",
+      "note": "추가: KT클라우드 (계약)"
     }
   ]
 }
