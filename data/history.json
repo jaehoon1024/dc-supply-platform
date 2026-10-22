@@ -13258,5 +13258,16 @@
     "old": "[object Object], [object Object], [object Object]",
     "new": "",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "lgu-paju",
+    "at": "2026-10-22T07:02:01.632Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-lgu-paju-20261022070201-aliases-0",
+    "field": "aliases",
+    "old": "",
+    "new": "27년_경기_파주_유플러스_1동",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
