@@ -11,7 +11,8 @@ export default async function handler(req, res) {
   const url = new URL(req.url, 'http://localhost');
   const now = new Date().toISOString();
 
-  const manual = url.searchParams.get('run') === '1'; // 로그인 사용자의 즉시 실행 (middleware가 입장 쿠키를 확인)
+  // 로그인 사용자의 즉시 실행: middleware가 입장 쿠키를 확인합니다(sync=1이 붙으면 middleware를 건너뛰므로 제외)
+  const manual = url.searchParams.get('run') === '1' && url.searchParams.get('sync') !== '1';
   if (url.searchParams.get('sync') === '1' || manual) {
     const auth = req.headers.authorization || '', ua = String(req.headers['user-agent'] || '');
     const cronOk = process.env.CRON_SECRET ? auth === `Bearer ${process.env.CRON_SECRET}` : /vercel-cron/i.test(ua);
