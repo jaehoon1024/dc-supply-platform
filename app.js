@@ -22,7 +22,7 @@ const state = {
   salesFull: false, sl: { scope: 'has', q: '', region: '' },
   meta: { source: '', sha: '', repo: '', editable: false }, loaded: false, tab: 'list',
   filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', dbo: '', cm: '', company: null, status: new Set(), q: '', sort: 'power' },
-  mapView: 'all', mapStatus: new Set(STATUSES), supYrArea: '', supYrEdge: '', supMetric: 'it_mw', supSplit: 'player', supMode: 'weighted'
+  mapView: 'all', mapStatus: new Set(STATUSES), supYrArea: '', supYrEdge: 'ex', supMetric: 'it_mw', supSplit: 'player', supMode: 'weighted'
 };
 
 /* ---------------- data ---------------- */
@@ -215,7 +215,7 @@ function fitMap() {
 }
 
 /* ---------------- supply forecast (to 2031) ---------------- */
-const FROM = 2026, TO = 2031, EDGE_MW = 20;
+const FROM = 2026, TO = 2031, MIN_STEP_MW = 20;
 const GROUPS = {
   player: { keys: [...CORE4, '기타'], color: k => PLAYER_VAR[k] },
   metro: { keys: ['수도권', '지방'], color: k => (k === '수도권' ? '--s-build' : '--s-done') },
@@ -376,17 +376,17 @@ function renderSupply() {
 
 function renderSupplyYears(fc) {
   const area = state.supYrArea, edge = state.supYrEdge, mode = state.supMode, unit = state.supMetric === 'it_mw' ? 'IT' : '수전';
-  // 엣지 = 센터 전체 용량(선택한 지표, 단계 합이 아닌 센터 기준) 20MW 미만
-  const isEdge = dc => { const c = capacityOf(dc, state.supMetric).mw; return c !== null && c < EDGE_MW; };
-  const ok = dc => (!area || locOf(dc).area === area) && (!edge || (edge === 'ex' ? !isEdge(dc) : isEdge(dc)));
-  const rows = fc.rows.filter(r => r.year !== 'base' && r.year >= FROM && ok(r.dc));
-  const later = fc.later.filter(ok);
+  // 소규모 제외: 공급 단위(단계별 일정이 있으면 그 단계, 없으면 센터)의 용량이 20MW 미만이면 제외 — 선택한 지표 기준
+  const ok = dc => !area || locOf(dc).area === area;
+  const small = mw => edge === 'ex' && mw < MIN_STEP_MW;
+  const rows = fc.rows.filter(r => r.year !== 'base' && r.year >= FROM && ok(r.dc) && !small(r.mw));
+  const later = fc.later.filter(dc => ok(dc) && !small(capacityOf(dc, state.supMetric).mw ?? 0));
   const cols = fc.years.map(y => ({ y, list: rows.filter(r => r.year === y).sort((a, b) => b.mw * b.prob - a.mw * a.prob) }));
   const sum = (l, w) => l.reduce((t, r) => t + r.mw * (w ? r.prob : 1), 0);
   const tot = rows.length ? sum(rows, mode === 'weighted') : 0;
-  $('#supYrNote').textContent = `${area || '전체'}${edge === 'ex' ? ' · 엣지 제외' : edge === 'only' ? ' · 엣지만' : ''} ${new Set(rows.map(r => r.dc.id)).size}곳 · ${FROM}~${TO} 신규 ${unit} ${fmtMW(tot) || 0}MW(${mode === 'weighted' ? '가중' : '계획'})${later.length ? ` · ${TO + 1}년 이후 ${later.length}곳` : ''}`;
+  $('#supYrNote').textContent = `${area || '전체'}${edge === 'ex' ? ` · 단계 ${MIN_STEP_MW}MW 미만 제외` : ''} ${new Set(rows.map(r => r.dc.id)).size}곳 · ${FROM}~${TO} 신규 ${unit} ${fmtMW(tot) || 0}MW(${mode === 'weighted' ? '가중' : '계획'})${later.length ? ` · ${TO + 1}년 이후 ${later.length}곳` : ''}`;
   const item = r => `<div class="yritem" data-id="${esc(r.dc.id)}" tabindex="0">
-      <div class="yrname">${esc(r.dc.name)}${isEdge(r.dc) ? ' <span class="edgechip">엣지</span>' : ''}${r.step ? ` <span class="of">· ${esc(r.step)}</span>` : ''}${pchip(r.dc)}</div>
+      <div class="yrname">${esc(r.dc.name)}${r.step ? ` <span class="of">· ${esc(r.step)}</span>` : ''}${pchip(r.dc)}</div>
       <div class="yrmeta"><span class="num"><b>${fmtMW(r.mw)}</b>MW${r.cap.how === '확정' ? '' : '<span class="of">(' + (r.cap.how === '추정' ? '추정' : '환산') + ')</span>'}</span><span>${statusPill(r.dc.status)}</span><span class="of">${esc(locOf(r.dc).sido)} ${esc(locOf(r.dc).sigungu)}</span><span class="of">${esc(r.timing.how === '리드타임 추정' ? `${r.timing.ym} 추정` : `${r.timing.how} ${r.timing.ym}`)}${mode === 'weighted' && r.prob < 1 ? ` · ×${Math.round(r.prob * 100)}%` : ''}</span></div></div>`;
   $('#supYears').innerHTML = cols.map(c => `<div class="yrcol"><div class="yrhead"><b>${c.y}</b><span class="num">${fmtMW(sum(c.list, mode === 'weighted')) || 0}<small> MW</small></span><span class="of">${c.list.length}건${mode === 'weighted' ? ` · 계획 ${fmtMW(sum(c.list, false)) || 0}` : ''}</span></div>
       ${c.list.map(item).join('') || '<div class="of" style="padding:8px 0">없음</div>'}</div>`).join('')
