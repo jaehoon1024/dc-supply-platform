@@ -430,3 +430,13 @@ test('동별 오픈 일정: 공급 추정을 동별로 나누고 나머지는 �
   assert.match(stepsCheck({ it_mw: 30, steps: [{ label: 'a', mw: 40, basis: 'IT' }] }), /넘습니다/);
   assert.throws(() => normalizeSteps([{ label: 'x', mw: 'abc' }]), /숫자/);
 });
+
+test('단계별 일정: 수전·IT 각각 입력, 없는 쪽은 환산, 예전 mw/basis 형식 변환', async () => {
+  const { normalizeSteps, supplyParts, stepsCheck } = await import('../lib/model.js');
+  assert.deepEqual(normalizeSteps([{ label: 'A', mw: 50, basis: '수전' }])[0].power_mw, 50);
+  const dc = { id: 'x', status: '착공', power_mw: 100, it_mw: 70, complete_ym: '2029', steps: [{ label: '1동', power_mw: 50, it_mw: 30, ym: '2027', status: '공사' }, { label: '2동', power_mw: 50, ym: '2028', status: '계획' }] };
+  const it = supplyParts(dc, 'it_mw');
+  assert.equal(it[0].cap.mw, 30); assert.equal(it[1].cap.how, '환산'); assert.equal(it[1].cap.mw, 35.7);
+  assert.equal(supplyParts(dc, 'power_mw').map(p => p.cap.mw).join(','), '50,50');
+  assert.match(stepsCheck({ ...dc, it_mw: 20 }), /IT 합계/);
+});

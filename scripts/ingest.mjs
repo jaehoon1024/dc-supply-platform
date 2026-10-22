@@ -8,7 +8,7 @@
 //       "updates": { "status": { "value": "착공", "conf": "확정", "note": "...", "evidence_url": "https://..." } },
 //       "evidence": [{ "url": "https://...", "title": "", "publisher": "", "pub_date": "YYYY-MM-DD", "grade": "A|B|C",
 //                      "fields": ["상태"], "excerpt": "", "source_id": "s01" }] },
-//     // updates에 "steps": { "value": [{ "label": "A동", "mw": 40, "basis": "IT", "ym": "2027-11", "status": "운영|공사|계획|구상", "c": "추정" }] } 로 단계별 일정 갱신(구상=확장 계획, 공급 추정 제외)
+//     // updates에 "steps": { "value": [{ "label": "A동", "power_mw": 50, "it_mw": 40, "ym": "2027-11", "status": "운영|공사|계획|구상", "c": "추정" }] } 로 단계별 일정 갱신(구상=확장 계획, 공급 추정 제외)
 //     { "new": { "id": "영문-슬러그(선택)", "name": "신규 센터명", "category": "상용", "address": "..." },   // 신규 센터
 //       "updates": { ... }, "evidence": [ ... ] }
 //   ],
