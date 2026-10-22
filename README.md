@@ -8,7 +8,7 @@
 - 발주처·시공사·운영사, 수전용량과 IT Load(MW), 착공월·준공월·RFS
 - 필드마다 **확정/추정** 표시. 센터마다 **근거 목록**과 **변경 히스토리**
 - 주소 정합성 검사, 지도(Leaflet + OpenStreetMap), 구글 지도 링크
-- **핵심 사업자**(LG유플러스·KT·SK·LG CNS) 필터·카드·사업자 목표 대비 추정치
+- **핵심 사업자**(LG유플러스·KT·SK·LG CNS·카카오엔터프라이즈 — 카카오 그룹 센터 포함) 필터·카드·사업자 목표 대비 추정치
 - **2031년까지 연도별 공급 추정**(상태별 실현확률 가중 / 계획 그대로)
 - 상세 화면에서 수동 수정 → Vercel 함수가 GitHub에 커밋. 수정한 필드는 고정되어 자동수집이 덮어쓰지 않음
 - 국토교통부 건축HUB 인허가: 인허가 탭 실시간 조회(+신규 후보 발굴), 매일 08:00 동기화(Vercel Cron), CSV 내보내기
@@ -58,7 +58,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 | 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) |
 | 07시대 | 도로명주소 정제 (`/api/address?sync=1`) | Vercel Cron → 주소 표준화(도로명·지번·건물명), 시·군·구만 있는 주소는 건물명으로 지번 보완(추정), 인허가 연결 자동 설정, 좌표 보정(`JUSO_COORD_KEY`, 50m 이상 차이 시) |
 | 06:47 | 30개 소스 뉴스·공시·발표 + 빈 칸 보강 5곳(`scripts/gaps.mjs`) | Claude 예약 작업 → `scripts/ingest.mjs`로 반영 후 저장소에 커밋 |
-| 월 07:13 | 플레이어(회사 75곳·핵심 4사 목표) 주간 동향·프로필 | Claude 예약 작업 → `scripts/ingest.mjs`(companies·targets) |
+| 월 07:13 | 플레이어(회사 75곳·핵심 사업자 목표) 주간 동향·프로필 | Claude 예약 작업 → `scripts/ingest.mjs`(companies·targets) |
 
 자동수집은 `lib/model.js`의 `applyAuto`를 따릅니다. 고정된 필드는 바꾸지 않고 히스토리에 `proposal`(제안)로 남깁니다.
 

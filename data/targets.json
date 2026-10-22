@@ -44,5 +44,12 @@
     "url": "",
     "reported_basis": "수전 기준, 미래에셋증권 추정(2025-10)",
     "reported_url": "https://v.daum.net/v/20251020145947364"
+  },
+  {
+    "player": "카카오엔터프라이즈",
+    "basis": "",
+    "note": "공개된 그룹 MW 목표 없음. 자체 센터 안산(서버 12만대)·남양주 제2DC 80MW(2029 목표, 착공 지연), 임차 캄스퀘어 안산 약 40%.",
+    "url": "https://m.sedaily.com/amparticle/20072470",
+    "updated_at": "2026-10-22T04:47:17.267Z"
   }
 ]

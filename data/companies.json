@@ -875,6 +875,43 @@
     ]
   },
   {
+    "id": "카카오엔터프라이즈",
+    "name": "카카오엔터프라이즈",
+    "aliases": [
+      "카카오클라우드",
+      "Kakao Enterprise",
+      "kakao cloud"
+    ],
+    "type": "통신·클라우드",
+    "roles": [
+      "op"
+    ],
+    "major": true,
+    "parent": "카카오",
+    "note": "카카오클라우드(GPU·AI 클라우드) 운영. 캄스퀘어 안산 데이터센터 약 40% 선임차. 그룹 자체 센터: 카카오 데이터센터 안산(운영), 남양주 왕숙 제2DC(80MW, 설계중). 플랫폼 '핵심 사업자'에 카카오 그룹 센터로 집계.",
+    "url": "https://www.gynews.kr/news/articleView.html?idxno=38711",
+    "created_at": "2026-10-22T04:47:17.267Z",
+    "updated_at": "2026-10-22T04:47:17.267Z",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-22T04:47:17.267Z",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
+      }
+    ]
+  },
+  {
     "id": "캡스톤자산운용",
     "name": "캡스톤자산운용",
     "aliases": [

@@ -1,7 +1,7 @@
 import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf, SALE_STATUS, SALE_SRC, SALE_SRC_NOTE, MARKET_METRICS, PRICE_UNIT, salesData, salesOf, BOARD_CATEGORIES, BOARD_STATUS } from '/lib/model.js';
 
-const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
-const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
+const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 카카오엔터프라이즈: '--p-kakao', 기타: '--p-etc' };
+const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip ${p === '카카오엔터프라이즈' ? 'dk' : ''}" style="--pc:var(${PLAYER_VAR[p]})">${esc(p === '카카오엔터프라이즈' ? '카카오' : p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
 
 const STATUS_VAR = { 설계중: '--s-design', 착공: '--s-start', 개발중: '--s-build', 준공: '--s-done', 운영중: '--s-run' };
 const ADDR_COLOR = { 정상: '--ok', 부분: '--warn', 불일치: '--bad', 주소불완전: '--bad', 좌표없음: '--none', 미입력: '--none' };
@@ -371,7 +371,7 @@ function renderSupply() {
     <p><b>가중 추정</b> 개발 중인 센터는 상태별 실현확률을 곱합니다: ${Object.entries(STATUS_PROB).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(', ')}. 설계중 센터는 준비단계 정보가 있으면 진척도로 보정합니다: ${Object.entries(PREP_PROB).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(', ')}. '계획 그대로'는 확률을 적용하지 않습니다.</p>
     <p><b>기존 공급</b> 2025년 이전에 RFS·준공했거나, 운영중인데 일정이 비어 있는 센터는 '~2025 기존'에 넣습니다.</p>
     <p><b>용량 환산</b> 선택한 지표가 없고 다른 지표만 있으면 수전 ≈ IT × ${PUE_RATIO}로 환산해 추정으로 다룹니다.</p>
-    <p><b>한계</b> 핵심 4사 기존 센터 상당수가 센터별 용량을 공개하지 않아 추정에서 빠집니다. 상세 화면에서 용량을 입력하면 바로 반영됩니다. 사업자 목표(카드의 '목표')는 회사 발표치이며 추정에 더하지 않습니다.</p>`;
+    <p><b>한계</b> 핵심 사업자 기존 센터 상당수가 센터별 용량을 공개하지 않아 추정에서 빠집니다. 상세 화면에서 용량을 입력하면 바로 반영됩니다. 사업자 목표(카드의 '목표')는 회사 발표치이며 추정에 더하지 않습니다.</p>`;
 }
 
 /* ---------------- permits ---------------- */
