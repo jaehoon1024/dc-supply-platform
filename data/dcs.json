@@ -802,7 +802,9 @@
     }
   },
   {
-    "aliases": [],
+    "aliases": [
+      "27년_인천_부평청천_디지털엣지_2동"
+    ],
     "category": "상용",
     "owner": "Digital Edge",
     "contractor": "",
@@ -810,22 +812,27 @@
     "address": "인천광역시 부평구 청천동 422",
     "lat": 37.517895,
     "lng": 126.710929,
-    "power_mw": null,
-    "it_mw": 36,
+    "power_mw": 60,
+    "it_mw": 48,
     "start_ym": "2025-05",
     "complete_ym": "",
-    "rfs_ym": "2024-08",
+    "rfs_ym": "2027",
     "note": "",
     "conf": {
       "owner": "확정",
       "operator": "확정",
-      "it_mw": "확정",
+      "it_mw": "추정",
       "rfs_ym": "확정",
       "status": "확정",
       "address": "확정",
       "start_ym": "확정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true,
+      "power_mw": true,
+      "it_mw": true,
+      "rfs_ym": true
+    },
     "permit_ref": {
       "sigunguCd": "28237",
       "bjdongCd": "10400",
@@ -834,8 +841,8 @@
     },
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T07:05:03.230Z",
+    "updated_by": "user:정재훈",
     "id": "de-sel2",
     "name": "Digital Edge SEL2",
     "status": "운영중",
@@ -845,7 +852,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T01:07:13.380Z"
+      "at": "2026-10-22T07:05:03.230Z"
     },
     "dbo": {
       "type": "자체",
