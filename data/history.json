@@ -13748,5 +13748,16 @@
     "new": "lgu-paju-2(2~4동) 통합 → 수전 200MW, 단계별 일정 1~4동",
     "by": "auto",
     "note": "사용자 요청: 파주 센터 하나로 통합"
+  },
+  {
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T07:47:40.756Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kt-bucheon-20261022074740-steps-0",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
