@@ -12830,5 +12830,16 @@
     "old": "추정",
     "new": "확정",
     "note": "근거 구분 변경"
+  },
+  {
+    "dc_id": "nfd-yongin",
+    "at": "2026-10-22T04:47:15.623Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-nfd-yongin-20261022044715-aliases-0",
+    "field": "aliases",
+    "old": "NFD 용인, 용인덕성데이터센터PFV",
+    "new": "27년_용인덕성_와이드클릭",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
