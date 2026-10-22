@@ -13236,5 +13236,27 @@
     "old": "[object Object], [object Object]",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "daou-jukjeon",
+    "at": "2026-10-22T07:00:43.260Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-daou-jukjeon-20261022070043-aliases-0",
+    "field": "aliases",
+    "old": "다우 죽전 CDC, Daou Jukjeon",
+    "new": "27년_경기_용인죽전_다우기술",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "daou-jukjeon",
+    "at": "2026-10-22T07:00:43.260Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-daou-jukjeon-20261022070043-steps-1",
+    "field": "steps",
+    "old": "[object Object], [object Object], [object Object]",
+    "new": "",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
