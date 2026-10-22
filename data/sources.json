@@ -9,7 +9,7 @@
     "collects": "건축허가·착공신고·사용승인(준공), 용도 방송통신시설",
     "method": "공공 페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -22,7 +22,7 @@
     "collects": "허가일·착공일·사용승인일, 연면적, 대지위치(주소 검증)",
     "method": "공공 API",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -35,7 +35,7 @@
     "collects": "도시·군관리계획, 지구단위계획 결정 고시",
     "method": "공공 페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -48,7 +48,7 @@
     "collects": "건축허가·도시계획시설 결정, 주민설명회 공고",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -61,7 +61,7 @@
     "collects": "대규모 부지 환경영향평가·소규모 평가 협의",
     "method": "공공 페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -74,7 +74,7 @@
     "collects": "공사대장: 발주자·시공사·착공/준공일",
     "method": "공공 페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -87,7 +87,7 @@
     "collects": "데이터센터 전기사용신청 건수·용량, 송변전 계획",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -100,7 +100,7 @@
     "collects": "분산에너지법에 따른 계통영향평가 대상·결과(수전 MW)",
     "method": "공공 페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -113,7 +113,7 @@
     "collects": "전력계통 정책, 분산에너지 특구, AIDC 전력 공급 계획",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -126,7 +126,7 @@
     "collects": "단일판매·공급계약(시공 수주), 신규시설투자, 유형자산 취득",
     "method": "공시 API",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -139,7 +139,7 @@
     "collects": "수주·투자 공시, 리츠 자산 편입",
     "method": "공시 페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -152,7 +152,7 @@
     "collects": "공공 데이터센터 설계·시공 발주, 낙찰자",
     "method": "공공 API",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -165,7 +165,7 @@
     "collects": "국가AI컴퓨팅센터, AIDC 특별법·지원사업",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -178,7 +178,7 @@
     "collects": "범정부 AIDC·전력 계획 발표",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -191,7 +191,7 @@
     "collects": "KT·KT클라우드, SKT·SKB, LG유플러스, 네이버클라우드, 카카오, 삼성SDS, LG CNS 발표",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -204,7 +204,7 @@
     "collects": "Digital Realty, Equinix, STT GDC, Digital Edge, PDG, Empyrion, Keppel, DCI, NFD",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -217,7 +217,7 @@
     "collects": "현대건설, 삼성물산, DL이앤씨, 현대엔지니어링, GS건설, SK에코플랜트, DL건설",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -230,7 +230,7 @@
     "collects": "국내 데이터센터 현황 통계·산업 보고서",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -243,7 +243,7 @@
     "collects": "프로젝트별 용량(수전/IT 구분)·일정 변경 추적",
     "method": "페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -256,7 +256,7 @@
     "collects": "분기 데이터센터 시장 보고서, 공급 파이프라인",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -269,7 +269,7 @@
     "collects": "데이터센터 공급·흡수 보고서",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -282,7 +282,7 @@
     "collects": "데이터센터 거래·개발 동향",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -295,7 +295,7 @@
     "collects": "해외 운영사 한국 진출·용량 발표",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -308,7 +308,7 @@
     "collects": "주간 국내 데이터센터 뉴스 큐레이션",
     "method": "페이지",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -321,7 +321,7 @@
     "collects": "IT·통신사 데이터센터 투자·착공",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -334,7 +334,7 @@
     "collects": "클라우드·데이터센터 사업 동향",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -347,7 +347,7 @@
     "collects": "데이터센터·AI 인프라 동향, KDCC 인용",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -360,7 +360,7 @@
     "collects": "전력·냉각 장비, 데이터센터 공급망",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -373,7 +373,7 @@
     "collects": "건설 수주·착공·준공, 시공사 정보",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   },
   {
@@ -386,7 +386,7 @@
     "collects": "PF 조달·자산운용사 개발, 매각·임차 계약",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T00:14:46.984Z",
+    "last_run": "2026-10-22T00:15:44.875Z",
     "last_hits": 0
   }
 ]
