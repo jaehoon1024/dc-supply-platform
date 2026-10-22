@@ -1,6 +1,6 @@
-import { transact } from '../lib/store.js';
+import { transact, repoIsPrivate } from '../lib/store.js';
 import { matches } from '../lib/gate.js';
-import { applyEdit, addEvidence, validateData, LABEL, applyCompanyEdit, validateCompanies } from '../lib/model.js';
+import { applyEdit, addEvidence, validateData, LABEL, applyCompanyEdit, validateCompanies, applySalesOp, validateSales, hasSensitive, salesData } from '../lib/model.js';
 
 // 편집 비밀번호: 입장 비밀번호와 같은 규칙(앞뒤 공백·대소문자·한글 자판 입력 허용)
 const okPassword = p => matches(p, process.env.EDIT_PASSWORD || '');
@@ -8,6 +8,7 @@ const okPassword = p => matches(p, process.env.EDIT_PASSWORD || '');
 // POST /api/save
 // { password, editor, action:'edit', id?, changes, conf, locked }
 // { password, editor, action:'evidence', evidence:{dc_id,title,url,publisher,pub_date,grade,fields,excerpt} }
+// { password, editor, action:'sales', op:'upsert'|'delete', kind:'contract'|'occupancy'|'market', item:{...} }
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST만 허용됩니다' });
   const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
@@ -24,6 +25,25 @@ export default async function handler(req, res) {
         return { files: { evidence: r.evidence, history: r.history }, message: `evidence(${body.evidence.dc_id}): ${r.evidence.at(-1).title || r.evidence.at(-1).url} — ${editor}` };
       });
       return res.status(200).json({ ok: true, committed: out.committed, sha: out.sha });
+    }
+    if (body.action === 'sales') {
+      // 단가·내부 정보는 저장소가 비공개일 때만 저장 (공개 저장소면 GitHub에서 누구나 볼 수 있음)
+      if (body.op !== 'delete' && hasSensitive(body.item) && !(await repoIsPrivate()))
+        return res.status(403).json({ error: 'GitHub 저장소가 공개(Public) 상태라 단가·내부 정보는 저장할 수 없습니다. 저장소를 Private로 바꾼 뒤 다시 저장하세요.' });
+      let saved;
+      const out = await transact(['dcs', 'sales'], d => {
+        const cur = salesData(d.sales);
+        // 수정 시 기존 단가·내부 출처를 유지하는 경우도 막음
+        const prev = body.item?.id ? [...cur.contracts, ...cur.occupancy, ...cur.market].find(x => x.id === body.item.id) : null;
+        if (body.op !== 'delete' && prev && body.item.price === undefined && prev.price != null) body.item.price = prev.price;
+        const r = applySalesOp(cur, { op: body.op, kind: body.kind, item: body.item || {} }, editor, now);
+        saved = r;
+        if (!r.changed) return { files: {}, message: '' };
+        const errs = validateSales(r.sales, new Set(d.dcs.map(x => x.id)));
+        if (errs.length) throw Object.assign(new Error(errs.slice(0, 3).join(' / ')), { status: 400 });
+        return { files: { sales: r.sales }, message: `sales(${body.kind}): ${r.sales.log.at(-1).note.replace(/ · .*$/, '')} — ${editor}` };
+      });
+      return res.status(200).json({ ok: true, id: saved.id, changed: saved.changed, committed: out.committed, sha: out.sha });
     }
     if (body.action === 'company') {
       let saved;

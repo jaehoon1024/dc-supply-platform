@@ -367,3 +367,28 @@ test('도로명주소 정제: 번지 주소는 표준화·인허가 연결, 시�
   const again = await refineAddresses({ ...out, runs: [] }, { key: 'k', coordKey: 'c', fetchImpl, now: NOW });
   assert.equal(again.stats.checked, 0);
 });
+
+test('판매 현황: 계약 합계·잔여·판매율, 단가·내부 비공개 처리, 자동수집은 단가 제외·사람이 고친 항목 보호', async () => {
+  const { applySalesOp, redactSales, salesOf, validateSales, emptySales } = await import('../lib/model.js');
+  const { ingest } = await import('../scripts/ingest.mjs');
+  let s = emptySales();
+  s = applySalesOp(s, { kind: 'contract', item: { dc_id: 'x', customer: '고객A', mw: 10, price: 18, src: '내부', status: '계약' } }, '재훈', NOW).sales;
+  s = applySalesOp(s, { kind: 'contract', item: { dc_id: 'x', customer: '고객B', mw: 14, basis: '수전', price: 15, status: '계약' } }, '재훈', NOW).sales;
+  s = applySalesOp(s, { kind: 'contract', item: { dc_id: 'x', customer: '고객C', mw: 5, status: '협상' } }, '재훈', NOW).sales;
+  const v = salesOf({ id: 'x', it_mw: 40 }, s);
+  assert.equal(v.sold, 20); assert.equal(v.nego, 5); assert.equal(v.remain, 20); assert.equal(v.pct, 50); assert.equal(v.avgPrice, 16.5);
+  const r = redactSales(s);
+  assert.equal(r.contracts.length, 2); assert.ok(r.contracts.every(c => c.price === null)); assert.equal(r.hidden, 1);
+  assert.ok(!JSON.stringify(r).includes('고객A'));
+  // 임대율만 있으면 용량 × 임대율
+  const s2 = applySalesOp(emptySales(), { kind: 'occupancy', item: { dc_id: 'y', pct: 90, ym: '2026-06' } }, 'auto', NOW).sales;
+  assert.equal(salesOf({ id: 'y', it_mw: 30 }, s2).remain, 3);
+  assert.deepEqual(validateSales(s, new Set(['x'])), []);
+  assert.throws(() => applySalesOp(emptySales(), { kind: 'contract', item: { dc_id: 'x', customer: '', mw: 1 } }), /고객명/);
+  // 자동수집: 단가·내부 제거, 같은 고객은 갱신, 사람이 고친 항목은 제안
+  const base = { dcs: [{ id: 'x', name: 'X', status: '운영중', category: '상용', phase: '운영', conf: {}, locked: {} }], evidence: [], history: [], sources: [], runs: [], sales: s };
+  const out = ingest(base, { sales: { contracts: [{ dc_id: 'x', customer: '고객B', mw: 20, price: 99, src: '내부' }, { dc_id: 'x', customer: '고객D', mw: 3, price: 99, src: '내부' }] } }, NOW);
+  const d = out.sales.contracts.find(c => c.customer === '고객D');
+  assert.equal(d.price, null); assert.equal(d.src, '공개'); assert.equal(out.stats.proposals, 1);
+  assert.equal(out.sales.contracts.find(c => c.customer === '고객B').mw, 14);
+});

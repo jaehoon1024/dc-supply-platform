@@ -6124,5 +6124,55 @@
     "source_id": "s03",
     "collected_at": "2026-10-22T01:10:00.618Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-sczeus-seoul-20261022014108-379",
+    "dc_id": "sczeus-seoul",
+    "title": "부천시, 데이터센터 '고무줄 잣대'… 특혜논란 자초",
+    "url": "https://www.kyeonggi.com/article/20240213580154",
+    "publisher": "경기일보",
+    "pub_date": "2024-02-14",
+    "grade": "B",
+    "fields": [
+      "개발사",
+      "주소",
+      "규모"
+    ],
+    "excerpt": "춘의동 데이터센터 — 사업자 캡스톤인프라, 원미구 춘의동 62-2, 대지 11,455㎡, 연면적 26,880㎡, 지하1~지상5층, 특고압 선로·도로관리심의·주민설명회 완료 후 허가 절차",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T01:41:08.787Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sczeus-seoul-20261022014108-380",
+    "dc_id": "sczeus-seoul",
+    "title": "캡스톤자산운용, 부천 데이터센터 개발 속도낸다",
+    "url": "https://www.thebell.co.kr/free/Content/ArticleView.asp?key=202402071540007520102694",
+    "publisher": "더벨",
+    "pub_date": "2024-02-07",
+    "grade": "B",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "캡스톤자산운용의 부천 데이터센터 개발(본문 미확인 — 제목 기준)",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T01:41:08.787Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-sczeus-seoul-20261022014108-381",
+    "dc_id": "sczeus-seoul",
+    "title": "데이터센터, 부동산 시장의 블루칩…상반기 수도권 715MW 개발·투자 확대",
+    "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=220378",
+    "publisher": "이지경제",
+    "pub_date": "2025-08-29",
+    "grade": "C",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "캡스톤자산운용은 춘의동·개봉동 개발권을 잇따라 확보",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T01:41:08.787Z",
+    "added_by": "auto"
   }
 ]

@@ -28,6 +28,7 @@
     <button class="tab" role="tab" data-tab="list" aria-selected="true">목록</button>
     <button class="tab" role="tab" data-tab="map" aria-selected="false">지도</button>
     <button class="tab" role="tab" data-tab="supply" aria-selected="false">공급 추정</button>
+    <button class="tab" role="tab" data-tab="sales" aria-selected="false">판매 현황</button>
     <button class="tab" role="tab" data-tab="value" aria-selected="false">가치점수</button>
     <button class="tab" role="tab" data-tab="company" aria-selected="false">회사</button>
     <button class="tab" role="tab" data-tab="permits" aria-selected="false">인허가</button>
@@ -96,6 +97,20 @@
     </div>
   </section>
 
+  <section id="v-sales" hidden>
+    <div id="slWarn"></div>
+    <div class="maptools">
+      <div class="fgroup"><span class="flabel">범위</span><div class="seg" id="slScope"><button data-v="has" aria-pressed="true">판매 정보 있음</button><button data-v="" aria-pressed="false">상용 전체</button></div></div>
+      <div class="fgroup"><span class="flabel">지역</span><select id="slRegion" aria-label="지역"><option value="">전체</option><option>수도권</option><option>충청</option><option>영남</option><option>호남</option><option>강원</option><option>제주</option></select></div>
+      <input type="search" id="slQ" placeholder="센터·운영사·고객" aria-label="판매 검색">
+      <span class="note" id="slNote"></span>
+      <span id="slLock" style="margin-left:auto"></span>
+    </div>
+    <section class="kpis" id="slKpis" aria-label="판매 요약"></section>
+    <div class="panel"><h3>센터별 판매 현황 <span class="note" style="font-weight:400">· IT 기준 · 판매=상태 '계약' 합계(없으면 공시 임대율×용량) · 잔여=용량−판매 · 행을 누르면 센터 상세의 판매 현황</span></h3><div style="overflow-x:auto" id="slTable"></div></div>
+    <div class="panel" style="margin-top:16px"><h3>시장 기준선 <span class="note" style="font-weight:400">· 시장 보고서의 지역별 임대료·공실률 — 센터 단가와 비교용</span></h3><div style="overflow-x:auto" id="slMarket"></div></div>
+    <div class="panel" style="margin-top:16px"><h3>판매 변경 이력</h3><div id="slLog"></div></div>
+  </section>
   <section id="v-value" hidden>
     <div class="maptools">
       <div class="fgroup"><span class="flabel">정렬 기준</span><div class="seg" id="valView"><button data-v="total" aria-pressed="true">종합</button><button data-v="feasibility" aria-pressed="false">실현 가능성</button><button data-v="asset" aria-pressed="false">자산 매력도</button><button data-v="win" aria-pressed="false">수주 기회</button></div></div>

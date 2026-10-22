@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf, SALE_STATUS, SALE_SRC, SALE_SRC_NOTE, MARKET_METRICS, PRICE_UNIT, salesData, salesOf } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -18,7 +18,8 @@ const store = {
 };
 
 const state = {
-  dcs: [], evidence: [], history: [], sources: [], runs: [], permits: [], grid: [], targets: [], companies: [],
+  dcs: [], evidence: [], history: [], sources: [], runs: [], permits: [], grid: [], targets: [], companies: [], sales: salesData(null),
+  salesFull: false, sl: { scope: 'has', q: '', region: '' },
   meta: { source: '', sha: '', repo: '', editable: false }, loaded: false, tab: 'list',
   filters: { cat: '', phase: '', conf: '', area: '', sido: '', sgg: '', player: '', prep: '', dbo: '', cm: '', company: null, status: new Set(), q: '', sort: 'power' },
   mapView: 'all', mapStatus: new Set(STATUSES), supMetric: 'it_mw', supSplit: 'player', supMode: 'weighted'
@@ -27,16 +28,20 @@ const state = {
 /* ---------------- data ---------------- */
 async function load(fresh = false) {
   try {
-    const r = await fetch(`/api/data${fresh ? `?t=${Date.now()}` : ''}`);
+    // 판매 단가·내부 정보는 편집 비밀번호로 잠금 해제했을 때만 받아옵니다(캐시 안 함)
+    const full = state.salesFull && editor().pw;
+    let r = await fetch(full ? '/api/data?full=1' : `/api/data${fresh ? `?t=${Date.now()}` : ''}`, full ? { headers: { 'x-edit-password': editor().pw }, cache: 'no-store' } : {});
+    if (full && r.status === 401) { state.salesFull = false; store.set('dc-pw', '', sessionStorage); toastMsg('편집 비밀번호가 맞지 않아 단가·내부 정보를 열 수 없습니다'); r = await fetch(`/api/data?t=${Date.now()}`); }
     if (!r.ok) throw new Error(String(r.status));
     const j = await r.json();
-    Object.assign(state, { dcs: j.dcs || [], evidence: j.evidence || [], history: j.history || [], sources: j.sources || [], runs: j.runs || [], permits: j.permits || [], grid: j.grid || [], targets: j.targets || [], companies: j.companies || [] });
-    state.meta = { source: j.source, sha: j.sha, repo: j.repo || '', editable: !!j.editable };
+    Object.assign(state, { dcs: j.dcs || [], evidence: j.evidence || [], history: j.history || [], sources: j.sources || [], runs: j.runs || [], permits: j.permits || [], grid: j.grid || [], targets: j.targets || [], companies: j.companies || [], sales: { ...salesData(j.sales), redacted: j.sales?.redacted !== false, hidden: j.sales?.hidden || 0 } });
+    state.meta = { source: j.source, sha: j.sha, repo: j.repo || '', editable: !!j.editable, repoPrivate: j.repo_private };
   } catch {
     // API가 없는 환경(로컬 정적 미리보기)에서는 정적 data/ 파일을 읽습니다.
-    const names = ['dcs', 'evidence', 'history', 'sources', 'runs', 'permits', 'grid', 'targets', 'companies'];
+    const names = ['dcs', 'evidence', 'history', 'sources', 'runs', 'permits', 'grid', 'targets', 'companies', 'sales'];
     const got = await Promise.all(names.map(n => fetch(`/data/${n}.json`).then(r => (r.ok ? r.json() : [])).catch(() => [])));
     names.forEach((n, i) => { state[n] = got[i]; });
+    state.sales = { ...salesData(state.sales), redacted: true, hidden: state.sales?.hidden || 0 };
     state.meta = { source: 'static', sha: '', repo: '', editable: false };
   }
   state.loaded = true;
@@ -445,12 +450,13 @@ function renderAll() {
   if (state.tab === 'supply') renderSupply();
   if (state.tab === 'value') renderValue();
   if (state.tab === 'company') renderCompanies();
+  if (state.tab === 'sales') renderSales();
   if (csheet && csheet.id && !csheetDirty()) { const c = state.companies.find(x => x.id === csheet.id); if (c) { csheet.orig = structuredClone(c); csheet.draft = structuredClone(c); renderCSheet(); } }
   if (sheet && sheet.id) { const dc = state.dcs.find(d => d.id === sheet.id); if (dc && !isDirty()) { sheet.orig = structuredClone(dc); sheet.draft = structuredClone(dc); normDraft(); renderSheet(); } else { renderEvidence(); renderHistory(); } }
 }
 
 /* ---------------- tabs & filters ---------------- */
-const TABS = ['list', 'map', 'supply', 'value', 'company', 'permits', 'sources', 'design'];
+const TABS = ['list', 'map', 'supply', 'sales', 'value', 'company', 'permits', 'sources', 'design'];
 function setTab(t) {
   state.tab = t;
   document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
@@ -460,6 +466,7 @@ function setTab(t) {
   if (t === 'supply') renderSupply();
   if (t === 'value') renderValue();
   if (t === 'company') renderCompanies();
+  if (t === 'sales') renderSales();
   if (t === 'permits') loadPermitsLive();
   if (location.hash.slice(1) !== t && !location.hash.startsWith('#dc/')) history.replaceState(null, '', '#' + t);
 }
@@ -507,6 +514,10 @@ STATUSES.forEach(s => {
 $('#fStatus').addEventListener('click', e => { const b = e.target.closest('.stchip'); if (!b) return; const s = b.dataset.s, on = !state.filters.status.has(s); on ? state.filters.status.add(s) : state.filters.status.delete(s); b.setAttribute('aria-pressed', String(on)); renderList(); });
 $('#mapStatus').addEventListener('click', e => { const b = e.target.closest('.stchip'); if (!b) return; const s = b.dataset.s, on = !state.mapStatus.has(s); on ? state.mapStatus.add(s) : state.mapStatus.delete(s); b.setAttribute('aria-pressed', String(on)); renderMap(); });
 $('#gridToggle').addEventListener('change', renderMap);
+$('#slTable').addEventListener('click', e => { const r = e.target.closest('[data-id]'); if (!r) return; openDetail(r.dataset.id); setTimeout(() => $('#secSales')?.scrollIntoView({ block: 'start' }), 50); });
+bindSeg('#slScope', v => { state.sl.scope = v; renderSales(); });
+$('#slRegion').addEventListener('change', e => { state.sl.region = e.target.value; renderSales(); });
+$('#slQ').addEventListener('input', e => { state.sl.q = e.target.value; renderSales(); });
 for (const id of ['#tbody', '#mlist', '#supList', '#permitBody']) {
   $(id).addEventListener('click', e => { const r = e.target.closest('[data-id]'); if (r && r.dataset.id) openDetail(r.dataset.id); });
 }
@@ -612,6 +623,7 @@ function renderSheet() {
       <div class="fld full"><label>회사 매칭 <span class="note">(회사 탭의 회사명·별칭 기준 자동 · 눌러서 회사 정보)</span></label><div class="comatch" id="coMatch">${coMatchHTML(d)}</div></div>
     </div></section>
     ${dboSection(d)}
+    ${sheet.id ? salesSection(d) : ''}
     ${campusSection(d)}
     ${complaintSection(d)}
     <section class="sec"><h3>준비단계 <span class="hint">부지확보 → 전기확보 → 건축허가 → 착공 · 설계중 센터의 공급 확률에 반영</span></h3>
@@ -714,6 +726,7 @@ function complaintSection(d) {
 
 function bindSheet() {
   const body = $('#shBody');
+  bindSales(body);
   ['owner', 'operator', 'contractor'].forEach(f => { const el = $('#f_' + f); if (el) el.setAttribute('list', 'coNames'); });
   bindCoChips($('#coMatch'));
   body.querySelectorAll('[data-f]').forEach(el => {
@@ -992,3 +1005,132 @@ window.addEventListener('hashchange', () => {
   if (h.startsWith('dc/')) { const id = decodeURIComponent(h.slice(3)); if (!sheet || sheet.id !== id) openDetail(id); }
   else if (TABS.includes(h) && h !== state.tab) setTab(h);
 });
+
+
+/* ---------------- 판매 현황 ---------------- */
+// 단가·출처 '내부'는 잠금 해제(편집 비밀번호)해야 보이고 입력할 수 있습니다. 저장소가 공개면 서버가 저장을 거부합니다.
+function toastMsg(t) { const b = $('#banner'); if (!b) return; b.innerHTML = `<div class="note" style="padding:8px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:10px">${esc(t)}</div>`; setTimeout(() => { b.innerHTML = ''; }, 6000); }
+function locked() { return state.sales.redacted !== false; }
+async function unlockSales() {
+  if (!locked()) { state.salesFull = false; await load(true); return; }
+  let ed = editor();
+  if (!ed.pw) { if (!(await askEditor())) return; ed = editor(); }
+  state.salesFull = true; await load(true);
+}
+function lockBtn() { return `<button class="btn" type="button" data-slunlock>${locked() ? '🔒 단가·내부 정보 보기' : '🔓 잠그기'}</button>`; }
+function priceTxt(x) { return isNum(x.price) ? `${fmtMW(x.price)}` : x.price_hidden ? '🔒' : '—'; }
+function srcChip(x) { return `<span class="slsrc ${x.src === '내부' ? 'in' : x.src === '업계' ? 'ind' : ''}" title="${esc(SALE_SRC_NOTE[x.src] || '')}">${esc(x.src)}</span>`; }
+function bar(pct) { return pct === null ? '<span class="of">—</span>' : `<span class="slbar" title="${pct}%"><i style="width:${Math.min(100, pct)}%"></i></span> <span class="num">${pct}%</span>`; }
+
+async function saveSales(kind, item, op = 'upsert') {
+  if (op === 'upsert' && locked()) delete item.price; // 잠금 상태에서는 단가를 건드리지 않음(서버가 기존 값 유지)
+  const j = await post({ action: 'sales', kind, op, item });
+  await load(true);
+  return j;
+}
+
+function salesSection(d) {
+  const sv = salesOf(d, state.sales), ed = sheet.sales || null;
+  const row = x => `<tr><td>${esc(x.customer)}${x.note ? `<div class="of">${esc(x.note)}</div>` : ''}</td><td class="r num">${fmtMW(x.mw) || '—'}<span class="of"> ${esc(x.basis)}</span></td>
+    <td class="r num">${priceTxt(x)}</td><td class="num">${esc(x.start_ym || '')}${x.end_ym ? '~' + esc(x.end_ym) : ''}</td><td><span class="slst s-${esc(x.status)}">${esc(x.status)}</span> ${srcChip(x)} <span class="of">${esc(x.c)}</span></td>
+    <td>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">근거</a>` : ''}</td><td style="white-space:nowrap"><button class="btn sm" type="button" data-skedit="${esc(x.id)}">수정</button> <button class="btn sm" type="button" data-skdel="${esc(x.id)}">삭제</button></td></tr>`;
+  const occ = state.sales.occupancy.filter(x => x.dc_id === d.id);
+  const f = ed || { kind: 'contract', item: { status: '계약', src: '공개', basis: 'IT', c: '추정' } };
+  const it = f.item;
+  const inp = (k, ph, w = '') => `<input class="inp" data-sk="${k}" value="${esc(it[k] ?? '')}" placeholder="${esc(ph)}" ${w ? `style="max-width:${w}"` : ''}>`;
+  const sel = (k, opts) => `<select data-sk="${k}">${opts.map(o => `<option ${o === it[k] ? 'selected' : ''}>${o}</option>`).join('')}</select>`;
+  const form = f.kind === 'contract' ? `
+      <div class="row">${inp('customer', '고객 (모르면 미공개 고객)')}${inp('mw', 'MW', '90px')}${sel('basis', ['IT', '수전'])}${locked() ? `<input class="inp" disabled placeholder="단가 🔒" style="max-width:110px">` : inp('price', `단가 ${PRICE_UNIT}`, '150px')}</div>
+      <div class="row">${inp('start_ym', '시작 YYYY-MM', '130px')}${inp('end_ym', '종료 YYYY-MM', '130px')}${sel('status', SALE_STATUS)}${sel('src', locked() ? SALE_SRC.filter(x => x !== '내부') : SALE_SRC)}${sel('c', ['추정', '확정'])}</div>`
+    : `<div class="row">${inp('pct', '임대율 %', '110px')}${inp('ym', '기준 YYYY-MM', '130px')}${sel('src', locked() ? SALE_SRC.filter(x => x !== '내부') : SALE_SRC)}${sel('c', ['추정', '확정'])}</div>`;
+  return `<section class="sec" id="secSales"><h3>판매 현황 <span class="hint">IT 기준 · 판매=계약 합계(없으면 공시 임대율) · 잔여=용량−판매 · 단가 ${PRICE_UNIT}</span> ${lockBtn()}</h3>
+    <div class="slsum"><div><b>${fmtMW(sv.cap) || '—'}</b><span>용량 MW${sv.capHow === '환산' || sv.capHow === '연면적 환산' ? '(환산)' : ''}</span></div><div><b>${sv.how ? fmtMW(sv.sold) : '—'}</b><span>판매 MW</span></div>
+      <div><b>${fmtMW(sv.nego) || '—'}</b><span>협상 MW</span></div><div><b>${sv.remain === null ? '—' : fmtMW(sv.remain)}</b><span>잔여 MW</span></div><div>${bar(sv.pct)}<span>판매율 ${sv.how ? '· ' + esc(sv.how) : ''}</span></div>
+      <div><b>${sv.avgPrice === null ? (locked() && sv.contracts.some(x => x.price_hidden) ? '🔒' : '—') : fmtMW(sv.avgPrice)}</b><span>평균 단가</span></div></div>
+    ${sv.contracts.length ? `<div style="overflow-x:auto"><table class="ftable sltable"><thead><tr><th>고객</th><th class="r">MW</th><th class="r">단가</th><th>기간</th><th>상태·출처</th><th></th><th></th></tr></thead><tbody>${sv.contracts.map(row).join('')}</tbody></table></div>` : '<div class="note">등록된 고객 계약이 없습니다.</div>'}
+    ${occ.length ? `<div class="note" style="margin-top:6px">공시 임대율: ${occ.map(o => `${o.pct}% (${esc(o.ym || '시점 미상')}, ${esc(o.src)}${o.url ? `, <a href="${esc(o.url)}" target="_blank" rel="noopener">근거</a>` : ''}) <button class="btn sm" type="button" data-skoedit="${esc(o.id)}">수정</button> <button class="btn sm" type="button" data-skodel="${esc(o.id)}">삭제</button>`).join(' · ')}</div>` : ''}
+    ${state.sales.hidden && locked() ? `<div class="note">비공개 항목 ${state.sales.hidden}건이 잠겨 있습니다.</div>` : ''}
+    <details class="slform" ${ed ? 'open' : ''}><summary>${ed?.item?.id ? '항목 수정' : '+ 계약·임대율 추가'}</summary>
+      <div class="seg" data-skkind style="margin:8px 0"><button type="button" data-v="contract" aria-pressed="${f.kind === 'contract'}">고객 계약</button><button type="button" data-v="occupancy" aria-pressed="${f.kind === 'occupancy'}">임대율(공시·IR)</button></div>
+      ${form}
+      <div class="row">${inp('url', '근거 URL (https://)')}${inp('note', '메모')}</div>
+      <div class="row"><button class="btn primary" type="button" data-sksave>저장</button>${ed ? '<button class="btn" type="button" data-skcancel>취소</button>' : ''}<span class="msg" data-skmsg></span></div>
+      ${state.meta.repoPrivate === false ? '<div class="note" style="color:var(--warn)">GitHub 저장소가 공개 상태라 단가·내부 정보는 저장되지 않습니다(공개·업계 정보만 가능).</div>' : ''}
+    </details></section>`;
+}
+
+function bindSales(body) {
+  if (!sheet || !body.querySelector('#secSales')) return;
+  const sec = body.querySelector('#secSales');
+  const formState = () => (sheet.sales = sheet.sales || { kind: 'contract', item: { status: '계약', src: '공개', basis: 'IT', c: '추정' } });
+  sec.querySelector('[data-slunlock]')?.addEventListener('click', unlockSales);
+  sec.querySelectorAll('[data-sk]').forEach(el => el.addEventListener('input', () => { formState().item[el.dataset.sk] = el.value; }));
+  sec.querySelectorAll('select[data-sk]').forEach(el => el.addEventListener('change', () => { formState().item[el.dataset.sk] = el.value; }));
+  sec.querySelector('[data-skkind]')?.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; sheet.sales = { kind: b.dataset.v, item: b.dataset.v === 'contract' ? { status: '계약', src: '공개', basis: 'IT', c: '추정' } : { src: '공개', c: '확정' } }; renderSheet(); });
+  sec.querySelectorAll('[data-skedit]').forEach(b => b.addEventListener('click', () => { const x = state.sales.contracts.find(c => c.id === b.dataset.skedit); sheet.sales = { kind: 'contract', item: { ...x } }; renderSheet(); $('#secSales')?.scrollIntoView({ block: 'start' }); }));
+  sec.querySelectorAll('[data-skoedit]').forEach(b => b.addEventListener('click', () => { const x = state.sales.occupancy.find(c => c.id === b.dataset.skoedit); sheet.sales = { kind: 'occupancy', item: { ...x } }; renderSheet(); }));
+  sec.querySelector('[data-skcancel]')?.addEventListener('click', () => { sheet.sales = null; renderSheet(); });
+  const del = async (kind, id) => { if (!confirmDel()) return; try { await saveSales(kind, { id }, 'delete'); } catch (e) { toastMsg(e.message); } };
+  sec.querySelectorAll('[data-skdel]').forEach(b => b.addEventListener('click', () => del('contract', b.dataset.skdel)));
+  sec.querySelectorAll('[data-skodel]').forEach(b => b.addEventListener('click', () => del('occupancy', b.dataset.skodel)));
+  sec.querySelector('[data-sksave]')?.addEventListener('click', async () => {
+    const f = formState(), msg = sec.querySelector('[data-skmsg]');
+    const item = { ...f.item, dc_id: sheet.id };
+    for (const k of ['created_at', 'updated_at', 'updated_by', 'price_hidden']) delete item[k];
+    msg.textContent = '저장하는 중…';
+    try { await saveSales(f.kind, item); sheet.sales = null; renderSheet(); } catch (e) { msg.innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+  });
+}
+// 삭제 확인: 브라우저 confirm 대신 두 번 누르기
+var delArmed = 0;
+function confirmDel() { const now = Date.now(); if (now - delArmed < 4000) { delArmed = 0; return true; } delArmed = now; toastMsg('삭제하려면 4초 안에 한 번 더 누르세요'); return false; }
+
+function renderSales() {
+  const sl = state.sl, q = sl.q.trim().toLowerCase();
+  const rows = state.dcs.filter(d => d.category === '상용' || state.sales.contracts.some(x => x.dc_id === d.id))
+    .map(d => ({ d, s: salesOf(d, state.sales) }))
+    .filter(({ d, s }) => (sl.scope !== 'has' || s.contracts.length || s.occupancy) && (!sl.region || locOf(d).area === sl.region || locOf(d).region === sl.region)
+      && (!q || [d.name, d.operator, d.owner, ...s.customers].join(' ').toLowerCase().includes(q)))
+    .sort((a, b) => (b.s.sold || 0) - (a.s.sold || 0) || (b.s.cap || 0) - (a.s.cap || 0));
+  const tot = rows.reduce((t, { s }) => ({ cap: t.cap + (s.how ? s.cap || 0 : 0), sold: t.sold + (s.how ? s.sold : 0), nego: t.nego + s.nego, remain: t.remain + (s.remain || 0), n: t.n + (s.how ? 1 : 0) }), { cap: 0, sold: 0, nego: 0, remain: 0, n: 0 });
+  $('#slLock').innerHTML = lockBtn();
+  $('#slLock').querySelector('[data-slunlock]').onclick = unlockSales;
+  $('#slNote').textContent = `${rows.length}곳${locked() && state.sales.hidden ? ` · 비공개 ${state.sales.hidden}건 잠김` : ''}`;
+  $('#slWarn').innerHTML = state.meta.repoPrivate === false ? '<div class="note" style="color:var(--warn);margin-bottom:10px">⚠ GitHub 저장소가 공개(Public) 상태입니다. 단가·내부 정보는 저장되지 않으며, 저장소를 Private로 바꾸면 입력할 수 있습니다.</div>' : '';
+  $('#slKpis').innerHTML = `<div class="kpi"><div class="k">판매 파악 센터</div><div class="v">${tot.n}<small>곳</small></div><div class="d">계약 또는 공시 임대율 기준</div></div>
+    <div class="kpi"><div class="k">판매 (IT)</div><div class="v">${fmtMW(tot.sold) || 0}<small>MW</small></div><div class="d">파악 센터 용량 ${fmtMW(tot.cap) || 0} MW · 판매율 ${tot.cap ? Math.round(tot.sold / tot.cap * 100) : 0}%</div></div>
+    <div class="kpi"><div class="k">잔여 (IT)</div><div class="v">${fmtMW(tot.remain) || 0}<small>MW</small></div><div class="d">파악 센터 기준</div></div>
+    <div class="kpi"><div class="k">협상 중</div><div class="v">${fmtMW(tot.nego) || 0}<small>MW</small></div><div class="d">상태 '협상' 합계</div></div>
+    <div class="kpi"><div class="k">고객 계약</div><div class="v">${state.sales.contracts.filter(x => x.status === '계약').length}<small>건</small></div><div class="d">고객 ${new Set(state.sales.contracts.map(x => x.customer)).size}곳${locked() && state.sales.hidden ? ` · 비공개 ${state.sales.hidden}건 잠김` : ''}</div></div>`;
+  $('#slTable').innerHTML = rows.length ? `<table class="ftable" style="min-width:980px"><thead><tr><th>센터</th><th>운영사</th><th>상태</th><th class="r">용량 IT</th><th class="r">판매</th><th class="r">협상</th><th class="r">잔여</th><th>판매율</th><th>주요 고객</th><th class="r">평균 단가<br><span class="of">${PRICE_UNIT}</span></th></tr></thead><tbody>${rows.map(({ d, s }) => `
+    <tr data-id="${esc(d.id)}" tabindex="0"><td class="name">${esc(d.name)}${pchip(d)}<div class="of">${esc(locOf(d).sido)} ${esc(locOf(d).sigungu)}</div></td><td>${esc(d.operator || d.owner || '')}</td><td>${statusPill(d.status)}</td>
+    <td class="r num">${fmtMW(s.cap) || '—'}${s.capHow === '환산' || s.capHow === '연면적 환산' ? '<span class="of">환산</span>' : ''}</td><td class="r num"><b>${s.how ? fmtMW(s.sold) : '—'}</b></td><td class="r num">${fmtMW(s.nego) || '—'}</td><td class="r num">${s.remain === null ? '—' : fmtMW(s.remain)}</td>
+    <td>${bar(s.pct)}${s.how && !s.how.startsWith('계약') ? `<div class="of">${esc(s.how)}</div>` : ''}</td><td>${s.customers.slice(0, 4).map(esc).join(', ') || '<span class="of">—</span>'}${s.customers.length > 4 ? ` 외 ${s.customers.length - 4}` : ''}</td>
+    <td class="r num">${s.avgPrice !== null ? fmtMW(s.avgPrice) : locked() && s.contracts.some(x => x.price_hidden) ? '🔒' : '—'}</td></tr>`).join('')}</tbody></table>`
+    : `<div class="note">${sl.scope === 'has' ? "판매 정보가 등록된 센터가 없습니다. '상용 전체'로 바꾸거나 센터 상세 화면의 '판매 현황'에서 계약을 추가하세요." : '조건에 맞는 센터가 없습니다.'}</div>`;
+  // 시장 기준선
+  const mk = state.sales.market.slice().sort((a, b) => a.metric.localeCompare(b.metric) || a.region.localeCompare(b.region, 'ko') || String(ymKey(b.ym)).localeCompare(String(ymKey(a.ym))));
+  const mlabel = k => MARKET_METRICS.find(m => m.key === k) || { label: k, unit: '' };
+  $('#slMarket').innerHTML = (mk.length ? `<table class="ftable"><thead><tr><th>지표</th><th>지역</th><th class="r">값</th><th>기준</th><th>출처</th><th></th></tr></thead><tbody>${mk.map(m => `<tr style="cursor:default"><td>${esc(mlabel(m.metric).label)}</td><td>${esc(m.region)}</td>
+    <td class="r num"><b>${fmtMW(m.value)}${isNum(m.value_hi) ? '~' + fmtMW(m.value_hi) : ''}</b> <span class="of">${esc(mlabel(m.metric).unit)}</span></td><td class="num">${esc(m.ym)}</td><td>${srcChip(m)} ${m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">근거</a>` : ''}${m.note ? `<div class="of">${esc(m.note)}</div>` : ''}</td>
+    <td style="white-space:nowrap"><button class="btn sm" type="button" data-mkedit="${esc(m.id)}">수정</button> <button class="btn sm" type="button" data-mkdel="${esc(m.id)}">삭제</button></td></tr>`).join('')}</tbody></table>` : '<div class="note">시장 기준선이 없습니다.</div>')
+    + `<details class="slform" id="mkForm" ${state.mkEdit ? 'open' : ''}><summary>${state.mkEdit?.id ? '기준선 수정' : '+ 기준선 추가'}</summary><div class="row">
+      <select data-mk="metric">${MARKET_METRICS.map(m => `<option value="${m.key}" ${m.key === (state.mkEdit?.metric || 'rent') ? 'selected' : ''}>${m.label} (${m.unit})</option>`).join('')}</select>
+      <input class="inp" data-mk="region" placeholder="지역 (수도권·서울·전국)" value="${esc(state.mkEdit?.region || '')}" style="max-width:170px"><input class="inp" data-mk="value" placeholder="값" value="${esc(state.mkEdit?.value ?? '')}" style="max-width:90px"><input class="inp" data-mk="value_hi" placeholder="상단(선택)" value="${esc(state.mkEdit?.value_hi ?? '')}" style="max-width:100px">
+      <input class="inp" data-mk="ym" placeholder="기준 2026-Q3" value="${esc(state.mkEdit?.ym || '')}" style="max-width:130px"><select data-mk="src">${(locked() ? SALE_SRC.filter(x => x !== '내부') : SALE_SRC).map(o => `<option ${o === (state.mkEdit?.src || '업계') ? 'selected' : ''}>${o}</option>`).join('')}</select></div>
+      <div class="row"><input class="inp" data-mk="url" placeholder="근거 URL" value="${esc(state.mkEdit?.url || '')}"><input class="inp" data-mk="note" placeholder="메모 (보고서명 등)" value="${esc(state.mkEdit?.note || '')}"></div>
+      <div class="row"><button class="btn primary" type="button" id="mkSave">저장</button>${state.mkEdit?.id ? '<button class="btn" type="button" id="mkCancel">취소</button>' : ''}<span class="msg" id="mkMsg"></span></div></details>`;
+  $('#slMarket').querySelectorAll('[data-mkedit]').forEach(b => b.onclick = () => { state.mkEdit = { ...state.sales.market.find(m => m.id === b.dataset.mkedit) }; renderSales(); });
+  $('#slMarket').querySelectorAll('[data-mkdel]').forEach(b => b.onclick = async () => { if (!confirmDel()) return; try { await saveSales('market', { id: b.dataset.mkdel }, 'delete'); } catch (e) { toastMsg(e.message); } });
+  if ($('#mkCancel')) $('#mkCancel').onclick = () => { state.mkEdit = null; renderSales(); };
+  $('#mkSave').onclick = async () => {
+    const item = { ...(state.mkEdit?.id ? { id: state.mkEdit.id } : {}) };
+    $('#slMarket').querySelectorAll('[data-mk]').forEach(el => { item[el.dataset.mk] = el.value; });
+    $('#mkMsg').textContent = '저장하는 중…';
+    try { await saveSales('market', item); state.mkEdit = null; renderSales(); } catch (e) { $('#mkMsg').innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+  };
+  // 변경 이력
+  const log = state.sales.log.slice().reverse().slice(0, 30);
+  const nameOf = id => state.dcs.find(d => d.id === id)?.name || id;
+  $('#slLog').innerHTML = log.length ? log.map(l => `<div class="runrow"><div><div class="num">${fmtDT(l.at)}</div><div class="of">${esc(l.editor === 'auto' ? '자동수집' : l.editor)}</div></div><div>${l.dc_id ? `<b>${esc(nameOf(l.dc_id))}</b> · ` : ''}${esc(l.note)}</div></div>`).join('') : '<div class="note">변경 이력이 없습니다.</div>';
+}

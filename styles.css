@@ -363,3 +363,17 @@ dialog .fld{margin-top:12px}
 .lens .vpts{margin:0}
 .vtable th.sel,.vtable td.sel{background:var(--accent-soft)}
 .vtable th .wt{display:block;font-weight:400;font-size:11px;color:var(--faint)}
+
+/* 판매 현황 */
+.slbar{display:inline-block;width:70px;height:7px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);vertical-align:middle;overflow:hidden}
+.slbar i{display:block;height:100%;background:var(--accent)}
+.slsum{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:8px;margin:6px 0 10px}
+.slsum>div{border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px}
+.slsum b{font-size:18px;font-variant-numeric:tabular-nums}.slsum span{font-size:12px;color:var(--muted)}
+.slsrc{font-size:11px;padding:0 5px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
+.slsrc.ind{border-style:dashed}.slsrc.in{background:var(--warn);color:#fff;border-color:transparent}
+.slst{font-size:12px;font-weight:600}.slst.s-협상{color:var(--warn)}.slst.s-소문{color:var(--faint)}
+.slform{margin-top:10px}.slform summary{cursor:pointer;font-size:13px;color:var(--accent)}
+.slform .row{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.slform .row .inp{flex:1;min-width:110px}
+.btn.sm{padding:2px 8px;font-size:12px}
+.sec h3 [data-slunlock]{float:right;font-size:12px;padding:2px 8px}

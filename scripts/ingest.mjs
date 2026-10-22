@@ -19,6 +19,11 @@
 //     { "player": "KT", "target_mw": 1000, "year": 2031, "basis": "", "note": "", "url": "",
 //       "reported_mw": 162, "reported_n": 15, "reported_basis": "", "reported_url": "" }
 //   ],
+//   "sales": {                                                // 판매 현황(공개·업계 정보만, 단가 제외)
+//     "contracts": [{ "dc_id": "", "customer": "고객", "mw": 10, "basis": "IT|수전", "start_ym": "", "end_ym": "", "status": "계약|협상|소문", "src": "공개|업계", "c": "확정|추정", "url": "", "note": "" }],
+//     "occupancy": [{ "dc_id": "", "pct": 95, "ym": "2026-06", "src": "공개", "c": "확정", "url": "", "note": "리츠 임대율" }],
+//     "market": [{ "region": "수도권", "metric": "rent|vacancy|supply|absorption", "value": 20, "value_hi": 25, "ym": "2026-Q3", "src": "업계", "url": "", "note": "" }]
+//   },
 //   "gap_checked": ["센터 id"],                             // 빈 칸 보강 조사한 센터(scripts/gaps.mjs 목록) — 값을 못 찾아도 넣기
 //   "kind": "자동수집",                                       // runs 로그 종류(주간 작업은 "플레이어 업데이트")
 //   "errors": 0,
@@ -28,15 +33,16 @@
 // 규칙: 고정(locked) 필드는 덮어쓰지 않고 history에 제안(proposal)으로만 남깁니다. 같은 dc_id+url 근거는 중복 추가하지 않습니다.
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { applyAuto, addEvidence, validateData, slug, stamp, normalizeField, CATEGORIES, applyCompanyEdit, validateCompanies, PLAYERS, isNum } from '../lib/model.js';
+import { applyAuto, addEvidence, validateData, slug, stamp, normalizeField, CATEGORIES, applyCompanyEdit, validateCompanies, PLAYERS, isNum, applySalesOp, validateSales, salesData } from '../lib/model.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
-const FILES = ['dcs', 'evidence', 'history', 'sources', 'runs', 'companies', 'targets'];
+const FILES = ['dcs', 'evidence', 'history', 'sources', 'runs', 'companies', 'targets', 'sales'];
 const norm = s => String(s || '').toLowerCase().replace(/㈜|\(주\)|주식회사|데이터센터|idc|센터/g, '').replace(/[\s·.,()\[\]&'’\-_/]/g, '');
 
 export function ingest(data, findings, now = new Date().toISOString()) {
   let { dcs, evidence, history, sources, runs, companies = [], targets = [] } = data;
-  const s = { new_dcs: 0, updated: 0, evidence: 0, proposals: 0, errors: Number(findings.errors || 0), notes: [], companies: 0, new_companies: 0, targets: 0 };
+  let sales = salesData(data.sales);
+  const s = { new_dcs: 0, updated: 0, evidence: 0, proposals: 0, errors: Number(findings.errors || 0), notes: [], companies: 0, new_companies: 0, targets: 0, sales: 0 };
   for (const item of findings.items || []) {
     try {
       let id = item.dc_id;
@@ -118,14 +124,28 @@ export function ingest(data, findings, now = new Date().toISOString()) {
       }
     } catch (e) { s.errors++; s.notes.push(`목표 ${t.player}: ${e.message}`); }
   }
+  // 판매 현황(공개·업계 정보만): 같은 센터·고객(계약), 같은 센터·시점(임대율), 같은 지역·지표·시점·출처(시장)는 갱신, 사람이 고친 항목은 제안으로만
+  const SK = { contracts: 'contract', occupancy: 'occupancy', market: 'market' };
+  const nk = v => String(v || '').toLowerCase().replace(/[\s·.,()㈜]|\(주\)|주식회사/g, '');
+  for (const [key, kind] of Object.entries(SK)) for (const raw of (findings.sales || {})[key] || []) {
+    try {
+      const item = { ...raw, src: raw.src === '업계' ? '업계' : '공개' }; delete item.id; delete item.price; // 자동수집은 단가를 넣지 않음(공개 저장소)
+      if (kind !== 'market' && !dcs.some(d => d.id === item.dc_id)) throw new Error(`센터 없음: ${item.dc_id}`);
+      const cur = sales[key].find(x => kind === 'contract' ? x.dc_id === item.dc_id && nk(x.customer) === nk(item.customer)
+        : kind === 'occupancy' ? x.dc_id === item.dc_id && x.ym === item.ym : x.region === item.region && x.metric === item.metric && x.ym === item.ym && x.src === item.src);
+      if (cur && cur.updated_by !== 'auto') { s.proposals++; s.notes.push(`판매 ${cur.id}: 사람이 고친 항목 유지(제안 ${JSON.stringify(item).slice(0, 80)})`); continue; }
+      const r = applySalesOp(sales, { op: 'upsert', kind, item: cur ? { ...item, id: cur.id } : item }, 'auto', now);
+      sales = r.sales; if (r.changed) s.sales++;
+    } catch (e) { s.errors++; s.notes.push(`판매 ${raw.customer || raw.region || raw.dc_id}: ${e.message}`); }
+  }
   const hits = new Map((findings.sources || []).map(x => [x.id, Number(x.hits || 0)]));
   sources = sources.map(src => (hits.has(src.id) ? { ...src, last_run: now, last_hits: hits.get(src.id) } : src));
   const kind = findings.kind || '자동수집';
-  const run = { id: `r-${stamp(now).slice(0, 8)}-${kind === '자동수집' ? 'news' : kind === '플레이어 업데이트' ? 'players' : 'misc-' + stamp(now).slice(8, 12)}`, at: now, kind, checked: hits.size || (findings.companies || []).length, new_dcs: s.new_dcs, updated: s.updated + s.companies + s.targets,
+  const run = { id: `r-${stamp(now).slice(0, 8)}-${kind === '자동수집' ? 'news' : kind === '플레이어 업데이트' ? 'players' : 'misc-' + stamp(now).slice(8, 12)}`, at: now, kind, checked: hits.size || (findings.companies || []).length, new_dcs: s.new_dcs, updated: s.updated + s.companies + s.targets + s.sales,
     evidence: s.evidence, proposals: s.proposals, errors: s.errors, ...(s.gap_checked ? { gap_checked: s.gap_checked } : {}),
-    summary: String(findings.summary || '').trim() || (s.new_dcs + s.updated + s.evidence + s.proposals + s.companies + s.new_companies + s.targets ? '' : '변경 없음') + (s.notes.length ? ` 오류: ${s.notes.slice(0, 3).join(' / ')}` : '') };
+    summary: String(findings.summary || '').trim() || (s.new_dcs + s.updated + s.evidence + s.proposals + s.companies + s.new_companies + s.targets + s.sales ? '' : '변경 없음') + (s.notes.length ? ` 오류: ${s.notes.slice(0, 3).join(' / ')}` : '') };
   runs = [...runs.filter(r => r.id !== run.id), run].slice(-400);
-  return { dcs, evidence, history, sources, runs, companies, targets, stats: s };
+  return { dcs, evidence, history, sources, runs, companies, targets, sales, stats: s };
 }
 
 async function main() {
@@ -137,11 +157,11 @@ async function main() {
   const data = {};
   for (const n of FILES) data[n] = JSON.parse(await readFile(path.join(ROOT, 'data', `${n}.json`), 'utf8'));
   const out = ingest(data, findings, now);
-  const problems = [...validateData(out), ...validateCompanies(out.companies)];
+  const problems = [...validateData(out), ...validateCompanies(out.companies), ...validateSales(out.sales, new Set(out.dcs.map(d => d.id)))];
   if (problems.length) { console.error('검증 실패:\n' + problems.slice(0, 20).join('\n')); process.exit(1); }
   if (!dry) for (const n of FILES) await writeFile(path.join(ROOT, 'data', `${n}.json`), JSON.stringify(out[n], null, 2) + '\n');
   const st = out.stats;
-  console.log(`${dry ? '[dry] ' : ''}신규 ${st.new_dcs} · 갱신 필드 ${st.updated} · 근거 ${st.evidence} · 제안 ${st.proposals} · 회사 갱신 ${st.companies}/신규 ${st.new_companies} · 목표 ${st.targets} · 보강조사 ${st.gap_checked || 0} · 오류 ${st.errors}${st.notes.length ? '\n' + st.notes.join('\n') : ''}`);
+  console.log(`${dry ? '[dry] ' : ''}신규 ${st.new_dcs} · 갱신 필드 ${st.updated} · 근거 ${st.evidence} · 제안 ${st.proposals} · 회사 갱신 ${st.companies}/신규 ${st.new_companies} · 목표 ${st.targets} · 판매 ${st.sales} · 보강조사 ${st.gap_checked || 0} · 오류 ${st.errors}${st.notes.length ? '\n' + st.notes.join('\n') : ''}`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main().catch(e => { console.error(e); process.exit(1); });
