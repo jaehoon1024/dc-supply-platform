@@ -6121,9 +6121,11 @@
   },
   {
     "id": "lgu-paju",
-    "name": "LG유플러스 파주 AIDC 1동",
+    "name": "LG유플러스 파주 AIDC",
     "aliases": [
-      "27년_경기_파주_유플러스_1동"
+      "27년_경기_파주_유플러스_1동",
+      "LG유플러스 파주 AIDC 1동",
+      "LG유플러스 파주 AIDC 2~4동"
     ],
     "category": "상용",
     "status": "개발중",
@@ -6134,29 +6136,31 @@
     "address": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
     "lat": 37.76,
     "lng": 126.78,
-    "power_mw": 51,
-    "it_mw": 31.8,
+    "power_mw": 200,
+    "it_mw": null,
     "start_ym": "",
-    "complete_ym": "2027-06",
+    "complete_ym": "2028",
     "rfs_ym": "2027",
     "conf": {
       "owner": "확정",
       "operator": "확정",
       "address": "추정",
-      "power_mw": "추정",
+      "power_mw": "확정",
       "status": "추정",
-      "complete_ym": "확정",
+      "complete_ym": "추정",
       "contractor": "추정"
     },
     "locked": {
       "aliases": true,
       "power_mw": true,
       "it_mw": true,
-      "rfs_ym": true
+      "rfs_ym": true,
+      "steps": true,
+      "name": true
     },
-    "note": "캠퍼스 전체 200MW 전력 확정, 연면적 약 15만㎡. 1동 2027-06 준공·완판. 1동 50MW는 시설 기준(센서스). 2~4동은 별도 항목. LG전자 액체냉각·LG엔솔 UPS·LS일렉트릭 DC 800V. 2026-06 공정률 약 20%, 1동·부속동 2027-06 준공 예정",
-    "updated_at": "2026-10-22T07:25:16.739Z",
-    "updated_by": "user:정재훈",
+    "note": "옛 LG디스플레이 파주 공장 부지, 캠퍼스 전체 수전 200MW 전력 확정, 연면적 약 15만㎡, 전산동 4개. 1동 수전 51MW(IT 31.8MW) 2027-06 준공·완판(2026-06 공정률 약 20%) → 1.3조 추가 투자로 2·3동 건설·4동 설계 착수, 2~4동 2028년까지 준공 목표. AIDC 총 2조 자체 조달. GS건설 시공. LG전자 액체냉각·LG엔솔 UPS·LS일렉트릭 DC 800V. (2026-10-22 1동·2~4동 두 항목을 하나로 통합)",
+    "updated_at": "2026-10-22T07:35:15.730Z",
+    "updated_by": "auto",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": null,
     "sido": "경기",
@@ -6178,68 +6182,17 @@
       "how": "건물명",
       "status": "미일치",
       "at": "2026-10-22T01:07:13.380Z"
-    }
-  },
-  {
-    "aliases": [],
-    "category": "상용",
-    "owner": "LG유플러스",
-    "contractor": "GS건설",
-    "operator": "LG유플러스",
-    "address": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
-    "lat": 37.761,
-    "lng": 126.782,
-    "power_mw": 150,
-    "it_mw": null,
-    "start_ym": "",
-    "complete_ym": "2028",
-    "rfs_ym": "",
-    "note": "1.3조 추가 투자로 2·3동 건설, 4동 설계 착수. 2~4동 2028년까지 준공 목표. 150MW는 캠퍼스 200MW − 1동 50MW로 역산. AIDC 총 2조 자체 조달. 전산동 4개(1동 포함) 2027~2028 순차 가동, 전체 수전 200MW",
-    "conf": {
-      "owner": "확정",
-      "operator": "확정",
-      "contractor": "추정",
-      "power_mw": "추정",
-      "complete_ym": "추정",
-      "status": "추정",
-      "address": "추정"
-    },
-    "locked": {},
-    "permit_ref": null,
-    "player": "",
-    "created_at": "2026-10-20T14:00:00+09:00",
-    "updated_at": "2026-10-22T04:56:28.175Z",
-    "updated_by": "auto",
-    "id": "lgu-paju-2",
-    "name": "LG유플러스 파주 AIDC 2~4동",
-    "status": "개발중",
-    "phase": "개발",
-    "sido": "경기",
-    "sigungu": "파주시",
-    "addr_check": {
-      "status": "부분",
-      "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T04:56:28.175Z"
-    },
-    "dbo": {
-      "type": "자체",
-      "provider": "",
-      "scope": [],
-      "c": "추정",
-      "note": "발주처가 직접 운영"
-    },
-    "addr_std": {
-      "src": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
-      "how": "건물명(2~4동)",
-      "status": "후보",
-      "candidate": {
-        "road": "경기도 파주시 금정2길 9",
-        "jibun": "경기도 파주시 금촌동 786-28 파주제일퀵서비스",
-        "bdNm": "파주제일퀵서비스"
-      },
-      "at": "2026-10-22T01:07:13.380Z"
     },
     "steps": [
+      {
+        "label": "1동",
+        "mw": 51,
+        "basis": "수전",
+        "ym": "2027-06",
+        "status": "공사",
+        "c": "추정",
+        "note": "IT 31.8MW(사용자 입력), 2027-06 준공·완판, 2026-06 공정률 약 20%"
+      },
       {
         "label": "2동",
         "mw": 50,

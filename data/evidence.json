@@ -2253,7 +2253,7 @@
   },
   {
     "id": "e-lgu-paju-2-0",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "url": "https://dealsite.co.kr/articles/166204",
     "publisher": "딜사이트",
     "title": "LG유플러스 파주 AIDC 1.3조 추가 투자",
@@ -2268,7 +2268,7 @@
   },
   {
     "id": "e-lgu-paju-2-1",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "url": "https://www.etnews.com/20260806000339",
     "publisher": "전자신문",
     "title": "LGU+, AIDC에 2조 투자…외부 조달 없이 단계적 확장",
@@ -4907,22 +4907,6 @@
     "id": "e-lgu-paju-20261021054505-305",
     "dc_id": "lgu-paju",
     "title": "AI-DC KOREA 데이터센터 DB – LG유플러스 파주 AIDC 1동",
-    "url": "https://www.ai-dc.co.kr/data-centers",
-    "publisher": "AI-DC KOREA",
-    "pub_date": "2026-10-19",
-    "grade": "B",
-    "fields": [
-      "주소"
-    ],
-    "excerpt": "주소 경기도 파주시 (옛 LG디스플레이 공장 부지) (운영사 공식자료 기반 정리)",
-    "source_id": "s19",
-    "collected_at": "2026-10-21T05:45:05.445Z",
-    "added_by": "auto"
-  },
-  {
-    "id": "e-lgu-paju-2-20261021054505-306",
-    "dc_id": "lgu-paju-2",
-    "title": "AI-DC KOREA 데이터센터 DB – LG유플러스 파주 AIDC 2~4동",
     "url": "https://www.ai-dc.co.kr/data-centers",
     "publisher": "AI-DC KOREA",
     "pub_date": "2026-10-19",

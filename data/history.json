@@ -2025,13 +2025,13 @@
   },
   {
     "id": "h-lgu-paju-2-20261020140000-create",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "at": "2026-10-20T14:00:00+09:00",
     "field": "_create",
     "old": "",
     "new": "LG유플러스 파주 AIDC 2~4동",
     "by": "auto",
-    "note": "핵심 4사 정밀 조사 (2026-10-20)",
+    "note": "핵심 4사 정밀 조사 (2026-10-20) [옛 2~4동 항목]",
     "evidence_url": "https://dealsite.co.kr/articles/166204"
   },
   {
@@ -5866,14 +5866,14 @@
   },
   {
     "id": "h-lgu-paju-2-20261021012250-dbo",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "at": "2026-10-21T01:22:50.125Z",
     "field": "dbo",
     "old": "",
     "new": "{\"type\":\"자체\",\"provider\":\"\",\"scope\":[],\"c\":\"추정\",\"note\":\"발주처가 직접 운영\"}",
     "evidence_url": "",
     "by": "auto",
-    "note": "DBO 초기 분류(기존 운영사·비고 기준)"
+    "note": "DBO 초기 분류(기존 운영사·비고 기준) [옛 2~4동 항목]"
   },
   {
     "id": "h-lgu-pyeongchon1-20261021012250-dbo",
@@ -8033,36 +8033,36 @@
   },
   {
     "id": "h-lgu-paju-2-20261021054505-address",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "at": "2026-10-21T05:45:05.445Z",
     "field": "address",
     "old": "경기도 파주시",
     "new": "경기도 파주시 (옛 LG디스플레이 공장 부지)",
     "evidence_url": "https://www.ai-dc.co.kr/data-centers",
     "by": "auto",
-    "note": "주소 정밀화(운영사 공개 주소·AI-DC KOREA 대조)"
+    "note": "주소 정밀화(운영사 공개 주소·AI-DC KOREA 대조) [옛 2~4동 항목]"
   },
   {
     "id": "h-lgu-paju-2-20261021054505-note",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "at": "2026-10-21T05:45:05.445Z",
     "field": "note",
     "old": "1.3조 추가 투자로 2·3동 건설, 4동 설계 착수. 2~4동 2028년까지 준공 목표. 150MW는 캠퍼스 200MW − 1동 50MW로 역산. AIDC 총 2조 자체 조달.",
     "new": "1.3조 추가 투자로 2·3동 건설, 4동 설계 착수. 2~4동 2028년까지 준공 목표. 150MW는 캠퍼스 200MW − 1동 50MW로 역산. AIDC 총 2조 자체 조달. 전산동 4개(1동 포함) 2027~2028 순차 가동, 전체 수전 200MW",
     "evidence_url": "",
     "by": "auto",
-    "note": "용량 관련 공개 정보 보강"
+    "note": "용량 관련 공개 정보 보강 [옛 2~4동 항목]"
   },
   {
     "id": "h-lgu-paju-2-20261021054505-evidence-306",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "at": "2026-10-21T05:45:05.445Z",
     "field": "_evidence",
     "old": "",
     "new": "AI-DC KOREA 데이터센터 DB – LG유플러스 파주 AIDC 2~4동",
     "by": "auto",
     "evidence_url": "https://www.ai-dc.co.kr/data-centers",
-    "note": "근거 자동 추가"
+    "note": "근거 자동 추가 [옛 2~4동 항목]"
   },
   {
     "id": "h-de-pus1-20261021060943-lat",
@@ -12943,14 +12943,14 @@
   },
   {
     "id": "h-lgu-paju-2-20261022045628-steps",
-    "dc_id": "lgu-paju-2",
+    "dc_id": "lgu-paju",
     "at": "2026-10-22T04:56:28.175Z",
     "field": "steps",
     "old": "",
     "new": "[object Object], [object Object], [object Object]",
     "evidence_url": "",
     "by": "auto",
-    "note": "비고 기반 동별 일정(동별 50MW 균등 가정)"
+    "note": "비고 기반 동별 일정(동별 50MW 균등 가정) [옛 2~4동 항목]"
   },
   {
     "id": "h-sds-dongtan-20261022045628-steps",
@@ -13738,5 +13738,15 @@
     "old": "27년_경기_고양향동_에퀴닉스",
     "new": "경기_고양향동_에퀴닉스",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "id": "h-lgu-paju-20261022073515-merge",
+    "dc_id": "lgu-paju",
+    "at": "2026-10-22T07:35:15.730Z",
+    "field": "_merge",
+    "old": "{\"name\":\"LG유플러스 파주 AIDC 1동\",\"power\":51,\"it\":31.8,\"steps\":null}",
+    "new": "lgu-paju-2(2~4동) 통합 → 수전 200MW, 단계별 일정 1~4동",
+    "by": "auto",
+    "note": "사용자 요청: 파주 센터 하나로 통합"
   }
 ]
