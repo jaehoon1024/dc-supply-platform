@@ -26,6 +26,10 @@
     {
       "path": "/api/permits?sync=1",
       "schedule": "0 23 * * *"
+    },
+    {
+      "path": "/api/address?sync=1",
+      "schedule": "0 22 * * *"
     }
   ]
 }

@@ -329,3 +329,33 @@ test('건축HUB 동기화: 연면적 반영, 지번 없는 주소는 대지위�
   assert.equal(d.area_m2, 132331.77); assert.equal(d.conf.area_m2, '확정');
   assert.equal(d.address, '서울특별시 영등포구 여의도동 18'); assert.equal(d.conf.address, '확정');
 });
+
+test('도로명주소 정제: 번지 주소는 표준화·인허가 연결, 시군구만 있으면 건물명으로 지번 보완(추정)', async () => {
+  const { refineAddresses, cleanKeyword, LIMIT } = await import('../scripts/address.mjs');
+  LIMIT.gapMs = 0;
+  assert.equal(cleanKeyword('경기도 부천시 오정구 내동 222-13 외 10필지'), '경기도 부천시 오정구 내동 222-13');
+  const J = (o) => ({ roadAddrPart1: '', jibunAddr: '', bdNm: '', admCd: '', lnbrMnnm: '', lnbrSlno: '0', mtYn: '0', rn: '', buldMnnm: '', buldSlno: '0', emdNm: '', sggNm: '', ...o });
+  const db = {
+    '서울특별시 영등포구 여의도동 18': [J({ roadAddrPart1: '서울특별시 영등포구 국제금융로 10', jibunAddr: '서울특별시 영등포구 여의도동 18', admCd: '1156011000', lnbrMnnm: '18', emdNm: '여의도동', rn: '국제금융로', buldMnnm: '10', sggNm: '영등포구' }),
+      J({ jibunAddr: '서울특별시 영등포구 여의도동 182', admCd: '1156011000', lnbrMnnm: '182', emdNm: '여의도동' })],
+    '안산시 에포크': [J({ roadAddrPart1: '경기도 안산시 단원구 해봉로 1', jibunAddr: '경기도 안산시 단원구 성곡동 700-1', bdNm: '에포크 안산 데이터센터', admCd: '4127310300', lnbrMnnm: '700', lnbrSlno: '1', sggNm: '안산시 단원구' })]
+  };
+  const fetchImpl = async u => { const kw = new URL(u).searchParams.get('keyword'); const juso = db[kw] || [];
+    return { ok: true, status: 200, text: async () => JSON.stringify({ results: { common: { errorCode: '0', errorMessage: '정상' }, juso } }) }; };
+  const base = { status: '운영중', category: '상용', conf: {}, locked: {}, aliases: [], permit_ref: null };
+  const data = { dcs: [
+    { ...base, id: 'a', name: 'KT 여의도', address: '서울특별시 영등포구 여의도동 18' },
+    { ...base, id: 'b', name: '액티스 안산 데이터센터', aliases: ['에포크 안산'], address: '경기도 안산시' },
+    { ...base, id: 'c', name: '어딘가 센터', address: '경기도 화성시' }
+  ], evidence: [], history: [], runs: [] };
+  const out = await refineAddresses(data, { key: 'k', fetchImpl, now: NOW });
+  const [a, b, c] = out.dcs;
+  assert.equal(a.addr_std.road, '서울특별시 영등포구 국제금융로 10'); assert.equal(a.address, '서울특별시 영등포구 여의도동 18');
+  assert.deepEqual(a.permit_ref, { sigunguCd: '11560', bjdongCd: '11000', bun: '18', ji: '' });
+  assert.equal(b.address, '경기도 안산시 단원구 성곡동 700-1'); assert.equal(b.conf.address, '추정');
+  assert.equal(b.permit_ref.bun, '700'); assert.equal(b.addr_std.src, b.address);
+  assert.equal(c.addr_std.status, '미일치'); assert.equal(c.address, '경기도 화성시');
+  // 주소가 그대로면 다음 실행에서 다시 조회하지 않음
+  const again = await refineAddresses({ ...out, runs: [] }, { key: 'k', fetchImpl, now: NOW });
+  assert.equal(again.stats.checked, 0);
+});

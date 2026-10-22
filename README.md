@@ -56,6 +56,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 | 시각(KST) | 무엇 | 방식 |
 |---|---|---|
 | 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) |
+| 07시대 | 도로명주소 정제 (`/api/address?sync=1`) | Vercel Cron → 주소 표준화(도로명·지번·건물명), 시·군·구만 있는 주소는 건물명으로 지번 보완(추정), 인허가 연결 자동 설정 |
 | 06:47 | 30개 소스 뉴스·공시·발표 + 빈 칸 보강 5곳(`scripts/gaps.mjs`) | Claude 예약 작업 → `scripts/ingest.mjs`로 반영 후 저장소에 커밋 |
 | 월 07:13 | 플레이어(회사 75곳·핵심 4사 목표) 주간 동향·프로필 | Claude 예약 작업 → `scripts/ingest.mjs`(companies·targets) |
 
@@ -87,6 +88,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 - 매일 자동수집 때 `node scripts/gaps.mjs 5`가 고른 5곳(수전·주소 지번이 빈 센터, 조사 안 한 곳 먼저)을 운영사 소개 페이지·공시·환경영향평가서·위원회 회의록·지도로 집중 조사합니다.
 - 값을 못 찾아도 findings의 `gap_checked`에 넣으면 조사일(`gap_checked_at`)이 남아 다음 순번으로 넘어갑니다.
 - 건축HUB 동기화는 연면적(`area_m2`)을 반영하고, 주소에 지번이 없으면 대장의 대지위치로 보완합니다(확정).
+- 도로명주소 정제(환경변수 `JUSO_KEY`)는 주소가 바뀐 센터만 다시 조회합니다. 결과는 상세 화면 '위치' 섹션의 표준 주소로 보이고, 로그인 상태에서 `/api/address?dry=1`로 저장 없이 미리 볼 수 있습니다.
 
 ## 로컬 확인
 

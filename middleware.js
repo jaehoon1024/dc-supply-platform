@@ -2,7 +2,7 @@
 // - 모든 페이지·데이터·API 요청 전에 실행됩니다. 비밀번호는 Vercel 환경변수 SITE_PASSWORD(Sensitive)에만 있습니다.
 // - 비밀번호 확인·쿠키 발급은 api/gate.js(서버 함수)가 합니다. 맞게 입력하면 30일간 유지되는 쿠키를 발급합니다. 쿠키에는 비밀번호가 아닌 해시만 들어갑니다.
 // - 비밀번호를 바꾸면(SITE_PASSWORD 변경 후 Redeploy) 기존 쿠키는 모두 무효가 됩니다.
-// - Vercel Cron(인허가 동기화)은 api/permits.js가 자체 확인하므로 통과시킵니다.
+// - Vercel Cron(인허가 동기화·도로명주소 정제)은 api/permits.js·api/address.js가 자체 확인하므로 통과시킵니다.
 // - SITE_PASSWORD가 없으면 잠긴 상태로 안내만 보여 줍니다(실수로 공개되지 않도록).
 
 export const config = { matcher: '/((?!favicon\\.ico).*)' };
@@ -47,7 +47,7 @@ export default async function middleware(request) {
   const pw = process.env.SITE_PASSWORD || '';
 
   // Vercel Cron 동기화: api/permits.js가 Cron 여부를 다시 확인합니다.
-  if (url.pathname === '/api/permits' && url.searchParams.get('sync') === '1') return;
+  if (['/api/permits', '/api/address'].includes(url.pathname) && url.searchParams.get('sync') === '1') return;
 
   if (!pw) return page({ locked: true });
   const token = await tokenOf(pw);
