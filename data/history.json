@@ -13825,5 +13825,38 @@
     "old": "[object Object], [object Object]",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "actis-ansan",
+    "at": "2026-10-22T08:19:07.713Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-actis-ansan-20261022081907-power_mw-0",
+    "field": "power_mw",
+    "old": "",
+    "new": 100,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "actis-ansan",
+    "at": "2026-10-22T08:19:07.713Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-actis-ansan-20261022081907-it_mw-1",
+    "field": "it_mw",
+    "old": "",
+    "new": 65,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "actis-ansan",
+    "at": "2026-10-22T08:19:07.713Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-actis-ansan-20261022081907-steps-2",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]

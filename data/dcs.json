@@ -10,8 +10,8 @@
     "address": "경기도 안산시 단원구 성곡동 644-2",
     "lat": 37.318,
     "lng": 126.818,
-    "power_mw": null,
-    "it_mw": null,
+    "power_mw": 100,
+    "it_mw": 65,
     "start_ym": "2025-04",
     "complete_ym": "2028-10",
     "rfs_ym": "",
@@ -27,12 +27,14 @@
     },
     "locked": {
       "aliases": true,
-      "steps": true
+      "steps": true,
+      "power_mw": true,
+      "it_mw": true
     },
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T10:00:00+09:00",
-    "updated_at": "2026-10-22T07:15:15.009Z",
+    "updated_at": "2026-10-22T08:19:07.713Z",
     "updated_by": "user:정재훈",
     "id": "actis-ansan",
     "name": "액티스 안산 데이터센터",
@@ -43,7 +45,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T07:15:15.009Z"
+      "at": "2026-10-22T08:19:07.713Z"
     },
     "dbo": {
       "type": "자체",
@@ -62,7 +64,7 @@
       {
         "label": "1단계",
         "power_mw": 50,
-        "it_mw": null,
+        "it_mw": 32.5,
         "ym": "2028",
         "status": "계획",
         "c": "추정"
@@ -70,7 +72,7 @@
       {
         "label": "2단계",
         "power_mw": 50,
-        "it_mw": null,
+        "it_mw": 32.5,
         "ym": "2030",
         "status": "계획",
         "c": "추정"
