@@ -89,6 +89,7 @@ td.r,th.r{text-align:right}
 .phase{font-size:11px;color:var(--faint);margin-top:2px}
 .est{color:var(--est)}
 .est::before{content:"≈";margin-right:1px}
+.conv{color:var(--faint);font-style:italic}.conv small{font-size:10px;font-style:normal;margin-left:2px;padding:0 3px;border:1px dashed var(--line);border-radius:3px}
 .conf-k{display:inline-block;font-size:10px;padding:0 5px;border-radius:3px;border:1px solid currentColor;line-height:16px}
 .conf-k.c{color:var(--ok)}
 .conf-k.e{color:var(--est);background:var(--est-bg);border-style:dashed}

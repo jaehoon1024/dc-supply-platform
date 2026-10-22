@@ -5325,5 +5325,21 @@
     "source_id": "s30",
     "collected_at": "2026-10-21T23:58:36.742Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-ksquare-ujb-20261022002050-330",
+    "dc_id": "ksquare-ujb",
+    "title": "건축인허가 기본개요 – 의정부 AI센터",
+    "url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.000000000000001e%2B21",
+    "publisher": "국토교통부 건축HUB",
+    "pub_date": "2026-10-22",
+    "grade": "A",
+    "fields": [
+      "연면적"
+    ],
+    "excerpt": "연면적 80588.83㎡ · 경기도 의정부시 산곡동 805번지",
+    "source_id": "s02",
+    "collected_at": "2026-10-22T00:20:50.363Z",
+    "added_by": "auto"
   }
 ]

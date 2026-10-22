@@ -9459,5 +9459,192 @@
     "by": "auto",
     "evidence_url": "https://www.vegannews.co.kr/news/article.html?no=395294",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-actis-yangpyeong-20261022002050-area_m2",
+    "dc_id": "actis-yangpyeong",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 26445.38,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1020100087011",
+    "by": "auto",
+    "note": "건축HUB 인허가 (양평동3가 77-80 데이터센터) 연면적"
+  },
+  {
+    "id": "h-empyrion-kr1-20261022002050-area_m2",
+    "dc_id": "empyrion-kr1",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 55436.06,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1023100142294",
+    "by": "auto",
+    "note": "건축HUB 인허가 (엠피리온 디지털 AI 캠퍼스) 연면적"
+  },
+  {
+    "id": "h-gangneung-anin-20261022002050-area_m2",
+    "dc_id": "gangneung-anin",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 52491.58,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000009e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (ORIENTE IDC) 연면적"
+  },
+  {
+    "id": "h-gangneung-anin-20261022002050-address",
+    "dc_id": "gangneung-anin",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "address",
+    "old": "강원특별자치도 강릉시 강동면 안인진리",
+    "new": "강원특별자치도 강릉시 강동면 안인진리 300-31",
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000009e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (ORIENTE IDC) 대지위치"
+  },
+  {
+    "id": "h-ksquare-ujb-20261022002050-area_m2",
+    "dc_id": "ksquare-ujb",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 80588.83,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.000000000000001e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (의정부 AI센터) 연면적"
+  },
+  {
+    "id": "h-ksquare-ujb-20261022002050-evidence-330",
+    "dc_id": "ksquare-ujb",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "건축인허가 기본개요 – 의정부 AI센터",
+    "by": "auto",
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.000000000000001e%2B21",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-kt-bucheon-20261022002050-area_m2",
+    "dc_id": "kt-bucheon",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 71160.33,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1097100076386",
+    "by": "auto",
+    "note": "건축HUB 인허가 (PEACH PFV DATA CENTER) 연면적"
+  },
+  {
+    "id": "h-kt-yeouido-20261022002050-area_m2",
+    "dc_id": "kt-yeouido",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 132331.77,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1020100005407",
+    "by": "auto",
+    "note": "건축HUB 인허가 (여의도동 18 방송통신시설 (한국방송공사)) 연면적"
+  },
+  {
+    "id": "h-kt-yeouido-20261022002050-address",
+    "dc_id": "kt-yeouido",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "address",
+    "old": "서울특별시 영등포구 여의도동",
+    "new": "서울특별시 영등포구 여의도동 18",
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1020100005407",
+    "by": "auto",
+    "note": "건축HUB 인허가 (여의도동 18 방송통신시설 (한국방송공사)) 대지위치"
+  },
+  {
+    "id": "h-lgu-daejeon-20261022002050-area_m2",
+    "dc_id": "lgu-daejeon",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 3538.65,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000007e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (엘지유플러스 탄방국사) 연면적"
+  },
+  {
+    "id": "h-lgu-nonhyeon-20261022002050-area_m2",
+    "dc_id": "lgu-nonhyeon",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 28058.78,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#10244516",
+    "by": "auto",
+    "note": "건축HUB 인허가 (주식회사 데이콤 KIDC) 연면적"
+  },
+  {
+    "id": "h-nfd-yongin-20261022002050-area_m2",
+    "dc_id": "nfd-yongin",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 55655.39,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000004e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (용인 덕성리 데이터센터) 연면적"
+  },
+  {
+    "id": "h-pacific-bucheon-20261022002050-area_m2",
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 26080.59,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000003e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (부천 내동 데이터센터) 연면적"
+  },
+  {
+    "id": "h-smilegate-munbong-20261022002050-area_m2",
+    "dc_id": "smilegate-munbong",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 48533.95,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000008e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (문봉동 방송통신시설) 연면적"
+  },
+  {
+    "id": "h-smilegate-munbong-20261022002050-address",
+    "dc_id": "smilegate-munbong",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "address",
+    "old": "경기도 고양시 일산동구 문봉동",
+    "new": "경기도 고양시 일산동구 문봉동 16-2",
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000008e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (문봉동 방송통신시설) 대지위치"
+  },
+  {
+    "id": "h-smilegate-siksa-20261022002050-area_m2",
+    "dc_id": "smilegate-siksa",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "area_m2",
+    "old": "",
+    "new": 44580.27,
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000005e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (일산2 IDC) 연면적"
+  },
+  {
+    "id": "h-smilegate-siksa-20261022002050-address",
+    "dc_id": "smilegate-siksa",
+    "at": "2026-10-22T00:20:50.363Z",
+    "field": "address",
+    "old": "경기도 고양시 일산동구 식사동",
+    "new": "경기도 고양시 일산동구 식사동 2-8",
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1.0000000000000005e%2B21",
+    "by": "auto",
+    "note": "건축HUB 인허가 (일산2 IDC) 대지위치"
   }
 ]

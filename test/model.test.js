@@ -294,3 +294,38 @@ test('건축HUB 동기화: 시간 제한에 걸리면 cursor를 남기고 다음
     assert.equal(r2.runs.at(-1).cursor, 0); assert.equal(r2.runs.at(-1).checked, 3);
   } finally { Object.assign(LIMIT, saved); }
 });
+
+test('수전 환산: 수전 없으면 IT×1.4, 둘 다 없으면 연면적×1.0kW/㎡ (참고용 표시)', async () => {
+  const { capacityOf } = await import('../lib/model.js');
+  assert.deepEqual(capacityOf({ power_mw: 30 }, 'power_mw'), { mw: 30, how: '추정' });
+  assert.equal(capacityOf({ it_mw: 10 }, 'power_mw').how, '환산');
+  const a = capacityOf({ area_m2: 26445 }, 'power_mw');
+  assert.equal(a.how, '연면적 환산'); assert.equal(a.mw, 26.4);
+  assert.equal(capacityOf({ area_m2: 26445 }, 'it_mw').mw, 18.9);
+  assert.equal(capacityOf({}, 'power_mw').mw, null);
+});
+
+test('빈 칸 보강 대상: 조사 안 한 센터 먼저, gap_checked 기록 후 다음 순번', async () => {
+  const { pickGaps } = await import('../scripts/gaps.mjs');
+  const { ingest } = await import('../scripts/ingest.mjs');
+  const list = [
+    { id: 'a', status: '운영중', address: '서울특별시 강남구', power_mw: null, it_mw: null },
+    { id: 'b', status: '설계중', address: '경기도 김포시 구래동 6880-1', power_mw: null, it_mw: 10 },
+    { id: 'c', status: '운영중', address: '서울특별시 강남구 역삼동 1', power_mw: 20, it_mw: null, area_m2: 1 }
+  ];
+  assert.deepEqual(pickGaps(list, 5).map(x => x.dc.id), ['a', 'b']);
+  const out = ingest({ dcs: list, evidence: [], history: [], sources: [], runs: [] }, { gap_checked: ['a'] }, NOW);
+  assert.equal(out.dcs.find(d => d.id === 'a').gap_checked_at, NOW);
+  assert.deepEqual(pickGaps(out.dcs, 5).map(x => x.dc.id), ['b', 'a']);
+});
+
+test('건축HUB 동기화: 연면적 반영, 지번 없는 주소는 대지위치로 보완', async () => {
+  const dc = { ...dcs[0], id: 'x1', status: '운영중', address: '서울특별시 영등포구 여의도동', area_m2: null, locked: {}, conf: {},
+    permit_ref: { sigunguCd: '11560', bjdongCd: '11000', bun: '', ji: '' }, prep: null };
+  const item = { mgmPmsrgstPk: 'P1', bldNm: '여의도 데이터센터', platPlc: '서울특별시 영등포구 여의도동 18번지', mainPurpsCdNm: '방송통신시설', totArea: '132331.77' };
+  const fetchImpl = async () => ({ ok: true, status: 200, text: async () => JSON.stringify({ response: { header: { resultCode: '00' }, body: { items: { item: [item] }, totalCount: 1 } } }) });
+  const out = await syncPermits({ dcs: [dc], evidence: [], history: [], permits: [], runs: [] }, { key: 'k', fetchImpl, now: NOW, log: () => {} });
+  const d = out.dcs[0];
+  assert.equal(d.area_m2, 132331.77); assert.equal(d.conf.area_m2, '확정');
+  assert.equal(d.address, '서울특별시 영등포구 여의도동 18'); assert.equal(d.conf.address, '확정');
+});

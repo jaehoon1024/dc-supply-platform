@@ -19,6 +19,7 @@
 //     { "player": "KT", "target_mw": 1000, "year": 2031, "basis": "", "note": "", "url": "",
 //       "reported_mw": 162, "reported_n": 15, "reported_basis": "", "reported_url": "" }
 //   ],
+//   "gap_checked": ["센터 id"],                             // 빈 칸 보강 조사한 센터(scripts/gaps.mjs 목록) — 값을 못 찾아도 넣기
 //   "kind": "자동수집",                                       // runs 로그 종류(주간 작업은 "플레이어 업데이트")
 //   "errors": 0,
 //   "summary": "한국어 2~3문장"
@@ -73,6 +74,11 @@ export function ingest(data, findings, now = new Date().toISOString()) {
       }
     } catch (e) { s.errors++; s.notes.push(String(e.message || e)); }
   }
+  // 빈 칸 보강 조사 기록: 값을 못 찾았어도 조사일을 남겨 다음 순번으로 넘깁니다 (scripts/gaps.mjs)
+  for (const gid of findings.gap_checked || []) {
+    if (!dcs.some(d => d.id === gid)) { s.errors++; s.notes.push(`보강 조사 센터 없음: ${gid}`); continue; }
+    dcs = dcs.map(d => (d.id === gid ? { ...d, gap_checked_at: now } : d)); s.gap_checked = (s.gap_checked || 0) + 1;
+  }
   // 회사 프로필
   const CO_FIELDS = ['name', 'aliases', 'type', 'roles', 'major', 'parent', 'note', 'url'];
   for (const c of findings.companies || []) {
@@ -116,7 +122,7 @@ export function ingest(data, findings, now = new Date().toISOString()) {
   sources = sources.map(src => (hits.has(src.id) ? { ...src, last_run: now, last_hits: hits.get(src.id) } : src));
   const kind = findings.kind || '자동수집';
   const run = { id: `r-${stamp(now).slice(0, 8)}-${kind === '자동수집' ? 'news' : kind === '플레이어 업데이트' ? 'players' : 'misc-' + stamp(now).slice(8, 12)}`, at: now, kind, checked: hits.size || (findings.companies || []).length, new_dcs: s.new_dcs, updated: s.updated + s.companies + s.targets,
-    evidence: s.evidence, proposals: s.proposals, errors: s.errors,
+    evidence: s.evidence, proposals: s.proposals, errors: s.errors, ...(s.gap_checked ? { gap_checked: s.gap_checked } : {}),
     summary: String(findings.summary || '').trim() || (s.new_dcs + s.updated + s.evidence + s.proposals + s.companies + s.new_companies + s.targets ? '' : '변경 없음') + (s.notes.length ? ` 오류: ${s.notes.slice(0, 3).join(' / ')}` : '') };
   runs = [...runs.filter(r => r.id !== run.id), run].slice(-400);
   return { dcs, evidence, history, sources, runs, companies, targets, stats: s };
@@ -135,7 +141,7 @@ async function main() {
   if (problems.length) { console.error('검증 실패:\n' + problems.slice(0, 20).join('\n')); process.exit(1); }
   if (!dry) for (const n of FILES) await writeFile(path.join(ROOT, 'data', `${n}.json`), JSON.stringify(out[n], null, 2) + '\n');
   const st = out.stats;
-  console.log(`${dry ? '[dry] ' : ''}신규 ${st.new_dcs} · 갱신 필드 ${st.updated} · 근거 ${st.evidence} · 제안 ${st.proposals} · 회사 갱신 ${st.companies}/신규 ${st.new_companies} · 목표 ${st.targets} · 오류 ${st.errors}${st.notes.length ? '\n' + st.notes.join('\n') : ''}`);
+  console.log(`${dry ? '[dry] ' : ''}신규 ${st.new_dcs} · 갱신 필드 ${st.updated} · 근거 ${st.evidence} · 제안 ${st.proposals} · 회사 갱신 ${st.companies}/신규 ${st.new_companies} · 목표 ${st.targets} · 보강조사 ${st.gap_checked || 0} · 오류 ${st.errors}${st.notes.length ? '\n' + st.notes.join('\n') : ''}`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main().catch(e => { console.error(e); process.exit(1); });

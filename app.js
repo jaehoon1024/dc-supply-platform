@@ -1,4 +1,4 @@
-import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf } from '/lib/model.js';
+import { STATUSES, CONF_FIELDS, LABEL, REGIONS, isNum, phaseOf, confOf, ymKey, regionOf, addrCheck, gmapUrl, PLAYERS, playerOf, watchOf, WATCH_NAMES, BUILDERS, forecast, locOf, SIDO_ORDER, METRO_SIDO, capacityOf, AREA_KW_PER_M2, STATUS_PROB, STATUS_LEAD_MONTHS, PUE_RATIO, PREP_STEPS, PREP_STAGES, PREP_PROB, prepOf, SCORE_AXES, SCORE_ITEMS, SCORE_VIEWS, valueScore, ROLES, COMPANY_TYPES, companyMatch, companyIndex, companyStats, DBO_TYPES, DBO_SCOPE, DBO_EXTERNAL, dboOf, dboLabel, CAMPUS_BASIS, campusPlans, COMPLAINT_TYPES, COMPLAINT_LEVELS, complaintRisk, SCORE_VIEW_ORDER, viewKey, lensOf } from '/lib/model.js';
 
 const PLAYER_VAR = { LG유플러스: '--p-lgu', KT: '--p-kt', SK: '--p-sk', 'LG CNS': '--p-cns', 기타: '--p-etc' };
 const pchip = dc => { const p = playerOf(dc); return (p === '기타' ? '' : `<span class="pchip" style="--pc:var(${PLAYER_VAR[p]})">${esc(p)}</span>`) + watchOf(dc).map(w => `<span class="wchip ${BUILDERS.includes(w) ? 'b' : ''}">${BUILDERS.includes(w) ? '시공 ' : ''}${esc(w)}</span>`).join(''); };
@@ -48,6 +48,13 @@ function val(dc, f, txt) {
   const v = txt ?? dc[f];
   if (v === null || v === undefined || v === '') return '<span style="color:var(--faint)">—</span>';
   return confOf(dc, f) === '확정' ? `<span>${esc(v)}</span>` : `<span class="est">${esc(v)}</span>`;
+}
+// 수전이 비어 있으면 IT·연면적 환산값을 흐린 글씨 + '환산' 표시로 구분 (입력값이 아님)
+function powerCell(dc) {
+  if (isNum(dc.power_mw)) return val(dc, 'power_mw', fmtMW(dc.power_mw));
+  const c = capacityOf(dc, 'power_mw');
+  if (c.mw === null) return val(dc, 'power_mw');
+  return `<span class="conv" title="${c.how === '연면적 환산' ? `연면적 ${Number(dc.area_m2).toLocaleString()}㎡ × ${AREA_KW_PER_M2}kW/㎡` : `IT ${fmtMW(dc.it_mw)}MW × ${PUE_RATIO}`} (${c.how} · 참고용, 입력값 아님)">${fmtMW(c.mw)}<small>환산</small></span>`;
 }
 const PREP_ICON = { done: '●', doing: '◐', todo: '○', unknown: '·' };
 function prepMini(dc) {
@@ -148,7 +155,7 @@ function renderList() {
       <td><span class="cat">${esc(dc.category || '—')}</span></td>
       <td>${statusPill(dc.status)}<div class="phase">${phaseOf(dc.status)}</div>${dc.status === '설계중' ? prepMini(dc) : ''}</td>
       <td><div>${esc(locOf(dc).sido)} ${esc(locOf(dc).sigungu)}${locOf(dc).area ? `<span class="atag ${locOf(dc).area === '수도권' ? 'm' : ''}">${locOf(dc).area === '수도권' ? '수도권' : '지방·' + esc(locOf(dc).region)}</span>` : ''}</div><span class="addr"><span class="dot" style="background:var(${ADDR_COLOR[ac.status]})"></span>${esc(ac.status)}</span></td>
-      <td class="r num">${val(dc, 'power_mw', fmtMW(dc.power_mw))}</td>
+      <td class="r num">${powerCell(dc)}</td>
       <td class="r num">${val(dc, 'it_mw', fmtMW(dc.it_mw))}</td>
       <td class="num">${val(dc, 'start_ym')}</td><td class="num">${val(dc, 'complete_ym')}</td><td class="num">${val(dc, 'rfs_ym')}</td>
       <td class="parties"><div><b>개발</b>${val(dc, 'owner')}</div><div><b>시공</b>${val(dc, 'contractor')}</div><div><b>운영</b>${val(dc, 'operator')}</div>${dboBadge(dc)}${listCm(dc)}</td>
@@ -353,7 +360,7 @@ function renderSupply() {
     <p class="note">용량 미상 ${fc.unknown.length}곳은 제외 · 2032년 이후 ${fc.later.length}곳 · ${unit} 값이 없고 다른 지표만 있으면 PUE ${PUE_RATIO}로 환산(추정)</p>`;
   // evidence rows
   const rows = fc.rows.filter(r => r.year !== 'base' && r.year >= FROM).sort((a, b) => a.year - b.year || b.mw - a.mw);
-  $('#supList').innerHTML = rows.map(r => `<div class="mrow" data-id="${esc(r.dc.id)}"><span>${r.year} · ${esc(r.dc.name)}${pchip(r.dc)}</span><span class="note num">${fmtMW(r.mw)}MW${r.cap.how === '환산' ? '(환산)' : r.cap.how === '추정' ? '(추정)' : ''} × ${Math.round(r.prob * 100)}% · ${esc(r.timing.how === '리드타임 추정' ? `${r.dc.status} → ${r.timing.ym} 추정` : `${r.timing.how} ${r.timing.ym}`)}</span></div>`).join('') || '<div class="note">해당 기간 공급 예정 센터가 없습니다.</div>';
+  $('#supList').innerHTML = rows.map(r => `<div class="mrow" data-id="${esc(r.dc.id)}"><span>${r.year} · ${esc(r.dc.name)}${pchip(r.dc)}</span><span class="note num">${fmtMW(r.mw)}MW${r.cap.how === '환산' ? '(환산)' : r.cap.how === '연면적 환산' ? '(연면적 환산)' : r.cap.how === '추정' ? '(추정)' : ''} × ${Math.round(r.prob * 100)}% · ${esc(r.timing.how === '리드타임 추정' ? `${r.dc.status} → ${r.timing.ym} 추정` : `${r.timing.how} ${r.timing.ym}`)}</span></div>`).join('') || '<div class="note">해당 기간 공급 예정 센터가 없습니다.</div>';
   $('#supAssume').innerHTML = `
     <p><b>공급 시점</b> RFS → 없으면 준공월 → 없으면 오늘 기준 상태별 소요기간(${Object.entries(STATUS_LEAD_MONTHS).map(([k, v]) => `${k} ${v}개월`).join(', ')})으로 추정합니다. 분기·반기 표기는 그 기간의 마지막 달로 봅니다.</p>
     <p><b>가중 추정</b> 개발 중인 센터는 상태별 실현확률을 곱합니다: ${Object.entries(STATUS_PROB).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(', ')}. 설계중 센터는 준비단계 정보가 있으면 진척도로 보정합니다: ${Object.entries(PREP_PROB).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(', ')}. '계획 그대로'는 확률을 적용하지 않습니다.</p>
@@ -508,7 +515,7 @@ $('#btnAdd').addEventListener('click', () => openDetail(null));
 
 /* ---------------- CSV ---------------- */
 $('#btnCsv').addEventListener('click', () => {
-  const cols = ['id', 'name', 'category', 'status', 'phase', 'owner', 'contractor', 'operator', 'address', 'sido', 'sigungu', 'lat', 'lng', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'note'];
+  const cols = ['id', 'name', 'category', 'status', 'phase', 'owner', 'contractor', 'operator', 'address', 'sido', 'sigungu', 'lat', 'lng', 'power_mw', 'it_mw', 'area_m2', 'start_ym', 'complete_ym', 'rfs_ym', 'note'];
   const head = cols.map(c => LABEL[c] || c).concat(CONF_FIELDS.map(f => `${LABEL[f]} 근거`));
   const q = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
   const lines = [head.map(q).join(',')].concat(filtered().map(d => cols.map(c => q(Array.isArray(d[c]) ? d[c].join(' ') : d[c])).concat(CONF_FIELDS.map(f => q(confOf(d, f)))).join(',')));
@@ -564,7 +571,7 @@ function openDetail(id, preset = null) {
   renderSheet();
 }
 
-const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus', 'complaints'];
+const EDIT_KEYS = ['name', 'aliases', 'category', 'status', 'owner', 'contractor', 'operator', 'power_mw', 'it_mw', 'area_m2', 'start_ym', 'complete_ym', 'rfs_ym', 'address', 'lat', 'lng', 'note', 'permit_ref', 'player', 'prep', 'score_manual', 'dbo', 'campus', 'complaints'];
 const same = (a, b) => JSON.stringify(a ?? '') === JSON.stringify(b ?? '');
 function diff() {
   const d = sheet.draft, o = sheet.orig, changes = {}, conf = {}, locked = {};
@@ -617,7 +624,8 @@ function renderSheet() {
     </section>
     ${sheet.id ? valueSection(d) : ''}
     <section class="sec"><h3>용량 · 일정</h3><div class="frm">
-      ${fieldHTML('power_mw', 'number', { ph: 'MW' })}${fieldHTML('it_mw', 'number', { ph: 'MW' })}
+      ${fieldHTML('power_mw', 'number', { ph: 'MW' })}${fieldHTML('it_mw', 'number', { ph: 'MW' })}${fieldHTML('area_m2', 'number', { ph: '㎡ (건축HUB 자동)' })}
+      ${!isNum(d.power_mw) && capacityOf(d, 'power_mw').mw !== null ? `<div class="full note">수전 미상 → 참고 환산 ${fmtMW(capacityOf(d, 'power_mw').mw)}MW (${capacityOf(d, 'power_mw').how}${capacityOf(d, 'power_mw').how === '연면적 환산' ? ` · ${AREA_KW_PER_M2}kW/㎡` : ` · IT×${PUE_RATIO}`}). 공급 추정에 '환산'으로 들어갑니다.</div>` : ''}
       ${fieldHTML('start_ym', 'text', { ph: 'YYYY-MM' })}${fieldHTML('complete_ym', 'text', { ph: 'YYYY-MM / YYYY-Q4 / YYYY-H2' })}${fieldHTML('rfs_ym', 'text', { ph: 'YYYY-MM / YYYY-Q4 / YYYY-H2' })}
     </div></section>
     <section class="sec"><h3>위치 · 주소 정합성</h3><div class="frm">
@@ -712,7 +720,7 @@ function bindSheet() {
     el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => {
       let v = el.value;
       if (f === 'aliases') v = v.split(',').map(s => s.trim()).filter(Boolean);
-      else if (['power_mw', 'it_mw', 'lat', 'lng'].includes(f)) v = v.trim() === '' ? null : (isNum(v) ? Number(v) : v);
+      else if (['power_mw', 'it_mw', 'area_m2', 'lat', 'lng'].includes(f)) v = v.trim() === '' ? null : (isNum(v) ? Number(v) : v);
       sheet.draft[f] = v;
       const changed = !same(v, sheet.orig[f]);
       sheet.draft.locked[f] = changed ? true : !!(sheet.orig.locked || {})[f];

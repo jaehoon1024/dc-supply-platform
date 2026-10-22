@@ -4,7 +4,7 @@
 // - 사람이 고정한 필드는 덮어쓰지 않고 히스토리에 '제안'으로만 남깁니다.
 // 필요: 환경변수 BUILDING_HUB_KEY (data.go.kr 일반 인증키, Decoding 값)
 import { readFile, writeFile } from 'node:fs/promises';
-import { applyAuto, addEvidence, stamp } from '../lib/model.js';
+import { applyAuto, addEvidence, stamp, parseSido, isNum } from '../lib/model.js';
 
 const ENDPOINT = 'https://apis.data.go.kr/1613000/ArchPmsHubService/getApBasisOulnInfo';
 const DC_HINT = /(데이터|IDC|전산|클라우드|AI|방송통신)/i;
@@ -112,6 +112,11 @@ export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date
         const site = dc.prep?.site || { state: '확보', ym: '', c: '추정', note: '건축허가로부터 추정' };
         upd.prep = { value: { ...(dc.prep || {}), site, permit: { state: '허가', ym: ym(it.archPmsDay), c: '확정', note: '건축HUB 허가일' } }, note: `${note} 건축허가`, evidence_url: url };
       }
+      if (p.totArea && !(isNum(dc.area_m2) && Math.abs(+dc.area_m2 - p.totArea) < 1)) upd.area_m2 = { value: p.totArea, conf: '확정', note: `${note} 연면적`, evidence_url: url };
+      // 주소에 지번이 없으면(행정동 수준) 대장의 대지위치로 보완
+      const plat = String(p.platPlc || '').replace(/번지$/, '').trim();
+      if (plat && /\d/.test(plat) && !/\d/.test(parseSido(dc.address).rest) && dc.address !== plat)
+        upd.address = { value: plat, conf: '확정', note: `${note} 대지위치`, evidence_url: url };
       if (p.realStcnsDay) upd.start_ym = { value: ym(it.realStcnsDay), conf: '확정', note, evidence_url: url };
       if (p.useAprDay) upd.complete_ym = { value: ym(it.useAprDay), conf: '확정', note, evidence_url: url };
       if (p.useAprDay && ['설계중', '착공', '개발중'].includes(dc.status)) upd.status = { value: '준공', conf: '확정', note: `${note} 사용승인`, evidence_url: url };
@@ -121,7 +126,7 @@ export async function syncPermits(data, { key, fetchImpl = fetch, now = new Date
         dcs = r.dcs; history = r.history; stats.updated += r.updated; stats.proposals += r.proposals;
         if (r.updated || r.proposals) {
           const e = addEvidence(evidence, history, { dc_id: dc.id, url, title: `건축인허가 기본개요 – ${p.bldNm || dc.name}`, publisher: '국토교통부 건축HUB',
-            pub_date: now.slice(0, 10), grade: 'A', fields: Object.keys(upd).map(f => ({ start_ym: '착공월', complete_ym: '준공월', status: '상태' })[f]),
+            pub_date: now.slice(0, 10), grade: 'A', fields: Object.keys(upd).map(f => ({ start_ym: '착공월', complete_ym: '준공월', status: '상태', area_m2: '연면적', address: '주소', prep: '준비단계' })[f]).filter(Boolean),
             excerpt: `허가 ${p.archPmsDay || '-'} · 착공 ${p.realStcnsDay || '-'} · 사용승인 ${p.useAprDay || '-'} · 연면적 ${p.totArea ?? '-'}㎡ · ${p.platPlc}`,
             source_id: 's02' }, now, 'auto');
           evidence = e.evidence; history = e.history; if (e.added) stats.evidence++;
