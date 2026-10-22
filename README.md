@@ -56,7 +56,7 @@ data/                             dcs, evidence, history, sources, runs, permits
 | 시각(KST) | 무엇 | 방식 |
 |---|---|---|
 | 08:00 | 건축HUB 착공·사용승인일 → 상태·착공월·준공월(A등급) | Vercel Cron (`/api/permits?sync=1`) |
-| 07시대 | 도로명주소 정제 (`/api/address?sync=1`) | Vercel Cron → 주소 표준화(도로명·지번·건물명), 시·군·구만 있는 주소는 건물명으로 지번 보완(추정), 인허가 연결 자동 설정 |
+| 07시대 | 도로명주소 정제 (`/api/address?sync=1`) | Vercel Cron → 주소 표준화(도로명·지번·건물명), 시·군·구만 있는 주소는 건물명으로 지번 보완(추정), 인허가 연결 자동 설정, 좌표 보정(`JUSO_COORD_KEY`, 50m 이상 차이 시) |
 | 06:47 | 30개 소스 뉴스·공시·발표 + 빈 칸 보강 5곳(`scripts/gaps.mjs`) | Claude 예약 작업 → `scripts/ingest.mjs`로 반영 후 저장소에 커밋 |
 | 월 07:13 | 플레이어(회사 75곳·핵심 4사 목표) 주간 동향·프로필 | Claude 예약 작업 → `scripts/ingest.mjs`(companies·targets) |
 

@@ -1,6 +1,6 @@
 // GET /api/address?sync=1 — (Vercel Cron 전용, 매일 07시대) 도로명주소 API로 주소 표준화·지번 보완·인허가 연결 후 GitHub에 커밋
 // GET /api/address?dry=1  — (로그인 사용자) 저장하지 않고 결과만 미리 보기 (최대 60초 조회)
-// 필요: 환경변수 JUSO_KEY (행정안전부 도로명주소 검색 API 승인키)
+// 필요: 환경변수 JUSO_KEY (행정안전부 도로명주소 검색 API 승인키), 선택: JUSO_COORD_KEY (좌표제공 API — 좌표 보정)
 import { readData, transact, githubEnabled } from '../lib/store.js';
 import { refineAddresses } from '../scripts/address.mjs';
 
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     try {
       let summary = '';
       const out = await transact(['dcs', 'evidence', 'history', 'runs'], async d => {
-        const r = await refineAddresses({ ...d, runs: d.runs || [] }, { key, now, budgetMs: 150000 });
+        const r = await refineAddresses({ ...d, runs: d.runs || [] }, { key, coordKey: process.env.JUSO_COORD_KEY || '', now, budgetMs: 150000 });
         summary = r.runs.at(-1)?.summary || '';
         return { files: { dcs: r.dcs, evidence: r.evidence, history: r.history, runs: r.runs }, message: `data: 도로명주소 정제 ${now.slice(0, 10)}` };
       });
@@ -30,10 +30,11 @@ export default async function handler(req, res) {
   try {
     const { data } = await readData(['dcs', 'evidence', 'history', 'runs']);
     const before = new Map(data.dcs.map(d => [d.id, d]));
-    const r = await refineAddresses(data, { key, now, budgetMs: 60000 });
-    const changes = r.dcs.filter(d => d.addr_std && d.addr_std.at === now).map(d => ({ id: d.id, name: d.name, before: before.get(d.id)?.address, after: d.address,
+    const r = await refineAddresses(data, { key, coordKey: process.env.JUSO_COORD_KEY || '', now, budgetMs: 60000 });
+    const changes = r.dcs.filter(d => d.addr_std && (d.addr_std.at === now || d.addr_std.coord_at === now)).map(d => ({ id: d.id, name: d.name, before: before.get(d.id)?.address, after: d.address,
       road: d.addr_std.road || '', jibun: d.addr_std.jibun || '', bdNm: d.addr_std.bdNm || '', how: d.addr_std.how, status: d.addr_std.status || '일치',
-      permit_ref_added: !before.get(d.id)?.permit_ref && !!d.permit_ref }));
+      permit_ref_added: !before.get(d.id)?.permit_ref && !!d.permit_ref,
+      coord_before: [before.get(d.id)?.lat ?? null, before.get(d.id)?.lng ?? null], coord_after: [d.lat ?? null, d.lng ?? null] }));
     return res.status(200).json({ configured: true, dry: true, summary: r.runs.at(-1)?.summary, changes });
   } catch (e) { return res.status(502).json({ configured: true, ok: false, error: String(e.message || e) }); }
 }

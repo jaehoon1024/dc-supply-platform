@@ -336,11 +336,13 @@ test('도로명주소 정제: 번지 주소는 표준화·인허가 연결, 시�
   assert.equal(cleanKeyword('경기도 부천시 오정구 내동 222-13 외 10필지'), '경기도 부천시 오정구 내동 222-13');
   const J = (o) => ({ roadAddrPart1: '', jibunAddr: '', bdNm: '', admCd: '', lnbrMnnm: '', lnbrSlno: '0', mtYn: '0', rn: '', buldMnnm: '', buldSlno: '0', emdNm: '', sggNm: '', ...o });
   const db = {
-    '서울특별시 영등포구 여의도동 18': [J({ roadAddrPart1: '서울특별시 영등포구 국제금융로 10', jibunAddr: '서울특별시 영등포구 여의도동 18', admCd: '1156011000', lnbrMnnm: '18', emdNm: '여의도동', rn: '국제금융로', buldMnnm: '10', sggNm: '영등포구' }),
+    '서울특별시 영등포구 여의도동 18': [J({ roadAddrPart1: '서울특별시 영등포구 국제금융로 10', jibunAddr: '서울특별시 영등포구 여의도동 18', admCd: '1156011000', lnbrMnnm: '18', emdNm: '여의도동', rn: '국제금융로', buldMnnm: '10', sggNm: '영등포구', rnMgtSn: 'R1' }),
       J({ jibunAddr: '서울특별시 영등포구 여의도동 182', admCd: '1156011000', lnbrMnnm: '182', emdNm: '여의도동' })],
     '안산시 에포크': [J({ roadAddrPart1: '경기도 안산시 단원구 해봉로 1', jibunAddr: '경기도 안산시 단원구 성곡동 700-1', bdNm: '에포크 안산 데이터센터', admCd: '4127310300', lnbrMnnm: '700', lnbrSlno: '1', sggNm: '안산시 단원구' })]
   };
-  const fetchImpl = async u => { const kw = new URL(u).searchParams.get('keyword'); const juso = db[kw] || [];
+  const fetchImpl = async u => { const q = new URL(u).searchParams;
+    if (u.includes('addrCoordApi')) return { ok: true, status: 200, text: async () => JSON.stringify({ results: { common: { errorCode: '0' }, juso: q.get('rnMgtSn') === 'R1' ? [{ entX: '953898.449', entY: '1952035.979' }] : [] } }) };
+    const kw = q.get('keyword'); const juso = db[kw] || [];
     return { ok: true, status: 200, text: async () => JSON.stringify({ results: { common: { errorCode: '0', errorMessage: '정상' }, juso } }) }; };
   const base = { status: '운영중', category: '상용', conf: {}, locked: {}, aliases: [], permit_ref: null };
   const data = { dcs: [
@@ -348,14 +350,17 @@ test('도로명주소 정제: 번지 주소는 표준화·인허가 연결, 시�
     { ...base, id: 'b', name: '액티스 안산 데이터센터', aliases: ['에포크 안산'], address: '경기도 안산시' },
     { ...base, id: 'c', name: '어딘가 센터', address: '경기도 화성시' }
   ], evidence: [], history: [], runs: [] };
-  const out = await refineAddresses(data, { key: 'k', fetchImpl, now: NOW });
+  const out = await refineAddresses(data, { key: 'k', coordKey: 'c', fetchImpl, now: NOW });
   const [a, b, c] = out.dcs;
   assert.equal(a.addr_std.road, '서울특별시 영등포구 국제금융로 10'); assert.equal(a.address, '서울특별시 영등포구 여의도동 18');
   assert.deepEqual(a.permit_ref, { sigunguCd: '11560', bjdongCd: '11000', bun: '18', ji: '' });
+  assert.equal(a.lat, 37.566535); assert.equal(a.lng, 126.977969); // UTM-K → WGS84 변환
+  const { toUtmk, fromUtmk } = await import('../lib/utmk.js');
+  const p = toUtmk(35.1796, 129.0756); const q = fromUtmk(p.x, p.y); assert.ok(Math.abs(q.lat - 35.1796) < 1e-6 && Math.abs(q.lng - 129.0756) < 1e-6);
   assert.equal(b.address, '경기도 안산시 단원구 성곡동 700-1'); assert.equal(b.conf.address, '추정');
   assert.equal(b.permit_ref.bun, '700'); assert.equal(b.addr_std.src, b.address);
   assert.equal(c.addr_std.status, '미일치'); assert.equal(c.address, '경기도 화성시');
   // 주소가 그대로면 다음 실행에서 다시 조회하지 않음
-  const again = await refineAddresses({ ...out, runs: [] }, { key: 'k', fetchImpl, now: NOW });
+  const again = await refineAddresses({ ...out, runs: [] }, { key: 'k', coordKey: 'c', fetchImpl, now: NOW });
   assert.equal(again.stats.checked, 0);
 });
