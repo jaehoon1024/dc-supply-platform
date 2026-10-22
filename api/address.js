@@ -1,4 +1,5 @@
 // GET /api/address?sync=1 — (Vercel Cron 전용, 매일 07시대) 도로명주소 API로 주소 표준화·지번 보완·인허가 연결 후 GitHub에 커밋
+// GET /api/address?run=1  — (로그인 사용자) 지금 바로 실행해 GitHub에 커밋
 // GET /api/address?dry=1  — (로그인 사용자) 저장하지 않고 결과만 미리 보기 (최대 60초 조회)
 // 필요: 환경변수 JUSO_KEY (행정안전부 도로명주소 검색 API 승인키), 선택: JUSO_COORD_KEY (좌표제공 API — 좌표 보정)
 import { readData, transact, githubEnabled } from '../lib/store.js';
@@ -10,10 +11,11 @@ export default async function handler(req, res) {
   const url = new URL(req.url, 'http://localhost');
   const now = new Date().toISOString();
 
-  if (url.searchParams.get('sync') === '1') {
+  const manual = url.searchParams.get('run') === '1'; // 로그인 사용자의 즉시 실행 (middleware가 입장 쿠키를 확인)
+  if (url.searchParams.get('sync') === '1' || manual) {
     const auth = req.headers.authorization || '', ua = String(req.headers['user-agent'] || '');
     const cronOk = process.env.CRON_SECRET ? auth === `Bearer ${process.env.CRON_SECRET}` : /vercel-cron/i.test(ua);
-    if (!cronOk) return res.status(401).json({ error: '동기화는 예약 작업만 실행할 수 있습니다' });
+    if (!cronOk && !manual) return res.status(401).json({ error: '동기화는 예약 작업만 실행할 수 있습니다' });
     if (!githubEnabled()) return res.status(200).json({ synced: false, reason: 'GITHUB_TOKEN/GITHUB_REPO가 없어 결과를 저장할 수 없습니다' });
     try {
       let summary = '';
