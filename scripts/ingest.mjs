@@ -108,7 +108,7 @@ export function ingest(data, findings, now = new Date().toISOString()) {
   const T_FIELDS = ['target_mw', 'year', 'basis', 'note', 'url', 'reported_mw', 'reported_n', 'reported_basis', 'reported_url'];
   for (const t of findings.targets || []) {
     try {
-      if (!PLAYERS.includes(t.player)) throw new Error(`핵심 사업자가 아닙니다: ${t.player}`);
+      if (!PLAYERS.includes(t.player)) throw new Error(`사업자 목록(PLAYERS)에 없습니다: ${t.player}`);
       const cur = targets.find(x => x.player === t.player) || { player: t.player };
       const next = { ...cur };
       for (const f of T_FIELDS) {
