@@ -13946,5 +13946,38 @@
     "old": "",
     "new": "LG유플러스",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "nfd-yongin",
+    "at": "2026-10-22T08:33:01.236Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-nfd-yongin-20261022083301-aliases-0",
+    "field": "aliases",
+    "old": "27년_용인덕성_와이드클릭",
+    "new": "29년_DBO_파이프라인, 30년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "nfd-yongin",
+    "at": "2026-10-22T08:33:01.236Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-nfd-yongin-20261022083301-operator-1",
+    "field": "operator",
+    "old": "",
+    "new": "KT클라우드",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "nfd-yongin",
+    "at": "2026-10-22T08:33:01.236Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-nfd-yongin-20261022083301-steps-2",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
