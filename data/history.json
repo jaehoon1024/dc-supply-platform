@@ -13792,5 +13792,16 @@
     "old": "",
     "new": 129,
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pohang-ai",
+    "at": "2026-10-22T08:10:52.036Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pohang-ai-20261022081052-steps-0",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
