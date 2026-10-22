@@ -406,5 +406,17 @@
     "proposals": 0,
     "errors": 0,
     "summary": "코어허브 시흥 정왕 좌표 이동"
+  },
+  {
+    "id": "r-20261022-misc-0432",
+    "at": "2026-10-22T04:32:29.766Z",
+    "kind": "수동 반영",
+    "checked": 1,
+    "new_dcs": 1,
+    "updated": 13,
+    "evidence": 4,
+    "proposals": 0,
+    "errors": 0,
+    "summary": "에퀴닉스 업데이트: SL3x(고양 향동 24MW, 공사 중) 신규, SL2x 소유 구조(GIC 80%·Equinix 20%) 확정, SL1 2MW."
   }
 ]

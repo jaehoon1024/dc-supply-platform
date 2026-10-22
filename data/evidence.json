@@ -6622,5 +6622,72 @@
     "source_id": "s30",
     "collected_at": "2026-10-22T02:29:24.454Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl1-20261022043229-408",
+    "dc_id": "equinix-sl1",
+    "title": "Equinix SL1 Data Center in Seoul (2 MW)",
+    "url": "https://www.datacentermap.com/south-korea/seoul/equinix-sl1/",
+    "publisher": "Data Center Map",
+    "pub_date": "2026-10-22",
+    "grade": "C",
+    "fields": [
+      "IT"
+    ],
+    "excerpt": "Equinix SL1 2 MW",
+    "source_id": "s23",
+    "collected_at": "2026-10-22T04:32:29.766Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl2x-20261022043229-409",
+    "dc_id": "equinix-sl2x",
+    "title": "Equinix, GIC Form $525m, 45 MW South Korea xScale Data Center JV",
+    "url": "https://dgtlinfra.com/equinix-gic-525m-south-korea-xscale/",
+    "publisher": "Dgtl Infra",
+    "pub_date": "2022-01-27",
+    "grade": "B",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "SL2x·SL3x 45MW+, GIC 80% / Equinix 20%",
+    "source_id": "s16",
+    "collected_at": "2026-10-22T04:32:29.766Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl3x-20261022043229-410",
+    "dc_id": "equinix-sl3x",
+    "title": "Equinix SL3x Data Center in Seoul",
+    "url": "https://www.datacentermap.com/south-korea/seoul/equinix-sl3x/",
+    "publisher": "Data Center Map",
+    "pub_date": "2026-10-22",
+    "grade": "C",
+    "fields": [
+      "주소",
+      "IT",
+      "상태"
+    ],
+    "excerpt": "583 Hyangdong-dong, Deogyang-gu (고양 향동), 24 MW, Under Construction, construction began 2025",
+    "source_id": "s23",
+    "collected_at": "2026-10-22T04:32:29.766Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-equinix-sl3x-20261022043229-411",
+    "dc_id": "equinix-sl3x",
+    "title": "에퀴닉스, 국내 데이터센터 추가 착공으로 클라우드 성장 견인",
+    "url": "https://www.datanet.co.kr/news/articleView.html?idxno=170153",
+    "publisher": "데이터넷",
+    "pub_date": "2022-03-03",
+    "grade": "B",
+    "fields": [
+      "IT",
+      "개발사"
+    ],
+    "excerpt": "xScale SL2x·SL3x 합계 45MW+, SL2x 22MW·2.1억 달러, SL3x는 SL2x와 비슷한 규모",
+    "source_id": "s16",
+    "collected_at": "2026-10-22T04:32:29.766Z",
+    "added_by": "auto"
   }
 ]

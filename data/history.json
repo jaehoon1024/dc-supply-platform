@@ -12534,5 +12534,191 @@
     "evidence_url": "",
     "by": "auto",
     "note": "시흥 정왕동 시화산단 대략 좌표(지번 미공개)"
+  },
+  {
+    "id": "h-equinix-sl1-20261022043229-it_mw",
+    "dc_id": "equinix-sl1",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "it_mw",
+    "old": "",
+    "new": 2,
+    "evidence_url": "https://www.datacentermap.com/south-korea/seoul/equinix-sl1/",
+    "by": "auto",
+    "note": "datacentermap 2MW"
+  },
+  {
+    "id": "h-equinix-sl1-20261022043229-note",
+    "dc_id": "equinix-sl1",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "note",
+    "old": "에퀴닉스 국내 1호. 용량 미공개.",
+    "new": "에퀴닉스 국내 1호 리테일 IBX(2019 개소), 삼성SDS 상암IT센터 내 임차. IT 약 2MW(datacentermap). 같은 주소의 sds-sangam(삼성SDS 상암)과 중복이 아니라 건물 내 임차 관계.",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-equinix-sl1-20261022043229-evidence-408",
+    "dc_id": "equinix-sl1",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "Equinix SL1 Data Center in Seoul (2 MW)",
+    "by": "auto",
+    "evidence_url": "https://www.datacentermap.com/south-korea/seoul/equinix-sl1/",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-equinix-sl2x-20261022043229-name",
+    "dc_id": "equinix-sl2x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "name",
+    "old": "Equinix SL2x · SL4 (고양 향동)",
+    "new": "Equinix SL2x · SL4 (고양 향동, xScale)",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "xScale 표기"
+  },
+  {
+    "id": "h-equinix-sl2x-20261022043229-owner",
+    "dc_id": "equinix-sl2x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "owner",
+    "old": "Equinix",
+    "new": "Equinix xScale 합작 (GIC 80% · Equinix 20%)",
+    "evidence_url": "https://dgtlinfra.com/equinix-gic-525m-south-korea-xscale/",
+    "by": "auto",
+    "note": "2022-01 GIC 합작 5.25억 달러(SL2x·SL3x, 45MW+)"
+  },
+  {
+    "id": "h-equinix-sl2x-20261022043229-it_mw",
+    "dc_id": "equinix-sl2x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "it_mw",
+    "old": 22,
+    "new": 22,
+    "evidence_url": "https://www.equinix.com/data-centers/asia-pacific-colocation/korea-colocation/seoul-data-center",
+    "by": "auto",
+    "note": "에퀴닉스 공식 SL2x 22MW"
+  },
+  {
+    "id": "h-equinix-sl2x-20261022043229-note",
+    "dc_id": "equinix-sl2x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "note",
+    "old": "SL4는 SL2x 건물 내. 22MW가 SL2x 단독인지 SL4 포함인지 불명. GIC와 합작으로 수도권 신규 센터 추진(부지 미공개).",
+    "new": "SL2x: 하이퍼스케일 전용 xScale, IT 22MW·코로케이션 6,600㎡+, 투자 2.1억 달러(2023-Q4 완공 목표 → 2024 개소). SL4: SL2x 건물 내 리테일 IBX(SL1에서 1.5km). 소유: GIC 80%·Equinix 20% 합작(2022, SL2x·SL3x 합계 45MW+, 5.25억 달러), 100% 재생에너지 계획. 바로 옆에 SL3x(24MW) 공사 중. 2026-04 장혜덕 대표: 다음 센터도 수도권, GIC 합작으로 추진(일정 미확정).",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-equinix-sl2x-20261022043229-evidence-409",
+    "dc_id": "equinix-sl2x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "Equinix, GIC Form $525m, 45 MW South Korea xScale Data Center JV",
+    "by": "auto",
+    "evidence_url": "https://dgtlinfra.com/equinix-gic-525m-south-korea-xscale/",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-create",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "_create",
+    "old": "",
+    "new": "Equinix SL3x (고양 향동, xScale)",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-status",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "status",
+    "old": "설계중",
+    "new": "착공",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-owner",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "owner",
+    "old": "",
+    "new": "Equinix xScale 합작 (GIC 80% · Equinix 20%)",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-operator",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "operator",
+    "old": "",
+    "new": "Equinix",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-address",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "address",
+    "old": "",
+    "new": "경기도 고양시 덕양구 향동동 583",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-it_mw",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "it_mw",
+    "old": "",
+    "new": 24,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-start_ym",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "start_ym",
+    "old": "",
+    "new": "2025",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-evidence-410",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "Equinix SL3x Data Center in Seoul",
+    "by": "auto",
+    "evidence_url": "https://www.datacentermap.com/south-korea/seoul/equinix-sl3x/",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-equinix-sl3x-20261022043229-evidence-411",
+    "dc_id": "equinix-sl3x",
+    "at": "2026-10-22T04:32:29.766Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "에퀴닉스, 국내 데이터센터 추가 착공으로 클라우드 성장 견인",
+    "by": "auto",
+    "evidence_url": "https://www.datanet.co.kr/news/articleView.html?idxno=170153",
+    "note": "근거 자동 추가"
   }
 ]

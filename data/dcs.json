@@ -1614,16 +1614,17 @@
     "lat": 37.582947,
     "lng": 126.887174,
     "power_mw": null,
-    "it_mw": null,
+    "it_mw": 2,
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "",
-    "note": "에퀴닉스 국내 1호. 용량 미공개.",
+    "note": "에퀴닉스 국내 1호 리테일 IBX(2019 개소), 삼성SDS 상암IT센터 내 임차. IT 약 2MW(datacentermap). 같은 주소의 sds-sangam(삼성SDS 상암)과 중복이 아니라 건물 내 임차 관계.",
     "conf": {
       "owner": "확정",
       "operator": "확정",
       "status": "확정",
-      "address": "추정"
+      "address": "추정",
+      "it_mw": "추정"
     },
     "locked": {},
     "permit_ref": {
@@ -1634,7 +1635,7 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T04:32:29.766Z",
     "updated_by": "auto",
     "id": "equinix-sl1",
     "name": "Equinix SL1",
@@ -1645,7 +1646,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T01:07:13.380Z"
+      "at": "2026-10-22T04:32:29.766Z"
     },
     "dbo": {
       "type": "자체",
@@ -1681,7 +1682,7 @@
       "SL4"
     ],
     "category": "상용",
-    "owner": "Equinix",
+    "owner": "Equinix xScale 합작 (GIC 80% · Equinix 20%)",
     "contractor": "",
     "operator": "Equinix",
     "address": "경기도 고양시 덕양구 향동로 69",
@@ -1692,11 +1693,11 @@
     "start_ym": "",
     "complete_ym": "",
     "rfs_ym": "",
-    "note": "SL4는 SL2x 건물 내. 22MW가 SL2x 단독인지 SL4 포함인지 불명. GIC와 합작으로 수도권 신규 센터 추진(부지 미공개).",
+    "note": "SL2x: 하이퍼스케일 전용 xScale, IT 22MW·코로케이션 6,600㎡+, 투자 2.1억 달러(2023-Q4 완공 목표 → 2024 개소). SL4: SL2x 건물 내 리테일 IBX(SL1에서 1.5km). 소유: GIC 80%·Equinix 20% 합작(2022, SL2x·SL3x 합계 45MW+, 5.25억 달러), 100% 재생에너지 계획. 바로 옆에 SL3x(24MW) 공사 중. 2026-04 장혜덕 대표: 다음 센터도 수도권, GIC 합작으로 추진(일정 미확정).",
     "conf": {
       "owner": "확정",
       "operator": "확정",
-      "it_mw": "추정",
+      "it_mw": "확정",
       "status": "확정",
       "address": "확정"
     },
@@ -1709,10 +1710,10 @@
     },
     "player": "",
     "created_at": "2026-10-20T13:00:00+09:00",
-    "updated_at": "2026-10-22T01:07:13.380Z",
+    "updated_at": "2026-10-22T04:32:29.766Z",
     "updated_by": "auto",
     "id": "equinix-sl2x",
-    "name": "Equinix SL2x · SL4 (고양 향동)",
+    "name": "Equinix SL2x · SL4 (고양 향동, xScale)",
     "status": "운영중",
     "phase": "운영",
     "sido": "경기",
@@ -1720,7 +1721,7 @@
     "addr_check": {
       "status": "정상",
       "note": "주소·시도·좌표가 일치합니다",
-      "at": "2026-10-22T01:07:13.380Z"
+      "at": "2026-10-22T04:32:29.766Z"
     },
     "dbo": {
       "type": "자체",
@@ -1748,6 +1749,49 @@
       "coord_at": "2026-10-22T01:07:13.380Z",
       "lat": 37.596434,
       "lng": 126.886597
+    }
+  },
+  {
+    "id": "equinix-sl3x",
+    "name": "Equinix SL3x (고양 향동, xScale)",
+    "aliases": [
+      "SL3x"
+    ],
+    "category": "상용",
+    "status": "착공",
+    "phase": "개발",
+    "owner": "Equinix xScale 합작 (GIC 80% · Equinix 20%)",
+    "contractor": "",
+    "operator": "Equinix",
+    "address": "경기도 고양시 덕양구 향동동 583",
+    "lat": null,
+    "lng": null,
+    "power_mw": null,
+    "it_mw": 24,
+    "start_ym": "2025",
+    "complete_ym": "",
+    "rfs_ym": "",
+    "note": "SL2x 바로 옆 두 번째 xScale. IT 24MW(datacentermap, SL2x·SL3x 합계 45MW+와 일치), 2025년 공사 시작(datacentermap). GIC 80%·Equinix 20% 합작(2022, 5.25억 달러). 개소 일정 미공개 — 에퀴닉스 공식 페이지는 SL2x에 인접한 SL3x만 언급.",
+    "conf": {
+      "status": "추정",
+      "owner": "확정",
+      "operator": "확정",
+      "address": "추정",
+      "it_mw": "추정",
+      "start_ym": "추정"
+    },
+    "locked": {},
+    "permit_ref": null,
+    "player": "",
+    "created_at": "2026-10-22T04:32:29.766Z",
+    "updated_at": "2026-10-22T04:32:29.766Z",
+    "updated_by": "auto",
+    "sido": "경기",
+    "sigungu": "고양시",
+    "addr_check": {
+      "status": "좌표없음",
+      "note": "위경도가 없습니다",
+      "at": "2026-10-22T04:32:29.766Z"
     }
   },
   {

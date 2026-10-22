@@ -1614,10 +1614,10 @@
     ],
     "major": true,
     "parent": "",
-    "note": "",
+    "note": "국내: SL1(상암, 2019), SL2x·SL4(고양 향동, xScale 22MW), SL3x(향동, 24MW 공사 중). xScale은 GIC 80%·Equinix 20% 합작. 2026-04 수도권 추가 센터 GIC 합작 추진 발표.",
     "url": "",
     "created_at": "2026-10-20T15:00:00+09:00",
-    "updated_at": "2026-10-20T15:00:00+09:00",
+    "updated_at": "2026-10-22T04:32:29.766Z",
     "updated_by": "auto",
     "log": [
       {
@@ -1625,6 +1625,14 @@
         "editor": "auto",
         "fields": [],
         "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      },
+      {
+        "at": "2026-10-22T04:32:29.766Z",
+        "editor": "auto",
+        "fields": [
+          "note"
+        ],
+        "note": "note:  → 국내: SL1(상암, 2019), SL2x·SL4(고양 향동, xScale 22MW), SL3x(향동, 24MW 공사 중). xScale은 GIC 80%·Equinix 20% 합작. 2026-04 수도권 추가 센터 GIC 합작 추진 발표."
       }
     ]
   },
