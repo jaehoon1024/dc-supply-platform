@@ -217,13 +217,13 @@ function fitMap() {
 /* ---------------- supply forecast (to 2031) ---------------- */
 const FROM = 2026, TO = 2031;
 const GROUPS = {
-  player: { keys: [...PLAYERS, '기타'], color: k => PLAYER_VAR[k] },
+  player: { keys: [...CORE4, '기타'], color: k => PLAYER_VAR[k] },
   metro: { keys: ['수도권', '지방'], color: k => (k === '수도권' ? '--s-build' : '--s-done') },
   cat: { keys: ['상용', '자체'], color: k => (k === '상용' ? '--accent' : '--s-run') },
   conf: { keys: ['확정', '추정'], color: k => (k === '확정' ? '--accent' : '--est') }
 };
 function groupOf(split, dc, cap) {
-  if (split === 'player') return playerOf(dc);
+  if (split === 'player') { const p = playerOf(dc); return CORE4.includes(p) ? p : '기타'; } // 차트·표는 핵심 4사 + 기타(카카오 포함)
   if (split === 'metro') return locOf(dc).area === '수도권' ? '수도권' : '지방';
   if (split === 'cat') return dc.category === '자체' ? '자체' : '상용';
   return cap && cap.how === '확정' ? '확정' : '추정';
