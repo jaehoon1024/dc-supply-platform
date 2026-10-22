@@ -14056,5 +14056,49 @@
     "old": "",
     "new": "2030",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-wonchang",
+    "at": "2026-10-22T08:37:15.601Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-wonchang-20261022083715-aliases-0",
+    "field": "aliases",
+    "old": "인천 원창동 데이터센터, 청라 AIDC",
+    "new": "29년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-wonchang",
+    "at": "2026-10-22T08:37:15.601Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-wonchang-20261022083715-it_mw-1",
+    "field": "it_mw",
+    "old": "",
+    "new": 32,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-wonchang",
+    "at": "2026-10-22T08:37:15.601Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-wonchang-20261022083715-complete_ym-2",
+    "field": "complete_ym",
+    "old": "2030-Q1",
+    "new": "2029",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "incheon-wonchang",
+    "at": "2026-10-22T08:37:15.601Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-incheon-wonchang-20261022083715-rfs_ym-3",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2029",
+    "note": "수동 변경 · 필드 고정"
   }
 ]

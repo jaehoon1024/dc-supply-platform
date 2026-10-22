@@ -2736,8 +2736,7 @@
     "id": "incheon-wonchang",
     "name": "이도 청라(원창동) AI 데이터센터",
     "aliases": [
-      "인천 원창동 데이터센터",
-      "청라 AIDC"
+      "29년_DBO_파이프라인"
     ],
     "category": "상용",
     "status": "설계중",
@@ -2749,10 +2748,10 @@
     "lat": 37.535,
     "lng": 126.66,
     "power_mw": 50,
-    "it_mw": null,
+    "it_mw": 32,
     "start_ym": "2026-Q4",
-    "complete_ym": "2030-Q1",
-    "rfs_ym": "",
+    "complete_ym": "2029",
+    "rfs_ym": "2029",
     "conf": {
       "owner": "확정",
       "contractor": "확정",
@@ -2764,10 +2763,15 @@
       "operator": "확정",
       "power_mw": "확정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true,
+      "it_mw": true,
+      "complete_ym": true,
+      "rfs_ym": true
+    },
     "note": "사업비 약 8,700억. 수전 50MW, 지하2~지상11층. KT클라우드 DBO(설계 컨설팅·주요 설비·커미셔닝·운영). 현대엔지니어링 시공. AI존(D2C 액체냉각)+클라우드존 하이브리드.",
-    "updated_at": "2026-10-22T01:07:13.380Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T08:37:15.601Z",
+    "updated_by": "user:정재훈",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
       "sigunguCd": "28260",
@@ -2780,7 +2784,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-22T01:10:35.363Z"
+      "at": "2026-10-22T08:37:15.601Z"
     },
     "prep": {
       "site": {
