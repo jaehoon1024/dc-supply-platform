@@ -251,6 +251,24 @@
       "created_at": "2026-10-22T04:40:23.677Z",
       "updated_at": "2026-10-22T04:40:23.677Z",
       "updated_by": "user:정재훈"
+    },
+    {
+      "id": "k-20261022065540-14",
+      "dc_id": "ansan-gcc",
+      "customer": "SKT",
+      "mw": 25.8,
+      "basis": "IT",
+      "price": null,
+      "start_ym": "",
+      "end_ym": "",
+      "status": "계약",
+      "src": "공개",
+      "c": "추정",
+      "url": "",
+      "note": "",
+      "created_at": "2026-10-22T06:55:40.663Z",
+      "updated_at": "2026-10-22T06:55:40.663Z",
+      "updated_by": "user:정재훈"
     }
   ],
   "occupancy": [],
@@ -526,6 +544,16 @@
       "dc_id": "kt-bucheon",
       "src": "공개",
       "note": "추가: 네이버 클라우드 20MW (계약)"
+    },
+    {
+      "at": "2026-10-22T06:55:40.663Z",
+      "editor": "정재훈",
+      "kind": "contract",
+      "op": "create",
+      "id": "k-20261022065540-14",
+      "dc_id": "ansan-gcc",
+      "src": "공개",
+      "note": "추가: SKT 25.8MW (계약)"
     }
   ]
 }
