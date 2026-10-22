@@ -12841,5 +12841,60 @@
     "old": "NFD 용인, 용인덕성데이터센터PFV",
     "new": "27년_용인덕성_와이드클릭",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "id": "h-kt-ansan-20261022044852-power_mw",
+    "dc_id": "kt-ansan",
+    "at": "2026-10-22T04:48:52.751Z",
+    "field": "power_mw",
+    "old": "",
+    "new": 50,
+    "evidence_url": "https://www.wikitree.co.kr/articles/1168223",
+    "by": "auto",
+    "note": "수전 50MW, 2026-10-22 착공 발표"
+  },
+  {
+    "id": "h-kt-ansan-20261022044852-start_ym",
+    "dc_id": "kt-ansan",
+    "at": "2026-10-22T04:48:52.751Z",
+    "field": "start_ym",
+    "old": "2026-10",
+    "new": "2026-10",
+    "evidence_url": "https://www.wikitree.co.kr/articles/1168223",
+    "by": "auto",
+    "note": "2026-10-22 착공 발표"
+  },
+  {
+    "id": "h-kt-ansan-20261022044852-status",
+    "dc_id": "kt-ansan",
+    "at": "2026-10-22T04:48:52.751Z",
+    "field": "status",
+    "old": "착공",
+    "new": "착공",
+    "evidence_url": "https://www.wikitree.co.kr/articles/1168223",
+    "by": "auto",
+    "note": "착공 발표"
+  },
+  {
+    "id": "h-kt-ansan-20261022044852-note",
+    "dc_id": "kt-ansan",
+    "at": "2026-10-22T04:48:52.751Z",
+    "field": "note",
+    "old": "KT 2031년 1GW 로드맵 중 하나(2029 안산 공급). 성곡동 640 일원, CJ대한통운 3,150억(2026-10-21 공시, 2029-12-15까지). 인접 성곡동 638-5에 안산 OUR(같은 CJ대한통운 시공) — 별개 사업. 용량 미공개.",
+    "new": "KT 2031년 1GW 로드맵 중 하나. 성곡동 640 일원, 수전 50MW, 연면적 약 36,878㎡·지하2~지상9층. 2026-10-22 착공, 2029 준공 목표. CJ대한통운 3,150억(2026-10-21~2029-12-15). 사업법인 안산아이디씨, 해외 자본 약 8,000억 조달(삼성증권·삼성자산운용 참여 보도). 인접 성곡동 638-5에 안산 OUR(같은 CJ대한통운 시공) — 별개 사업.",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-kt-ansan-20261022044852-evidence-412",
+    "dc_id": "kt-ansan",
+    "at": "2026-10-22T04:48:52.751Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "KT클라우드, 50MW 규모 '안산 AI 데이터센터' 착공…2029년 준공 목표",
+    "by": "auto",
+    "evidence_url": "https://www.wikitree.co.kr/articles/1168223",
+    "note": "근거 자동 추가"
   }
 ]

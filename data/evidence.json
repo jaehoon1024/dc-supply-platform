@@ -6689,5 +6689,24 @@
     "source_id": "s16",
     "collected_at": "2026-10-22T04:32:29.766Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-kt-ansan-20261022044852-412",
+    "dc_id": "kt-ansan",
+    "title": "KT클라우드, 50MW 규모 '안산 AI 데이터센터' 착공…2029년 준공 목표",
+    "url": "https://www.wikitree.co.kr/articles/1168223",
+    "publisher": "위키트리",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "수전",
+      "착공월",
+      "상태",
+      "규모"
+    ],
+    "excerpt": "수전 50MW, 연면적 약 36,878㎡ 지하2~지상9, 10/22 착공, 2029 준공, CJ대한통운 3,150억, 안산아이디씨 해외자본 8,000억",
+    "source_id": "s15",
+    "collected_at": "2026-10-22T04:48:52.751Z",
+    "added_by": "auto"
   }
 ]

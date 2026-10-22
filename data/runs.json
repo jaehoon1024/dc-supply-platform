@@ -430,5 +430,17 @@
     "proposals": 0,
     "errors": 0,
     "summary": "핵심 사업자에 카카오엔터프라이즈(카카오 그룹) 추가."
+  },
+  {
+    "id": "r-20261022-misc-0448",
+    "at": "2026-10-22T04:48:52.751Z",
+    "kind": "수동 반영",
+    "checked": 0,
+    "new_dcs": 0,
+    "updated": 4,
+    "evidence": 1,
+    "proposals": 0,
+    "errors": 0,
+    "summary": "KT클라우드 안산 AIDC 착공(수전 50MW) 반영."
   }
 ]
