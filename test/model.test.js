@@ -251,14 +251,17 @@ test('플레이어 업데이트(ingest): 회사 프로필·핵심 4사 목표, �
   const { validateCompanies } = await import('../lib/model.js'); assert.deepEqual(validateCompanies(out.companies), []);
 });
 
-test('캠퍼스: 계획 용량 중 등록 단계 합계를 빼 미배정 용량 계산', async () => {
-  const { campusPlans, normalizeCampus } = await import('../lib/model.js');
-  const dcs = [{ id: 'a', power_mw: 60, campus: { name: 'X', phase: '1단계', plan_mw: 1000, basis: '수전' } },
-    { id: 'b', power_mw: 100, campus: { name: 'X', phase: '2단계' } }, { id: 'c', it_mw: 10 }];
-  const [g] = campusPlans(dcs);
-  assert.equal(g.members.length, 2); assert.equal(g.assigned, 160); assert.equal(g.unassigned, 840);
-  assert.throws(() => normalizeCampus({ name: 'X', plan_mw: -1 }));
-  assert.equal(normalizeCampus({}), null);
+test('단계별 일정: 구상은 공급 추정·검증 제외, 연결 센터 단계는 그 센터에서 집계, 사이트 계획 합계', async () => {
+  const { sitePlans, forecast, stepsCheck } = await import('../lib/model.js');
+  const a = { id: 'a', name: 'A', status: '착공', category: '상용', power_mw: 60, complete_ym: '2028-06', steps: [
+    { label: '1단계', mw: 60, basis: '수전', ym: '2028-06', status: '공사' }, { label: '2단계', mw: 100, basis: '수전', status: '공사', dc_id: 'b' },
+    { label: '향후 확장', mw: 840, basis: '수전', ym: '2032', status: '구상' }] };
+  const b = { id: 'b', name: 'B', status: '설계중', category: '상용', power_mw: 100, complete_ym: '2030-01' };
+  assert.equal(stepsCheck(a), '');
+  const fc = forecast([a, b], { metric: 'power_mw', from: 2026, to: 2031, now: new Date('2026-10-01') });
+  assert.equal(fc.byYear[2028].nominal, 60); assert.equal(fc.byYear[2030].nominal, 100); assert.equal(fc.later.length, 0);
+  const [g] = sitePlans([a, b]);
+  assert.equal(g.idea_mw, 840); assert.equal(g.plan_mw, 1000); assert.equal(g.linked[0].dc.id, 'b');
 });
 
 test('DBO 구분: 마스터리스 허용, 예전 위탁운영은 부분 DBO로 변환', async () => {
