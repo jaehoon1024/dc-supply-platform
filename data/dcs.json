@@ -1806,7 +1806,7 @@
       "it_mw": "확정",
       "start_ym": "추정",
       "power_mw": "확정",
-      "rfs_ym": "확정"
+      "rfs_ym": "추정"
     },
     "locked": {
       "aliases": true,
@@ -1817,14 +1817,14 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-22T04:32:29.766Z",
-    "updated_at": "2026-10-22T05:02:31.515Z",
+    "updated_at": "2026-10-22T05:02:56.981Z",
     "updated_by": "user:정재훈",
     "sido": "경기",
     "sigungu": "고양시",
     "addr_check": {
       "status": "좌표없음",
       "note": "위경도가 없습니다",
-      "at": "2026-10-22T05:02:31.515Z"
+      "at": "2026-10-22T05:02:56.981Z"
     }
   },
   {
