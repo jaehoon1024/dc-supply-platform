@@ -501,6 +501,43 @@
     ]
   },
   {
+    "id": "신한금융그룹",
+    "name": "신한금융그룹",
+    "aliases": [
+      "신한은행",
+      "신한금융"
+    ],
+    "type": "에너지·기타",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "남양주 왕숙 'AI 인피니티 센터'(가칭) 50MW(2029 목표)",
+    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=275530",
+    "created_at": "2026-10-22T02:08:45.874Z",
+    "updated_at": "2026-10-22T02:08:45.874Z",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-22T02:08:45.874Z",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
+      }
+    ]
+  },
+  {
     "id": "아워서킷",
     "name": "아워서킷",
     "aliases": [],
@@ -573,6 +610,43 @@
         "editor": "auto",
         "fields": [],
         "note": "초기 등록 (기존 센터 데이터에서 추출)"
+      }
+    ]
+  },
+  {
+    "id": "우리금융그룹",
+    "name": "우리금융그룹",
+    "aliases": [
+      "우리은행",
+      "우리금융"
+    ],
+    "type": "에너지·기타",
+    "roles": [
+      "dev",
+      "op"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "남양주 왕숙 '디지털 유니버스' 80MW급(2029 목표)",
+    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=275530",
+    "created_at": "2026-10-22T02:08:45.874Z",
+    "updated_at": "2026-10-22T02:08:45.874Z",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-22T02:08:45.874Z",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
       }
     ]
   },
@@ -1550,6 +1624,43 @@
           "note"
         ],
         "note": "note:  → 물류 중심 부동산 개발·운용(ESR켄달스퀘어). 데이터센터: 인천 부평 청천동(PDG SE1, 와이드크릭 공동)·인천 도화동(산은인프라와 함께, 사용자 제공 — 공개 보도 미확인)"
+      }
+    ]
+  },
+  {
+    "id": "fd파트너스",
+    "name": "F&D파트너스",
+    "aliases": [
+      "에프엔디파트너스",
+      "남양주마석아이디씨",
+      "남양주마석IDC"
+    ],
+    "type": "자산운용·펀드",
+    "roles": [
+      "dev"
+    ],
+    "major": false,
+    "parent": "",
+    "note": "남양주 마석(화도 답내리) X-AI 데이터센터 60MW 시행 SPC 설립",
+    "url": "https://www.khan.co.kr/article/202601281701001",
+    "created_at": "2026-10-22T02:08:45.874Z",
+    "updated_at": "2026-10-22T02:08:45.874Z",
+    "updated_by": "auto",
+    "log": [
+      {
+        "at": "2026-10-22T02:08:45.874Z",
+        "editor": "auto",
+        "fields": [
+          "name",
+          "aliases",
+          "type",
+          "roles",
+          "major",
+          "parent",
+          "note",
+          "url"
+        ],
+        "note": "신규 등록"
       }
     ]
   },

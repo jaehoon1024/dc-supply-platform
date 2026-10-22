@@ -6382,5 +6382,143 @@
     "source_id": "s27",
     "collected_at": "2026-10-22T02:00:22.882Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-namyangju-maseok-20261022020806-394",
+    "dc_id": "namyangju-maseok",
+    "title": "남양주 1조원 'X-AI 데이터센터' 첫발…LG CNS 등 300억원 투자",
+    "url": "https://m.ekn.kr/view.php?key=20260727027016599",
+    "publisher": "에너지경제",
+    "pub_date": "2026-07-27",
+    "grade": "B",
+    "fields": [
+      "개발사",
+      "운영사",
+      "수전",
+      "RFS"
+    ],
+    "excerpt": "답내리 4.5만㎡·연면적 3.7만㎡·수전 60MW, 1조, LG CNS SI·DBO, 인허가 2027-05, 상업운전 2029-02, 본PF 내년",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-namyangju-maseok-20261022020806-395",
+    "dc_id": "namyangju-maseok",
+    "title": "남양주에 1조원 규모 60㎿ 데이터센터 건립",
+    "url": "https://www.khan.co.kr/article/202601281701001",
+    "publisher": "경향신문",
+    "pub_date": "2026-01-28",
+    "grade": "B",
+    "fields": [
+      "개발사",
+      "주소",
+      "수전"
+    ],
+    "excerpt": "남양주마석아이디씨(F&D파트너스 SPV), 화도읍 답내리, 60MW, 10MW AI 스타트업 전용, 남양주시 투자협약",
+    "source_id": "s04",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-namyangju-maseok-20261022020806-396",
+    "dc_id": "namyangju-maseok",
+    "title": "남양주마석아이디씨, 'X-AI 스마트 데이터센터' 본격 추진",
+    "url": "https://www.newspim.com/news/view/20260727000536",
+    "publisher": "뉴스핌",
+    "pub_date": "2026-07-27",
+    "grade": "B",
+    "fields": [
+      "개발사",
+      "인허가"
+    ],
+    "excerpt": "1차 300억, LG CNS·안다자산운용·유진투자증권·키움증권·에프엔디파트너스 공동 투자계약",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kakao-namyangju-20261022020806-397",
+    "dc_id": "kakao-namyangju",
+    "title": "[단독]남양주 초대형DC, 전력·용수 수급에 '발목'",
+    "url": "https://m.sedaily.com/amparticle/20072470",
+    "publisher": "서울경제",
+    "pub_date": "2026-07-27",
+    "grade": "B",
+    "fields": [
+      "수전",
+      "인허가"
+    ],
+    "excerpt": "왕숙 산단 카카오 80MW·우리은행 80MW·신한은행 50MW, 수도권정비위 실무위 보류(7/24), 8월 말 재심의",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-woori-namyangju-20261022020806-398",
+    "dc_id": "woori-namyangju",
+    "title": "[르포] '갈림길'에 선 우리·신한금융 남양주 데이터센터",
+    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=275530",
+    "publisher": "파이낸셜포스트",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "규모",
+      "인허가",
+      "준공월"
+    ],
+    "excerpt": "우리금융 디지털 유니버스 8,500억·9.8만㎡·80MW급, 2026-05 건축허가, 2029 준공 / 신한 AI 인피니티 센터 8,500억·9.7만㎡, 2029 준공, 신임 시장 재검토",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-woori-namyangju-20261022020806-399",
+    "dc_id": "woori-namyangju",
+    "title": "[단독]남양주 초대형DC, 전력·용수 수급에 '발목'",
+    "url": "https://m.sedaily.com/amparticle/20072470",
+    "publisher": "서울경제",
+    "pub_date": "2026-07-27",
+    "grade": "B",
+    "fields": [
+      "수전"
+    ],
+    "excerpt": "우리은행 80MW, 공공주택특별법으로 부지계약",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-shinhan-namyangju-20261022020806-400",
+    "dc_id": "shinhan-namyangju",
+    "title": "[르포] '갈림길'에 선 우리·신한금융 남양주 데이터센터",
+    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=275530",
+    "publisher": "파이낸셜포스트",
+    "pub_date": "2026-09-15",
+    "grade": "B",
+    "fields": [
+      "규모",
+      "준공월"
+    ],
+    "excerpt": "신한 AI 인피니티 센터(가칭) 8,500억·부지 9.7만㎡·약 500명, 2025-12 협약, 2026년 말 착공 계획, 2029 준공",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-shinhan-namyangju-20261022020806-401",
+    "dc_id": "shinhan-namyangju",
+    "title": "[단독]남양주 초대형DC, 전력·용수 수급에 '발목'",
+    "url": "https://m.sedaily.com/amparticle/20072470",
+    "publisher": "서울경제",
+    "pub_date": "2026-07-27",
+    "grade": "B",
+    "fields": [
+      "수전"
+    ],
+    "excerpt": "신한은행 50MW, 산업단지법 적용",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:08:06.198Z",
+    "added_by": "auto"
   }
 ]
