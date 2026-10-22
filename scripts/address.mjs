@@ -1,6 +1,6 @@
 // 도로명주소 API(행정안전부 business.juso.go.kr)로 센터 주소 표준화 (Vercel Cron이 매일 07시대에 /api/address?sync=1 호출)
 // - 지번·도로명 번호가 있는 주소: 표준 주소(도로명·지번·건물명·법정동코드)를 찾아 dc.addr_std에 저장합니다. 주소 칸은 그대로 둡니다.
-// - 시·군·구까지만 있는 주소: 센터명·별칭으로 건물명을 검색해 1곳으로 좁혀지면 지번 주소로 채웁니다(추정 — 확인 필요).
+// - 시·군·구까지만 있는 주소: 센터명·별칭으로 건물명을 검색해 1곳으로 좁혀지면 '후보'로만 기록합니다(자동 반영 안 함 — 상세 화면에서 확인).
 // - 인허가 연결(permit_ref)이 비어 있으면 법정동코드·번지로 채워, 다음 건축HUB 동기화에서 연면적·착공·준공을 받아옵니다.
 // - 사람이 고정한 주소·인허가 연결은 덮어쓰지 않고 히스토리에 '제안'으로 남깁니다.
 // - 주소가 바뀌지 않은 센터는 다시 조회하지 않습니다(addr_std.src = 조회에 쓴 주소).
@@ -12,7 +12,7 @@ import { fromUtmk } from '../lib/utmk.js';
 const ENDPOINT = 'https://business.juso.go.kr/addrlink/addrLinkApi.do';
 const COORD_ENDPOINT = 'https://business.juso.go.kr/addrlink/addrCoordApi.do';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-export const LIMIT = { gapMs: Number(process.env.JUSO_GAP_MS ?? 150), retries: 2 };
+export const LIMIT = { gapMs: Number(process.env.JUSO_GAP_MS ?? 300), retries: 3 };
 
 // 검색어 정리: 괄호 설명, '외 N필지', 특수문자 제거 (API가 특수문자·SQL 예약어를 거부)
 export function cleanKeyword(s) {
@@ -34,6 +34,7 @@ export async function jusoSearch(keyword, key, fetchImpl = fetch, count = 10) {
   if (!res.ok) throw new Error(`도로명주소 HTTP ${res.status}`);
   let j; try { j = JSON.parse(text); } catch { throw new Error(`도로명주소 응답이 JSON이 아닙니다: ${text.slice(0, 120)}`); }
   const c = j?.results?.common || {};
+  if (String(c.errorCode ?? '0') === 'E0007' && (arguments[4] || 0) < LIMIT.retries) { await sleep(3000 * 2 ** (arguments[4] || 0)); return jusoSearch(keyword, key, fetchImpl, count, (arguments[4] || 0) + 1); }
   if (String(c.errorCode ?? '0') !== '0') throw Object.assign(new Error(`도로명주소 오류 ${c.errorCode}: ${c.errorMessage}`), { code: String(c.errorCode) });
   return j?.results?.juso || [];
 }
@@ -65,9 +66,9 @@ export function pickByAddress(list, keyword) {
 }
 
 /** 결과 중 센터명과 건물명이 맞는 1곳 고르기 (시·군·구까지만 있는 주소) */
-export function pickByName(list, dc, sigungu) {
+export function pickByName(list, dc, sigungu, sido = '') {
   const toks = nameTokens(dc).map(norm);
-  const hits = list.filter(j => (!sigungu || norm(j.sggNm).includes(norm(sigungu)) || norm(j.jibunAddr).includes(norm(sigungu)))
+  const hits = list.filter(j => (!sido || String(j.siNm || j.jibunAddr || '').startsWith(sido)) && (!sigungu || norm(j.sggNm).includes(norm(sigungu)) || norm(j.jibunAddr).includes(norm(sigungu)))
     && toks.some(t => norm(j.bdNm).includes(t)));
   const lots = new Set(hits.map(j => `${j.admCd}-${j.lnbrMnnm}-${j.lnbrSlno}`));
   return lots.size === 1 ? hits[0] : null;
@@ -76,7 +77,7 @@ export function pickByName(list, dc, sigungu) {
 const permitRefOf = s => (s.admCd?.length === 10 && s.bun ? { sigunguCd: s.admCd.slice(0, 5), bjdongCd: s.admCd.slice(5, 10), bun: s.bun, ji: s.ji && s.ji !== '0' ? s.ji : '', ...(s.mt === '1' ? { platGbCd: '1' } : {}) } : null);
 
 /** 좌표제공 API: 표준 주소의 건물 좌표(UTM-K) → { lat, lng } (없으면 null) */
-export async function jusoCoord(std, key, fetchImpl = fetch) {
+export async function jusoCoord(std, key, fetchImpl = fetch, attempt = 0) {
   if (!std.admCd || !std.rnMgtSn || !std.buldMnnm) return null;
   const q = new URLSearchParams({ confmKey: key, admCd: std.admCd, rnMgtSn: std.rnMgtSn, udrtYn: std.udrtYn || '0', buldMnnm: std.buldMnnm, buldSlno: std.buldSlno || '0', resultType: 'json' });
   await sleep(LIMIT.gapMs);
@@ -85,6 +86,7 @@ export async function jusoCoord(std, key, fetchImpl = fetch) {
   if (!res.ok) throw new Error(`좌표제공 HTTP ${res.status}`);
   let j; try { j = JSON.parse(text); } catch { throw new Error(`좌표제공 응답이 JSON이 아닙니다: ${text.slice(0, 120)}`); }
   const c = j?.results?.common || {};
+  if (String(c.errorCode ?? '0') === 'E0007' && attempt < LIMIT.retries) { await sleep(3000 * 2 ** attempt); return jusoCoord(std, key, fetchImpl, attempt + 1); }
   if (String(c.errorCode ?? '0') !== '0') throw Object.assign(new Error(`좌표제공 오류 ${c.errorCode}: ${c.errorMessage}`), { code: String(c.errorCode) });
   const r = (j?.results?.juso || [])[0];
   if (!r || !isNum(r.entX) || !isNum(r.entY)) return null;
@@ -102,7 +104,7 @@ export async function refineAddresses(data, { key, coordKey = '', fetchImpl = fe
   // 주소가 바뀌었거나, 좌표 키가 생겼는데 아직 좌표를 확인하지 않은 일치 센터
   const todo = dcs.filter(d => String(d.address || '').trim() && (d.addr_std?.src !== d.address || (coordKey && d.addr_std?.road && !d.addr_std.coord_at)))
     .sort((a, b) => String(a.addr_std?.at || '').localeCompare(String(b.addr_std?.at || '')) || a.id.localeCompare(b.id));
-  const st = { checked: 0, matched: 0, filled: 0, permit_refs: 0, updated: 0, proposals: 0, evidence: 0, nomatch: 0, coords: 0, errors: 0, notes: [] };
+  const st = { checked: 0, matched: 0, filled: 0, permit_refs: 0, updated: 0, proposals: 0, evidence: 0, nomatch: 0, candidates: 0, coords: 0, errors: 0, notes: [] };
   let partial = false;
   for (const dc0 of todo) {
     if (Date.now() - t0 > budgetMs) { partial = true; break; }
@@ -120,15 +122,16 @@ export async function refineAddresses(data, { key, coordKey = '', fetchImpl = fe
         for (const t of nameTokens(dc).slice(0, 3)) {
           const kw = cleanKeyword(`${sigungu} ${t}`);
           if (kw.length < 3) continue;
-          hit = pickByName(await jusoSearch(kw, key, fetchImpl), dc, sigungu);
+          hit = pickByName(await jusoSearch(kw, key, fetchImpl), dc, sigungu, parseSido(dc.address).sido || '');
           if (hit) { how = `건물명(${t})`; break; }
         }
       }
-      const std = hit ? toStd(hit, dc.address, how, now) : { src: dc.address, how: hasLot ? '주소' : '건물명', status: '미일치', at: now };
-      if (!hit) st.nomatch++; else st.matched++;
+      let std = hit ? toStd(hit, dc.address, how, now) : { src: dc.address, how: hasLot ? '주소' : '건물명', status: '미일치', at: now };
+      // 건물명 검색은 오매칭(학교·교회·주유소 등)이 많아 자동 반영하지 않고 '후보'로만 남깁니다. 상세 화면에서 확인 후 주소 칸에 직접 입력.
+      if (hit && !hasLot) { std = { src: dc.address, how, status: '후보', candidate: { road: std.road, jibun: std.jibun, bdNm: std.bdNm }, at: now }; hit = null; st.candidates++; }
+      else if (!hit) st.nomatch++; else st.matched++;
       const upd = {};
       const url = `https://business.juso.go.kr/addrlink/main.do#${encodeURIComponent(std.jibun || dc.address)}`;
-      if (hit && !hasLot && std.jibun) { upd.address = { value: std.jibun, conf: '추정', note: `도로명주소 API 건물명 일치(${std.bdNm}) — 확인 필요`, evidence_url: url }; std.src = std.jibun; }
       const ref = hit ? permitRefOf(std) : null;
       if (ref && !dc.permit_ref) upd.permit_ref = { value: ref, note: `도로명주소 API 법정동코드·번지 (${std.jibun})`, evidence_url: url };
       if (hit && coordKey) {
@@ -165,7 +168,7 @@ export async function refineAddresses(data, { key, coordKey = '', fetchImpl = fe
     }
   }
   const run = { id: `r-${stamp(now)}-address`, at: now, kind: '도로명주소 정제', checked: st.checked, new_dcs: 0, updated: st.updated, evidence: st.evidence, proposals: st.proposals, errors: st.errors,
-    summary: todo.length ? `주소 미정제 ${todo.length}곳 중 ${st.checked}곳 조회${partial ? '(시간 제한으로 중단 — 다음 실행에서 이어서)' : ''}: 표준주소 일치 ${st.matched}, 미일치 ${st.nomatch}, 지번 보완 ${st.filled}, 인허가 연결 ${st.permit_refs}, 좌표 보정 ${st.coords}, 제안 ${st.proposals}.${st.notes.length ? ' ' + st.notes.slice(0, 3).join(' / ') : ''}`
+    summary: todo.length ? `주소 미정제 ${todo.length}곳 중 ${st.checked}곳 조회${partial ? '(시간 제한으로 중단 — 다음 실행에서 이어서)' : ''}: 표준주소 일치 ${st.matched}, 미일치 ${st.nomatch}, 건물명 후보 ${st.candidates}, 인허가 연결 ${st.permit_refs}, 좌표 보정 ${st.coords}, 제안 ${st.proposals}.${st.notes.length ? ' ' + st.notes.slice(0, 3).join(' / ') : ''}`
       : '새로 정제할 주소가 없습니다.' };
   return { dcs, evidence, history, runs: [...runs, run].slice(-400), stats: st };
 }

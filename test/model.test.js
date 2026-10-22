@@ -331,14 +331,16 @@ test('건축HUB 동기화: 연면적 반영, 지번 없는 주소는 대지위�
 });
 
 test('도로명주소 정제: 번지 주소는 표준화·인허가 연결, 시군구만 있으면 건물명으로 지번 보완(추정)', async () => {
-  const { refineAddresses, cleanKeyword, LIMIT } = await import('../scripts/address.mjs');
+  const { refineAddresses, cleanKeyword, pickByName, LIMIT } = await import('../scripts/address.mjs');
   LIMIT.gapMs = 0;
+  // 다른 시·도의 같은 이름 구(대구 서구 ↔ 인천 서구)는 후보에서 제외
+  assert.equal(pickByName([{ siNm: '대구광역시', sggNm: '서구', bdNm: '청라중학교', jibunAddr: '대구광역시 서구 비산동 228', admCd: '1', lnbrMnnm: '228' }], { name: '청라 데이터센터', aliases: [] }, '서구', '인천'), null);
   assert.equal(cleanKeyword('경기도 부천시 오정구 내동 222-13 외 10필지'), '경기도 부천시 오정구 내동 222-13');
   const J = (o) => ({ roadAddrPart1: '', jibunAddr: '', bdNm: '', admCd: '', lnbrMnnm: '', lnbrSlno: '0', mtYn: '0', rn: '', buldMnnm: '', buldSlno: '0', emdNm: '', sggNm: '', ...o });
   const db = {
     '서울특별시 영등포구 여의도동 18': [J({ roadAddrPart1: '서울특별시 영등포구 국제금융로 10', jibunAddr: '서울특별시 영등포구 여의도동 18', admCd: '1156011000', lnbrMnnm: '18', emdNm: '여의도동', rn: '국제금융로', buldMnnm: '10', sggNm: '영등포구', rnMgtSn: 'R1' }),
       J({ jibunAddr: '서울특별시 영등포구 여의도동 182', admCd: '1156011000', lnbrMnnm: '182', emdNm: '여의도동' })],
-    '안산시 에포크': [J({ roadAddrPart1: '경기도 안산시 단원구 해봉로 1', jibunAddr: '경기도 안산시 단원구 성곡동 700-1', bdNm: '에포크 안산 데이터센터', admCd: '4127310300', lnbrMnnm: '700', lnbrSlno: '1', sggNm: '안산시 단원구' })]
+    '안산시 에포크': [J({ roadAddrPart1: '경기도 안산시 단원구 해봉로 1', jibunAddr: '경기도 안산시 단원구 성곡동 700-1', bdNm: '에포크 안산 데이터센터', admCd: '4127310300', lnbrMnnm: '700', lnbrSlno: '1', sggNm: '안산시 단원구', siNm: '경기도' })]
   };
   const fetchImpl = async u => { const q = new URL(u).searchParams;
     if (u.includes('addrCoordApi')) return { ok: true, status: 200, text: async () => JSON.stringify({ results: { common: { errorCode: '0' }, juso: q.get('rnMgtSn') === 'R1' ? [{ entX: '953898.449', entY: '1952035.979' }] : [] } }) };
@@ -357,8 +359,9 @@ test('도로명주소 정제: 번지 주소는 표준화·인허가 연결, 시�
   assert.equal(a.lat, 37.566535); assert.equal(a.lng, 126.977969); // UTM-K → WGS84 변환
   const { toUtmk, fromUtmk } = await import('../lib/utmk.js');
   const p = toUtmk(35.1796, 129.0756); const q = fromUtmk(p.x, p.y); assert.ok(Math.abs(q.lat - 35.1796) < 1e-6 && Math.abs(q.lng - 129.0756) < 1e-6);
-  assert.equal(b.address, '경기도 안산시 단원구 성곡동 700-1'); assert.equal(b.conf.address, '추정');
-  assert.equal(b.permit_ref.bun, '700'); assert.equal(b.addr_std.src, b.address);
+  // 건물명 일치는 자동 반영하지 않고 후보로만 기록
+  assert.equal(b.address, '경기도 안산시'); assert.equal(b.addr_std.status, '후보');
+  assert.equal(b.addr_std.candidate.jibun, '경기도 안산시 단원구 성곡동 700-1'); assert.equal(b.permit_ref, null);
   assert.equal(c.addr_std.status, '미일치'); assert.equal(c.address, '경기도 화성시');
   // 주소가 그대로면 다음 실행에서 다시 조회하지 않음
   const again = await refineAddresses({ ...out, runs: [] }, { key: 'k', coordKey: 'c', fetchImpl, now: NOW });
