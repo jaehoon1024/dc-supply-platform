@@ -13225,5 +13225,16 @@
     "old": "[object Object], [object Object]",
     "new": "[object Object], [object Object]",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "kaam-sihwa",
+    "at": "2026-10-22T06:58:43.529Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-kaam-sihwa-20261022065843-steps-0",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
