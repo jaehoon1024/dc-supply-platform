@@ -12808,5 +12808,27 @@
     "old": "추정",
     "new": "확정",
     "note": "근거 구분 변경"
+  },
+  {
+    "dc_id": "ansan-gcc",
+    "at": "2026-10-22T04:44:03.396Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-ansan-gcc-20261022044403-it_mw-0",
+    "field": "it_mw",
+    "old": "",
+    "new": 25.8,
+    "note": "수동 변경 · 필드 고정 · 근거 확정"
+  },
+  {
+    "dc_id": "ansan-gcc",
+    "at": "2026-10-22T04:44:03.396Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-ansan-gcc-20261022044403-power_mw-1",
+    "field": "power_mw",
+    "old": "추정",
+    "new": "확정",
+    "note": "근거 구분 변경"
   }
 ]
