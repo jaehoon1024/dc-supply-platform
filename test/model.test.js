@@ -37,7 +37,9 @@ test('신규 등록', () => {
 });
 
 test('자동수집은 고정 필드를 덮어쓰지 않고 제안으로 남긴다', () => {
-  const locked = applyEdit(dcs, [], { id: 'icn11', changes: { it_mw: 70 }, editor: 'a' }, NOW).dcs;
+  // 실제 데이터의 고정 상태와 무관하게: icn11의 고정을 모두 풀고 it_mw만 사람이 고친 상태로 시작
+  const base = dcs.map(d => (d.id === 'icn11' ? { ...d, locked: {} } : d));
+  const locked = applyEdit(base, [], { id: 'icn11', changes: { it_mw: 70 }, editor: 'a' }, NOW).dcs;
   const r = applyAuto(locked, [], 'icn11', { it_mw: { value: 64, conf: '확정' }, rfs_ym: { value: '2027-09', conf: '확정' } }, NOW);
   const d = r.dcs.find(x => x.id === 'icn11');
   assert.equal(d.it_mw, 70); assert.equal(d.rfs_ym, '2027-09');
