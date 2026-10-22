@@ -13313,5 +13313,49 @@
     "old": "2024-08",
     "new": "2027",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "icn11",
+    "at": "2026-10-22T07:07:33.102Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-icn11-20261022070733-aliases-0",
+    "field": "aliases",
+    "old": "디지털서울2",
+    "new": "28년_경기_김포_디지털리얼티",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "icn11",
+    "at": "2026-10-22T07:07:33.102Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-icn11-20261022070733-power_mw-1",
+    "field": "power_mw",
+    "old": "",
+    "new": 80,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "icn11",
+    "at": "2026-10-22T07:07:33.102Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-icn11-20261022070733-rfs_ym-2",
+    "field": "rfs_ym",
+    "old": "2027-H2",
+    "new": "2028",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "icn11",
+    "at": "2026-10-22T07:07:33.102Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-icn11-20261022070733-steps-3",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object]",
+    "note": "수동 변경 · 필드 고정"
   }
 ]

@@ -2444,7 +2444,7 @@
     "id": "icn11",
     "name": "디지털리얼티 ICN11",
     "aliases": [
-      "디지털서울2"
+      "28년_경기_김포_디지털리얼티"
     ],
     "category": "상용",
     "status": "개발중",
@@ -2455,11 +2455,11 @@
     "address": "경기도 김포시 구래동",
     "lat": 37.645,
     "lng": 126.628,
-    "power_mw": null,
+    "power_mw": 80,
     "it_mw": 64,
     "start_ym": "2025-05",
     "complete_ym": "2027-10",
-    "rfs_ym": "2027-H2",
+    "rfs_ym": "2028",
     "conf": {
       "owner": "확정",
       "contractor": "확정",
@@ -2471,10 +2471,15 @@
       "complete_ym": "추정",
       "rfs_ym": "추정"
     },
-    "locked": {},
+    "locked": {
+      "aliases": true,
+      "power_mw": true,
+      "rfs_ym": true,
+      "steps": true
+    },
     "note": "공사비 3,617억 → 5,243억(설계변경). 상량 완료, 내부 MEP·커미셔닝 남음. 착공월은 2025-04(DL 보도) vs 2025-05(본착공) 상이.",
-    "updated_at": "2026-10-21T06:26:50.698Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T07:07:33.102Z",
+    "updated_by": "user:정재훈",
     "created_at": "2026-10-19T09:00:00+09:00",
     "permit_ref": {
       "sigunguCd": "41570",
@@ -2487,7 +2492,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T06:26:50.698Z"
+      "at": "2026-10-22T07:07:33.102Z"
     },
     "dbo": {
       "type": "자체",
@@ -2519,7 +2524,25 @@
       "how": "건물명",
       "status": "미일치",
       "at": "2026-10-22T01:07:13.380Z"
-    }
+    },
+    "steps": [
+      {
+        "label": "1단계",
+        "mw": 40,
+        "basis": "수전",
+        "ym": "2028",
+        "status": "운영",
+        "c": "추정"
+      },
+      {
+        "label": "2단계",
+        "mw": 40,
+        "basis": "수전",
+        "ym": "2029",
+        "status": "운영",
+        "c": "추정"
+      }
+    ]
   },
   {
     "id": "incheon-dohwa",
