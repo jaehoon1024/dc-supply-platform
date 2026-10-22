@@ -1781,7 +1781,7 @@
     "id": "equinix-sl3x",
     "name": "Equinix SL3x (고양 향동, xScale)",
     "aliases": [
-      "경기_고양향동_에퀴닉스"
+      "27년_경기_고양향동_에퀴닉스"
     ],
     "category": "상용",
     "status": "착공",
@@ -1817,14 +1817,14 @@
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-22T04:32:29.766Z",
-    "updated_at": "2026-10-22T05:02:56.981Z",
+    "updated_at": "2026-10-22T05:07:17.377Z",
     "updated_by": "user:정재훈",
     "sido": "경기",
     "sigungu": "고양시",
     "addr_check": {
       "status": "좌표없음",
       "note": "위경도가 없습니다",
-      "at": "2026-10-22T05:02:56.981Z"
+      "at": "2026-10-22T05:07:17.377Z"
     }
   },
   {
