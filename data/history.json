@@ -14397,5 +14397,60 @@
     "old": "경기_김포구래_디지털리얼티",
     "new": "28년_DBO_파이프라인, 29년_DBO_파이프라인",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T09:02:25.612Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-bucheon-20261022090225-aliases-0",
+    "field": "aliases",
+    "old": "엠디에이3호, 유림티에스 부천 데이터센터",
+    "new": "32년_DBO_파이프라인",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T09:02:25.612Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-bucheon-20261022090225-status-1",
+    "field": "status",
+    "old": "착공",
+    "new": "설계중",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T09:02:25.612Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-bucheon-20261022090225-it_mw-2",
+    "field": "it_mw",
+    "old": "",
+    "new": 66,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T09:02:25.612Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-bucheon-20261022090225-complete_ym-3",
+    "field": "complete_ym",
+    "old": "",
+    "new": "2032",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-22T09:02:25.612Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-pacific-bucheon-20261022090225-rfs_ym-4",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2032",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
