@@ -394,3 +394,13 @@ dialog .fld{margin-top:12px}
 .bdadmin{margin-top:10px}.bdadmin summary{cursor:pointer;font-size:12px;color:var(--muted)}.bdadmin .row{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}
 
 .stepchip{display:inline-block;font-size:11px;color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:0 5px;margin-top:3px;margin-left:4px}
+
+/* 공급 연도별 센터 */
+.yrgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.yrcol{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface-2);min-width:0}
+.yrhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:4px}
+.yrhead b{font-size:16px}.yrhead .num{font-family:var(--font-data);font-weight:600}
+.yritem{padding:6px 2px;border-bottom:1px dashed var(--line-2);cursor:pointer}.yritem:last-child{border-bottom:0}
+.yritem:hover{background:var(--surface)}
+.yrname{font-size:13px;font-weight:600;overflow-wrap:anywhere}
+.yrmeta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:2px}
