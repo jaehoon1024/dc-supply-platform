@@ -9937,10 +9937,10 @@
     "lat": 37.5175,
     "lng": 126.8945,
     "power_mw": 80,
-    "it_mw": null,
+    "it_mw": 36,
     "start_ym": "2025-10",
-    "complete_ym": "",
-    "rfs_ym": "",
+    "complete_ym": "2029",
+    "rfs_ym": "2029",
     "note": "유림티에스 시행. 최대 계약전력 80MW, 지하5~지상8층. 2021 한전 계약 → 2022 부지 매입·건축허가 → 2025-10 영등포구 착공신고 수리. 아파트·학교 인접으로 주민 반대(서명 1,332명) → 구청이 민관협의체·전자파 실시간 공개 등 대책 제시. 실제 공사 진척 확인 필요.",
     "conf": {
       "owner": "확정",
@@ -9949,12 +9949,16 @@
       "start_ym": "확정",
       "address": "추정"
     },
-    "locked": {},
+    "locked": {
+      "it_mw": true,
+      "complete_ym": true,
+      "rfs_ym": true
+    },
     "permit_ref": null,
     "player": "",
     "created_at": "2026-10-20T20:00:00+09:00",
-    "updated_at": "2026-10-21T06:26:50.698Z",
-    "updated_by": "auto",
+    "updated_at": "2026-10-22T08:42:46.996Z",
+    "updated_by": "user:정재훈",
     "id": "urim-mullae",
     "name": "유림티에스 문래 데이터센터",
     "status": "착공",
@@ -9984,7 +9988,7 @@
     "addr_check": {
       "status": "부분",
       "note": "지번·도로명 번호가 없어 행정동 수준입니다",
-      "at": "2026-10-21T06:26:50.698Z"
+      "at": "2026-10-22T08:42:46.996Z"
     },
     "complaints": [
       {

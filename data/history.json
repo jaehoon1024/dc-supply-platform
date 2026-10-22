@@ -14177,5 +14177,38 @@
     "old": "경기_고양향동_에퀴닉스",
     "new": "27년_DBO_파이프라인",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "urim-mullae",
+    "at": "2026-10-22T08:42:46.996Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-urim-mullae-20261022084246-it_mw-0",
+    "field": "it_mw",
+    "old": "",
+    "new": 36,
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "urim-mullae",
+    "at": "2026-10-22T08:42:46.996Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-urim-mullae-20261022084246-complete_ym-1",
+    "field": "complete_ym",
+    "old": "",
+    "new": "2029",
+    "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "dc_id": "urim-mullae",
+    "at": "2026-10-22T08:42:46.996Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-urim-mullae-20261022084246-rfs_ym-2",
+    "field": "rfs_ym",
+    "old": "",
+    "new": "2029",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
