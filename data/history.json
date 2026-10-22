@@ -14342,5 +14342,49 @@
     "old": "",
     "new": "2029",
     "note": "수동 변경 · 필드 고정"
+  },
+  {
+    "id": "h-pacific-sunny-20261022085737-owner",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-22T08:57:37.627Z",
+    "field": "owner",
+    "old": "퍼시픽자산운용 (CPPIB 공동투자)",
+    "new": "퍼시픽자산운용 (퍼시픽써니45호 사모부동산투자회사, CPPIB·신한투자증권 공동)",
+    "evidence_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03788406642068224",
+    "by": "auto",
+    "note": "이데일리 2025-02"
+  },
+  {
+    "id": "h-pacific-sunny-20261022085737-steps",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-22T08:57:37.627Z",
+    "field": "steps",
+    "old": "[object Object], [object Object]",
+    "new": "[object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "동별 준공 시점 보강"
+  },
+  {
+    "id": "h-pacific-sunny-20261022085737-note",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-22T08:57:37.627Z",
+    "field": "note",
+    "old": "총사업비 1.3조, 연면적 99,125㎡, 2개동. 주 임차인 AWS로 보도. 1.12조 리파이낸싱.",
+    "new": "용인 죽전 하이퍼스케일 Tier3 코로케이션, 수전 100MW·IT 64MW, 2개동(동별 용량은 균등 가정), 연면적 약 99,000㎡, 데이터홀당 약 1,000랙·랙당 10kW+. 총사업비 1.3조(CPPIB·신한투자증권 약 8,280억 조달), 현대건설 8,569억 — A동 2024-12 선준공, B동 2025-10 준공(공기 7개월 단축). 2025-02 기준 임대 가능 면적 100% 임차(글로벌 CSP), 네이버클라우드 A동 8년 계약(LG CNS 공시). LG CNS 설계·구축 참여 후 임차·운영. 1.12조 리파이낸싱.",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-pacific-sunny-20261022085737-evidence-415",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-22T08:57:37.627Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "'국내 최대' 용인 퍼시픽써니 데이터센터, 예정대로 9월 준공될까",
+    "by": "auto",
+    "evidence_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03788406642068224",
+    "note": "근거 자동 추가"
   }
 ]

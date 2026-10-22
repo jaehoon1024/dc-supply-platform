@@ -6745,5 +6745,23 @@
     "source_id": "s23",
     "collected_at": "2026-10-22T07:21:00.326Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-sunny-20261022085737-415",
+    "dc_id": "pacific-sunny",
+    "title": "'국내 최대' 용인 퍼시픽써니 데이터센터, 예정대로 9월 준공될까",
+    "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03788406642068224",
+    "publisher": "이데일리",
+    "pub_date": "2025-02-07",
+    "grade": "B",
+    "fields": [
+      "개발사",
+      "준공월",
+      "판매"
+    ],
+    "excerpt": "IT 64MW·연면적 99,074㎡, A동 2024-12 선준공·B동 2025-09 준공 예정, 임대 100%(글로벌 CSP), 퍼시픽써니45호, 현대건설 8,569억",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T08:57:37.627Z",
+    "added_by": "auto"
   }
 ]
