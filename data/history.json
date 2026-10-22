@@ -13672,5 +13672,16 @@
     "by": "auto",
     "evidence_url": "https://www.datacentermap.com/south-korea/seoul/digital-edge-incheon-campus/",
     "note": "근거 자동 추가"
+  },
+  {
+    "dc_id": "de-sel3",
+    "at": "2026-10-22T07:23:32.011Z",
+    "by": "user",
+    "editor": "정재훈",
+    "id": "h-de-sel3-20261022072332-aliases-0",
+    "field": "aliases",
+    "old": "27년_인천_부평청천_디지털엣지_2동, 부평 데이터센터 2단계",
+    "new": "인천_부평청천_디지털엣지_2동",
+    "note": "수동 변경 · 필드 고정"
   }
 ]
