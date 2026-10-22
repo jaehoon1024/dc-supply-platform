@@ -12315,5 +12315,114 @@
     "by": "auto",
     "evidence_url": "https://m.sedaily.com/amparticle/20072470",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-create",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "_create",
+    "old": "",
+    "new": "퍼시픽 구로 항동 데이터센터",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-status",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "status",
+    "old": "설계중",
+    "new": "착공",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-owner",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "owner",
+    "old": "",
+    "new": "퍼시픽자산운용 (퍼시픽디구로62호 펀드, CPPIB 공동투자)",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-contractor",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "contractor",
+    "old": "",
+    "new": "현대건설 (책임준공)",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-address",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "address",
+    "old": "",
+    "new": "서울특별시 구로구 항동 236-7",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-power_mw",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "power_mw",
+    "old": "",
+    "new": 52,
+    "evidence_url": "",
+    "by": "auto",
+    "note": "자동수집 신규 등록"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-complaints",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "complaints",
+    "old": "",
+    "new": "[object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": "보도 기반"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-evidence-402",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "구로 항동 데이터센터, 현대건설 책임준공 '6000억 PF' 조달",
+    "by": "auto",
+    "evidence_url": "https://www.bloter.net/news/articleView.html?idxno=650439",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-pacific-guro-hangdong-20261022021730-evidence-403",
+    "dc_id": "pacific-guro-hangdong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "데이터센터, 부동산 시장의 블루칩…상반기 수도권 715MW 개발·투자 확대",
+    "by": "auto",
+    "evidence_url": "https://www.ezyeconomy.com/news/articleView.html?idxno=220378",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-kt-gaebong-20261022021730-evidence-404",
+    "dc_id": "kt-gaebong",
+    "at": "2026-10-22T02:17:30.254Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "싱가포르 PDG, '구로 데이터센터' 인수한다",
+    "by": "auto",
+    "evidence_url": "https://dealsite.co.kr/articles/105634",
+    "note": "근거 자동 추가"
   }
 ]

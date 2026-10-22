@@ -6520,5 +6520,57 @@
     "source_id": "s30",
     "collected_at": "2026-10-22T02:08:06.198Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-guro-hangdong-20261022021730-402",
+    "dc_id": "pacific-guro-hangdong",
+    "title": "구로 항동 데이터센터, 현대건설 책임준공 '6000억 PF' 조달",
+    "url": "https://www.bloter.net/news/articleView.html?idxno=650439",
+    "publisher": "블로터",
+    "pub_date": "2025-12-26",
+    "grade": "B",
+    "fields": [
+      "주소",
+      "개발사",
+      "시공사",
+      "수전",
+      "규모"
+    ],
+    "excerpt": "항동 236-7, 대지 7,402㎡, 52MW, 지하5~지상7 연면적 44,336㎡, 퍼시픽디구로62호 펀드(퍼시픽·CPPIB), PF 6,000억, 현대건설 책임준공, 하양에너지파워→퍼시픽 부지 1,400억 인수",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:17:30.254Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-guro-hangdong-20261022021730-403",
+    "dc_id": "pacific-guro-hangdong",
+    "title": "데이터센터, 부동산 시장의 블루칩…상반기 수도권 715MW 개발·투자 확대",
+    "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=220378",
+    "publisher": "이지경제",
+    "pub_date": "2025-08-29",
+    "grade": "C",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "퍼시픽자산운용은 CPPIB와 공동 펀드를 통해 구로 항동 부지를 인수",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:17:30.254Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-gaebong-20261022021730-404",
+    "dc_id": "kt-gaebong",
+    "title": "싱가포르 PDG, '구로 데이터센터' 인수한다",
+    "url": "https://dealsite.co.kr/articles/105634",
+    "publisher": "딜사이트",
+    "pub_date": "2023-06-23",
+    "grade": "B",
+    "fields": [
+      "개발사"
+    ],
+    "excerpt": "개봉동 166-2, 블루리본디벨롭먼트(롯데건설 25%·한국투자증권 19%) 보유, 35MW급·지하5~지상8·연면적 20,958㎡, PDG 우선협상대상자(2023-06)",
+    "source_id": "s30",
+    "collected_at": "2026-10-22T02:17:30.254Z",
+    "added_by": "auto"
   }
 ]
