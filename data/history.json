@@ -16242,5 +16242,38 @@
     "by": "auto",
     "evidence_url": "https://zdnet.co.kr/view/?no=20261021150632",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-skt-ulsan-20261023215614-evidence-464",
+    "dc_id": "skt-ulsan",
+    "at": "2026-10-23T21:56:14.454Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "SK하이퍼, 국내에 463조 규모…초대형 AI 데이터센터 짓는다",
+    "by": "auto",
+    "evidence_url": "https://www.hankyung.com/article/2026102318001",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-skt-ulsan-20261023215614-evidence-465",
+    "dc_id": "skt-ulsan",
+    "at": "2026-10-23T21:56:14.454Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "SK Data Center Arm in Talks to Fund $350 Billion AI Buildout",
+    "by": "auto",
+    "evidence_url": "https://www.bloomberg.com/news/articles/2026-10-23/sk-data-center-arm-in-talks-to-fund-350-billion-ai-buildout",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-kt-baekseok-20261023215614-evidence-466",
+    "dc_id": "kt-baekseok",
+    "at": "2026-10-23T21:56:14.454Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "KT IDC Goyang Baekseok AIDC",
+    "by": "auto",
+    "evidence_url": "https://www.ocolo.io/colocation/kt-idc/goyang-baekseok-aidc",
+    "note": "근거 자동 추가"
   }
 ]

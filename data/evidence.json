@@ -7598,5 +7598,55 @@
     "source_id": "s27",
     "collected_at": "2026-10-23T04:16:24.519Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-skt-ulsan-20261023215614-464",
+    "dc_id": "skt-ulsan",
+    "title": "SK하이퍼, 국내에 463조 규모…초대형 AI 데이터센터 짓는다",
+    "url": "https://www.hankyung.com/article/2026102318001",
+    "publisher": "한국경제",
+    "pub_date": "2026-10-23",
+    "grade": "B",
+    "fields": [
+      "플레이어",
+      "일정"
+    ],
+    "excerpt": "SKT AI DC 개발사 SK하이퍼, 2035년까지 국내 15GW·1단계 5GW에 3,500억달러(약 463조원) 필요. 울산 AI 데이터센터를 시작으로 영남권 2GW 이상 클러스터, 충청·서남권 GW급 순차 추진. 첫 데이터센터 완공 2029년, 빅테크·재무적 투자자와 연내~내년 초 첫 외부투자 유치 협상(정석근 대표 블룸버그 인터뷰).",
+    "source_id": "s30",
+    "collected_at": "2026-10-23T21:56:14.454Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-skt-ulsan-20261023215614-465",
+    "dc_id": "skt-ulsan",
+    "title": "SK Data Center Arm in Talks to Fund $350 Billion AI Buildout",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-23/sk-data-center-arm-in-talks-to-fund-350-billion-ai-buildout",
+    "publisher": "Bloomberg",
+    "pub_date": "2026-10-23",
+    "grade": "B",
+    "fields": [
+      "플레이어",
+      "일정"
+    ],
+    "excerpt": "SK Hyper in talks with big tech and financial investors to fund first 5GW ($350bn) of a 15GW Korea buildout; Ulsan first, first data center completion 2029.",
+    "source_id": "s15",
+    "collected_at": "2026-10-23T21:56:14.454Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-kt-baekseok-20261023215614-466",
+    "dc_id": "kt-baekseok",
+    "title": "KT IDC Goyang Baekseok AIDC",
+    "url": "https://www.ocolo.io/colocation/kt-idc/goyang-baekseok-aidc",
+    "publisher": "ocolo",
+    "pub_date": "2026-10-23",
+    "grade": "C",
+    "fields": [
+      "주소"
+    ],
+    "excerpt": "주소 235 Gyeongui-ro, Goyang-si(경의로 235 표기, 지번 없음), Tier II, 공랭. 수전·IT·연면적 미기재 — 중개 사이트 표기라 주소는 미반영.",
+    "source_id": "s16",
+    "collected_at": "2026-10-23T21:56:14.454Z",
+    "added_by": "auto"
   }
 ]
