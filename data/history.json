@@ -16275,5 +16275,16 @@
     "by": "auto",
     "evidence_url": "https://www.ocolo.io/colocation/kt-idc/goyang-baekseok-aidc",
     "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-pacific-bucheon-20261023234933-status",
+    "dc_id": "pacific-bucheon",
+    "at": "2026-10-23T23:49:33.318Z",
+    "field": "status",
+    "old": "설계중",
+    "new": "착공",
+    "evidence_url": "https://www.hub.go.kr/portal/opn/tyb/idx-acpmslg.do#1000000000000000294786",
+    "by": "proposal",
+    "note": "고정 필드 – 제안 · 건축HUB 인허가 (부천 내동 데이터센터) 착공"
   }
 ]
