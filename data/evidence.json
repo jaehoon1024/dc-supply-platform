@@ -7426,5 +7426,95 @@
     "source_id": "s02",
     "collected_at": "2026-10-22T23:49:33.327Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-geumgang-cheonan-jiksan-20261023040932-454",
+    "dc_id": "geumgang-cheonan-jiksan",
+    "title": "천안시, 직산읍에 1조2천억 들여 'AI 데이터센터' 짓는다",
+    "url": "https://www.jbnews.com/news/articleView.html?idxno=1497969",
+    "publisher": "중부매일",
+    "pub_date": "2026-01-29",
+    "grade": "A",
+    "fields": [
+      "개발사(발주처)",
+      "주소",
+      "수전용량(MW)",
+      "착공월",
+      "준공월"
+    ],
+    "excerpt": "천안시 서북구 직산읍 군서리 일원 10만2642㎡, 160MW급, 1차분(80MW) 한전 전기사용계약 완료, 2026년 2월 착공·2028년 6월 준공 목표, 1조2천억원",
+    "source_id": "s04",
+    "collected_at": "2026-10-23T04:09:32.226Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-geumgang-cheonan-jiksan-20261023040932-455",
+    "dc_id": "geumgang-cheonan-jiksan",
+    "title": "충남-천안-금강, 1.2조 AI 데이터센터 투자협약…2028년 160㎿ 용량 센터 건립",
+    "url": "https://www.etnews.com/20260129000133",
+    "publisher": "전자신문",
+    "pub_date": "2026-01-29",
+    "grade": "A",
+    "fields": [
+      "수전용량(MW)",
+      "준공월"
+    ],
+    "excerpt": "160㎿ 용량 규모, 한전 80MW 전기공급 계약, 투자기간 2026년 2월~2028년 6월, 고용 200명",
+    "source_id": "s25",
+    "collected_at": "2026-10-23T04:09:32.226Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-geumgang-cheonan-jiksan-20261023040932-456",
+    "dc_id": "geumgang-cheonan-jiksan",
+    "title": "충남도, 2029년까지 AI데이터센터 건립…80MW 규모",
+    "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=222419",
+    "publisher": "에너지신문",
+    "pub_date": "2026-01-29",
+    "grade": "B",
+    "fields": [
+      "수전용량(MW)",
+      "준공월"
+    ],
+    "excerpt": "천안 AI 데이터센터는 80MW 규모로 2029년까지 건립, 한전과 80MW 전력공급 계약 완료",
+    "source_id": "s04",
+    "collected_at": "2026-10-23T04:09:32.226Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-tstrillion-cheonan-20261023040932-457",
+    "dc_id": "tstrillion-cheonan",
+    "title": "TS트릴리온 2.3조원 규모 천안 AI 데이터센터 공동개발 추진",
+    "url": "https://www.hankyung.com/article/2026101655286",
+    "publisher": "한국경제",
+    "pub_date": "2026-10-16",
+    "grade": "B",
+    "fields": [
+      "개발사(발주처)",
+      "수전용량(MW)",
+      "연면적(㎡)",
+      "상태"
+    ],
+    "excerpt": "충남 천안시 동남구 일원, 대지 5만323㎡·연면적 8만4293㎡, 80MW 전기사용계약, 건축허가·개발행위허가 완료, 1단계 40MW 착공 추진, 총사업비 2.3조(PF 2조)",
+    "source_id": "s30",
+    "collected_at": "2026-10-23T04:09:32.226Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-tstrillion-cheonan-20261023040932-458",
+    "dc_id": "tstrillion-cheonan",
+    "title": "[특징주] 2조 규모 AI 데이터센터 공동개발…TS트릴리온 상한가",
+    "url": "https://www.etoday.co.kr/news/view/2636527",
+    "publisher": "이투데이",
+    "pub_date": "2026-10-16",
+    "grade": "B",
+    "fields": [
+      "개발사(발주처)",
+      "수전용량(MW)"
+    ],
+    "excerpt": "코리아플랜·민속촌·TS CORE 공동개발, 80MW 전기사용계약, 1단계 40MW",
+    "source_id": "s30",
+    "collected_at": "2026-10-23T04:09:32.226Z",
+    "added_by": "auto"
   }
 ]

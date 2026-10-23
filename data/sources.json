@@ -48,7 +48,7 @@
     "collects": "건축허가·도시계획시설 결정, 주민설명회 공고",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T21:52:13.478Z",
+    "last_run": "2026-10-23T04:09:32.226Z",
     "last_hits": 1
   },
   {
@@ -321,8 +321,8 @@
     "collects": "IT·통신사 데이터센터 투자·착공",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T21:52:13.478Z",
-    "last_hits": 0
+    "last_run": "2026-10-23T04:09:32.226Z",
+    "last_hits": 1
   },
   {
     "id": "s26",
@@ -386,7 +386,7 @@
     "collects": "PF 조달·자산운용사 개발, 매각·임차 계약",
     "method": "웹검색",
     "enabled": true,
-    "last_run": "2026-10-22T21:52:13.478Z",
+    "last_run": "2026-10-23T04:09:32.226Z",
     "last_hits": 1
   }
 ]
