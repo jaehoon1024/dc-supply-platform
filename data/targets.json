@@ -40,10 +40,12 @@
     "target_mw": null,
     "year": null,
     "basis": "",
-    "note": "공개 용량 목표 없음. AI박스(모듈형 소형 AIDC) 사업 확대",
+    "note": "공개 용량 목표 없음. DBO 외부 운영 약 350MW·자체 100MW 미만(회사 측, 2026-09). AI 박스 모듈형 확대, 부산 AI 박스 캠퍼스(약 50기) 구상.",
     "url": "",
-    "reported_basis": "수전 기준, 미래에셋증권 추정(2025-10)",
-    "reported_url": "https://v.daum.net/v/20251020145947364"
+    "reported_basis": "DBO 외부 운영 약 350MW(자체 100MW 미만 별도) — 회사 측 발언, 머니투데이 2026-09-28",
+    "reported_url": "https://www.mt.co.kr/tech/2026/09/28/2026092812381034956",
+    "reported_mw": 350,
+    "updated_at": "2026-10-23T04:16:24.519Z"
   },
   {
     "player": "카카오엔터프라이즈",

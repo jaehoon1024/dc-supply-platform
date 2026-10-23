@@ -16165,5 +16165,82 @@
     "evidence_url": "",
     "by": "auto",
     "note": "동남구 일원 근사 좌표(지번 미공개)"
+  },
+  {
+    "id": "h-lgcns-busan-20261023041624-steps",
+    "dc_id": "lgcns-busan",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "steps",
+    "old": "",
+    "new": "[object Object], [object Object], [object Object]",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-lgcns-busan-20261023041624-note",
+    "dc_id": "lgcns-busan",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "note",
+    "old": "부산 글로벌 클라우드센터, 지상5층, 연면적 32,531㎡, 수전 40,000kVA(≈40MW), 국내 최초 진도 8.0 면진. LG CNS 위탁운영 첫 사례로도 언급.",
+    "new": "부산 글로벌 클라우드센터, 지상5층, 연면적 32,531㎡, 수전 40,000kVA(≈40MW), 국내 최초 진도 8.0 면진. LG CNS 위탁운영 첫 사례로도 언급. 2026-03 부지 내 모듈형 'AI 박스'(1.2MW) 1호 구축 발표, 향후 약 50개 'AI 박스 캠퍼스' 구상.",
+    "evidence_url": "",
+    "by": "auto",
+    "note": ""
+  },
+  {
+    "id": "h-lgcns-busan-20261023041624-evidence-459",
+    "dc_id": "lgcns-busan",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "LG CNS, 그룹 기술 결집한 소형 데이터센터 'AI 박스' 공개…글로벌 공략",
+    "by": "auto",
+    "evidence_url": "https://zdnet.co.kr/view/?no=20260305090440",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-lgcns-busan-20261023041624-evidence-460",
+    "dc_id": "lgcns-busan",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "상반기에만 AI DC 1조 수주⋯ 해외 사업도 확장",
+    "by": "auto",
+    "evidence_url": "https://www.kmib.co.kr/article/20261022502048",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-egis-samsong-20261023041624-evidence-461",
+    "dc_id": "egis-samsong",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "상반기에만 AI DC 1조 수주⋯ 해외 사업도 확장",
+    "by": "auto",
+    "evidence_url": "https://www.kmib.co.kr/article/20261022502048",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-egis-samsong-20261023041624-evidence-462",
+    "dc_id": "egis-samsong",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "[유미's 픽] 신성장 동력은 해외 데이터센터…LG CNS·롯데이노베이트의 승부수",
+    "by": "auto",
+    "evidence_url": "https://zdnet.co.kr/view/?no=20261021150632",
+    "note": "근거 자동 추가"
+  },
+  {
+    "id": "h-pacific-sunny-20261023041624-evidence-463",
+    "dc_id": "pacific-sunny",
+    "at": "2026-10-23T04:16:24.519Z",
+    "field": "_evidence",
+    "old": "",
+    "new": "[유미's 픽] 신성장 동력은 해외 데이터센터…LG CNS·롯데이노베이트의 승부수",
+    "by": "auto",
+    "evidence_url": "https://zdnet.co.kr/view/?no=20261021150632",
+    "note": "근거 자동 추가"
   }
 ]

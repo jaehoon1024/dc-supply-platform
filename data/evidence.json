@@ -7516,5 +7516,87 @@
     "source_id": "s30",
     "collected_at": "2026-10-23T04:09:32.226Z",
     "added_by": "auto"
+  },
+  {
+    "id": "e-lgcns-busan-20261023041624-459",
+    "dc_id": "lgcns-busan",
+    "title": "LG CNS, 그룹 기술 결집한 소형 데이터센터 'AI 박스' 공개…글로벌 공략",
+    "url": "https://zdnet.co.kr/view/?no=20260305090440",
+    "publisher": "지디넷코리아",
+    "pub_date": "2026-03-05",
+    "grade": "A",
+    "fields": [
+      "동별 오픈 일정"
+    ],
+    "excerpt": "첫 AI 박스를 부산 글로벌 클라우드 데이터센터 부지에 구축, 1기당 서버전력 1.2MW·GPU 576장, 약 6개월 구축. 향후 약 2만7179㎡ 부지에 AI 박스 약 50개 캠퍼스",
+    "source_id": "s27",
+    "collected_at": "2026-10-23T04:16:24.519Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-lgcns-busan-20261023041624-460",
+    "dc_id": "lgcns-busan",
+    "title": "상반기에만 AI DC 1조 수주⋯ 해외 사업도 확장",
+    "url": "https://www.kmib.co.kr/article/20261022502048",
+    "publisher": "국민일보",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "동별 오픈 일정"
+    ],
+    "excerpt": "1.2㎿급 소형 데이터센터 'AI 하우스'(576 GPU), 부산에 AI 하우스 50개를 집적한 캠퍼스 조성 계획",
+    "source_id": "s30",
+    "collected_at": "2026-10-23T04:16:24.519Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-egis-samsong-20261023041624-461",
+    "dc_id": "egis-samsong",
+    "title": "상반기에만 AI DC 1조 수주⋯ 해외 사업도 확장",
+    "url": "https://www.kmib.co.kr/article/20261022502048",
+    "publisher": "국민일보",
+    "pub_date": "2026-10-22",
+    "grade": "B",
+    "fields": [
+      "수전용량(MW)",
+      "운영사"
+    ],
+    "excerpt": "삼송 데이터센터는 총 수전용량 80㎿ 규모, 랙당 200kW 이상 고밀도·DTC 액체냉각 적용, 네이버클라우드 파트너",
+    "source_id": "s30",
+    "collected_at": "2026-10-23T04:16:24.519Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-egis-samsong-20261023041624-462",
+    "dc_id": "egis-samsong",
+    "title": "[유미's 픽] 신성장 동력은 해외 데이터센터…LG CNS·롯데이노베이트의 승부수",
+    "url": "https://zdnet.co.kr/view/?no=20261021150632",
+    "publisher": "지디넷코리아",
+    "pub_date": "2026-10-21",
+    "grade": "B",
+    "fields": [
+      "운영사",
+      "판매"
+    ],
+    "excerpt": "삼송: 이지스자산운용 투자, LG CNS DBO, 네이버클라우드와 2035년 5월까지 코로케이션 계약",
+    "source_id": "s27",
+    "collected_at": "2026-10-23T04:16:24.519Z",
+    "added_by": "auto"
+  },
+  {
+    "id": "e-pacific-sunny-20261023041624-463",
+    "dc_id": "pacific-sunny",
+    "title": "[유미's 픽] 신성장 동력은 해외 데이터센터…LG CNS·롯데이노베이트의 승부수",
+    "url": "https://zdnet.co.kr/view/?no=20261021150632",
+    "publisher": "지디넷코리아",
+    "pub_date": "2026-10-21",
+    "grade": "B",
+    "fields": [
+      "운영사"
+    ],
+    "excerpt": "죽전: 퍼시픽자산운용 발주 100MW, LG CNS 컨설팅·인프라 구축·운영",
+    "source_id": "s27",
+    "collected_at": "2026-10-23T04:16:24.519Z",
+    "added_by": "auto"
   }
 ]
